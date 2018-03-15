@@ -189,13 +189,15 @@ The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN distri
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{The Skew Normal distribution} \label{sec:2}
-
+\jessi{This section is too complicated.  I suggest we define the skew normal in terms of the parameters that are used later, then relegate additional details, including the optimization, to an appendix section.}
 \comment{17) I cannot find where R, R+, x and w were defined. It is a common practice when you introduce variables in a paper, these should all be defined.
 18) Paragraph 4: "By using the so-called direct parameterization (DP) defined in Eq. 2 problems with parameters estimation arise in the evaluation of the likelihood function in a neighborhood of $\alpha$ = 0, where the presence of a stationary point complicates the achievement of the maximum likelihood or least squares estimates."
 A poorly constructed sentence that simply confuses me! The authors are trying to say too many things in one sentence which loses the reader.
 19) To be honest, I could not follow all the mathematics. I really would have to read the referenced material, but I had little time. Maybe the details can be put in an appendix?}
 
-The Skew Normal (SN) distribution, introduced by \cite{Azzalini1985}, is a class of probability distributions which includes the Normal distribution as a special case. The SN distribution has, in addition to a position and a scale parameter, a third parameter which describes the asymmetry of the distribution. 
+The Skew Normal (SN) distribution, introduced by \cite{Azzalini1985}
+\jessi{Wikipedia says this was introduced in O'Hagan and Leonard (1976), Bayes estimation subject to uncertainty about parameter constraints.  However, it seems this may just be a 2-parameter class. I don't know that we need to get into the history anyway, we can just discuss the SN and reference the Azzalini paper.}
+, is a class of probability distributions which includes the Normal distribution as a special case. The SN distribution has, in addition to a position and a scale parameter, a third parameter which describes the asymmetry of the distribution. 
 
 Formally the density function of the SN distribution for a random variable $Z \in \mathbb R$ is defined as:
 \begin{equation} \label{def:snd}
@@ -322,11 +324,13 @@ When the Normal fit is used, the parameter $\gamma_1$ is replaced by the BIS SPA
 
 
 
-
+%-----------------------------------------------------------------------------------------------------------------------------------------------
+\subsection{Doppler shift added to Alpha Centauri B} \label{sec:soap_real}
 
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Real data applications} \label{sec:4}
+\jessi{I suggest we include one real-date application (whichever is used in \S\ref{sec:soap_real} (Alpha Centauri B?) and then add the other examples to an appendix}
 
 In this Section we present the analyses of five stars, showing the advantages of fitting the CCF using the SN distribution defined in Section \ref{sec:3}. 
 
