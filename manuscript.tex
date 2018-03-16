@@ -194,7 +194,7 @@ The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN distri
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{The Skew Normal distribution} \label{sec:2}
-\jessi{This section is too complicated.  I suggest we define the skew normal in terms of the parameters that are used later, then relegate additional details, including the optimization, to an appendix section.}
+\jessi{I re-wrote this section to hopefully address the referees concerns along with removing elements that are not needed}
 \comment{17) I cannot find where R, R+, x and w were defined. It is a common practice when you introduce variables in a paper, these should all be defined.
 18) Paragraph 4: "By using the so-called direct parameterization (DP) defined in Eq. 2 problems with parameters estimation arise in the evaluation of the likelihood function in a neighborhood of $\alpha$ = 0, where the presence of a stationary point complicates the achievement of the maximum likelihood or least squares estimates."
 A poorly constructed sentence that simply confuses me! The authors are trying to say too many things in one sentence which loses the reader.
@@ -251,46 +251,52 @@ $\alpha$ & $\mu$ & $\sigma^2$ & $\gamma$ \\
 Further details about the parametrization from Equation~\eqref{def:snd_gen} (called the \emph{Direct Parametrization}), the CP, and general statistical properties of the SN are treated in rigorous mathematical and statistical viewpoints in the book by \cite{Azzalini2014}.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
-\section{Fitting the Skew Normal distribution to the CCF} \label{sec:3}
+\subsection{Fitting the Skew Normal distribution to the CCF} \label{sec:3}
 
 %The CCF represents the average shape of spectral lines and is expressed in flux as a function of radial-velocity.
-We fit the following function to the CCF:
+The SN density shape is used to model the CCF.  In particular, the following function is fit using least-squares estimation,
 %
 \begin{eqnarray} \label{eq:3}
-\mathrm{C} - \mathrm{A} \times SN(y;\mu, \sigma^2, \gamma),
+f_{CCF}(y_i) = \mathrm{C} - \mathrm{A} \times SN(y_i;\mu, \sigma^2, \gamma), \quad i = 1, \ldots, n
 \end{eqnarray}
 %
-where C is a constant fitting the continuum of the CCF, A is an amplitude parameter and $y$ is the RV of each point of the CCF. Note that the CCF is expressed in flux as a function of the lag of the cross-correlation template, expressed in RV.
+where C is a constant fitting the continuum of the CCF \jessi{The C is unclear to me - can more intuition be added here?  Are C and A considered known?}, A is an amplitude parameter, and $y_1, \ldots, y_n$ are the set of RV's considered for the CCF. Note that the CCF is expressed in flux as a function of the lag of the cross-correlation template, expressed in RV.
 
-We use least squares to fit the SN distribution to the CCF. Since each point of the CCF has a measurement error, we include this information in the specification of the SN distribution by introducing the following heteroskedastic function for the variance:
+Since each point of the CCF has a measurement error, this information is included in the specification of the SN distribution by introducing the following heteroskedastic function for the variance,
 %
 \begin{equation}
-var(Y_{i})=\sigma^{2}+\sigma_{i}^{2}, i = 1, \dots, n,
+\text{var}(Y_{i})=\sigma^{2}+\sigma_{i}^{2}, \quad i = 1, \dots, n,
 \label{eq:vaf}
 \end{equation}
 %
-where n corresponds to the number of points of the CCF and $\sigma_{i}$ represents the measurement error for each available point. By using Eq. \ref{eq:vaf} we can interpret the parameter $\sigma^{2}$ as a measure of the pure variability present in the evaluation of the CCF. However, although useful for estimating correct error bars in the case where the different $\sigma_{i}$ do not include all systematic, this heteroskedastic function only consider Gaussian distributed residuals. As the CCF is the result of a cross correlation, we expect the residuals of a Normal or a SN fit to show some red noise. For this reason, we first calculated the best fit for each CCF using a Normal or a SN distribution assuming Gaussian distributed noise. We then subtracted the median of the residuals obtained for all CCFs before performing a second fitting round. The result of this procedure is illustrated in Fig.~\ref{fig:Residual.comparison}. We see in the lower left panel that the residuals of a simple fit of a Normal or a SN distribution are strongly correlated. After removing the median of the residuals, in the lower right panel, the final residuals of the SN have nearly no correlation, while the final residuals of the Normal still present a small systematic component. This comes from the fact that because of the asymmetric nature of the CCF (see Sec. \ref{intro}), the SN distribution is a more flexible model than the Normal one.
-%including the correct measurement errors in the analysis if , Eq. \ref{eq:vaf} assumes common variance for all the $n$ points of the CCF. Since the CCF is retrieved introducing different lags in the template, the latter assumption is not accurate, since unknown correlations will be produced as an effect of the procedure for retrieving the CCF. For this reason, in evaluating each CCF, we subtracted to each CCF its residuals, running the SN fit a second time with a ``decorrelated'' CCF as displayed in Fig.~\ref{fig:Residual.comparison}.
+where $\sigma_{i}$ represents the measurement error for each point of the CCF. By using Eq. \ref{eq:vaf} we can interpret the parameter $\sigma^{2}$ \jessi{this is going to be confusing given the CP parametrization of the SN - one needs to be changes} as a measure of the pure variability present in the evaluation of the CCF. 
+However, although useful for estimating correct error bars in the case where the different $\sigma_{i}$ do not include all systematics, this heteroskedastic function only considers Gaussian distributed residuals. \jessi{the previous statement is unclear}
+%
 
-
-%Looking at Fig.~\ref{fig:Residual.comparison}, also after removing the correlations due to the CCF, a clear systematic trend is visible in the residuals when a Normal distribution is fitted, suggesting how by using simply a location and a scale parameter relevant aspects of the CCF are not explained. The behaviour of the residuals for the SN analysis suggests that the inclusion of a skewness parameter helps for explaining the characteristics of the CCF, although a small systematic component is still present in the residuals. 
-
-
-
-
-
-When using the least squares estimate for fitting the CCF with the SN distribution, we have to take into account the stationary problem in $\gamma=0$ due to the presence of the function $sign(\gamma)$ in Equation (\ref{eq:2}). Depending on the initial values of the numerical minimization for the least squares estimate of $\gamma$, the presence of this stationary point when evaluating $\gamma$ can lead to an incorrect estimation of the asymmetry parameter of the SN. In order to resolve this problem, we implemented two functions for retrieving the best least squares solution. In the first function we allowed for only positive solutions of $\gamma_1$ (with an upper limit of $0.995$), while in the second function only negative solutions are allowed (with a lower limit of $\gamma= -0.995$). The chosen solution is the estimate which has smallest residuals.
-
-
-
+The CCF is the result of a cross correlation so the residuals of a normal or a SN fit are expected to show correlated noise.
+To investigate this issue, we considered example CCFs from the star Tau Ceti.  The CCFs were modeled using a normal or a SN shape, and assuming independent normally-distributed noise around the modeled shape. 
+%
+We then subtracted the median of the residuals (the original data minus the fit function) obtained for all CCFs before performing a second round of fitting. The result of this procedure is illustrated in Figure~\ref{fig:Residual.comparison}. The lower left panel displays the residuals of a simple fit of a normal or a SN distribution, which appear to be strongly correlated. 
+%
+After removing the median of the residuals, in the lower right panel, the final residuals of the SN procedure have almost no apparent correlation, while the final residuals of the normal procedure still present a small systematic component. This seems to be due to the asymmetric nature of the CCF (see Section~\ref{intro}), which is not captured in a symmetric distribution like the normal distribution.  This exercise highlights that the SN density shape better captures the shape of a CCF compared to a normal density shape.
+%
 \begin{figure*}[htbp]
    \centering
 \includegraphics[height = 6in]{[1]Plot_Fitting_and_Residuals_2run.pdf} 
-   \caption{Comparison between the Normal and the Skew Normal fit for a particular CCF for the star Tau Ceti. The first run corresponds to fitting a Normal or a SN to the raw CCF. The second run corresponds to fitting the same function to the CCF after removing the median of all the residuals obtained in the first run. The SN residuals of the second run present a tiny correlation, whereas the Normal residuals present still a clear systematic component.}
+   \caption{Comparison between the normal and the SN procedures for modeling a collection of CCFs for the star Tau Ceti.  Two stages of modeling are carried out with the first stage results displayed in the left column and the second stage in the right column.
+   The first run corresponds to fitting a normal or a SN shape to the raw CCF. The second run corresponds to fitting the same shape to the CCF after removing the median of all the residuals obtained in the first run. The SN residuals of the second run present minimal correlations, whereas the normal residuals present still a clear systematic component.}
    \label{fig:Residual.comparison}
 \end{figure*}
+%When using the least squares estimate for fitting the CCF with the SN distribution, we have to take into account the stationary problem in $\gamma=0$ due to the presence of the function $sign(\gamma)$ in Equation (\ref{eq:2}). Depending on the initial values of the numerical minimization for the least squares estimate of $\gamma$, the presence of this stationary point when evaluating $\gamma$ can lead to an incorrect estimation of the asymmetry parameter of the SN. In order to resolve this problem, we implemented two functions for retrieving the best least squares solution. In the first function we allowed for only positive solutions of $\gamma_1$ (with an upper limit of $0.995$), while in the second function only negative solutions are allowed (with a lower limit of $\gamma= -0.995$). The chosen solution is the estimate which has smallest residuals.
 
-In the following of the paper, we define the RV as the mean of the Normal or the mean of the SN (defined as SN RV). For the width of the CCF, we use the FWHM of the Normal, defined as $2\sqrt(2\ln2)\sigma$. The width of the SN, SN FWHM, is defined in the same way\footnote{Note that SN FWHM does not correspond to the width of the SN distribution at half maximum linke in the Normal case.}. In the Normal case, it is not possible to retrieve an asymmetric parameter and therefore we use BIS SPAN. This will be compared to the asymmetric parameter $\gamma_1$ of the SN.
+
+In the following of the paper, we define the RV as the mean of the normal or the mean of the SN (defined as SN RV). For the width of the CCF, we use the FWHM of the Normal, defined as $2\sqrt(2\ln2)\sigma$. The width of the SN, SN FWHM, is defined in the same way\footnote{Note that SN FWHM does not correspond to the width of the SN distribution at half maximum like in the normal case.}. In the normal case, it is not possible to retrieve an asymmetric parameter and therefore we use BIS SPAN. This will be compared to the asymmetric parameter $\gamma_1$ of the SN.
+
+
+
+
+
+
 
 \section{Effect of stellar activity on radial velocities and correction} \label{sec:31}
 
