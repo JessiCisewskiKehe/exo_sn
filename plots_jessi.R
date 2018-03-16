@@ -18,7 +18,7 @@ temp <- sapply(1:length(alpha), function(ii) lines(x, dx[[ii]], col = par.index[
 legend("topleft", legend = alpha, col = par.index, lty = par.index, lwd = 5, title = expression(alpha), cex = 1.75)
 
 
-fbeta <- function(a){sqrt(2/pi*a^2/(1+a^2))}
+fbeta <- function(a){sqrt(2/pi)*a/sqrt(1+a^2)}
 fgamma <- function(b){0.5*(4 - pi)*b^2*(1-b^2)^(-3/2)}
 beta <- fbeta(alpha)
 gamma <- fgamma(beta)
