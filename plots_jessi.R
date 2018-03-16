@@ -29,3 +29,44 @@ round(cbind(alpha, mu, sig2, gamma),3)
 
 
 
+
+
+
+################  Exploration of robust (wrt skewness) parameters
+x <- seq(-3.25, 3.25, length.out = 1000)
+xi <- 0
+omega <- 1
+alpha <- seq(0, 5, by = 0.25)
+dx <- lapply(1:length(alpha), function(ii) dsn(x, xi, omega, alpha[ii], tau=0, dp=NULL, log=FALSE))
+medx <- sapply(1:length(alpha), function(ii) qsn(.5, xi, omega, alpha[ii], tau=0, dp=NULL, log=FALSE))
+fbeta <- function(a){sqrt(2/pi)*a/sqrt(1+a^2)}
+fgamma <- function(b){0.5*(4 - pi)*b^2*(1-b^2)^(-3/2)}
+beta <- fbeta(alpha)
+gamma <- fgamma(beta)
+meanx <- xi + omega*beta
+
+par(mfrow = c(1,2), mar = c(4,4,1,1), lwd = 3, cex = 2)
+#Median
+plot(x, dx[[1]], "n", xlab = "Y", ylab = "Density", ylim = c(0,.8), main = "Median = vertical lines")
+temp <- sapply(1:length(alpha), function(ii) lines(x, dx[[ii]], col = ii, lty = ii))
+abline(v = medx, col = 1:length(alpha), lwd = 3, lty = 1)
+legend("topleft", legend = alpha, col = 1:length(alpha), lty = 1:length(alpha), lwd = 2, title = expression(alpha), cex = .5)
+#Mean
+plot(x, dx[[1]], "n", xlab = "Y", ylab = "Density", ylim = c(0,.8), main = "Mean = vertical lines")
+temp <- sapply(1:length(alpha), function(ii) lines(x, dx[[ii]], col = ii, lty = ii))
+abline(v = meanx, col = 1:length(alpha), lwd = 3, lty = 1)
+
+plot(meanx, medx)
+abline(a = 0, b = 1)
+
+
+
+
+
+
+
+
+
+
+
+
