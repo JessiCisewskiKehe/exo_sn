@@ -211,19 +211,7 @@ SN(y;\xi, \omega, \alpha) = \frac{2}{\omega} \phi\left(\frac{y-\xi}{\omega}\righ
 where $\phi$ and $\Phi$ are respectively the density function and the distribution function of a \emph{standard} normal distribution\footnote{A standard normal distribution is a normal distribution with a mean of 0 and a standard deviation of 1.}
  and $\alpha \in \mathbb R$ is the skewness parameter which quantifies the asymmetry of the SN.  We then write $Y \sim SN(\xi, \omega^{2}, \alpha)$ to mean that the random variable $Y$ follows the noted SN distribution.
 Examples of SN densities under different skewness parameter values and the same location and scale parameters ($\xi = 0$ and $\omega = 1$) are displayed in Figure \ref{fig:SN.plot}.  A usual normal distribution is the special case of the SN distribution when the skewness parameter, $\alpha$, is equal to 0.\footnote{This can be seen from Equation~\eqref{def:snd_gen}.  If $\alpha = 0$ then $\Phi\left(\frac{\alpha(y-\xi)}{\omega}\right) = \Phi(0)$; this is the the probability a standard normal random variable is less than or equal to 0, which is $0.5$.  The $0.5$ cancels with the $2$ in the denominator and what remains is the usual normal density, $\frac{1}{\omega} \phi\left(\frac{y-\xi}{\omega}\right)$}
-
-%Formally the density function of the SN distribution for a random variable $Z \in \mathbb R$ is defined as:
-%\begin{equation} \label{def:snd}
-%SN(z; \alpha) = 2\phi(z)\Phi(\alpha z),
-%\end{equation}
-%where $\phi$ and $\Phi$ are respectively the density function and the distribution function of a standard Normal distribution and $\alpha \in \mathbb R$ is the skewness parameter which quantifies the asymmetry of the SN. It is possible to provide a general expression where both the location and the scale parameters are included. If $Z \sim SN(\alpha)$, $\xi \in \mathbb R$ and $\omega \in \mathbb R^{+}$, the density of $Y = \xi + \omega Z$ is defined as:
-%\begin{equation} \label{def:snd_gen}
-%SN(z;\xi, \omega, \alpha) = \frac{2}{\omega} \phi\left(\frac{y-\xi}{\omega}\right) \Phi\left(\alpha\frac{y-\xi}{\omega}\right)
-%\end{equation}
-%and $Y \sim SN(\xi, \omega^{2}, \alpha)$.
 %
-%From both a mathematical and an inferential viewpoint, the SN distribution has useful properties; the details can be found in \citet{Azzalini1985}. As previously mentioned, the Normal distribution is included in the SN family when $\alpha=0$. The parameter $\alpha$ provides information about the asymmetry of the curve. In Figure \ref{fig:SN.plot}, we plot the density function of the SN distribution for different values of $\alpha$.
-
 \begin{figure}[htbp]
    \centering
 \includegraphics[height = 3in]{Skew_normal_densities_jjck.pdf} 
@@ -233,41 +221,16 @@ Note that the solid black line has an $\alpha = 0$ making it a normal distributi
    \label{fig:SN.plot}
 \end{figure}
 
-For reasons related to the interpretation of the parameters in Equation~\eqref{def:snd_gen} and computational issues with estimating $\alpha$ near 0, a different parametrization is used, which is referred to as the \emph{centered parametrization} (CP).
-
-
-
-By using the so-called direct parameterization (DP) defined in Eq. \ref{def:snd_gen} problems with parameters estimation arise in the evaluation of the likelihood function in a neighborhood of $\alpha=0$, where the presence of a stationary point complicates the achievement of the maximum likelihood or least squares estimates. In order to solve this problem, \citet{Azzalini1985} proposed to pass from the direct parameterization having parameters $\xi, \omega$ and $\alpha$ to the so-called centred parameterization (CP), which is introduced below. 
-
-According to Eq. \ref{def:snd_gen}, $Y = \xi + \omega Z = \mu + \sigma Z_{0} $, where $Z \sim SN(\alpha)$ and $Z_{0}$ is defined below. Hence the first two moments of $Z$ are defined simply with:
-
-\begin{eqnarray}
-\mu_{z} &=& E(Z) = b\delta, \nonumber\\
-\sigma_{z} &=& var(Z) = 1-(b\delta)^2,\nonumber
-\end{eqnarray}
-where $b=\sqrt{2/\pi}$, $\delta = \alpha / \sqrt{1+\alpha^{2}}$ and $Z_{0}$, which is the standardization of $Z$, is defined as:
- 
+For reasons related to the interpretation of the parameters in Equation~\eqref{def:snd_gen} and computational issues with estimating $\alpha$ near 0, a different parametrization is used, which is referred to as the \emph{centered parametrization} (CP).  We will be using the CP in this work, which includes a mean parameter $\mu$, a variance parameter $\sigma^2$, and a skewness parameter $\gamma$.  In order to define the CP, we need to express the CP parameters $(\mu, \sigma^2, \gamma)$ as a function of the one used in the Equation~\eqref{def:snd_gen} with $(\xi, \omega^2, \alpha)$ by
+%
 \begin{equation} \label{eq:snd_cp}
-Z_{0}=\frac{1}{\sigma_{z}}\left(Z-\mu_{z}\right).
+\mu = \xi + \omega \beta, \quad \sigma^{2} = \omega^{2}(1-\beta^2), \quad \gamma = \frac{1}{2}(4-\pi) \beta^{3}\left(1-\beta^2\right)^{-3/2}
 \end{equation}
+where $\beta = \sqrt{\frac{2}{\pi}\left(\frac{\alpha^2}{1+\alpha^2}\right)}$.
 
-By using Eq. \ref{eq:snd_cp}, the new set of parameters $(\mu, \sigma^2, \gamma)$ provides a more clear interpretation of the behavior of the SN distribution. In fact, as it happens in the Normal case, $\mu$ and $\sigma^2$ indicate exactly the mean and the variance of the distribution, while $\gamma$ naturally represents an index for evaluating the asymmetry of the SN, making its interpretation simpler than the one available when $\alpha$ is considered. In order to completely define the CP, we need to express the CP parameters $(\mu, \sigma^2, \gamma)$ as a function of the one used in the DP $(\xi, \omega^2, \alpha)$:
+By using Eq. \ref{eq:snd_cp}, the new set of parameters $(\mu, \sigma^2, \gamma)$ provides a more clear interpretation of the behavior of the SN distribution. In particular, $\mu$ and $\sigma^2$ are the actual mean and the variance of the distribution (rather than simply a location and scale parameter), and $\gamma$ becomes an index for evaluating the asymmetry of the SN. 
 %
-\begin{eqnarray} \label{eq:1}
-\mu &=& E(Y) = \xi + \omega \mu_{z}, \\
-\sigma^{2} &=& var(Y) = \omega^{2} (1-\mu_{z})^2, \nonumber\\
-\gamma &=& \frac{4-\pi}{2} \frac{\mu_{z}^{3}}{\left(1-\mu_{z}^2\right)^{3/2}}. \nonumber
-\end{eqnarray}
-
-By simple algebra, we can invert those equations to get the DP parameters as a function of the CP ones.
-%
-\begin{eqnarray} \label{eq:2}
-\xi &=& \mu - b\omega\delta, \\
-\omega &=& \frac{\sigma}{\sqrt{1 - b^2\,\delta^2}}, \nonumber\\
-\alpha &=& \frac{R}{\sqrt{b^2 - (1-b^2)\,R^2}},\,R = sign(\gamma) \left[\frac{2\,|\gamma|}{4-\pi}\right]^{\frac{1}{3}}. \nonumber
-\end{eqnarray}
-%
-The CP allows us to use the usual methods offered by the inferential theory and we will use this parameterization for the rest of the paper. Further details about DP, CP and statistical properties of the SN are treated in rigorous mathematical and statistical viewpoints in the book by \cite{Azzalini2014}.
+Further details about the parametrization from Equation~\eqref{def:snd_gen} (called the \emph{Direct Parametrization}), the CP, and general statistical properties of the SN are treated in rigorous mathematical and statistical viewpoints in the book by \cite{Azzalini2014}.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Fitting the Skew Normal distribution to the CCF} \label{sec:3}
