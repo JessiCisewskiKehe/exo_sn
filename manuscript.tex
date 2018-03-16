@@ -4,7 +4,7 @@
 \usepackage{graphicx}				
 									
 \usepackage{amssymb}
-
+\usepackage{amsmath}
 \usepackage{natbib}
 \bibliographystyle{abbrvnat}
 \usepackage{aas_macros} % AAS journal abbreviations
@@ -199,18 +199,18 @@ The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN distri
 18) Paragraph 4: "By using the so-called direct parameterization (DP) defined in Eq. 2 problems with parameters estimation arise in the evaluation of the likelihood function in a neighborhood of $\alpha$ = 0, where the presence of a stationary point complicates the achievement of the maximum likelihood or least squares estimates."
 A poorly constructed sentence that simply confuses me! The authors are trying to say too many things in one sentence which loses the reader.
 19) To be honest, I could not follow all the mathematics. I really would have to read the referenced material, but I had little time. Maybe the details can be put in an appendix?}
-\jessi{Wikipedia says this was introduced in O'Hagan and Leonard (1976), Bayes estimation subject to uncertainty about parameter constraints.  However, it seems this may just be a 2-parameter class. I don't know that we need to get into the history anyway, we can just discuss the SN and reference the Azzalini paper.}
-
-The Skew Normal (SN) distribution is a class of probability distributions which includes the Normal distribution as a special case \cite{Azzalini1985}. The SN distribution has, in addition to a location and a scale parameter, a third parameter which describes the asymmetry, or the skewness, of the distribution.  
 
 
-Considering a random variable $Y\in \mathbb R$ which follows a skew normal distribution with location parameter $\xi \in \mathbb R$, scale parameter $\omega \in \mathbb R^{+}$ (i.e., the positive real line), and skewness parameter $\alpha \in \mathbb R$, its density can be written as 
+The Skew Normal (SN) distribution is a class of probability distributions which includes the normal distribution as a special case \citep{Azzalini1985}. The SN distribution has, in addition to a location and a scale parameter analogous to the normal distribution's mean and standard deviation, a third parameter which describes the asymmetry, or the skewness, of the distribution.  
+
+
+Considering a random variable $Y\in \mathbb R$ (where $\mathbb R$ is the real line) which follows a SN distribution with location parameter $\xi \in \mathbb R$, scale parameter $\omega \in \mathbb R^{+}$ (i.e., the positive real line), and skewness parameter $\alpha \in \mathbb R$, its density at some value $Y = y$ can be written as 
 \begin{equation} \label{def:snd_gen}
-SN(z;\xi, \omega, \alpha) = \frac{2}{\omega} \phi\left(\frac{y-\xi}{\omega}\right) \Phi\left(\alpha\frac{y-\xi}{\omega}\right)
+SN(y;\xi, \omega, \alpha) = \frac{2}{\omega} \phi\left(\frac{y-\xi}{\omega}\right) \Phi\left(\frac{\alpha(y-\xi)}{\omega}\right)
 \end{equation}
-where $\phi$ and $\Phi$ are respectively the density function and the distribution function of a standard Normal distribution\footnote{A standard normal distribution is a Gaussian distribution with a mean of 0 and a standard deviation of 1.}
+where $\phi$ and $\Phi$ are respectively the density function and the distribution function of a \emph{standard} normal distribution\footnote{A standard normal distribution is a normal distribution with a mean of 0 and a standard deviation of 1.}
  and $\alpha \in \mathbb R$ is the skewness parameter which quantifies the asymmetry of the SN.  We then write $Y \sim SN(\xi, \omega^{2}, \alpha)$ to mean that the random variable $Y$ follows the noted SN distribution.
-Examples of SN densities under different skewness parameter values and the same location and scale parameters are displayed in Figure \ref{fig:SN.plot}.
+Examples of SN densities under different skewness parameter values and the same location and scale parameters ($\xi = 0$ and $\omega = 1$) are displayed in Figure \ref{fig:SN.plot}.  A usual normal distribution is the special case of the SN distribution when the skewness parameter, $\alpha$, is equal to 0.\footnote{This can be seen from Equation~\eqref{def:snd_gen}.  If $\alpha = 0$ then $\Phi\left(\frac{\alpha(y-\xi)}{\omega}\right) = \Phi(0)$; this is the the probability a standard normal random variable is less than or equal to 0, which is $0.5$.  The $0.5$ cancels with the $2$ in the denominator and what remains is the usual normal density, $\frac{1}{\omega} \phi\left(\frac{y-\xi}{\omega}\right)$}
 
 %Formally the density function of the SN distribution for a random variable $Z \in \mathbb R$ is defined as:
 %\begin{equation} \label{def:snd}
@@ -221,15 +221,21 @@ Examples of SN densities under different skewness parameter values and the same 
 %SN(z;\xi, \omega, \alpha) = \frac{2}{\omega} \phi\left(\frac{y-\xi}{\omega}\right) \Phi\left(\alpha\frac{y-\xi}{\omega}\right)
 %\end{equation}
 %and $Y \sim SN(\xi, \omega^{2}, \alpha)$.
-
-From both a mathematical and an inferential viewpoint, the SN distribution has useful properties; the details can be found in \citet{Azzalini1985}. As previously mentioned, the Normal distribution is included in the SN family when $\alpha=0$. The parameter $\alpha$ provides information about the asymmetry of the curve. In Figure \ref{fig:SN.plot}, we plot the density function of the SN distribution for different values of $\alpha$.
+%
+%From both a mathematical and an inferential viewpoint, the SN distribution has useful properties; the details can be found in \citet{Azzalini1985}. As previously mentioned, the Normal distribution is included in the SN family when $\alpha=0$. The parameter $\alpha$ provides information about the asymmetry of the curve. In Figure \ref{fig:SN.plot}, we plot the density function of the SN distribution for different values of $\alpha$.
 
 \begin{figure}[htbp]
    \centering
 \includegraphics[height = 3in]{Skew_normal_densities_jjck.pdf} 
-   \caption{Density function of a $SN(\alpha)$ for different choices of $\alpha$. For negative values of $\alpha$ the asymmetry will be on the left tail of the distribution.}
+   \caption{Density function of a random variable $Y \sim SN(\xi, \omega^{2}, \alpha)$ with location parameter $\xi = 0$, scale parameter $\omega = 1$, and different values of the skewness parameter $\alpha$ indicated by different colors and line types.
+Note that the solid black line has an $\alpha = 0$ making it a normal distribution.   
+   }
    \label{fig:SN.plot}
 \end{figure}
+
+For reasons related to the interpretation of the parameters in Equation~\eqref{def:snd_gen} and computational issues with estimating $\alpha$ near 0, a different parametrization is used, which is referred to as the \emph{centered parametrization} (CP).
+
+
 
 By using the so-called direct parameterization (DP) defined in Eq. \ref{def:snd_gen} problems with parameters estimation arise in the evaluation of the likelihood function in a neighborhood of $\alpha=0$, where the presence of a stationary point complicates the achievement of the maximum likelihood or least squares estimates. In order to solve this problem, \citet{Azzalini1985} proposed to pass from the direct parameterization having parameters $\xi, \omega$ and $\alpha$ to the so-called centred parameterization (CP), which is introduced below. 
 
