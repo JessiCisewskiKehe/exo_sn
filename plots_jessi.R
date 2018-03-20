@@ -19,7 +19,7 @@ legend("topleft", legend = alpha, col = par.index, lty = par.index, lwd = 5, tit
 
 
 fbeta <- function(a){sqrt(2/pi)*a/sqrt(1+a^2)}
-fgamma <- function(b){0.5*(4 - pi)*b^2*(1-b^2)^(-3/2)}
+fgamma <- function(b){0.5*(4 - pi)*b^3*(1-b^2)^(-3/2)}
 beta <- fbeta(alpha)
 gamma <- fgamma(beta)
 mu <- xi + omega*beta
@@ -63,10 +63,23 @@ abline(a = 0, b = 1)
 
 
 
+################  FWHM
+x <- seq(-3.25, 3.25, length.out = 1000)
+xi <- 0
+omega <- 1
+alpha <- seq(0, 5, by = 1)
+dx <- lapply(1:length(alpha), function(ii) dsn(x, xi, omega, alpha[ii], tau=0, dp=NULL, log=FALSE))
+medx <- sapply(1:length(alpha), function(ii) qsn(.5, xi, omega, alpha[ii], tau=0, dp=NULL, log=FALSE))
+fbeta <- function(a){sqrt(2/pi)*a/sqrt(1+a^2)}
+fgamma <- function(b){0.5*(4 - pi)*b^2*(1-b^2)^(-3/2)}
+beta <- fbeta(alpha)
+gamma <- fgamma(beta)
+meanx <- xi + omega*beta
+ffwhm <- function(sig){2*sqrt(2*log(2))*sig}
+sig2 <- omega^2*(1-beta^2)
+ffwhm(sqrt(sig2))
 
-
-
-
-
-
+par(mfrow = c(1,1), mar = c(4,4,1,1), lwd = 3, cex = 1)
+plot(x, dx[[1]], "n", xlab = "Y", ylab = "Density", ylim = c(0,.8), main = "FWHM")
+temp <- sapply(1:length(alpha), function(ii) lines(x, dx[[ii]], col = ii, lty = ii))
 

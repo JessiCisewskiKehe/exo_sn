@@ -150,14 +150,14 @@ In this case, if the spectrograph shifts due to changing atmospheric conditions,
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Stellar activity effect on CCF, normal fit plus FWHM indicator}
+\subsection{Stellar activity effect on CCF, Normal fit plus FWHM indicator}
 \jessi{Eventually three methods are introduced for detecting CCF asymmetry:  FWHM, bisector span, and the Figueira approach - it seems that these methods need to be better explained.  Somewhere in the intro it needs to become clear that we are (i) providing a new way of measuring CCF asymmetry, (ii) this is a unified approach that also provides an RV estimate, and (iii) it (hopefully) provides a better indicator.}
 For spectrographs that are stabilized, the spectrum of a calibration lamp is recorded close to the stellar spectrum on the CCD, which prevents contamination of the stellar spectrum (CORALIE \citep{Queloz-2000a}, The High Accuracy Radial Velocity Planet Searcher (HARPS) \citep{Mayor-2003}, HARPS- N \citep{Cosentino-2012}, SOPHIE \citep{Bouchy:2013aa}, CARMENES \citep{Quirrenbach:2014aa}). For those instruments, reducing the data is easier as the stellar spectrum is not contaminated with iodine absorption lines.
 \comment{This is not true! I have taken spectra with HARPS and there is cross-talk between spectra and Th-Ar particularly for strong emission lines. So there is some contamination. Furthermore, this "preventing of contamination" as the authors state has nothing to do with the spectrograph being stablized, it has to do with the simultaneous wavelength calibration using two fibers. In fact one reference the authors give, CORALIE, is not a stabilized spectrograph!}
 \comment{In paragraph 1 you give two lists of spectrographs. I presume the first one is a list spectrographs that use the iodine method, although that is not explicitly expressed. The authors talk about the iodine cell and then just give a parenthetical list of spectrographs. There is no explicit statement that these spectrographs, designed for other purposes, are all equipped with an iodine cell. The reader must assume this. Furthermore, the list is not all-inclusive. I can think of a dozen facilities that use iodine cells. So you should say, "For example" or..."to name a few"
 The second list it is for simultaneous Th-Ar calibration. Not all of these are "stabilized" like the authors claim. CORALIE, if I am not mistaken, was simultaneous Th-Ar without stabilization. That is why they built HARPS. Furthermore, all of theses spectrographs were designed for precise stellar RVs, unlike the spectrographs listed for the iodine method.}
 
-For stabilized spectrographs, the RV is derived by first correlating a stellar spectrum at a particular time with a synthetic \citep[][]{Baranne-1996,Pepe-2002a} or an observed stellar template \citep[][]{Anglada-Escude-2012}, which gives an average line profile, generally called Cross Correlation Function (CCF).  The CCF is a function of RV, and the RV corresponding to the minimum of the CCF is the estimated RV for that spectrum.  However, this would give a noisy estimate so first a normal density shape is fitted to the CCF, and then the estimated mean of the normal density is used as the estimate of the RV.  The full width at half maximum (FWHM) of the normal fit is also used as an indicator of spectral line asymmetry.
+For stabilized spectrographs, the RV is derived by first correlating a stellar spectrum at a particular time with a synthetic \citep[][]{Baranne-1996,Pepe-2002a} or an observed stellar template \citep[][]{Anglada-Escude-2012}, which gives an average line profile, generally called Cross Correlation Function (CCF).  The CCF is a function of RV, and the RV corresponding to the minimum of the CCF is the estimated RV for that spectrum.  However, this would give a noisy estimate so first a normal density shape is fitted to the CCF, and then the estimated mean of the normal density is used as the estimate of the RV.  The full width at half maximum (FWHM) of the Normal fit is also used as an indicator of spectral line asymmetry.
 The CCF technique allows for an averaging of thousands of spectral lines and can therefore reach a very high signal-to-noise ratio (SNR), which is essential for a good RV precision.
 
 The convection in external layers of solar type stars is responsible for the granulation pattern than can be seen at high spatial resolution on the surface of the Sun. The differences in flux and velocity between upflows and downflows change the Normal profile of spectral lines that become asymmetric with a "C"-shaped profile \citep[][]{Dravins-1981}. 
@@ -281,24 +281,24 @@ where $\sigma_{i}$ represents the measurement error for each point of the CCF. B
 However, although useful for estimating correct error bars in the case where the different $\sigma_{i}$ do not include all systematics, this heteroskedastic function only considers Gaussian distributed residuals. \jessi{the previous statement is unclear}
 %
 
-The CCF is the result of a cross correlation so the residuals of a normal or a SN fit are expected to show correlated noise.
+The CCF is the result of a cross correlation so the residuals of a Normal or a SN fit are expected to show correlated noise.
 To investigate this issue, we considered example CCFs from the star Tau Ceti.  The CCFs were modeled using a normal or a SN shape, and assuming independent normally-distributed noise around the modeled shape. 
 %
 We then subtracted the median of the residuals (the original data minus the fit function) obtained for all CCFs before performing a second round of fitting. The result of this procedure is illustrated in Figure~\ref{fig:Residual.comparison}. The lower left panel displays the residuals of a simple fit of a normal or a SN distribution, which appear to be strongly correlated. 
 %
-After removing the median of the residuals, in the lower right panel, the final residuals of the SN procedure have almost no apparent correlation, while the final residuals of the normal procedure still present a small systematic component. This seems to be due to the asymmetric nature of the CCF (see Section~\ref{intro}), which is not captured in a symmetric distribution like the normal distribution.  This exercise highlights that the SN density shape better captures the shape of a CCF compared to a normal density shape.
+After removing the median of the residuals, in the lower right panel, the final residuals of the SN procedure have almost no apparent correlation, while the final residuals of the Normal procedure still present a small systematic component. This seems to be due to the asymmetric nature of the CCF (see Section~\ref{intro}), which is not captured in a symmetric distribution like the normal distribution.  This exercise highlights that the SN density shape better captures the shape of a CCF compared to a normal density shape.
 %
 \begin{figure*}[htbp]
    \centering
 \includegraphics[height = 6in]{[1]Plot_Fitting_and_Residuals_2run.pdf} 
-   \caption{Comparison between the normal and the SN procedures for modeling a collection of CCFs for the star Tau Ceti.  Two stages of modeling are carried out with the first stage results displayed in the left column and the second stage in the right column.
+   \caption{Comparison between the Normal and the SN procedures for modeling a collection of CCFs for the star Tau Ceti.  Two stages of modeling are carried out with the first stage results displayed in the left column and the second stage in the right column.
    The first run corresponds to fitting a normal or a SN shape to the raw CCF. The second run corresponds to fitting the same shape to the CCF after removing the median of all the residuals obtained in the first run. The SN residuals of the second run present minimal correlations, whereas the normal residuals present still a clear systematic component.}
    \label{fig:Residual.comparison}
 \end{figure*}
 %When using the least squares estimate for fitting the CCF with the SN distribution, we have to take into account the stationary problem in $\gamma=0$ due to the presence of the function $sign(\gamma)$ in Equation (\ref{eq:2}). Depending on the initial values of the numerical minimization for the least squares estimate of $\gamma$, the presence of this stationary point when evaluating $\gamma$ can lead to an incorrect estimation of the asymmetry parameter of the SN. In order to resolve this problem, we implemented two functions for retrieving the best least squares solution. In the first function we allowed for only positive solutions of $\gamma_1$ (with an upper limit of $0.995$), while in the second function only negative solutions are allowed (with a lower limit of $\gamma= -0.995$). The chosen solution is the estimate which has smallest residuals.
 
 
-In the following of the paper, we define the RV as the mean of the normal or the mean of the SN (defined as SN RV). For the width of the CCF, we use the FWHM of the Normal, defined as $2\sqrt(2\ln2)\sigma$. The width of the SN, SN FWHM, is defined in the same way\footnote{Note that SN FWHM does not correspond to the width of the SN distribution at half maximum like in the normal case.}. In the normal case, it is not possible to retrieve an asymmetric parameter and therefore we use BIS SPAN. This will be compared to the asymmetric parameter $\gamma_1$ of the SN.
+In the following of the paper, we define the RV as the mean of the normal or the mean of the SN (defined as SN RV). For the width of the CCF, we use the FWHM of the Normal, which is $2\sqrt(2\ln2)\sigma$. The width of the SN, SN FWHM, is defined in the same way\footnote{Note that SN FWHM does not correspond to the width of the SN distribution at half maximum like in the Normal case.}. In the Normal case, there is not an asymmetric parameter so we use BIS SPAN. This will be compared to the asymmetric parameter $\gamma_1$ of the SN. \jessi{Why use FWHM at all?  Why not just use the standard deviation since the FWHM just includes a multiplicative factor that is the same for all of them.}
 
 
 
@@ -308,17 +308,12 @@ In the following of the paper, we define the RV as the mean of the normal or the
 
 \section{Effect of stellar activity on radial velocities and correction} \label{sec:31}
 
-Exoplanets will only produce a RV variation induced by a pure Doppler shift of stellar spectra. Stellar activity, on the contrary, does not produce a blueshift or redshift of the spectra, but creates a spurious RV signal by modifying the shape of spectral lines. To track these changes in line shape, we generally use the FWHM, the BIS SPAN or the indicators introduced by \citet{Figueira-2013} that give an information on the average width and asymmetry of the CCF. A strong correlation between the RVs and one or more of these parameters is a sign that the RVs are significantly affected by stellar activity signals.
+An orbiting exoplanet will produce an RV variation induced by a pure Doppler shift of \emph{all} the spectral lines of each stellar spectrum. 
+Stellar activity, however, does not produce a blueshift or redshift of the spectra, but can create a spurious RV signal by modifying the shape of spectral lines. To track changes in line shape, the FWHM, the BIS SPAN or the indicators introduced by \citet{Figueira-2013} are often used, \jessi{citations are needed here} which provide information on the average width and asymmetry of the CCF. A strong correlation between the estimated RVs and one or more of these parameters is a sign that the estimated RVs may be contaminated by stellar activity.
 
-To test the strength of the correlation between RVs and the different activity indicators, we calculated the Pearson correlation coefficient defined as:
-%
-\begin{equation}
-R (x,y)= \frac{cov(x,y)}{\sigma(x),\sigma(y)},
-\label{eq:Pearson:corr}
-\end{equation}
-where $x$ and $y$ are two quantitative variables, $cov(x,y)$ indicates the covariance between $x$ and $y$, and $\sigma(x)$ and $\sigma(y)$ represents their standard deviation. 
-A $p-$value for the statistical test having null hypothesis $H_{0}: R=0$ is provided, along with a $95\,\%$ confidence interval for $R$.
-%
+To test the strength of the correlation between RVs and the different activity indicators, we calculated the Pearson correlation coefficient, $R$.
+A $p-$value for the statistical test having null hypothesis $H_{0}: R=0$ (i.e., no correlation) is provided, along with a $95\,\%$ confidence interval for $R$.
+
 
 To correct for stellar activity signals, it is common to consider a linear combination of the RVs with the BIS SPAN and the FWHM (or $\gamma$ and SN FWHM in the SN case):
 \comment{Is this really common? I am not aware of it having wide use in the community. If so, references would support this. The authors have to distinguish what their research group and collaborators do from what the rest of the community does.}
@@ -330,12 +325,14 @@ RV= \beta_{0} + \beta_{1}  \gamma + \beta_{2} FWHM + \epsilon,
 %
 where $\beta_{0}$ is the intercept and $\epsilon$ is the vector of the errors with mean equal to $0$ and covariance matrix equal to $\sigma^{2}I$ ($I$ is the identity matrix). 
 \comment{Is this expression just for the RV from activity alone, or the measured RV from the star (contribution of all phenomena)? If it is just activity, you should put a subscript otherwise the readers will be confused. In the text you refer to the variable ?1, but Eq. 9 has no subscript in ?. You give one equation for Normal and SN, but in the text you state these variables have to be replaced by such and such when using SN, etc. It will be less confusing if you simply have two equations, one for Normal and one for SN and with their respective variables.}
-When the Normal fit is used, the parameter $\gamma_1$ is replaced by the BIS SPAN and SN FWHM by FWHM. In order to show the goodness of this correction, a statistical test on the parameters $\beta_{0}$, $\beta_{1}$ and $\beta_{2}$ is presented, where the null hypothesis is $H_{0}: \beta_{i}=0$, for $i=0,1,2$. The level for not rejecting the null hypothesis is fixed equal to $0.05$. Pearson correlation coefficient $R^{2}$ is considered for explaining how well this linear combination explains the variability of the RVs of the star due to stellar activity.
+When the Normal fit is used, the parameter $\gamma_1$ is replaced by the BIS SPAN and SN FWHM by FWHM. In order to show the goodness of this correction, a statistical test on the parameters $\beta_{0}$, $\beta_{1}$ and $\beta_{2}$ is presented, where the null hypothesis is $H_{0}: \beta_{i}=0$, for $i=0,1,2$. \jessi{the estimated values and p-values of the $\beta$'s does \underline{not} show goodness of fit.}
+The level for not rejecting the null hypothesis is fixed equal to $0.05$. Pearson correlation coefficient $R^{2}$ is considered for explaining how well this linear combination explains the variability of the RVs of the star due to stellar activity. \jessi{$R^2$ is the coefficient of determination, and this should be explained better because it is not commonly used in astronomy as an assessment of the amount of variability explained by the model.}
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
-\section{Simulated data examples} \label{sec:soap}
+\section{Simulation Study} \label{sec:soap}
+In order to evaluate the performance of the proposed SN approach for modeling the CCF, we begin by considering a simulation study using spectra generated from the Spot Oscillation And Planet (SOAP) 2.0 code \citep{Dumusque-2014b}...
 
-
+We also consider a real-data example using HARPS spectra from the star Alpha Centauri B with an imputed Doppler shift added...
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Doppler shift added to Alpha Centauri B} \label{sec:soap_real}
@@ -345,15 +342,15 @@ When the Normal fit is used, the parameter $\gamma_1$ is replaced by the BIS SPA
 \section{Real data applications} \label{sec:4}
 \jessi{I suggest we include one real-date application (whichever is used in \S\ref{sec:soap_real} (Alpha Centauri B?) and then add the other examples to an appendix}
 
-In this Section we present the analyses of five stars, showing the advantages of fitting the CCF using the SN distribution defined in Section \ref{sec:3}. 
+In this Section we present the analyses of five stars comparing the result of fitting a CCF using the SN distribution defined in Section \ref{sec:3} versus the Normal approach. 
 
 A comparison with the results obtained by the classic approach is done, where the RVs of the star are estimated by the mean of the Normal distribution used to fit the CCF along with the BIS SPAN or the other asymmetric parameters defined in \citet{Figueira-2013}.
 
 \subsection{Alpha Centauri B} \label{sec:alphacentb}
 
-We first analyze Alpha Centauri B, where $1816$ CCFs in 2010 are considered. Several measurement in 2010 are contaminated by light from Alpha Centauri A. To remove contaminated spectra and thus CCFs, we performed the same selection as presented in \citet{Dumusque-2012}.
+Alpha Centauri B $1816$ CCFs in 2010 are considered. Several measurement in 2010 are contaminated by light from Alpha Centauri A. To remove contaminated spectra and thus CCFs, we performed the same selection as presented in \citet{Dumusque-2012}.
 
-We begin by evaluating the correlation between $\gamma$ and the classic BIS SPAN. In Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relationship between $\gamma$ and the BIS SPAN is linear, with a slope equal to $0.933$ and a strong Pearson correlation coefficient of $0.958$. 
+We begin by evaluating the correlation between $\gamma$ and the BIS SPAN. In Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relationship between $\gamma$ and the BIS SPAN is linear, with a slope equal to $0.933$ and a strong Pearson correlation coefficient of $0.958$. \jessi{It would be good to explain why you care about this.}
 %
 \begin{figure}[htbp]
    \centering
@@ -362,7 +359,7 @@ We begin by evaluating the correlation between $\gamma$ and the classic BIS SPAN
    \label{fig:alphacent:corr.gamma}
 \end{figure}
 
-Figure \ref{fig:alphacent:diff:RV} shows the comparison between the RVs retrieved using the SN distribution and the ones obtained with the Normal distribution. This data set for Alpha Centauri B, used in \citet{Dumusque-2012} and \citet{Thompson-2017}, present a strong stellar activity signal. We see that the RVs measured by the SN fitting show more variations than the RVs measured by the Normal fitting. 
+Figure \ref{fig:alphacent:diff:RV} shows the comparison between the RVs retrieved using the SN shape and the ones obtained with the normal shape. This data set for Alpha Centauri B, used in \citet{Dumusque-2012} and \citet{Thompson-2017} \jessi{It seems that this should be mentioned at the beginning of this section}, present a strong stellar activity signal. We see that the RVs measured by the SN fitting show more variations than the RVs measured by the Normal fitting. 
 \comment{This is not at all clear from the figure. Is there a way to quantify this?}
 The SN fit is therefore significantly more sensitive to stellar activity. 
 \comment{How can you be sure that the higher scatter in your measurement error is not simply due to the fact that you have an inferior measurement technique? This can be answered by isolating the RV contribution from activity (from the asymmetry). Is this random (noise) or is there structure (activity).}
@@ -414,21 +411,20 @@ We compare the correlation between the different activity indicators and the RVs
    \label{fig:alphacent:corrPlot}
 \end{figure*}
 
-By looking closer to the data in Fig.~\ref{fig:alphacent:clusters}, we saw that there are three distinct temporal clusters in the Alpha Centauri B measurements and those clusters have a different linear relationship between $\gamma_1$ and RVs (and also SN FWHM and RVs, though not displayed here). When considering Eq. \ref{eq:RV:correction} and the subsequent inferences, this clustering is not accounted for in the model. A slightly more general linear model that allows for different intercepts and different slopes for the three clusters for $\gamma_1$ and SN FWHM can be considered.  Adjusting the RVs for stellar activity using this expanded model produces the corrected radial velocities displayed in the left plot of Fig.~\ref{fig:alphacent:clusters_residuals}.  Those corrected RVs are different from those displayed in the lower left plot of Fig.~\ref{fig:alphacent:correctionRV} (which apply the correction derived from Eq. \ref{eq:RV:correction}); the right plot of Fig.~\ref{fig:alphacent:clusters_residuals} displays the difference between the two sets of corrected RVs. The long-term trend can be explained by the fact that the RV drift induced by the companion Alpha Centauri A is not well corrected, however the shorter-term variations show that stellar activity varies as a function of time, with spots and faculae evolving, and therefore modifies the dependence of the RVs with respect to $\gamma_1$ and SN FWHM. These temporal variations is something that we want to explore more, however this work presents a significant effort that we want to address in a future paper.
+%By looking closer to the data in Fig.~\ref{fig:alphacent:clusters}, we saw that there are three distinct temporal clusters in the Alpha Centauri B measurements and those clusters have a different linear relationship between $\gamma_1$ and RVs (and also SN FWHM and RVs, though not displayed here). When considering Eq. \ref{eq:RV:correction} and the subsequent inferences, this clustering is not accounted for in the model. A slightly more general linear model that allows for different intercepts and different slopes for the three clusters for $\gamma_1$ and SN FWHM can be considered.  Adjusting the RVs for stellar activity using this expanded model produces the corrected radial velocities displayed in the left plot of Fig.~\ref{fig:alphacent:clusters_residuals}.  Those corrected RVs are different from those displayed in the lower left plot of Fig.~\ref{fig:alphacent:correctionRV} (which apply the correction derived from Eq. \ref{eq:RV:correction}); the right plot of Fig.~\ref{fig:alphacent:clusters_residuals} displays the difference between the two sets of corrected RVs. The long-term trend can be explained by the fact that the RV drift induced by the companion Alpha Centauri A is not well corrected, however the shorter-term variations show that stellar activity varies as a function of time, with spots and faculae evolving, and therefore modifies the dependence of the RVs with respect to $\gamma_1$ and SN FWHM. These temporal variations is something that we want to explore more, however this work presents a significant effort that we want to address in a future paper.
 
-\begin{figure*}[htbp]
-   \centering
-\includegraphics[width = 6in]{AlphaCenB_clusters.pdf}  
-   \caption{The RVs as a function of time (left) and the RVs plotted against $\gamma_1$ (right) with colors and plot symbol according to its temporal cluster assignment for Alpha Centauri B. The RVs are expressed in \ms.}
-   \label{fig:alphacent:clusters}
-\end{figure*}
-
-\begin{figure*}[htbp]
-   \centering
-\includegraphics[width = 6in]{AlphaCenB_clusters_residuals.pdf}  
-   \caption{The RV for Alpha Centauri B corrected for stellar activity using the SN fit and accounting for the temporal clusters (left), and the difference between those values on in the left plot and the analogous values without accounting for the temporal clusters (right) which are displayed in the lower left plot of Figure~\ref{fig:alphacent:correctionRV}. The RVs are expressed in \ms.}
-   \label{fig:alphacent:clusters_residuals}
-\end{figure*}
+%\begin{figure*}[htbp]
+%   \centering
+%\includegraphics[width = 6in]{AlphaCenB_clusters.pdf}  
+%   \caption{The RVs as a function of time (left) and the RVs plotted against $\gamma_1$ (right) with colors and plot symbol according to its temporal cluster assignment for Alpha Centauri B. The RVs are expressed in \ms.}
+%   \label{fig:alphacent:clusters}
+%\end{figure*}
+%\begin{figure*}[htbp]
+%   \centering
+%\includegraphics[width = 6in]{AlphaCenB_clusters_residuals.pdf}  
+%   \caption{The RV for Alpha Centauri B corrected for stellar activity using the SN fit and accounting for the temporal clusters (left), and the difference between those values on in the left plot and the analogous values without accounting for the temporal clusters (right) which are displayed in the lower left plot of Figure~\ref{fig:alphacent:correctionRV}. The RVs are expressed in \ms.}
+%   \label{fig:alphacent:clusters_residuals}
+%\end{figure*}
 
 
 
