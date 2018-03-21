@@ -63,7 +63,7 @@ abline(a = 0, b = 1)
 
 
 
-################  FWHM
+################  Stable
 x <- seq(-3.25, 3.25, length.out = 1000)
 xi <- 0
 omega <- 1
@@ -79,7 +79,48 @@ ffwhm <- function(sig){2*sqrt(2*log(2))*sig}
 sig2 <- omega^2*(1-beta^2)
 ffwhm(sqrt(sig2))
 
+dx_rm <- lapply(1:length(alpha), function(ii) pnorm(alpha[ii]*(x-xi)/omega,0,1))
+
 par(mfrow = c(1,1), mar = c(4,4,1,1), lwd = 3, cex = 1)
-plot(x, dx[[1]], "n", xlab = "Y", ylab = "Density", ylim = c(0,.8), main = "FWHM")
+plot(x, dx[[1]], "n", xlab = "Y", ylab = "Density", ylim = c(0,.8), main = "")
 temp <- sapply(1:length(alpha), function(ii) lines(x, dx[[ii]], col = ii, lty = ii))
+
+# Remove skew portion
+temp <- sapply(1:length(alpha), function(ii) lines(x, dx[[ii]]/dx_rm[[ii]], col = ii, lty = ii))
+
+
+
+
+### Remove skew portion
+
+x <- seq(0, 8, length.out = 1000)
+xi <- 4
+omega <- 1
+alpha <- 8
+dx <- dsn(x, xi, omega, alpha, tau=0, dp=NULL, log=FALSE)
+dx_rm <- pnorm(alpha*(x-xi)/omega,0,1)
+medx <- sapply(1:length(alpha), function(ii) qsn(.5, xi, omega, alpha[ii], tau=0, dp=NULL, log=FALSE))
+fbeta <- function(a){sqrt(2/pi)*a/sqrt(1+a^2)}
+fgamma <- function(b){0.5*(4 - pi)*b^2*(1-b^2)^(-3/2)}
+beta <- fbeta(alpha)
+gamma <- fgamma(beta)
+meanx <- xi + omega*beta
+sig2 <- omega^2*(1-beta^2)
+
+
+
+plot(x, dx, "l", col = 1, lwd = 3, xlab = "Y", ylab = "Density", ylim = range(dx, dx/dx_rm))
+lines(x, dx/dx_rm, col = 2, lty = 2, lwd = 3)
+abline(v = 0, lty = 2, col = "gray")
+lines(x, dnorm(x, 0, 1), col = "green", lty = 3)
+meanx
+sum((dx/dx_rm)*x)/sum(dx/dx_rm)
+
+
+
+
+
+
+
+
 
