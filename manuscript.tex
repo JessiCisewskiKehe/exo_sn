@@ -114,16 +114,17 @@
 %\abstract
 {\bf Abstract}\\
 % Context, Aims, Methods, Results, Conclu (not mandatory)
-When working with radial velocities for detecting Extrasolar planets and when using data from stabilized spectrographs,
-the different moments of the cross-correlation function (CCF) are used to measure the radial velocity of the star but also the changes in the shape of the CCF. Those changes are due to stellar activity and therefore the best precision on these moments is required to de-correlate exoplanet signals from spurious RV signals originating from stellar activity.
-We propose here to measure those moments using a Skew Normal (SN) distribution, which compared to the Normal distribution generally used, provides an extra parameter to model the CCF natural asymmetry.
-We analyzed 5 stars with different activity levels and different signal-to-noise ratio levels. In each case, we compare the results obtained from the Normal fitting of the CCF and from the SN fitting. We also estimate rigorous errors for the different moments of the CCF using a bootstrap analysis.
+When working with radial velocities for detecting Extrasolar planets and when using data from stabilized spectrographs, the different moments of the cross-correlation function (CCF) are used to measure the radial velocity of the star and also changes in the shape of the CCF. Those changes are due to stellar activity and therefore the best precision on these moments is required to de-correlate exoplanet signals from spurious RV signals originating from stellar activity.
+
+We propose here to measure those moments using a Skew Normal (SN) distribution, which compared to the Normal distribution generally used, naturally provides an extra parameter to model the CCF natural asymmetry. Moreover, since the CCF presents a natural asymmetry due the convective blueshift, the SN distribution seems to provide a more realistic model to the CCF.
+
+We analyze 5 stars with different activity levels and different signal-to-noise ratio levels. In each case, we compare the results obtained by fitting to the CCF respectively a Normal and a SN.  We also estimate rigorous errors for the different moments of the CCF using a bootstrap analysis.
+
 The correlations between the RVs and the CCF asymmetry or RVs and the CCF width is always stronger when using the parameters derived from the SN. Therefore all the moments of the CCF are more sensitive to activity, which is a huge gain to probe stellar activity. RVs derived from a SN distribution are more sensitive to activity, which is interesting when looking for rotational periods or characterizing better stellar activity. 
 \comment{" interesting" is a highly subjective and not very precise or quantitative expression. Interesting in what sense? I would term this a "sentence of no value", i.e. one that conveys not useful information to the reader.}
-However, once correcting the RVs from stellar activity signal using a linear combination of the CCF asymmetry and width, the RV residuals obtained from a Normal or SN fitting are very similar. The precision on the asymmetric parameter derived from the SN is also 15\% better than the one derived on the common Bisector Inverse Slope Span (BIS SPAN). Besides all these advantages, the errors on the RVs measured by the SN are 60\% greater. 
-\comment{To me this statement alone tells me that the SN method is not very useful, and not one that I would use. Any method that produces larger errors *before* correcting for the activity is not a very useful method. Why should the reader continue beyond this point?}
-This is not a problem at signal-to-noise ratio levels $>$ 150 because other noise sources dominate in this regime, however we have to be careful when deriving precise RVs for low SNR measurements. We also found that in the case of low SNR measurements, errors measured by bootstrap analysis can be 50\% more precise than errors measured using the derivative of the CCF.
-We strongly encourage the use of the SN distribution to derive the different moments of the CCF, because the derived moments probe better stellar activity signals than when using a Normal distribution.
+The precision on the asymmetry parameter derived from the SN is on average $15\%$ better than the one calculated on the common Bisector Inverse Slope Span (BIS SPAN). When using the median of the SN as parameter defining the radial velocity of the star, the errors on the RVs measured by the SN are on average $10\%$ smaller than the errors calculated on the mean of the Normal.
+
+We strongly encourage the use of the SN distribution to retrieve in 1 single fit the different moments of the CCF, because the derived moments probe better stellar activity signals than when using a Normal distribution, leading as well to smaller standard errors associated to the radial velocity and the asymmetry parameters.
 \comment{You simply cannot make this claim. What you have shown is that the SN method produces errors that are 60\% larger than the Normal distribution and you hint that this is due to it being more sensitive to activity. You have not demonstrated this by looking at the "activity" signal that the SN isolates to see if it is actually more sensitive at finding rotation periods, activity cycles, etc. Where is the sensitivity in actually getting out useful information? Furthermore, after correcting the SN RVs for the activity, you arrive at the same answer as the Normal distribution method. I would conclude that the SN offers no real advantages over Normal so the community can continue to use the standard method.
 Grammatically this is an ambiguous statement. Are you looking for "better signals", i.e. ones that you like, or probing stellar signals in a better way? (This is what you meant, but not what was stated.)}
 %\keywords{techniques: radial velocities -- planetary systems -- stars: activity -- methods: data analysis}
@@ -169,14 +170,14 @@ The strength of the asymmetry depends on the velocity of the convection, approxi
 
 Convection is not the only phenomenon responsible for asymmetries in the single spectral line and the CCF. Stellar activity is responsible for the appearance of dark spots and bright faculae on the stellar photosphere, which breaks the flux balance between the red-shifted and the blue-shifted halves of a rotating star and therefore induce an asymmetry of spectral lines and thus of the CCF. As the star rotates, spots and faculae move across the stellar disk, modifying the line asymmetry and thus producing an apparent Doppler shift \citep{Saar-1997b,Hatzes-2002,Kurster2003,Desort-2007,Lagrange-2010,Boisse-2012b}. Spots and faculae are also regions where the magnetic field is strong. Strong magnetic fields reduce stellar convection, which in turn modifies the asymmetry of spectral lines \citep[][]{Cavallini-1985a,Dravins-1981,Lindegren-2003,Meunier-2010a,Dumusque-2014b}.
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bisector span indicators of stellar activity}
 \jessi{Its seems that more details should be added here}
 Stellar activity can induce RV variations by a modification of the spectral line asymmetry, while any orbiting companions would induce a pure Doppler shift on \emph{all} spectral lines without modifying their shape.
 Therefore, assuming that there is no instrumental systematics, stellar activity generally induces a variation in line asymmetry that can be observed in the  FWHM of the CCF. 
 The line asymmetry is commonly retrieved by calculating the bisector of the CCF \citep[][]{Voigt1956} and deriving the bisector curvature \citep[][]{Hatzes1996} or the bisector inverse slope span \citep[BIS SPAN,][]{Queloz-2001}. 
+An orbiting exoplanet will produce an RV variation induced by a pure Doppler shift of \emph{all} the spectral lines of each stellar spectrum. 
+Stellar activity, however, does not produce a blueshift or redshift of the spectra, but can create a spurious RV signal by modifying the shape of spectral lines. To track changes in line shape, the FWHM, the BIS SPAN or the indicators introduced by \citet{Figueira-2013} are often used, which provide information on the average width and asymmetry of the CCF \citep{Hatzes1996, fiorenzano2005line, Queloz-2001}. A strong correlation between the estimated RVs and one or more of these parameters is a sign that the estimated RVs may be contaminated by stellar activity. 
 \comment{It is the slope or span, not both. And you generally do not calculate the inverse, just the
 span. This may be correlated or inversely correlated with the RV.}
 
@@ -193,12 +194,10 @@ In the procedure described above, the measurement of the RV and the FWHM is done
 \comment{I simply do not understand this statement, possibly because it does not follow a standard English construction. You have a CCF and you measure a width and bisector span. This is a measurement error determined by the S/N, the resolution, and the stability of the spectrograph. You can determine an error in a quantity (RV and BIS). You can also have an uncertainty in the contribution of activity to the RV signal, but that is not a formal error. True errors come from photon statistics, systematic errors, instrumental errors, etc. You can attempt to remove the signal due to activity and that has an associated error, but that error is due to your lack of knowledge of the surface structure causing this RV and the exact value of the contribution to the RV. This is different from a measurement error. Maybe that is what you mean here, but it is not clear from what is written.}
 In addition, the Normal distribution cannot take into account the natural asymmetry of the CCF, leaving correlated noise in the residuals, which also complicates the determination of errors. We propose to overcome these problems by fitting a SN (SN) distribution to the CCF, which naturally includes a skewness parameter \citep[][]{Azzalini1985}.
 
-\umberto{We considered CCFs having SNR larger than 10.}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Outline of paper}
-\todo{This paragraph will need to be updated once the rest is finished.} The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN distribution and describe its applicability for modeling the CCF,  show that the SN density is a better representation of observed CCF than a Normal distribution, and study how the SN parameters relate to the RV, FWHM and BIS SPAN of the CCF. In Sec.~\ref{sec:31} we present a simple model to correct for stellar activity. In Sec.~\ref{sec:4}, we compare on real observations the sensitivity of the SN parameters to stellar activity with respect to other existing indicators. In Sec.~\ref{sec:5} we derive error bars for the different CCF parameters, and finally we discuss our results and conclude in Sec.~\ref{sec:discu} and Sec.~\ref{sec:conclu}.
+\todo{This paragraph will need to be updated once the rest is finished.} The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN distribution and describe its applicability for modeling the CCF,  show that the SN density is a better representation of observed CCF than a Normal distribution, and study how the SN parameters relate to the RV, FWHM and BIS SPAN of the CCF. In Sec.~\ref{intro} we present a simple model to correct for stellar activity. In Sec.~\ref{sec:4}, we compare on real observations the sensitivity of the SN parameters to stellar activity with respect to other existing indicators. In Sec.~\ref{sec:5} we derive error bars for the different CCF parameters, and finally we discuss our results and conclude in Sec.~\ref{sec:discu} and Sec.~\ref{sec:conclu}.
 
 
 
@@ -215,7 +214,7 @@ Examples of SN densities under different skewness parameter values and the same 
 %
 \begin{figure}[htbp]
    \centering
-\includegraphics[height = 3in]{Skew_Normal_densities_jjck.pdf} 
+\includegraphics[height = 4in]{Skew_Normal_densities_jjck.pdf} 
    \caption{Density function of a random variable $Y \sim SN(\xi, \omega^{2}, \alpha)$ with location parameter $\xi = 0$, scale parameter $\omega = 1$, and different values of the skewness parameter $\alpha$ indicated by different colors and line types.
 Note that the solid black line has an $\alpha = 0$ making it a Normal distribution.   
    }
@@ -273,24 +272,19 @@ f_{CCF}(y_i) = \mathrm{C} - \mathrm{A} \times SN(y_i;\mu, \sigma^2, \gamma), \qu
 %
 where C is a constant fitting the continuum of the CCF \jessi{The C is unclear to me - can more intuition be added here?  Are C and A considered known?}, A is an unknown amplitude parameter, and $y_1, \ldots, y_n$ are the set of RV's considered for the CCF. Note that the CCF is expressed in flux as a function of the lag of the cross-correlation template, expressed in RV.
 
-Since the CCF presents a natural asymmetry due the convective blueshift, the SN distribution can better catch this aspect, together with other changes in asymmetry, respect the Normal fit. To check this assumption, we compared the CCF residuals after fitting a Normal and a SN distribution for 2 stars. The first star is Alpha Centauri b, whose CCFs have high signal to noise ratio (SNR). The second star is Corot-7, whose CCFs have low SNR. Fig.~ \ref{fig:Residual.comparison} shows that the SN seems to be a slightly better model to explain the shape of the CCF, in particular as the SNR decreases.
+Since the CCF presents a natural asymmetry due the convective blueshift, the SN distribution can better catch this aspect, together with other changes in asymmetry, respect the Normal fit. To check this assumption, we compared the CCF residuals after fitting a Normal and a SN distribution for 2 stars. The first star is Alpha Centauri b, whose CCFs have high signal-to-noise ratio (SNR). The second star is Corot-7, whose CCFs have low SNR. Fig.~ \ref{fig:Residual.comparison} shows that the SN seems to be a slightly better model to explain the shape of the CCF, in particular as the SNR decreases.
 %
 \begin{figure*}[htbp]
    \centering
 \includegraphics[height = 2.5in]{[1]HD128621Residuals.pdf} 
 \includegraphics[height = 2.5in]{[1]LRa01_E2Residuals.pdf} 
-   \caption{Comparison between the Normal (black circles) and the SN (red crosses) residuals using CCFs of the star Alpha Centauri b (left) and Corot-7 (right). The results are comparable looking at the residuals corresponding to the tails of the CCF but the SN fit leads to slightly better results in the center of the CCF for both the stars. As the signal to noise decreases, as happens when analyzing the star Corot-7, the SN distribution leads to better residuals respect using the Normal.}
+   \caption{\umberto{create with subfig in order to show left plot is Alpha Cent b, right plot is Corot-7} Comparison between the Normal (black circles) and the SN (red crosses) residuals using CCFs of the star Alpha Centauri b (left) and Corot-7 (right). The results are comparable looking at the residuals corresponding to the tails of the CCF but the SN fit leads to slightly better results in the center of the CCF for both the stars. As the signal-to-noise decreases, as happens when analyzing the star Corot-7, the SN distribution leads to better residuals respect using the Normal.}
     \label{fig:Residual.comparison}
 \end{figure*}
 %
 
-\subsection{Effect of stellar activity on the CCF} \label{sec:31}
-
-An orbiting exoplanet will produce an RV variation induced by a pure Doppler shift of \emph{all} the spectral lines of each stellar spectrum. 
-Stellar activity, however, does not produce a blueshift or redshift of the spectra, but can create a spurious RV signal by modifying the shape of spectral lines. To track changes in line shape, the FWHM, the BIS SPAN or the indicators introduced by \citet{Figueira-2013} are often used, which provide information on the average width and asymmetry of the CCF \citep{Hatzes1996, fiorenzano2005line, Queloz-2001}. A strong correlation between the estimated RVs and one or more of these parameters is a sign that the estimated RVs may be contaminated by stellar activity. To test the strength of the correlation between RVs and the different activity indicators, we calculated the Pearson correlation coefficient, $R$.
+In the following of the paper, we define RV as the mean of the Normal. Concerning the fit of the CCF using the SN, we present at first $2$ indicators that define the RV of the star: the mean of the SN, defined as SN mean RV and the median of the SN, defined as SN median RV (i.e. looking at Equation \eqref{eq:snmed}, $m$ = SN median RV). We will discuss advantages and limits for both these choices in the examples. For the width of the CCF, we use the FWHM of the Normal, which is $2\sqrt(2\ln2)\sigma$. The width of the SN, SN FWHM, is defined in the same way\footnote{Note that SN FWHM does not correspond to the width of the SN distribution at half maximum like in the Normal case.}. Being a Normal distribution symmetric, there is not such a parameter that evaluates the asymmetry of the distribution, so the BIS SPAN is used. This will be compared to the asymmetric parameter $\gamma$ of the SN, called SN GAMMA. To test the strength of the correlation between the RVs and the different activity indicators, we calculated the Pearson correlation coefficient, $R$.
 A $p-$value for the statistical test having null hypothesis $H_{0}: R=0$ (i.e., no correlation) is provided, along with a $95\,\%$ confidence interval for $R$.
-
-In the following of the paper, we define RV as the mean of the Normal. Concerning the fit of the CCF using the SN, we present at first $2$ indicators that define the RV of the star: the mean of the SN, defined as SN mean RV and the median of the SN, defined as SN median RV (i.e. looking at Equation \eqref{eq:snmed}, $m$ = SN median RV). We will discuss advantages and limits for both these choices in the examples. For the width of the CCF, we use the FWHM of the Normal, which is $2\sqrt(2\ln2)\sigma$. The width of the SN, SN FWHM, is defined in the same way\footnote{Note that SN FWHM does not correspond to the width of the SN distribution at half maximum like in the Normal case.}. Being a Normal distribution symmetric, there is not such a parameter that evaluates the asymmetry of the distribution, so the BIS SPAN is used. This will be compared to the asymmetric parameter $\gamma$ of the SN, called SN GAMMA.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Simulation Study} \label{sec:soap}
@@ -305,7 +299,9 @@ We also consider a real-data example using HARPS spectra from the star Alpha Cen
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Real data applications} \label{sec:4}
 
-In this Section we present the analyses conducted on Alpha Centauri b, comparing the result of fitting a CCF using the SN distribution defined in Section \ref{sec:3} versus the Normal approach. Other 4 stars have been analyzed with the proposed methods and details can be found in the Appendix \ref{appendix}. A comparison with the results obtained by the classic approach is done, where the RVs of the star are estimated by retrieving the mean of the Normal distribution used to fit the CCF, along with the BIS SPAN or the other asymmetric parameters defined in \citet{Figueira-2013}. The latter parameters are calculated separately from the Normal fit that leads to the RV of the star.
+In this Section we present the analyses conducted on Alpha Centauri b, comparing the result of fitting a CCF using the SN distribution defined in Section \ref{sec:3} versus the Normal approach. Other 4 stars have been analyzed with the proposed methods and details can be found in the Appendix \ref{appendix}. For all the stars that have been considered in the present work, we selected those CCFs having SNR larger than 10.
+
+ A comparison with the results obtained by the classic approach is done, where the RVs of the star are estimated by retrieving the mean of the Normal distribution used to fit the CCF, along with the BIS SPAN or the other asymmetric parameters defined in \citet{Figueira-2013}. The latter parameters are calculated separately from the Normal fit that leads to the RV of the star.
 
 \subsection{Alpha Centauri B} \label{sec:alphacentb}
 
@@ -315,7 +311,7 @@ We begin by evaluating the correlation between $\gamma$ and the BIS SPAN. In Fig
 %
 \begin{figure}[htbp]
    \centering
-\includegraphics[height = 3in]{HD12862_[2]gamma_vs_bisspan.pdf} 
+\includegraphics[height = 4in]{HD12862_[2]gamma_vs_bisspan.pdf} 
    \caption{Correlation between $\gamma$ and the BIS SPAN for Alpha Centauri B. Because $\gamma$ is adimensional, retrieving the slope between $\gamma$ and the BIS SPAN, which is expressed in \kms, allows us to provide physical meaning to $\gamma$.}
    \label{fig:alphacent:corr.gamma}
 \end{figure}
@@ -325,7 +321,7 @@ Fig.~ \ref{fig:alphacent:diff:RV} shows the comparison between the RVs retrieved
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{HD12862_[2]RadialVelocityDifferences.pdf} 
+\includegraphics[height = 4in]{HD12862_[2]RadialVelocityDifferences.pdf} 
    \caption{(top) RVs as function of Julian Day for Alpha Centauri b. The RVs are retrieved using the mean of the Normal (red triangles), SN mean RV (black circles), SN median RV (cyan crosses). (bottom) RV differences between Normal RV and SN mean RV (black circles) and between Normal RV and a SN median RV (cyan crosses).}
    \label{fig:alphacent:diff:RV}
 \end{figure*}
@@ -337,13 +333,13 @@ Because the median is a more rubust index than the mean, the correlation between
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{HD12862_[4]Comparison_para.pdf}  
+\includegraphics[height = 4in]{HD12862_[4]Comparison_para.pdf}  
    \caption{Correlation between the asymmetry parameters and the RVs for Alpha Centauri B. The last three plots show the correlation between the FWHM and the RVs for Alpha Centauri B using respectively the SN (SN mean RV and SN median RV) and the Normal fits.}
    \label{fig:alphacent:corrPlot}
 \end{figure*}
 %
 
-Both the proposed indicators coming from the SN distribution have desirable and undesirable behaviors: the SN mean RV better catches changes in the asymmetry of the CCF but the resulting set of RVs ends up being contaminated by those spurious shifts caused by stellar activity that have been shortly presented in Section \ref{sec:31}. When using SN median RV, the final set of radial velocity is less affected by those spurious shifts caused by stellar activity, but at the same time this indicator is not able to catch as well as SN mean RV changes in the shape of the CCF. Anyway, both SN mean RV and SN median RV are useful to catch different aspects of the CCF and our suggestion is to use SN mean RV when interested to retrieve information about changes in the shape of the CCF. In order to provide a set of RVs containing the smallest amount of spurious contamination imputable to stellar activity, our suggestion is instead to use SN median RV. 
+Both the proposed indicators coming from the SN distribution have desirable and undesirable behaviors: the SN mean RV better catches changes in the asymmetry of the CCF but the resulting set of RVs ends up being contaminated by those spurious shifts caused by stellar activity that have been shortly presented in Section \ref{intro}. When using SN median RV, the final set of radial velocity is less affected by those spurious shifts caused by stellar activity, but at the same time this indicator is not able to catch as well as SN mean RV changes in the shape of the CCF. Anyway, both SN mean RV and SN median RV are useful to catch different aspects of the CCF and our suggestion is to use SN mean RV when interested to retrieve information about changes in the shape of the CCF. In order to provide a set of RVs containing the smallest amount of spurious contamination imputable to stellar activity, our suggestion is instead to use SN median RV. 
 
 In the next Section we further motivate the reasons for defining as RV the median of the SN by retrieving the standard errors associated with the RV defined as the mean of the Normal, SN mean and SN median.
 
@@ -374,7 +370,7 @@ Finally, for the errors in CCF asymmetry, we see that, when fitting the SN to th
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{[5]Errors_vs_SNR_all_stars.pdf} 
+\includegraphics[height = 4in]{[5]Errors_vs_SNR_all_stars.pdf} 
    \caption{Comparison between the standard errors using the bootstrap analysis for the RVs, the FWHM and the asymmetry parameter. When using as parameter for the RV the mean of the SN (black circles), the standard errors are in average $60\%$ larger than the standard errors retrieved fitting a Normal (red triangles). However, once the RV is defined as the median of the SN (cyan crosses), the standard errors are in average $10\%$ smaller than the standard errors coming from the Normal fit. To use as asymmetry parameter the $\gamma$ of the SN leads to standard errors in average $15\%$ smaller than the standard errors related to the BIS SPAN. Note that for the asymmetry, the error in BIS SPAN is in \kms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN.}
    \label{fig:se}
 \end{figure*}
@@ -393,7 +389,7 @@ Finally, for the errors in CCF asymmetry, we see that, when fitting the SN to th
 
 An analysis of the CCF residuals after fitting a Normal or SN distribution show that the SN is a slightly better model to explain the shape of the CCF. This comes from the fact that CCFs present a natural asymmetry due the convective blueshift.
 
-\umberto{add conclusions on SOAP}
+\umberto{add discussions on SOAP example}
 
 We compared for five stars the difference between the RVs (defined as mean of a Normal, mean of the SN or median of the SN), FWHM and asymmetry (BIS SPAN in the Normal case and $\gamma$ in the SN case). The $\gamma$ parameter is linearly dependant on the BIS SPAN, with always a strong correlation coefficient. 
 %To compare $\gamma$, that do not have any units, with BIS SPAN expressed in \kms, one has simply to multiply $\gamma$ by the slope of the linear dependence between $\gamma$ and BIS SPAN. 
@@ -408,6 +404,8 @@ In this paper we introduced a novel approach based on the Skew Normal (SN) distr
 
 In this paper we propose to conduct the analysis fitting a SN distribution to the CCF. Since the CCF presents a natural asymmetry due the convective blueshift, the SN distribution can better catch these aspects respect the Normal fit. On top of that, by using the SN distribution to fit CCFs, we can measure simultaneously the RV of the star, the width and the asymmetry of the CCF.
 
+\umberto{add conclusions on SOAP example}
+
 Using the SN to fit CCFs brings a significant improvement in probing stellar activity. While for the Normal distribution mean and median are equivalent, using the SN fit different location parameters can be tested. While the median of the SN is more robust respect variations in the shape of the CCF, the mean of the SN is more sensible to changes in the asymmetry of the CCF. We suggest to use as parameter that defines the RV of the star the median of the SN, since the standard errors related to this parameter are $10\%$ smaller than the standard errors retrieved using the Normal distribution. For evaluating changes in the asymmetry of the CCF, we suggest to use the mean of the SN. The correlations between SN mean RV and SN FWHM, and SN mean RV and $\gamma$ (the asymmetry parameter of the SN) are much stronger than the correlations between the equivalent parameters derived using a Normal fit (RV, FWHM and BIS SPAN or the asymmetric parameters described in \citet{Figueira-2013}). The precision on the asymmetry measured by $\gamma$ is greater than the one on BIS SPAN by $\sim$15\%. Therefore when searching for rotational periods in the data, or applying Gaussian Processes to account for stellar activity signals, the SN parameters should be used.
 
 Finally, we also encourage the use of bootstrapping to estimate more realistic errors on the different parameters of the Normal or SN fitted to the CCF, mainly in the low SNR regime where a gain of 50\% can be reached. This takes significantly more time, but note that 100 realization are enough to get a good estimation of errors.
@@ -415,7 +413,7 @@ Finally, we also encourage the use of bootstrapping to estimate more realistic e
 
 %the RVs of the star can be calculated as the mean of the SN, whereas its asymmetry parameter $\gamma$ can be naturally used for retrieving information about the asymmetry of the CCF. Because of the natural correlation between the RVs and the asymmetry parameter, a linear combination of both $\gamma$ and the FWHM has been implemented for correcting the RVs from stellar activity, allowing us to retrieve a more precise RVs. 
 
-%In order to get the standard errors for the estimated parameters, rather than using the common $noise$ statistic, we created a simulated procedure based on perturbing each point of the CCF according to its measurement error. Then, by getting from the original profile line $100$ simulated profiles, we run the SN fitting analyses, allowing us retrieving for all the parameter of interests an estimation for their standard errors. Concerning the standard error associated to the means of the distributions, the SN fit leads to slightly larger standard errors respect when running the Normal fit. This fact can be explained by noticing that as a simulated CCF is created according to the procedure described above, we expect slightly differences on the asymmetry of the CCF as well. The natural correlation between the RVs of the star and $\gamma$, where the mean of the SN is shifted in the direction of the asymmetry of the distribution, leads to larger uncertainties related to the RVs of the star. The latter consideration provides a further justification for correcting the RVs of the star from stellar activity and explains why this correction is more helpful when running the proposed analysis rather than the classic Normal fit. Concerning the standard errors related to the asymmetry parameters, when using the SN fit the uncertainties are $10 \%$ smaller than using the classic BIS SPAN. In conclusion, we showed how using the SN fit provides in an unique step a better understanding of the stellar activity through using the asymmetry parameter $\gamma$ rather than using the common statistics such as the BIS SPAN or other indicators. On top of that, when focusing on low signal to noise cases, the SN procedure showed how statistically significant results are retrieved with the proposed approach in terms of correlation between the asymmetry of the profile line and the RVs, whereas for the previous analyses this correlation does not result statistically significant.
+%In order to get the standard errors for the estimated parameters, rather than using the common $noise$ statistic, we created a simulated procedure based on perturbing each point of the CCF according to its measurement error. Then, by getting from the original profile line $100$ simulated profiles, we run the SN fitting analyses, allowing us retrieving for all the parameter of interests an estimation for their standard errors. Concerning the standard error associated to the means of the distributions, the SN fit leads to slightly larger standard errors respect when running the Normal fit. This fact can be explained by noticing that as a simulated CCF is created according to the procedure described above, we expect slightly differences on the asymmetry of the CCF as well. The natural correlation between the RVs of the star and $\gamma$, where the mean of the SN is shifted in the direction of the asymmetry of the distribution, leads to larger uncertainties related to the RVs of the star. The latter consideration provides a further justification for correcting the RVs of the star from stellar activity and explains why this correction is more helpful when running the proposed analysis rather than the classic Normal fit. Concerning the standard errors related to the asymmetry parameters, when using the SN fit the uncertainties are $10 \%$ smaller than using the classic BIS SPAN. In conclusion, we showed how using the SN fit provides in an unique step a better understanding of the stellar activity through using the asymmetry parameter $\gamma$ rather than using the common statistics such as the BIS SPAN or other indicators. On top of that, when focusing on low signal-to-noise cases, the SN procedure showed how statistically significant results are retrieved with the proposed approach in terms of correlation between the asymmetry of the profile line and the RVs, whereas for the previous analyses this correlation does not result statistically significant.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Acknowledgements}
@@ -469,21 +467,21 @@ Do we need to show all these plots?}
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{[0]HD19231_vs_time.pdf} 
+\includegraphics[height = 4in]{[0]HD19231_vs_time.pdf} 
    \caption{RVs comparison for HD192310 considering a Normal and a SN fitting (using both the mean and the median).}
    \label{fig:HD192310:RV}
 \end{figure*}
 %
 \begin{figure}[htbp]
    \centering
-\includegraphics[height = 3in]{HD19231_[2]gamma_vs_bisspan.pdf} 
+\includegraphics[height = 4in]{HD19231_[2]gamma_vs_bisspan.pdf} 
    \caption{Correlation between $\gamma$ and the BIS SPAN for HD192310.}
    \label{fig:Gliese785:corr.gamma}
 \end{figure}
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{HD19231_[4]Comparison_para.pdf} 
+\includegraphics[height = 4in]{HD19231_[4]Comparison_para.pdf} 
    \caption{Correlation between the asymmetry parameters and the RVs for HD 192310. The last two plots show the correlation between the FWHM and the RVs for HD 192310 using respectively the SN and the Normal fits.}
    \label{fig:Gliese785:corrPlot}
 \end{figure*}
@@ -492,21 +490,21 @@ Do we need to show all these plots?}
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{[0]TauCeti_vs_time.pdf} 
+\includegraphics[height = 4in]{[0]TauCeti_vs_time.pdf} 
    \caption{RVs comparison for Tau Ceti considering a Normal and a SN fitting (using both the mean and the median).}
    \label{fig:Tau Ceti:RV}
 \end{figure*}
 %
 \begin{figure}[htbp]
    \centering
-\includegraphics[height = 3in]{HD10700_[2]gamma_vs_bisspan.pdf} 
+\includegraphics[height = 4in]{HD10700_[2]gamma_vs_bisspan.pdf} 
    \caption{Correlation between $\gamma$ and the BIS SPAN for Tau Ceti.}
    \label{fig:Tau:corr.gamma}
 \end{figure}
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{HD10700_[4]Comparison_para.pdf}  
+\includegraphics[height = 4in]{HD10700_[4]Comparison_para.pdf}  
    \caption{Correlation between the asymmetry parameters and the RVs for Tau Ceti. The last two plots show the correlation between the FWHM and the RVs for Tau Ceti using respectively the SN and the Normal fits.}
    \label{fig:Tau:corrPlot}
 \end{figure*}
@@ -515,21 +513,21 @@ Do we need to show all these plots?}
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{[0]HD21515_vs_time.pdf} 
+\includegraphics[height = 4in]{[0]HD21515_vs_time.pdf} 
    \caption{RVs comparison for HD215152 considering a Normal and a SN fitting (using both the mean and the median).}
    \label{fig:HD215152:RV}
 \end{figure*}
 %
 \begin{figure}[htbp]
    \centering
-\includegraphics[height = 3in]{HD21515_[2]gamma_vs_bisspan.pdf} 
+\includegraphics[height = 4in]{HD21515_[2]gamma_vs_bisspan.pdf} 
    \caption{Correlation between $\gamma$ and the BIS SPAN for HD 215152.}
    \label{fig:HD215152:corr.gamma}
 \end{figure}
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{HD21515_[4]Comparison_para.pdf}  
+\includegraphics[height = 4in]{HD21515_[4]Comparison_para.pdf}  
    \caption{Correlation between the asymmetry parameters and the RVs for HD 215152. The last two plots show the correlation between the FWHM and the RVs for HD 215152 using respectively the SN and the Normal fits.}
    \label{fig:HD215152:corrPlot}
 \end{figure*}
@@ -539,21 +537,21 @@ Do we need to show all these plots?}
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{[0]LRa01_E_vs_time.pdf} 
+\includegraphics[height = 4in]{[0]LRa01_E_vs_time.pdf} 
    \caption{RVs comparison for Corot-7 considering a Normal and a SN fitting (using both the mean and the median).}
    \label{fig:corot7:RV}
 \end{figure*}
 %
 \begin{figure}[htbp]
    \centering
-\includegraphics[height = 3in]{LRa01_E_[2]gamma_vs_bisspan.pdf} 
+\includegraphics[height = 4in]{LRa01_E_[2]gamma_vs_bisspan.pdf} 
    \caption{Correlation between $\gamma$ and the BIS SPAN for Corot-7.}
    \label{fig:Corot7:corr.gamma}
 \end{figure}
 %
 \begin{figure*}[htbp]
    \centering
-\includegraphics[height = 3in]{LRa01_E_[4]Comparison_para.pdf} 
+\includegraphics[height = 4in]{LRa01_E_[4]Comparison_para.pdf} 
    \caption{Correlation between the asymmetry parameters and the RVs for Corot-7. The last two plots show the correlation between the FWHM and the RVs for Corot-7 using respectively the SN and the Normal fits.}
    \label{fig:Corot7:corrPlot}
 \end{figure*}
