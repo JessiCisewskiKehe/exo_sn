@@ -1,0 +1,230 @@
+\begin{thebibliography}{33}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Anglada-Escud{\'e} and Butler(2012)]{Anglada-Escude-2012}
+G.~Anglada-Escud{\'e} and R.~P. Butler.
+\newblock The harps-terra project. i. description of the algorithms,
+  performance, and new measurements on a few remarkable stars observed by
+  harps.
+\newblock \emph{The Astrophysical Journal Supplement Series}, 200\penalty0
+  (2):\penalty0 15, 2012.
+
+\bibitem[Azzalini(1985)]{Azzalini1985}
+A.~Azzalini.
+\newblock A class of distributions which includes the normal ones.
+\newblock \emph{Scandinavian journal of statistics}, pages 171--178, 1985.
+
+\bibitem[Azzalini and Capitanio(2014)]{Azzalini2014}
+A.~Azzalini and A.~Capitanio.
+\newblock The skew-normal and related families. institute of mathematical
+  statistics monographs, 2014.
+
+\bibitem[Baranne et~al.(1996)Baranne, Queloz, Mayor, Adrianzyk, Knispel,
+  Kohler, Lacroix, Meunier, Rimbaud, and Vin]{Baranne-1996}
+A.~Baranne, D.~Queloz, M.~Mayor, G.~Adrianzyk, G.~Knispel, D.~Kohler,
+  D.~Lacroix, J.-P. Meunier, G.~Rimbaud, and A.~Vin.
+\newblock Elodie: A spectrograph for accurate radial velocity measurements.
+\newblock \emph{Astronomy and Astrophysics Supplement Series}, 119\penalty0
+  (2):\penalty0 373--390, 1996.
+
+\bibitem[Boisse et~al.(2012)Boisse, Bonfils, and Santos]{Boisse-2012b}
+I.~Boisse, X.~Bonfils, and N.~Santos.
+\newblock Soap-a tool for the fast computation of photometry and radial
+  velocity induced by stellar spots.
+\newblock \emph{Astronomy \& Astrophysics}, 545:\penalty0 A109, 2012.
+
+\bibitem[Bouchy et~al.(2013)Bouchy, D{\'\i}az, H{\'e}brard, Arnold, Boisse,
+  Delfosse, Perruchot, and Santerne]{Bouchy:2013aa}
+F.~Bouchy, R.~D{\'\i}az, G.~H{\'e}brard, L.~Arnold, I.~Boisse, X.~Delfosse,
+  S.~Perruchot, and A.~Santerne.
+\newblock Sophie+: First results of an octagonal-section fiber for
+  high-precision radial velocity measurements.
+\newblock \emph{Astronomy \& Astrophysics}, 549:\penalty0 A49, 2013.
+
+\bibitem[Cavallini et~al.(1985)Cavallini, Ceppatelli, and
+  Righini]{Cavallini-1985a}
+F.~Cavallini, G.~Ceppatelli, and A.~Righini.
+\newblock Asymmetry and shift of three fe i photospheric lines in solar active
+  regions.
+\newblock \emph{Astronomy and Astrophysics}, 143:\penalty0 116--121, 1985.
+
+\bibitem[Cosentino et~al.(2012)Cosentino, Lovis, Pepe, Cameron, Latham,
+  Molinari, Udry, Bezawada, Black, Born, et~al.]{Cosentino-2012}
+R.~Cosentino, C.~Lovis, F.~Pepe, A.~C. Cameron, D.~W. Latham, E.~Molinari,
+  S.~Udry, N.~Bezawada, M.~Black, A.~Born, et~al.
+\newblock Harps-n: the new planet hunter at tng.
+\newblock In \emph{Proc. SPIE}, volume 8446, page 84461V, 2012.
+
+\bibitem[Desort et~al.(2007)Desort, Lagrange, Galland, Udry, and
+  Mayor]{Desort-2007}
+M.~Desort, A.-M. Lagrange, F.~Galland, S.~Udry, and M.~Mayor.
+\newblock Search for exoplanets with the radial-velocity technique:
+  quantitative diagnostics of stellar activity.
+\newblock \emph{Astronomy \& Astrophysics}, 473\penalty0 (3):\penalty0
+  983--993, 2007.
+
+\bibitem[Dravins et~al.(1981)Dravins, Lindegren, and Nordlund]{Dravins-1981}
+D.~Dravins, L.~Lindegren, and {\AA}.~Nordlund.
+\newblock Solar granulation-influence of convection on spectral line
+  asymmetries and wavelength shifts.
+\newblock \emph{Astronomy and Astrophysics}, 96:\penalty0 345--364, 1981.
+
+\bibitem[Dumusque et~al.(2012)Dumusque, Pepe, Lovis, S{\'e}gransan, Sahlmann,
+  Benz, Bouchy, Mayor, Queloz, Santos, et~al.]{Dumusque-2012}
+X.~Dumusque, F.~Pepe, C.~Lovis, D.~S{\'e}gransan, J.~Sahlmann, W.~Benz,
+  F.~Bouchy, M.~Mayor, D.~Queloz, N.~Santos, et~al.
+\newblock An earth-mass planet orbiting [agr] centauri b.
+\newblock \emph{Nature}, 491\penalty0 (7423):\penalty0 207--211, 2012.
+
+\bibitem[Dumusque et~al.(2014)Dumusque, Boisse, and Santos]{Dumusque-2014b}
+X.~Dumusque, I.~Boisse, and N.~Santos.
+\newblock Soap 2.0: A tool to estimate the photometric and radial velocity
+  variations induced by stellar spots and plages.
+\newblock \emph{The Astrophysical Journal}, 796\penalty0 (2):\penalty0 132,
+  2014.
+
+\bibitem[Figueira et~al.(2013)Figueira, Santos, Pepe, Lovis, and
+  Nardetto]{Figueira-2013}
+P.~Figueira, N.~Santos, F.~Pepe, C.~Lovis, and N.~Nardetto.
+\newblock Line-profile variations in radial-velocity measurements-two
+  alternative indicators for planetary searches.
+\newblock \emph{Astronomy \& Astrophysics}, 557:\penalty0 A93, 2013.
+
+\bibitem[Fiorenzano et~al.(2005)Fiorenzano, Gratton, Desidera, Cosentino, and
+  Endl]{fiorenzano2005line}
+A.~M. Fiorenzano, R.~Gratton, S.~Desidera, R.~Cosentino, and M.~Endl.
+\newblock Line bisectors and radial velocity jitter from sarg spectra.
+\newblock \emph{Astronomy \& Astrophysics}, 442\penalty0 (2):\penalty0
+  775--784, 2005.
+
+\bibitem[Gray(2009)]{Gray-2009}
+D.~F. Gray.
+\newblock The third signature of stellar granulation.
+\newblock \emph{The Astrophysical Journal}, 697\penalty0 (2):\penalty0 1032,
+  2009.
+
+\bibitem[Hatzes(1996)]{Hatzes1996}
+A.~P. Hatzes.
+\newblock Simulations of stellar radial velocity and spectral line bisector
+  variations: I. nonradial pulsations.
+\newblock \emph{Publications of the Astronomical Society of the Pacific},
+  108\penalty0 (728):\penalty0 839, 1996.
+
+\bibitem[Hatzes(2002)]{Hatzes-2002}
+A.~P. Hatzes.
+\newblock Starspots and exoplanets.
+\newblock \emph{Astronomische Nachrichten}, 323\penalty0 (3-4):\penalty0
+  392--394, 2002.
+
+\bibitem[Kurster et~al.(2003)Kurster, Endl, Rouesnel, Els, Kaufer, Brillant,
+  Hatzes, Saar, and Cochran]{Kurster2003}
+M.~Kurster, M.~Endl, F.~Rouesnel, S.~Els, A.~Kaufer, S.~Brillant, A.~Hatzes,
+  S.~Saar, and W.~Cochran.
+\newblock The low-level radial velocity variability in barnard's star (= gj
+  699). secular acceleration, indications for convective redshift, and planet
+  mass limits.
+\newblock \emph{ASTRONOMY AND ASTROPHYSICS-BERLIN-}, 403\penalty0 (3):\penalty0
+  1077--1088, 2003.
+
+\bibitem[Lagrange et~al.(2010)Lagrange, Desort, and Meunier]{Lagrange-2010}
+A.-M. Lagrange, M.~Desort, and N.~Meunier.
+\newblock Using the sun to estimate earth-like planets detection
+  capabilities-i. impact of cold spots.
+\newblock \emph{Astronomy \& Astrophysics}, 512:\penalty0 A38, 2010.
+
+\bibitem[Lindegren and Dravins(2003)]{Lindegren-2003}
+L.~Lindegren and D.~Dravins.
+\newblock The fundamental definition of ?radial velocity?
+\newblock \emph{Astronomy \& Astrophysics}, 401\penalty0 (3):\penalty0
+  1185--1201, 2003.
+
+\bibitem[Meunier et~al.(2010)Meunier, Desort, and Lagrange]{Meunier-2010a}
+N.~Meunier, M.~Desort, and A.-M. Lagrange.
+\newblock Using the sun to estimate earth-like planets detection
+  capabilities-ii. impact of plages.
+\newblock \emph{Astronomy \& Astrophysics}, 512:\penalty0 A39, 2010.
+
+\bibitem[Pepe et~al.(2002)Pepe, Mayor, Galland, Naef, Queloz, Santos, Udry, and
+  Burnet]{Pepe-2002a}
+F.~Pepe, M.~Mayor, F.~Galland, D.~Naef, D.~Queloz, N.~Santos, S.~Udry, and
+  M.~Burnet.
+\newblock The coralie survey for southern extra-solar planets vii-two
+  short-period saturnian companions to hd 108147 and hd 168746.
+\newblock \emph{Astronomy \& Astrophysics}, 388\penalty0 (2):\penalty0
+  632--638, 2002.
+
+\bibitem[PHASE(2003)]{Mayor-2003}
+C.~PHASE.
+\newblock Setting new standards with harps.
+\newblock \emph{The Messenger}, 114:\penalty0 20, 2003.
+
+\bibitem[Queloz et~al.(2000)Queloz, Mayor, Weber, Bl{\'e}cha, Burnet, Confino,
+  Naef, Pepe, Santos, and Udry]{Queloz-2000a}
+D.~Queloz, M.~Mayor, L.~Weber, A.~Bl{\'e}cha, M.~Burnet, B.~Confino, D.~Naef,
+  F.~Pepe, N.~Santos, and S.~Udry.
+\newblock The coralie survey for southern extra-solar planets. i. a planet
+  orbiting the star gliese 86.
+\newblock \emph{Astronomy and Astrophysics}, 354:\penalty0 99--102, 2000.
+
+\bibitem[Queloz et~al.(2001)Queloz, Henry, Sivan, Baliunas, Beuzit, Donahue,
+  Mayor, Naef, Perrier, and Udry]{Queloz-2001}
+D.~Queloz, G.~Henry, J.~Sivan, S.~Baliunas, J.~Beuzit, R.~Donahue, M.~Mayor,
+  D.~Naef, C.~Perrier, and S.~Udry.
+\newblock No planet for hd 166435.
+\newblock \emph{Astronomy \& Astrophysics}, 379\penalty0 (1):\penalty0
+  279--287, 2001.
+
+\bibitem[Quirrenbach et~al.(2014)Quirrenbach, Amado, Caballero, Mundt, Reiners,
+  Ribas, Seifert, Abril, Aceituno, Alonso-Floriano, et~al.]{Quirrenbach:2014aa}
+A.~Quirrenbach, P.~Amado, J.~Caballero, R.~Mundt, A.~Reiners, I.~Ribas,
+  W.~Seifert, M.~Abril, J.~Aceituno, F.~Alonso-Floriano, et~al.
+\newblock Carmenes instrument overview.
+\newblock In \emph{Proc. SPIE}, volume 9147, page 91471F, 2014.
+
+\bibitem[Saar and Donahue(1997)]{Saar-1997b}
+S.~H. Saar and R.~A. Donahue.
+\newblock Activity-related radial velocity variation in cool stars.
+\newblock \emph{The Astrophysical Journal}, 485\penalty0 (1):\penalty0 319,
+  1997.
+
+\bibitem[Thompson et~al.(2017)Thompson, Watson, de~Mooij, and
+  Jess]{Thompson-2017}
+A.~Thompson, C.~Watson, E.~de~Mooij, and D.~Jess.
+\newblock The changing face of $\alpha$ centauri b: probing plage and stellar
+  activity in k dwarfs.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society: Letters},
+  468\penalty0 (1):\penalty0 L16--L20, 2017.
+
+\bibitem[Tull(1998)]{Tull1998}
+R.~G. Tull.
+\newblock High-resolution fiber-coupled spectrograph of the hobby-eberly
+  telescope.
+\newblock \emph{Proc. Soc. Photo-opt. Inst. Eng.}, 3355:\penalty0 387, 1998.
+
+\bibitem[Tull et~al.(1995)Tull, MacQueen, Sneden, and Lambert]{Tull1995}
+R.~G. Tull, P.~J. MacQueen, C.~Sneden, and D.~L. Lambert.
+\newblock The high-resolution cross-dispersed echelle white pupil spectrometer
+  of the mcdonald observatory 2.7-m telescope.
+\newblock \emph{Publications of the Astronomical Society of the Pacific},
+  107\penalty0 (709):\penalty0 251, 1995.
+
+\bibitem[Vogt(1987)]{Vogt1987}
+S.~Vogt.
+\newblock \emph{PASP}, \penalty0 (99):\penalty0 1214, 1987.
+
+\bibitem[Vogt et~al.(1994)Vogt, Allen, and Bigelow]{Vogt1994}
+S.~S. Vogt, S.~L. Allen, and B.~C. Bigelow.
+\newblock \emph{Society of Photo-Optical Instrumentation Engineers (SPIE)
+  Conference Series}, 2198\penalty0 (362), 1994.
+
+\bibitem[Voigt(1956)]{Voigt1956}
+H.-H. Voigt.
+\newblock " drei-strom-modell" der sonnenphotosph{\"a}re und asymmetrie der
+  linien des infraroten sauerstoff-tripletts. mit 12 textabbildungen.
+\newblock \emph{Zeitschrift fur Astrophysik}, 40:\penalty0 157, 1956.
+
+\end{thebibliography}
