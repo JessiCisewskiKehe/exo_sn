@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 MAY 2018 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 MAY 2018 13:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -557,14 +557,14 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
  [4]
-[5] <Skew_Normal_densities_jjck.pdf, id=228, 1127.80943pt x 750.54713pt>
+[5] <Skew_Normal_densities_jjck.pdf, id=236, 1127.80943pt x 750.54713pt>
 File: Skew_Normal_densities_jjck.pdf Graphic file (type pdf)
 
 <use Skew_Normal_densities_jjck.pdf>
 Package pdftex.def Info: Skew_Normal_densities_jjck.pdf used on input line 217.
 
 (pdftex.def)             Requested size: 325.7829pt x 216.81pt.
- [6] [7 <./Skew_Normal_densities_jjck.pdf>] <[1]HD128621Residuals.pdf, id=356, 
+ [6] [7 <./Skew_Normal_densities_jjck.pdf>] <[1]HD128621Residuals.pdf, id=364, 
 505.89pt x 505.89pt>
 File: [1]HD128621Residuals.pdf Graphic file (type pdf)
 
@@ -572,173 +572,176 @@ File: [1]HD128621Residuals.pdf Graphic file (type pdf)
 Package pdftex.def Info: [1]HD128621Residuals.pdf used on input line 277.
 (pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
 
-<[1]LRa01_E2Residuals.pdf, id=357, 505.89pt x 505.89pt>
+<[1]LRa01_E2Residuals.pdf, id=365, 505.89pt x 505.89pt>
 File: [1]LRa01_E2Residuals.pdf Graphic file (type pdf)
 
 <use [1]LRa01_E2Residuals.pdf>
 Package pdftex.def Info: [1]LRa01_E2Residuals.pdf used on input line 278.
 (pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
- [8] [9 <./[1]HD128621Residuals.pdf> <./[1]LRa01_E2Residuals.pdf>] <RV_comparis
-on_FACULAE.pdf, id=396, 505.89pt x 505.89pt>
+ [8]
+<RV_comparison_FACULAE.pdf, id=382, 505.89pt x 505.89pt>
 File: RV_comparison_FACULAE.pdf Graphic file (type pdf)
 
 <use RV_comparison_FACULAE.pdf>
 Package pdftex.def Info: RV_comparison_FACULAE.pdf used on input line 306.
-(pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
-
-<RV_se_comparison_FACULAE.pdf, id=397, 505.89pt x 505.89pt>
-File: RV_se_comparison_FACULAE.pdf Graphic file (type pdf)
-
-<use RV_se_comparison_FACULAE.pdf>
-Package pdftex.def Info: RV_se_comparison_FACULAE.pdf used on input line 307.
-(pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
-
-<SOAP_FACULAE_Comparison_para_SN.pdf, id=398, 505.89pt x 505.89pt>
+(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+ [9 <./[1]HD128621Residuals.pdf> <./[1]LRa01_E2Residuals.pdf>]
+<SOAP_FACULAE_Comparison_para_SN.pdf, id=405, 505.89pt x 505.89pt>
 File: SOAP_FACULAE_Comparison_para_SN.pdf Graphic file (type pdf)
 
 <use SOAP_FACULAE_Comparison_para_SN.pdf>
 Package pdftex.def Info: SOAP_FACULAE_Comparison_para_SN.pdf used on input line
- 314.
+ 315.
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [10 <./RV_comparison_FACULAE.pdf> <./RV_se_comparison_FACULAE.pdf>] [11 <./SOA
-P_FACULAE_Comparison_para_SN.pdf>]
-<RV_comparison_SPOT.pdf, id=435, 505.89pt x 505.89pt>
+ [10 <./RV_comparison_FACULAE.pdf>]
+[11 <./SOAP_FACULAE_Comparison_para_SN.pdf>]
+<RV_comparison_SPOT.pdf, id=434, 505.89pt x 505.89pt>
 File: RV_comparison_SPOT.pdf Graphic file (type pdf)
 
 <use RV_comparison_SPOT.pdf>
-Package pdftex.def Info: RV_comparison_SPOT.pdf used on input line 329.
-(pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
+Package pdftex.def Info: RV_comparison_SPOT.pdf used on input line 330.
+(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
 
-<RV_se_comparison_PLANET_SPOT.pdf, id=436, 505.89pt x 505.89pt>
-File: RV_se_comparison_PLANET_SPOT.pdf Graphic file (type pdf)
-
-<use RV_se_comparison_PLANET_SPOT.pdf>
-Package pdftex.def Info: RV_se_comparison_PLANET_SPOT.pdf used on input line 33
-0.
-(pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
-
-<SOAP_SPOT_Comparison_para_SN.pdf, id=437, 505.89pt x 505.89pt>
+<SOAP_SPOT_Comparison_para_SN.pdf, id=435, 505.89pt x 505.89pt>
 File: SOAP_SPOT_Comparison_para_SN.pdf Graphic file (type pdf)
 
 <use SOAP_SPOT_Comparison_para_SN.pdf>
 Package pdftex.def Info: SOAP_SPOT_Comparison_para_SN.pdf used on input line 33
-7.
+9.
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
-
-<RV_comparison_PLANET_SPOT.pdf, id=440, 505.89pt x 505.89pt>
+ [12 <./RV_comparison_SPOT.pdf>] [13 <./SOAP_SPOT_Comparison_para_SN.pdf>]
+<RV_comparison_PLANET_SPOT.pdf, id=463, 505.89pt x 505.89pt>
 File: RV_comparison_PLANET_SPOT.pdf Graphic file (type pdf)
 
 <use RV_comparison_PLANET_SPOT.pdf>
-Package pdftex.def Info: RV_comparison_PLANET_SPOT.pdf used on input line 352.
-(pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
+Package pdftex.def Info: RV_comparison_PLANET_SPOT.pdf used on input line 354.
+(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
 
-<RV_se_comparison_SPOT.pdf, id=441, 505.89pt x 505.89pt>
-File: RV_se_comparison_SPOT.pdf Graphic file (type pdf)
-
-<use RV_se_comparison_SPOT.pdf>
-Package pdftex.def Info: RV_se_comparison_SPOT.pdf used on input line 353.
-(pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
-
-<SOAP_SPOT_PLANET_Comparison_para_SN.pdf, id=442, 505.89pt x 505.89pt>
+<SOAP_SPOT_PLANET_Comparison_para_SN.pdf, id=464, 505.89pt x 505.89pt>
 File: SOAP_SPOT_PLANET_Comparison_para_SN.pdf Graphic file (type pdf)
 
 <use SOAP_SPOT_PLANET_Comparison_para_SN.pdf>
 Package pdftex.def Info: SOAP_SPOT_PLANET_Comparison_para_SN.pdf used on input 
-line 360.
+line 363.
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [12 <./RV_comparison_SPOT.pdf> <./RV_se_comparison_PLANET_SPOT.pdf>] [13 <./SO
-AP_SPOT_Comparison_para_SN.pdf>]
-<RV_comparison_PLANET.pdf, id=476, 505.89pt x 505.89pt>
+
+<RV_comparison_PLANET.pdf, id=466, 505.89pt x 505.89pt>
 File: RV_comparison_PLANET.pdf Graphic file (type pdf)
 
 <use RV_comparison_PLANET.pdf>
-Package pdftex.def Info: RV_comparison_PLANET.pdf used on input line 369.
-(pdftex.def)             Requested size: 216.81056pt x 216.81pt.
- [14 <./RV_comparison_PLANET_SPOT.pdf> <./RV_se_comparison_SPOT.pdf>] [15 <./SO
-AP_SPOT_PLANET_Comparison_para_SN.pdf>] [16 <./RV_comparison_PLANET.pdf>]
-<HD12862_[2]gamma_vs_bisspan.pdf, id=531, 505.89pt x 505.89pt>
+Package pdftex.def Info: RV_comparison_PLANET.pdf used on input line 372.
+(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+ [14 <./RV_comparison_PLANET_SPOT.pdf>] [15 <./SOAP_SPOT_PLANET_Comparison_para
+_SN.pdf>] [16 <./RV_comparison_PLANET.pdf>]
+<HD12862_[2]gamma_vs_bisspan.pdf, id=514, 505.89pt x 505.89pt>
 File: HD12862_[2]gamma_vs_bisspan.pdf Graphic file (type pdf)
 
 <use HD12862_[2]gamma_vs_bisspan.pdf>
-Package pdftex.def Info: HD12862_[2]gamma_vs_bisspan.pdf used on input line 399
+Package pdftex.def Info: HD12862_[2]gamma_vs_bisspan.pdf used on input line 397
 .
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
 
-<HD12862_[2]RadialVelocityDifferences.pdf, id=538, 505.89pt x 505.89pt>
+<HD12862_[2]RadialVelocityDifferences.pdf, id=521, 505.89pt x 505.89pt>
 File: HD12862_[2]RadialVelocityDifferences.pdf Graphic file (type pdf)
 
 <use HD12862_[2]RadialVelocityDifferences.pdf>
 Package pdftex.def Info: HD12862_[2]RadialVelocityDifferences.pdf used on input
- line 409.
+ line 407.
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [17 <./HD12862_[2]gamma_vs_bisspan.pdf>] [18 <./HD12862_[2]RadialVelocityDiffe
-rences.pdf>]
-<HD12862_[4]Comparison_para.pdf, id=571, 505.89pt x 505.89pt>
+ [17] [18 <./HD12862_[2]gamma_vs_bisspan.pdf>] [19 <./HD12862_[2]RadialVelocity
+Differences.pdf>]
+<HD12862_[4]Comparison_para.pdf, id=559, 505.89pt x 505.89pt>
 File: HD12862_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD12862_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD12862_[4]Comparison_para.pdf used on input line 421.
+Package pdftex.def Info: HD12862_[4]Comparison_para.pdf used on input line 419.
 
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [19 <./HD12862_[4]Comparison_para.pdf>]
-[20] <[5]Errors_vs_SNR_all_stars.pdf, id=592, 505.89pt x 505.89pt>
+ [20 <./HD12862_[4]Comparison_para.pdf>]
+[21] <RV_comparison_FACULAE_standard_errors.pdf, id=580, 505.89pt x 505.89pt>
+File: RV_comparison_FACULAE_standard_errors.pdf Graphic file (type pdf)
+
+<use RV_comparison_FACULAE_standard_errors.pdf>
+Package pdftex.def Info: RV_comparison_FACULAE_standard_errors.pdf used on inpu
+t line 450.
+(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+
+<RV_comparison_SPOT_standard_errors.pdf, id=582, 505.89pt x 505.89pt>
+File: RV_comparison_SPOT_standard_errors.pdf Graphic file (type pdf)
+
+<use RV_comparison_SPOT_standard_errors.pdf>
+Package pdftex.def Info: RV_comparison_SPOT_standard_errors.pdf used on input l
+ine 459.
+(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+
+<RV_comparison_SPOT_PLANET_standard_errors.pdf, id=584, 505.89pt x 505.89pt>
+File: RV_comparison_SPOT_PLANET_standard_errors.pdf Graphic file (type pdf)
+
+<use RV_comparison_SPOT_PLANET_standard_errors.pdf>
+Package pdftex.def Info: RV_comparison_SPOT_PLANET_standard_errors.pdf used on 
+input line 468.
+(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+ [22] [23 <./RV_comparison_FACULAE_standard_errors.pdf>] [24 <./RV_comparison_S
+POT_standard_errors.pdf>]
+[25 <./RV_comparison_SPOT_PLANET_standard_errors.pdf>]
+<[5]Errors_vs_SNR_all_stars.pdf, id=629, 505.89pt x 505.89pt>
 File: [5]Errors_vs_SNR_all_stars.pdf Graphic file (type pdf)
 
 <use [5]Errors_vs_SNR_all_stars.pdf>
-Package pdftex.def Info: [5]Errors_vs_SNR_all_stars.pdf used on input line 458.
+Package pdftex.def Info: [5]Errors_vs_SNR_all_stars.pdf used on input line 485.
 
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [21] [22 <./[5]Errors_vs_SNR_all_stars.pdf>] [23] <HD19231_[4]Comparison_para.
-pdf, id=623, 505.89pt x 505.89pt>
+ [26] [27 <./[5]Errors_vs_SNR_all_stars.pdf>] [28] <HD19231_[4]Comparison_para.
+pdf, id=660, 505.89pt x 505.89pt>
 File: HD19231_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD19231_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD19231_[4]Comparison_para.pdf used on input line 545.
+Package pdftex.def Info: HD19231_[4]Comparison_para.pdf used on input line 565.
 
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
 
-<HD10700_[4]Comparison_para.pdf, id=624, 505.89pt x 505.89pt>
+<HD10700_[4]Comparison_para.pdf, id=661, 505.89pt x 505.89pt>
 File: HD10700_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD10700_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD10700_[4]Comparison_para.pdf used on input line 552.
+Package pdftex.def Info: HD10700_[4]Comparison_para.pdf used on input line 572.
 
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
 
-<HD21515_[4]Comparison_para.pdf, id=625, 505.89pt x 505.89pt>
+<HD21515_[4]Comparison_para.pdf, id=662, 505.89pt x 505.89pt>
 File: HD21515_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD21515_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD21515_[4]Comparison_para.pdf used on input line 559.
+Package pdftex.def Info: HD21515_[4]Comparison_para.pdf used on input line 579.
 
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
 
-<LRa01_E_[4]Comparison_para.pdf, id=626, 505.89pt x 505.89pt>
+<LRa01_E_[4]Comparison_para.pdf, id=663, 505.89pt x 505.89pt>
 File: LRa01_E_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use LRa01_E_[4]Comparison_para.pdf>
-Package pdftex.def Info: LRa01_E_[4]Comparison_para.pdf used on input line 566.
+Package pdftex.def Info: LRa01_E_[4]Comparison_para.pdf used on input line 586.
 
 (pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- (./manuscript.bbl [24] [25 <./HD19231_[4]Comparison_para.pdf>] [26 <./HD10700_
-[4]Comparison_para.pdf>] [27 <./HD21515_[4]Comparison_para.pdf>] [28 <./LRa01_E
-_[4]Comparison_para.pdf>] [29])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 654.
- [30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 654.
+ (./manuscript.bbl [29] [30 <./HD19231_[4]Comparison_para.pdf>] [31 <./HD10700_
+[4]Comparison_para.pdf>] [32 <./HD21515_[4]Comparison_para.pdf>] [33 <./LRa01_E
+_[4]Comparison_para.pdf>] [34])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 674.
+ [35]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 674.
 
 (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 654.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 654.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 674.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 674.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: D19511D82A813677F21454D03040A768;1436.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 654.
+(rerunfilecheck)             Checksum: 4A8C0ABF91E98C7F8BCCF7AF02898357;1680.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 674.
  ) 
 Here is how much of TeX's memory you used:
- 8120 strings out of 493014
- 115702 string characters out of 6133351
- 218670 words of memory out of 5000000
- 11381 multiletter control sequences out of 15000+600000
+ 8137 strings out of 493014
+ 116128 string characters out of 6133351
+ 220655 words of memory out of 5000000
+ 11388 multiletter control sequences out of 15000+600000
  56864 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,13n,28p,1998b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -752,10 +755,10 @@ s/type1/public/txfonts/txex.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /txfonts/txsyb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (30 pages, 1512916 bytes).
+Output written on manuscript.pdf (35 pages, 1533115 bytes).
 PDF statistics:
- 753 PDF objects out of 1000 (max. 8388607)
- 639 compressed objects within 7 object streams
- 113 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 792 PDF objects out of 1000 (max. 8388607)
+ 673 compressed objects within 7 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 290 words of extra memory for PDF output out of 10000 (max. 10000000)
 
