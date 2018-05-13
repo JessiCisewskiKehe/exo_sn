@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -37,27 +37,12 @@ I.~Boisse, X.~Bonfils, and N.~Santos.
   velocity induced by stellar spots.
 \newblock \emph{Astronomy \& Astrophysics}, 545:\penalty0 A109, 2012.
 
-\bibitem[Bouchy et~al.(2013)Bouchy, D{\'\i}az, H{\'e}brard, Arnold, Boisse,
-  Delfosse, Perruchot, and Santerne]{Bouchy:2013aa}
-F.~Bouchy, R.~D{\'\i}az, G.~H{\'e}brard, L.~Arnold, I.~Boisse, X.~Delfosse,
-  S.~Perruchot, and A.~Santerne.
-\newblock Sophie+: First results of an octagonal-section fiber for
-  high-precision radial velocity measurements.
-\newblock \emph{Astronomy \& Astrophysics}, 549:\penalty0 A49, 2013.
-
 \bibitem[Cavallini et~al.(1985)Cavallini, Ceppatelli, and
   Righini]{Cavallini-1985a}
 F.~Cavallini, G.~Ceppatelli, and A.~Righini.
 \newblock Asymmetry and shift of three fe i photospheric lines in solar active
   regions.
 \newblock \emph{Astronomy and Astrophysics}, 143:\penalty0 116--121, 1985.
-
-\bibitem[Cosentino et~al.(2012)Cosentino, Lovis, Pepe, Cameron, Latham,
-  Molinari, Udry, Bezawada, Black, Born, et~al.]{Cosentino-2012}
-R.~Cosentino, C.~Lovis, F.~Pepe, A.~C. Cameron, D.~W. Latham, E.~Molinari,
-  S.~Udry, N.~Bezawada, M.~Black, A.~Born, et~al.
-\newblock Harps-n: the new planet hunter at tng.
-\newblock In \emph{Proc. SPIE}, volume 8446, page 84461V, 2012.
 
 \bibitem[Desort et~al.(2007)Desort, Lagrange, Galland, Udry, and
   Mayor]{Desort-2007}
@@ -73,6 +58,16 @@ D.~Dravins, L.~Lindegren, and {\AA}.~Nordlund.
   asymmetries and wavelength shifts.
 \newblock \emph{Astronomy and Astrophysics}, 96:\penalty0 345--364, 1981.
 
+\bibitem[{Dumusque} et~al.(2011){Dumusque}, {Udry}, {Lovis}, {Santos}, and
+  {Monteiro}]{Dumusque-2011a}
+X.~{Dumusque}, S.~{Udry}, C.~{Lovis}, N.~C. {Santos}, and M.~J.~P.~F.~G.
+  {Monteiro}.
+\newblock {Planetary detection limits taking into account stellar noise. I.
+  Observational strategies to reduce stellar oscillation and granulation
+  effects}.
+\newblock \emph{\aap}, 525:\penalty0 A140, Jan. 2011.
+\newblock \doi{10.1051/0004-6361/201014097}.
+
 \bibitem[Dumusque et~al.(2012)Dumusque, Pepe, Lovis, S{\'e}gransan, Sahlmann,
   Benz, Bouchy, Mayor, Queloz, Santos, et~al.]{Dumusque-2012}
 X.~Dumusque, F.~Pepe, C.~Lovis, D.~S{\'e}gransan, J.~Sahlmann, W.~Benz,
@@ -87,6 +82,22 @@ X.~Dumusque, I.~Boisse, and N.~Santos.
 \newblock \emph{The Astrophysical Journal}, 796\penalty0 (2):\penalty0 132,
   2014.
 
+\bibitem[{Dumusque} et~al.(2017){Dumusque}, {Borsa}, {Damasso}, {D{\'{\i}}az},
+  {Gregory}, {Hara}, {Hatzes}, {Rajpaul}, {Tuomi}, {Aigrain},
+  {Anglada-Escud{\'e}}, {Bonomo}, {Bou{\'e}}, {Dauvergne}, {Frustagli},
+  {Giacobbe}, {Haywood}, {Jones}, {Laskar}, {Pinamonti}, {Poretti}, {Rainer},
+  {S{\'e}gransan}, {Sozzetti}, and {Udry}]{Dumusque:2017aa}
+X.~{Dumusque}, F.~{Borsa}, M.~{Damasso}, R.~F. {D{\'{\i}}az}, P.~C. {Gregory},
+  N.~C. {Hara}, A.~{Hatzes}, V.~{Rajpaul}, M.~{Tuomi}, S.~{Aigrain},
+  G.~{Anglada-Escud{\'e}}, A.~S. {Bonomo}, G.~{Bou{\'e}}, F.~{Dauvergne},
+  G.~{Frustagli}, P.~{Giacobbe}, R.~D. {Haywood}, H.~R.~A. {Jones},
+  J.~{Laskar}, M.~{Pinamonti}, E.~{Poretti}, M.~{Rainer}, D.~{S{\'e}gransan},
+  A.~{Sozzetti}, and S.~{Udry}.
+\newblock {Radial-velocity fitting challenge. II. First results of the analysis
+  of the data set}.
+\newblock \emph{\aap}, 598:\penalty0 A133, Feb. 2017.
+\newblock \doi{10.1051/0004-6361/201628671}.
+
 \bibitem[Figueira et~al.(2013)Figueira, Santos, Pepe, Lovis, and
   Nardetto]{Figueira-2013}
 P.~Figueira, N.~Santos, F.~Pepe, C.~Lovis, and N.~Nardetto.
@@ -100,6 +111,16 @@ A.~M. Fiorenzano, R.~Gratton, S.~Desidera, R.~Cosentino, and M.~Endl.
 \newblock Line bisectors and radial velocity jitter from sarg spectra.
 \newblock \emph{Astronomy \& Astrophysics}, 442\penalty0 (2):\penalty0
   775--784, 2005.
+
+\bibitem[{Fischer} et~al.(2017){Fischer}, {Jurgenson}, {McCracken}, {Sawyer},
+  {Blackman}, and {Szymkowiak}]{Fischer:2017aa}
+D.~{Fischer}, C.~{Jurgenson}, T.~{McCracken}, D.~{Sawyer}, R.~{Blackman}, and
+  A.~E. {Szymkowiak}.
+\newblock {EXPRES: the EXtreme PREcision Spectrograph at the Discovery Channel
+  Telescope}.
+\newblock In \emph{American Astronomical Society Meeting Abstracts \#229},
+  volume 229 of \emph{American Astronomical Society Meeting Abstracts}, page
+  126.04, Jan. 2017.
 
 \bibitem[Gray(2009)]{Gray-2009}
 D.~F. Gray.
@@ -157,18 +178,30 @@ F.~Pepe, M.~Mayor, F.~Galland, D.~Naef, D.~Queloz, N.~Santos, S.~Udry, and
 \newblock \emph{Astronomy \& Astrophysics}, 388\penalty0 (2):\penalty0
   632--638, 2002.
 
-\bibitem[PHASE(2003)]{Mayor-2003}
-C.~PHASE.
-\newblock Setting new standards with harps.
-\newblock \emph{The Messenger}, 114:\penalty0 20, 2003.
-
-\bibitem[Queloz et~al.(2000)Queloz, Mayor, Weber, Bl{\'e}cha, Burnet, Confino,
-  Naef, Pepe, Santos, and Udry]{Queloz-2000a}
-D.~Queloz, M.~Mayor, L.~Weber, A.~Bl{\'e}cha, M.~Burnet, B.~Confino, D.~Naef,
-  F.~Pepe, N.~Santos, and S.~Udry.
-\newblock The coralie survey for southern extra-solar planets. i. a planet
-  orbiting the star gliese 86.
-\newblock \emph{Astronomy and Astrophysics}, 354:\penalty0 99--102, 2000.
+\bibitem[{Pepe} et~al.(2014){Pepe}, {Molaro}, {Cristiani}, {Rebolo}, {Santos},
+  {Dekker}, {M{\'e}gevand}, {Zerbi}, {Cabral}, {Di Marcantonio}, {Abreu},
+  {Affolter}, {Aliverti}, {Allende Prieto}, {Amate}, {Avila}, {Baldini},
+  {Bristow}, {Broeg}, {Cirami}, {Coelho}, {Conconi}, {Coretti}, {Cupani},
+  {D'Odorico}, {De Caprio}, {Delabre}, {Dorn}, {Figueira}, {Fragoso},
+  {Galeotta}, {Genolet}, {Gomes}, {Gonz{\'a}lez Hern{\'a}ndez}, {Hughes},
+  {Iwert}, {Kerber}, {Landoni}, {Lizon}, {Lovis}, {Maire}, {Mannetta},
+  {Martins}, {Monteiro}, {Oliveira}, {Poretti}, {Rasilla}, {Riva}, {Santana
+  Tschudi}, {Santos}, {Sosnowska}, {Sousa}, {Span{\'o}}, {Tenegi}, {Toso},
+  {Vanzella}, {Viel}, and {Zapatero Osorio}]{Pepe-2014}
+F.~{Pepe}, P.~{Molaro}, S.~{Cristiani}, R.~{Rebolo}, N.~C. {Santos},
+  H.~{Dekker}, D.~{M{\'e}gevand}, F.~M. {Zerbi}, A.~{Cabral}, P.~{Di
+  Marcantonio}, M.~{Abreu}, M.~{Affolter}, M.~{Aliverti}, C.~{Allende Prieto},
+  M.~{Amate}, G.~{Avila}, V.~{Baldini}, P.~{Bristow}, C.~{Broeg}, R.~{Cirami},
+  J.~{Coelho}, P.~{Conconi}, I.~{Coretti}, G.~{Cupani}, V.~{D'Odorico}, V.~{De
+  Caprio}, B.~{Delabre}, R.~{Dorn}, P.~{Figueira}, A.~{Fragoso}, S.~{Galeotta},
+  L.~{Genolet}, R.~{Gomes}, J.~I. {Gonz{\'a}lez Hern{\'a}ndez}, I.~{Hughes},
+  O.~{Iwert}, F.~{Kerber}, M.~{Landoni}, J.-L. {Lizon}, C.~{Lovis}, C.~{Maire},
+  M.~{Mannetta}, C.~{Martins}, M.~{Monteiro}, A.~{Oliveira}, E.~{Poretti},
+  J.~L. {Rasilla}, M.~{Riva}, S.~{Santana Tschudi}, P.~{Santos},
+  D.~{Sosnowska}, S.~{Sousa}, P.~{Span{\'o}}, F.~{Tenegi}, G.~{Toso},
+  E.~{Vanzella}, M.~{Viel}, and M.~R. {Zapatero Osorio}.
+\newblock {ESPRESSO: The next European exoplanet hunter}.
+\newblock \emph{ArXiv e-prints}, Jan. 2014.
 
 \bibitem[Queloz et~al.(2001)Queloz, Henry, Sivan, Baliunas, Beuzit, Donahue,
   Mayor, Naef, Perrier, and Udry]{Queloz-2001}
@@ -177,13 +210,6 @@ D.~Queloz, G.~Henry, J.~Sivan, S.~Baliunas, J.~Beuzit, R.~Donahue, M.~Mayor,
 \newblock No planet for hd 166435.
 \newblock \emph{Astronomy \& Astrophysics}, 379\penalty0 (1):\penalty0
   279--287, 2001.
-
-\bibitem[Quirrenbach et~al.(2014)Quirrenbach, Amado, Caballero, Mundt, Reiners,
-  Ribas, Seifert, Abril, Aceituno, Alonso-Floriano, et~al.]{Quirrenbach:2014aa}
-A.~Quirrenbach, P.~Amado, J.~Caballero, R.~Mundt, A.~Reiners, I.~Ribas,
-  W.~Seifert, M.~Abril, J.~Aceituno, F.~Alonso-Floriano, et~al.
-\newblock Carmenes instrument overview.
-\newblock In \emph{Proc. SPIE}, volume 9147, page 91471F, 2014.
 
 \bibitem[Saar and Donahue(1997)]{Saar-1997b}
 S.~H. Saar and R.~A. Donahue.
@@ -198,28 +224,6 @@ A.~Thompson, C.~Watson, E.~de~Mooij, and D.~Jess.
   activity in k dwarfs.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society: Letters},
   468\penalty0 (1):\penalty0 L16--L20, 2017.
-
-\bibitem[Tull(1998)]{Tull1998}
-R.~G. Tull.
-\newblock High-resolution fiber-coupled spectrograph of the hobby-eberly
-  telescope.
-\newblock \emph{Proc. Soc. Photo-opt. Inst. Eng.}, 3355:\penalty0 387, 1998.
-
-\bibitem[Tull et~al.(1995)Tull, MacQueen, Sneden, and Lambert]{Tull1995}
-R.~G. Tull, P.~J. MacQueen, C.~Sneden, and D.~L. Lambert.
-\newblock The high-resolution cross-dispersed echelle white pupil spectrometer
-  of the mcdonald observatory 2.7-m telescope.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  107\penalty0 (709):\penalty0 251, 1995.
-
-\bibitem[Vogt(1987)]{Vogt1987}
-S.~Vogt.
-\newblock \emph{PASP}, \penalty0 (99):\penalty0 1214, 1987.
-
-\bibitem[Vogt et~al.(1994)Vogt, Allen, and Bigelow]{Vogt1994}
-S.~S. Vogt, S.~L. Allen, and B.~C. Bigelow.
-\newblock \emph{Society of Photo-Optical Instrumentation Engineers (SPIE)
-  Conference Series}, 2198\penalty0 (362), 1994.
 
 \bibitem[Voigt(1956)]{Voigt1956}
 H.-H. Voigt.
