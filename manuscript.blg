@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 The style file: abbrvnat.bst
-Illegal, another \bibstyle command---line 150 of file manuscript.aux
+Illegal, another \bibstyle command---line 145 of file manuscript.aux
  : \bibstyle
  :          {aa}
 I'm skipping whatever remains of this command
@@ -31,45 +31,45 @@ Repeated entry---line 579 of file mybib-SNCCF.bib
  : @article{Meunier-2010a
  :                       ,
 I'm skipping whatever remains of this entry
-You've used 28 entries,
+You've used 31 entries,
             2773 wiz_defined-function locations,
-            799 strings with 11886 characters,
-and the built_in function-call counts, 18887 in all, are:
-= -- 1507
-> -- 1801
-< -- 12
-+ -- 604
-- -- 576
-* -- 1825
-:= -- 3060
-add.period$ -- 85
-call.type$ -- 28
-change.case$ -- 275
-chr.to.int$ -- 28
-cite$ -- 56
-duplicate$ -- 599
-empty$ -- 1075
-format.name$ -- 612
-if$ -- 3763
+            822 strings with 13682 characters,
+and the built_in function-call counts, 23924 in all, are:
+= -- 1858
+> -- 2531
+< -- 11
++ -- 847
+- -- 816
+* -- 2401
+:= -- 3934
+add.period$ -- 100
+call.type$ -- 31
+change.case$ -- 363
+chr.to.int$ -- 31
+cite$ -- 62
+duplicate$ -- 662
+empty$ -- 1185
+format.name$ -- 855
+if$ -- 4713
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 27
-newline$ -- 149
-num.names$ -- 112
-pop$ -- 512
+missing$ -- 30
+newline$ -- 170
+num.names$ -- 124
+pop$ -- 677
 preamble$ -- 1
-purify$ -- 247
+purify$ -- 332
 quote$ -- 0
-skip$ -- 564
+skip$ -- 673
 stack$ -- 0
-substring$ -- 505
-swap$ -- 57
+substring$ -- 552
+swap$ -- 67
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 308
+type$ -- 341
 warning$ -- 0
-while$ -- 122
+while$ -- 130
 width$ -- 0
-write$ -- 372
+write$ -- 422
 (There were 7 error messages)
