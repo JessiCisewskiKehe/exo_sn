@@ -2,53 +2,74 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: manuscript.aux
 The style file: abbrvnat.bst
-Illegal, another \bibstyle command---line 110 of file manuscript.aux
+Illegal, another \bibstyle command---line 168 of file manuscript.aux
  : \bibstyle
  :          {aa}
 I'm skipping whatever remains of this command
 Database file #1: mybib-SNCCF.bib
-Warning--empty title in Vogt1987
-Warning--there's a number but no volume in Vogt1987
-Warning--empty title in Vogt1994
-You've used 33 entries,
+Repeated entry---line 407 of file mybib-SNCCF.bib
+ : @article{Pepe-2002a
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 420 of file mybib-SNCCF.bib
+ : @article{Baranne-1996
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 437 of file mybib-SNCCF.bib
+ : @article{Queloz-2001
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 459 of file mybib-SNCCF.bib
+ : @article{Saar-1997b
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 474 of file mybib-SNCCF.bib
+ : @article{Desort-2007
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 579 of file mybib-SNCCF.bib
+ : @article{Meunier-2010a
+ :                       ,
+I'm skipping whatever remains of this entry
+You've used 31 entries,
             2773 wiz_defined-function locations,
-            833 strings with 11174 characters,
-and the built_in function-call counts, 18344 in all, are:
-= -- 1532
-> -- 1412
-< -- 17
-+ -- 477
-- -- 444
-* -- 1658
-:= -- 2897
-add.period$ -- 96
-call.type$ -- 33
-change.case$ -- 242
-chr.to.int$ -- 33
-cite$ -- 69
-duplicate$ -- 716
-empty$ -- 1277
-format.name$ -- 485
-if$ -- 3741
+            822 strings with 13682 characters,
+and the built_in function-call counts, 23924 in all, are:
+= -- 1858
+> -- 2531
+< -- 11
++ -- 847
+- -- 816
+* -- 2401
+:= -- 3934
+add.period$ -- 100
+call.type$ -- 31
+change.case$ -- 363
+chr.to.int$ -- 31
+cite$ -- 62
+duplicate$ -- 662
+empty$ -- 1185
+format.name$ -- 855
+if$ -- 4713
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 32
+missing$ -- 30
 newline$ -- 170
-num.names$ -- 132
-pop$ -- 451
+num.names$ -- 124
+pop$ -- 677
 preamble$ -- 1
-purify$ -- 211
+purify$ -- 332
 quote$ -- 0
-skip$ -- 603
+skip$ -- 673
 stack$ -- 0
-substring$ -- 594
-swap$ -- 72
-text.length$ -- 5
+substring$ -- 552
+swap$ -- 67
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 363
-warning$ -- 3
-while$ -- 145
+type$ -- 341
+warning$ -- 0
+while$ -- 130
 width$ -- 0
-write$ -- 431
-(There was 1 error message)
+write$ -- 422
+(There were 7 error messages)

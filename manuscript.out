@@ -1,23 +1,18 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Goal of RV analysis}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{Stellar activity effect on CCF, Normal fit plus FWHM indicator}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{Bisector span indicators of stellar activity}{section.1}% 4
-\BOOKMARK [2][-]{subsection.1.4}{Figueira indicators of stellar activity}{section.1}% 5
-\BOOKMARK [2][-]{subsection.1.5}{Issues with detecting stellar activity}{section.1}% 6
-\BOOKMARK [2][-]{subsection.1.6}{Outline of paper}{section.1}% 7
-\BOOKMARK [1][-]{section.2}{The Skew Normal distribution}{}% 8
-\BOOKMARK [2][-]{subsection.2.1}{Fitting the Skew Normal distribution to the CCF}{section.2}% 9
-\BOOKMARK [1][-]{section.3}{Simulation Study}{}% 10
-\BOOKMARK [2][-]{subsection.3.1}{Faculae}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.2}{Spot}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.3}{Spot and planet}{section.3}% 13
-\BOOKMARK [1][-]{section.4}{Real data applications}{}% 14
-\BOOKMARK [2][-]{subsection.4.1}{Alpha Centauri B}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.2}{Doppler shift added to Alpha Centauri B}{section.4}% 16
-\BOOKMARK [1][-]{section.5}{Estimation of standard errors for the CCF parameters}{}% 17
-\BOOKMARK [2][-]{subsection.5.1}{Estimation of standard errors for the CCF parameters for the simulation study}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.2}{Estimation of standard errors for the CCF parameters for real stars}{section.5}% 19
-\BOOKMARK [1][-]{section.6}{Discussion}{}% 20
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 21
-\BOOKMARK [1][-]{section.8}{Acknowledgements}{}% 22
-\BOOKMARK [1][-]{appendix.A}{Appendix}{}% 23
+\BOOKMARK [1][-]{section.2}{The Skew Normal distribution}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Fitting the Skew Normal distribution to the CCF}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{Radial Velocity correction function for stellar activity}{}% 4
+\BOOKMARK [1][-]{section.4}{Simulation Study}{}% 5
+\BOOKMARK [2][-]{subsection.4.1}{Faculae}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.2}{Spot}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.3}{Spot and planet}{section.4}% 8
+\BOOKMARK [1][-]{section.5}{Real data application}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Alpha Centauri B}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.2}{Doppler shift added to Alpha Centauri B}{section.5}% 11
+\BOOKMARK [1][-]{section.6}{Estimation of standard errors for the CCF parameters}{}% 12
+\BOOKMARK [2][-]{subsection.6.1}{Estimation of standard errors for the CCF parameters for the simulation study}{section.6}% 13
+\BOOKMARK [2][-]{subsection.6.2}{Estimation of standard errors for the CCF parameters for real stars}{section.6}% 14
+\BOOKMARK [1][-]{section.7}{Discussion}{}% 15
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 16
+\BOOKMARK [1][-]{section.9}{Acknowledgements}{}% 17
+\BOOKMARK [1][-]{appendix.A}{Appendix}{}% 18
