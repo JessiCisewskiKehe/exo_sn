@@ -2,75 +2,75 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: manuscript.aux
 The style file: abbrvnat.bst
-Illegal, another \bibstyle command---line 171 of file manuscript.aux
+Illegal, another \bibstyle command---line 175 of file manuscript.aux
  : \bibstyle
  :          {aa}
 I'm skipping whatever remains of this command
 Database file #1: mybib-SNCCF.bib
-Repeated entry---line 435 of file mybib-SNCCF.bib
+Repeated entry---line 478 of file mybib-SNCCF.bib
  : @article{Pepe-2002a
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 448 of file mybib-SNCCF.bib
+Repeated entry---line 491 of file mybib-SNCCF.bib
  : @article{Baranne-1996
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 465 of file mybib-SNCCF.bib
+Repeated entry---line 508 of file mybib-SNCCF.bib
  : @article{Queloz-2001
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 487 of file mybib-SNCCF.bib
+Repeated entry---line 530 of file mybib-SNCCF.bib
  : @article{Saar-1997b
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 502 of file mybib-SNCCF.bib
+Repeated entry---line 545 of file mybib-SNCCF.bib
  : @article{Desort-2007
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 607 of file mybib-SNCCF.bib
+Repeated entry---line 650 of file mybib-SNCCF.bib
  : @article{Meunier-2010a
  :                       ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no series in belsley1991conditioning
-You've used 34 entries,
+You've used 38 entries,
             2773 wiz_defined-function locations,
-            842 strings with 14098 characters,
-and the built_in function-call counts, 25084 in all, are:
-= -- 1970
-> -- 2561
-< -- 16
-+ -- 859
-- -- 825
-* -- 2472
-:= -- 4106
-add.period$ -- 110
-call.type$ -- 34
-change.case$ -- 374
-chr.to.int$ -- 34
-cite$ -- 69
-duplicate$ -- 731
-empty$ -- 1299
-format.name$ -- 867
-if$ -- 4967
+            861 strings with 14562 characters,
+and the built_in function-call counts, 26474 in all, are:
+= -- 2085
+> -- 2623
+< -- 21
++ -- 881
+- -- 843
+* -- 2563
+:= -- 4326
+add.period$ -- 122
+call.type$ -- 38
+change.case$ -- 389
+chr.to.int$ -- 38
+cite$ -- 77
+duplicate$ -- 811
+empty$ -- 1433
+format.name$ -- 893
+if$ -- 5258
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 34
-newline$ -- 185
-num.names$ -- 136
-pop$ -- 703
+missing$ -- 41
+newline$ -- 205
+num.names$ -- 152
+pop$ -- 747
 preamble$ -- 1
-purify$ -- 341
+purify$ -- 355
 quote$ -- 0
-skip$ -- 722
+skip$ -- 778
 stack$ -- 0
-substring$ -- 606
-swap$ -- 80
-text.length$ -- 5
+substring$ -- 633
+swap$ -- 85
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 369
+type$ -- 398
 warning$ -- 1
-while$ -- 144
+while$ -- 158
 width$ -- 0
-write$ -- 461
+write$ -- 511
 (There were 7 error messages)
