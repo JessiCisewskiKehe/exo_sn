@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -30,6 +30,12 @@ A.~Baranne, D.~Queloz, M.~Mayor, G.~Adrianzyk, G.~Knispel, D.~Kohler,
 \newblock Elodie: A spectrograph for accurate radial velocity measurements.
 \newblock \emph{Astronomy and Astrophysics Supplement Series}, 119\penalty0
   (2):\penalty0 373--390, 1996.
+
+\bibitem[Belsley(1991)]{belsley1991conditioning}
+D.~A. Belsley.
+\newblock \emph{Conditioning diagnostics: Collinearity and weak data in
+  regression}.
+\newblock Number 519.536 B452. Wiley New York, 1991.
 
 \bibitem[{Boisse} et~al.(2009){Boisse}, {Moutou}, {Vidal-Madjar}, {Bouchy},
   {Pont}, {H{\'e}brard}, {Bonfils}, {Croll}, {Delfosse}, {Desort}, {Forveille},
@@ -113,6 +119,12 @@ X.~{Dumusque}, F.~{Borsa}, M.~{Damasso}, R.~F. {D{\'{\i}}az}, P.~C. {Gregory},
 \newblock \emph{\aap}, 598:\penalty0 A133, Feb. 2017.
 \newblock \doi{10.1051/0004-6361/201628671}.
 
+\bibitem[Efroymson(1960)]{efroymson1960multiple}
+M.~Efroymson.
+\newblock Multiple regression analysis.
+\newblock \emph{Mathematical methods for digital computers}, pages 191--203,
+  1960.
+
 \bibitem[{Feng} et~al.(2017){Feng}, {Tuomi}, and {Jones}]{Feng:2017aa}
 F.~{Feng}, M.~{Tuomi}, and H.~R.~A. {Jones}.
 \newblock {Evidence for at least three planet candidates orbiting HD20794}.
@@ -154,6 +166,12 @@ R.~Haywood, A.~Collier~Cameron, D.~Queloz, S.~Barros, M.~Deleuil, R.~Fares,
 \newblock Planets and stellar activity: hide and seek in the corot-7 system?
 \newblock \emph{Monthly notices of the royal astronomical society},
   443\penalty0 (3):\penalty0 2517--2531, 2014.
+
+\bibitem[Hocking(1976)]{hocking1976biometrics}
+R.~R. Hocking.
+\newblock A biometrics invited paper. the analysis and selection of variables
+  in linear regression.
+\newblock \emph{Biometrics}, 32\penalty0 (1):\penalty0 1--49, 1976.
 
 \bibitem[Kurster et~al.(2003)Kurster, Endl, Rouesnel, Els, Kaufer, Brillant,
   Hatzes, Saar, and Cochran]{Kurster2003}
