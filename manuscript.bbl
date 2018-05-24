@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,12 @@ G.~Anglada-Escud{\'e} and R.~P. Butler.
   harps.
 \newblock \emph{The Astrophysical Journal Supplement Series}, 200\penalty0
   (2):\penalty0 15, 2012.
+
+\bibitem[{Arellano} and {Azzalini}(2010)]{Arellano-2010}
+R.~B. {Arellano} and A.~{Azzalini}.
+\newblock The centred parametrization for the multivariate skew-normal
+  distribution.
+\newblock 2010.
 
 \bibitem[Azzalini(1985)]{Azzalini1985}
 A.~Azzalini.
