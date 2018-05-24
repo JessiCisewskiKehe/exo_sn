@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  24 MAY 2018 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  24 MAY 2018 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -578,58 +578,64 @@ File: [1]LRa01_E2Residuals.pdf Graphic file (type pdf)
 <use [1]LRa01_E2Residuals.pdf>
 Package pdftex.def Info: [1]LRa01_E2Residuals.pdf used on input line 235.
 (pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
- [5] [6 <./[1]HD128621Residuals.pdf> <./[1]LRa01_E2Residuals.pdf>]
-<FTS_solar_CCFs_whyWeAddAlsoPARAM_A.pdf, id=392, 520.34402pt x 390.25798pt>
-File: FTS_solar_CCFs_whyWeAddAlsoPARAM_A.pdf Graphic file (type pdf)
-
-<use FTS_solar_CCFs_whyWeAddAlsoPARAM_A.pdf>
-Package pdftex.def Info: FTS_solar_CCFs_whyWeAddAlsoPARAM_A.pdf used on input l
-ine 270.
-(pdftex.def)             Requested size: 385.44553pt x 289.07999pt.
- [7] [8 <./FTS_solar_CCFs_whyWeAddAlsoPARAM_A.pdf>] [9] <RV_comparison_FACULAE.
-pdf, id=450, 505.89pt x 505.89pt>
+ [5] [6 <./[1]HD128621Residuals.pdf> <./[1]LRa01_E2Residuals.pdf>] [7] [8]
+<RV_comparison_FACULAE.pdf, id=430, 505.89pt x 505.89pt>
 File: RV_comparison_FACULAE.pdf Graphic file (type pdf)
 
 <use RV_comparison_FACULAE.pdf>
 Package pdftex.def Info: RV_comparison_FACULAE.pdf used on input line 300.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+(pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
 
-<SOAP_FACULAE_Comparison_para_SN.pdf, id=451, 505.89pt x 505.89pt>
+<SOAP_FACULAE_Comparison_para_SN.pdf, id=431, 505.89pt x 505.89pt>
 File: SOAP_FACULAE_Comparison_para_SN.pdf Graphic file (type pdf)
 
 <use SOAP_FACULAE_Comparison_para_SN.pdf>
 Package pdftex.def Info: SOAP_FACULAE_Comparison_para_SN.pdf used on input line
  309.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [10 <./RV_comparison_FACULAE.pdf>]
-[11 <./SOAP_FACULAE_Comparison_para_SN.pdf>]
-<FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=48
-1, 505.89pt x 505.89pt>
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
+
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 309--310
+ [][] 
+ []
+
+
+<FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=43
+7, 505.89pt x 505.89pt>
 File: FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf G
 raphic file (type pdf)
 
 <use FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVel
 ocity_vs_time.pdf used on input line 318.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-[12 <./FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
-] <RV_comparison_SPOT.pdf, id=505, 505.89pt x 505.89pt>
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 318--319
+ [][] 
+ []
+
+[9 <./RV_comparison_FACULAE.pdf>] [10 <./SOAP_FACULAE_Comparison_para_SN.pdf>]
+[11 <./FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
+] <RV_comparison_SPOT.pdf, id=483, 505.89pt x 505.89pt>
 File: RV_comparison_SPOT.pdf Graphic file (type pdf)
 
 <use RV_comparison_SPOT.pdf>
 Package pdftex.def Info: RV_comparison_SPOT.pdf used on input line 356.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+(pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
 
-<SOAP_SPOT_Comparison_para_SN.pdf, id=506, 505.89pt x 505.89pt>
+<SOAP_SPOT_Comparison_para_SN.pdf, id=484, 505.89pt x 505.89pt>
 File: SOAP_SPOT_Comparison_para_SN.pdf Graphic file (type pdf)
 
 <use SOAP_SPOT_Comparison_para_SN.pdf>
 Package pdftex.def Info: SOAP_SPOT_Comparison_para_SN.pdf used on input line 36
 5.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=511, 
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 365--366
+ [][] 
+ []
+
+
+<Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=489, 
 505.89pt x 505.89pt>
 File: Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Grap
 hic file (type pdf)
@@ -637,44 +643,59 @@ hic file (type pdf)
 <use Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVeloci
 ty_vs_time.pdf used on input line 374.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-[13] [14 <./RV_comparison_SPOT.pdf>] [15 <./SOAP_SPOT_Comparison_para_SN.pdf>]
-[16 <./Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
-<RV_comparison_SPOT_PLANET.pdf, id=562, 505.89pt x 505.89pt>
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 374--375
+ [][] 
+ []
+
+[12] [13 <./RV_comparison_SPOT.pdf>] [14 <./SOAP_SPOT_Comparison_para_SN.pdf>]
+[15 <./Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
+<RV_comparison_SPOT_PLANET.pdf, id=540, 505.89pt x 505.89pt>
 File: RV_comparison_SPOT_PLANET.pdf Graphic file (type pdf)
 
 <use RV_comparison_SPOT_PLANET.pdf>
 Package pdftex.def Info: RV_comparison_SPOT_PLANET.pdf used on input line 412.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+(pdftex.def)             Requested size: 180.67676pt x 180.67499pt.
 
-<SOAP_SPOT_PLANET_Comparison_para_SN.pdf, id=563, 505.89pt x 505.89pt>
+<SOAP_SPOT_PLANET_Comparison_para_SN.pdf, id=541, 505.89pt x 505.89pt>
 File: SOAP_SPOT_PLANET_Comparison_para_SN.pdf Graphic file (type pdf)
 
 <use SOAP_SPOT_PLANET_Comparison_para_SN.pdf>
 Package pdftex.def Info: SOAP_SPOT_PLANET_Comparison_para_SN.pdf used on input 
 line 421.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [17 <./RV_comparison_SPOT_PLANET.pdf>] [18 <./SOAP_SPOT_PLANET_Comparison_para
-_SN.pdf>] [19]
-<HD12862_[2]gamma_vs_bisspan.pdf, id=614, 505.89pt x 505.89pt>
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
+
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 421--422
+ [][] 
+ []
+
+[16 <./RV_comparison_SPOT_PLANET.pdf>] [17 <./SOAP_SPOT_PLANET_Comparison_para_
+SN.pdf>] [18] <HD12862_[2]gamma_vs_bisspan.pdf, id=593, 505.89pt x 505.89pt>
 File: HD12862_[2]gamma_vs_bisspan.pdf Graphic file (type pdf)
 
 <use HD12862_[2]gamma_vs_bisspan.pdf>
 Package pdftex.def Info: HD12862_[2]gamma_vs_bisspan.pdf used on input line 501
 .
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [20]
-<HD12862_[2]RadialVelocityDifferences.pdf, id=628, 505.89pt x 505.89pt>
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
+
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 501--502
+ [][] 
+ []
+
+[19] <HD12862_[2]RadialVelocityDifferences.pdf, id=608, 505.89pt x 505.89pt>
 File: HD12862_[2]RadialVelocityDifferences.pdf Graphic file (type pdf)
 
 <use HD12862_[2]RadialVelocityDifferences.pdf>
 Package pdftex.def Info: HD12862_[2]RadialVelocityDifferences.pdf used on input
  line 511.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [21 <./HD12862_[2]gamma_vs_bisspan.pdf>] [22 <./HD12862_[2]RadialVelocityDiffe
-rences.pdf>]
-<HD12862_[4]Comparison_para.pdf, id=656, 505.89pt x 505.89pt>
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
+
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 511--512
+ [][] 
+ []
+
+<HD12862_[4]Comparison_para.pdf, id=613, 505.89pt x 505.89pt>
 File: HD12862_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD12862_[4]Comparison_para.pdf>
@@ -687,7 +708,7 @@ Overfull \hbox (3.62422pt too wide) in paragraph at lines 523--524
  []
 
 
-<NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=659
+<NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=616
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
@@ -701,147 +722,177 @@ Overfull \hbox (3.62422pt too wide) in paragraph at lines 533--534
  [][] 
  []
 
-[23] [24 <./HD12862_[4]Comparison_para.pdf>] [25 <./NEW_CORRECTIONHD12862_[3]Co
-rrectionActivity_RadialVelocity_vs_time.pdf>] [26]
-<RV_comparison_FACULAE_standard_errors.pdf, id=720, 505.89pt x 505.89pt>
+[20] [21 <./HD12862_[2]gamma_vs_bisspan.pdf>] [22 <./HD12862_[2]RadialVelocityD
+ifferences.pdf>] [23 <./HD12862_[4]Comparison_para.pdf>] [24 <./NEW_CORRECTIONH
+D12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>] [25]
+<RV_comparison_FACULAE_standard_errors.pdf, id=699, 505.89pt x 505.89pt>
 File: RV_comparison_FACULAE_standard_errors.pdf Graphic file (type pdf)
 
 <use RV_comparison_FACULAE_standard_errors.pdf>
 Package pdftex.def Info: RV_comparison_FACULAE_standard_errors.pdf used on inpu
 t line 585.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<RV_comparison_SPOT_standard_errors.pdf, id=722, 505.89pt x 505.89pt>
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 585--586
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 11.9251pt on input line 588.
+
+[26] [27 <./RV_comparison_FACULAE_standard_errors.pdf>]
+<RV_comparison_SPOT_standard_errors.pdf, id=721, 505.89pt x 505.89pt>
 File: RV_comparison_SPOT_standard_errors.pdf Graphic file (type pdf)
 
 <use RV_comparison_SPOT_standard_errors.pdf>
 Package pdftex.def Info: RV_comparison_SPOT_standard_errors.pdf used on input l
 ine 594.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<RV_comparison_SPOT_PLANET_standard_errors.pdf, id=724, 505.89pt x 505.89pt>
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 594--595
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 9.6913pt on input line 597.
+
+<RV_comparison_SPOT_PLANET_standard_errors.pdf, id=723, 505.89pt x 505.89pt>
 File: RV_comparison_SPOT_PLANET_standard_errors.pdf Graphic file (type pdf)
 
 <use RV_comparison_SPOT_PLANET_standard_errors.pdf>
 Package pdftex.def Info: RV_comparison_SPOT_PLANET_standard_errors.pdf used on 
 input line 603.
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [27] [28 <./RV_comparison_FACULAE_standard_errors.pdf>] [29 <./RV_comparison_S
-POT_standard_errors.pdf>]
-[30 <./RV_comparison_SPOT_PLANET_standard_errors.pdf>]
-<[5]Errors_vs_SNR_all_stars.pdf, id=768, 505.89pt x 505.89pt>
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
+
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 603--604
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 11.79918pt on input line 606.
+
+<[5]Errors_vs_SNR_all_stars.pdf, id=726, 505.89pt x 505.89pt>
 File: [5]Errors_vs_SNR_all_stars.pdf Graphic file (type pdf)
 
 <use [5]Errors_vs_SNR_all_stars.pdf>
 Package pdftex.def Info: [5]Errors_vs_SNR_all_stars.pdf used on input line 620.
 
-(pdftex.def)             Requested size: 289.08589pt x 289.07999pt.
- [31] [32 <./[5]Errors_vs_SNR_all_stars.pdf>] [33] <HD19231_[4]Comparison_para.
-pdf, id=804, 505.89pt x 505.89pt>
-File: HD19231_[4]Comparison_para.pdf Graphic file (type pdf)
-
-<use HD19231_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD19231_[4]Comparison_para.pdf used on input line 701.
-
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-Overfull \hbox (3.62422pt too wide) in paragraph at lines 701--702
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 620--621
  [][] 
  []
 
 
-<NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=805
+LaTeX Warning: Float too large for page by 9.6913pt on input line 623.
+
+[28] [29 <./RV_comparison_SPOT_standard_errors.pdf>] [30 <./RV_comparison_SPOT_
+PLANET_standard_errors.pdf>] [31 <./[5]Errors_vs_SNR_all_stars.pdf>] [32]
+[33] <HD19231_[4]Comparison_para.pdf, id=792, 505.89pt x 505.89pt>
+File: HD19231_[4]Comparison_para.pdf Graphic file (type pdf)
+
+<use HD19231_[4]Comparison_para.pdf>
+Package pdftex.def Info: HD19231_[4]Comparison_para.pdf used on input line 703.
+
+(pdftex.def)             Requested size: 433.62885pt x 433.62pt.
+
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 703--704
+ [][] 
+ []
+
+
+<NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=793
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 708.
+city_vs_time.pdf used on input line 710.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-Overfull \hbox (3.62422pt too wide) in paragraph at lines 708--709
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 710--711
  [][] 
  []
 
-<HD10700_[4]Comparison_para.pdf, id=808, 505.89pt x 505.89pt>
+<HD10700_[4]Comparison_para.pdf, id=796, 505.89pt x 505.89pt>
 File: HD10700_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD10700_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD10700_[4]Comparison_para.pdf used on input line 716.
+Package pdftex.def Info: HD10700_[4]Comparison_para.pdf used on input line 718.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-Overfull \hbox (3.62422pt too wide) in paragraph at lines 716--717
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 718--719
  [][] 
  []
 
 
-<NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=809
+<NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=797
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 723.
+city_vs_time.pdf used on input line 725.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-Overfull \hbox (3.62422pt too wide) in paragraph at lines 723--724
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 725--726
  [][] 
  []
 
-<HD21515_[4]Comparison_para.pdf, id=812, 505.89pt x 505.89pt>
+<HD21515_[4]Comparison_para.pdf, id=800, 505.89pt x 505.89pt>
 File: HD21515_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD21515_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD21515_[4]Comparison_para.pdf used on input line 731.
+Package pdftex.def Info: HD21515_[4]Comparison_para.pdf used on input line 733.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-Overfull \hbox (3.62422pt too wide) in paragraph at lines 731--732
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 733--734
  [][] 
  []
 
 
-<NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=813
+<NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=801
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 738.
+city_vs_time.pdf used on input line 740.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-Overfull \hbox (3.62422pt too wide) in paragraph at lines 738--739
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 740--741
  [][] 
  []
 
-<LRa01_E_[4]Comparison_para.pdf, id=816, 505.89pt x 505.89pt>
+<LRa01_E_[4]Comparison_para.pdf, id=804, 505.89pt x 505.89pt>
 File: LRa01_E_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use LRa01_E_[4]Comparison_para.pdf>
-Package pdftex.def Info: LRa01_E_[4]Comparison_para.pdf used on input line 746.
+Package pdftex.def Info: LRa01_E_[4]Comparison_para.pdf used on input line 748.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-Overfull \hbox (3.62422pt too wide) in paragraph at lines 746--747
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 748--749
  [][] 
  []
 
 
-<NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=817
+<NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=805
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 753.
+city_vs_time.pdf used on input line 755.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-Overfull \hbox (3.62422pt too wide) in paragraph at lines 753--754
+Overfull \hbox (3.62422pt too wide) in paragraph at lines 755--756
  [][] 
  []
 
@@ -851,25 +902,25 @@ CTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>] [37 <./HD10700_
 ialVelocity_vs_time.pdf>] [39 <./HD21515_[4]Comparison_para.pdf>] [40 <./NEW_CO
 RRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>] [41 <./LRa01
 _E_[4]Comparison_para.pdf>] [42 <./NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_
-RadialVelocity_vs_time.pdf>] [43] [44])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 844.
- [45]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 844.
+RadialVelocity_vs_time.pdf>] [43])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 846.
+ [44]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 846.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 844.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 844.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 846.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 846.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 13C874D11A03C36BE77726AF6F601DC7;1338.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 844.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 846.
  ) 
 Here is how much of TeX's memory you used:
- 8216 strings out of 493014
- 119517 string characters out of 6133351
- 229737 words of memory out of 5000000
- 11433 multiletter control sequences out of 15000+600000
+ 8208 strings out of 493014
+ 119281 string characters out of 6133351
+ 229413 words of memory out of 5000000
+ 11428 multiletter control sequences out of 15000+600000
  56864 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,13n,28p,2293b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,13n,28p,2293b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016/t
@@ -879,10 +930,10 @@ s/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /public/txfonts/txsyb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (45 pages, 2017951 bytes).
+Output written on manuscript.pdf (44 pages, 1972649 bytes).
 PDF statistics:
- 1009 PDF objects out of 1200 (max. 8388607)
- 847 compressed objects within 9 object streams
- 150 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 990 PDF objects out of 1000 (max. 8388607)
+ 835 compressed objects within 9 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 288 words of extra memory for PDF output out of 10000 (max. 10000000)
 
