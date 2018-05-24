@@ -7,70 +7,46 @@ Illegal, another \bibstyle command---line 175 of file manuscript.aux
  :          {aa}
 I'm skipping whatever remains of this command
 Database file #1: mybib-SNCCF.bib
-Repeated entry---line 478 of file mybib-SNCCF.bib
- : @article{Pepe-2002a
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 491 of file mybib-SNCCF.bib
- : @article{Baranne-1996
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 508 of file mybib-SNCCF.bib
- : @article{Queloz-2001
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 530 of file mybib-SNCCF.bib
- : @article{Saar-1997b
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 545 of file mybib-SNCCF.bib
- : @article{Desort-2007
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 650 of file mybib-SNCCF.bib
- : @article{Meunier-2010a
- :                       ,
-I'm skipping whatever remains of this entry
-Warning--there's a number but no series in belsley1991conditioning
+Warning--there's a number but no series in belsley1991
 You've used 38 entries,
             2773 wiz_defined-function locations,
-            861 strings with 14562 characters,
-and the built_in function-call counts, 26474 in all, are:
-= -- 2085
-> -- 2623
-< -- 21
-+ -- 881
-- -- 843
-* -- 2563
-:= -- 4326
-add.period$ -- 122
+            855 strings with 12442 characters,
+and the built_in function-call counts, 21693 in all, are:
+= -- 1800
+> -- 1745
+< -- 20
++ -- 590
+- -- 552
+* -- 1969
+:= -- 3460
+add.period$ -- 114
 call.type$ -- 38
-change.case$ -- 389
+change.case$ -- 287
 chr.to.int$ -- 38
 cite$ -- 77
 duplicate$ -- 811
-empty$ -- 1433
-format.name$ -- 893
-if$ -- 5258
+empty$ -- 1457
+format.name$ -- 602
+if$ -- 4399
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 41
-newline$ -- 205
+newline$ -- 197
 num.names$ -- 152
-pop$ -- 747
+pop$ -- 545
 preamble$ -- 1
-purify$ -- 355
+purify$ -- 253
 quote$ -- 0
-skip$ -- 778
+skip$ -- 694
 stack$ -- 0
-substring$ -- 633
-swap$ -- 85
-text.length$ -- 6
+substring$ -- 708
+swap$ -- 73
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 398
 warning$ -- 1
-while$ -- 158
+while$ -- 168
 width$ -- 0
-write$ -- 511
-(There were 7 error messages)
+write$ -- 496
+(There was 1 error message)

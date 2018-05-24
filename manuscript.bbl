@@ -31,32 +31,25 @@ A.~Baranne, D.~Queloz, M.~Mayor, G.~Adrianzyk, G.~Knispel, D.~Kohler,
 \newblock \emph{Astronomy and Astrophysics Supplement Series}, 119\penalty0
   (2):\penalty0 373--390, 1996.
 
-\bibitem[Belsley(1991)]{belsley1991conditioning}
+\bibitem[Belsley(1991)]{belsley1991}
 D.~A. Belsley.
 \newblock \emph{Conditioning diagnostics: Collinearity and weak data in
   regression}.
 \newblock Number 519.536 B452. Wiley New York, 1991.
 
-\bibitem[{Boisse} et~al.(2009){Boisse}, {Moutou}, {Vidal-Madjar}, {Bouchy},
-  {Pont}, {H{\'e}brard}, {Bonfils}, {Croll}, {Delfosse}, {Desort}, {Forveille},
-  {Lagrange}, {Loeillet}, {Lovis}, {Matthews}, {Mayor}, {Pepe}, {Perrier},
-  {Queloz}, {Rowe}, {Santos}, {S{\'e}gransan}, and {Udry}]{Boisse-2009}
-I.~{Boisse}, C.~{Moutou}, A.~{Vidal-Madjar}, F.~{Bouchy}, F.~{Pont},
-  G.~{H{\'e}brard}, X.~{Bonfils}, B.~{Croll}, X.~{Delfosse}, M.~{Desort},
-  T.~{Forveille}, A.~{Lagrange}, B.~{Loeillet}, C.~{Lovis}, J.~M. {Matthews},
-  M.~{Mayor}, F.~{Pepe}, C.~{Perrier}, D.~{Queloz}, J.~F. {Rowe}, N.~C.
-  {Santos}, D.~{S{\'e}gransan}, and S.~{Udry}.
-\newblock {Stellar activity of planetary host star HD 189 733}.
-\newblock \emph{\aap}, 495:\penalty0 959--966, Mar. 2009.
-\newblock \doi{10.1051/0004-6361:200810648}.
+\bibitem[Boisse et~al.(2009)Boisse, Moutou, Vidal-Madjar, Bouchy, Pont,
+  H{\'e}brard, Bonfils, Croll, Delfosse, Desort, et~al.]{Boisse-2009}
+I.~Boisse, C.~Moutou, A.~Vidal-Madjar, F.~Bouchy, F.~Pont, G.~H{\'e}brard,
+  X.~Bonfils, B.~Croll, X.~Delfosse, M.~Desort, et~al.
+\newblock Stellar activity of planetary host star hd 189 733.
+\newblock \emph{Astronomy \& Astrophysics}, 495\penalty0 (3):\penalty0
+  959--966, 2009.
 
-\bibitem[{Boisse} et~al.(2011){Boisse}, {Bouchy}, {H{\'e}brard}, {Bonfils},
-  {Santos}, and {Vauclair}]{Boisse-2011}
-I.~{Boisse}, F.~{Bouchy}, G.~{H{\'e}brard}, X.~{Bonfils}, N.~{Santos}, and
-  S.~{Vauclair}.
-\newblock {Disentangling between stellar activity and planetary signals}.
-\newblock \emph{\aap}, 528:\penalty0 A4, Apr. 2011.
-\newblock \doi{10.1051/0004-6361/201014354}.
+\bibitem[Boisse et~al.(2011)Boisse, Bouchy, H{\'e}brard, Bonfils, Santos, and
+  Vauclair]{Boisse-2011}
+I.~Boisse, F.~Bouchy, G.~H{\'e}brard, X.~Bonfils, N.~Santos, and S.~Vauclair.
+\newblock Disentangling between stellar activity and planetary signals.
+\newblock \emph{Astronomy \& Astrophysics}, 528:\penalty0 A4, 2011.
 
 \bibitem[Davison and Hinkley(1997)]{davison1997bootstrap}
 A.~C. Davison and D.~V. Hinkley.
@@ -77,22 +70,19 @@ D.~Dravins, L.~Lindegren, and {\AA}.~Nordlund.
   asymmetries and wavelength shifts.
 \newblock \emph{Astronomy and Astrophysics}, 96:\penalty0 345--364, 1981.
 
-\bibitem[{Dumusque}(2016)]{Dumusque-2016a}
-X.~{Dumusque}.
-\newblock {Radial velocity fitting challenge. I. Simulating the data set
-  including realistic stellar radial-velocity signals}.
-\newblock \emph{\aap}, 593:\penalty0 A5, Aug. 2016.
-\newblock \doi{10.1051/0004-6361/201628672}.
+\bibitem[Dumusque(2016)]{Dumusque-2016a}
+X.~Dumusque.
+\newblock Radial velocity fitting challenge-i. simulating the data set
+  including realistic stellar radial-velocity signals.
+\newblock \emph{Astronomy \& Astrophysics}, 593:\penalty0 A5, 2016.
 
-\bibitem[{Dumusque} et~al.(2011){Dumusque}, {Udry}, {Lovis}, {Santos}, and
-  {Monteiro}]{Dumusque-2011a}
-X.~{Dumusque}, S.~{Udry}, C.~{Lovis}, N.~C. {Santos}, and M.~J.~P.~F.~G.
-  {Monteiro}.
-\newblock {Planetary detection limits taking into account stellar noise. I.
-  Observational strategies to reduce stellar oscillation and granulation
-  effects}.
-\newblock \emph{\aap}, 525:\penalty0 A140, Jan. 2011.
-\newblock \doi{10.1051/0004-6361/201014097}.
+\bibitem[Dumusque et~al.(2011)Dumusque, Udry, Lovis, Santos, and
+  Monteiro]{Dumusque-2011a}
+X.~Dumusque, S.~Udry, C.~Lovis, N.~C. Santos, and M.~Monteiro.
+\newblock Planetary detection limits taking into account stellar noise-i.
+  observational strategies to reduce stellar oscillation and granulation
+  effects.
+\newblock \emph{Astronomy \& Astrophysics}, 525:\penalty0 A140, 2011.
 
 \bibitem[Dumusque et~al.(2012)Dumusque, Pepe, Lovis, S{\'e}gransan, Sahlmann,
   Benz, Bouchy, Mayor, Queloz, Santos, et~al.]{Dumusque-2012}
@@ -108,21 +98,13 @@ X.~Dumusque, I.~Boisse, and N.~Santos.
 \newblock \emph{The Astrophysical Journal}, 796\penalty0 (2):\penalty0 132,
   2014.
 
-\bibitem[{Dumusque} et~al.(2017){Dumusque}, {Borsa}, {Damasso}, {D{\'{\i}}az},
-  {Gregory}, {Hara}, {Hatzes}, {Rajpaul}, {Tuomi}, {Aigrain},
-  {Anglada-Escud{\'e}}, {Bonomo}, {Bou{\'e}}, {Dauvergne}, {Frustagli},
-  {Giacobbe}, {Haywood}, {Jones}, {Laskar}, {Pinamonti}, {Poretti}, {Rainer},
-  {S{\'e}gransan}, {Sozzetti}, and {Udry}]{Dumusque:2017aa}
-X.~{Dumusque}, F.~{Borsa}, M.~{Damasso}, R.~F. {D{\'{\i}}az}, P.~C. {Gregory},
-  N.~C. {Hara}, A.~{Hatzes}, V.~{Rajpaul}, M.~{Tuomi}, S.~{Aigrain},
-  G.~{Anglada-Escud{\'e}}, A.~S. {Bonomo}, G.~{Bou{\'e}}, F.~{Dauvergne},
-  G.~{Frustagli}, P.~{Giacobbe}, R.~D. {Haywood}, H.~R.~A. {Jones},
-  J.~{Laskar}, M.~{Pinamonti}, E.~{Poretti}, M.~{Rainer}, D.~{S{\'e}gransan},
-  A.~{Sozzetti}, and S.~{Udry}.
-\newblock {Radial-velocity fitting challenge. II. First results of the analysis
-  of the data set}.
-\newblock \emph{\aap}, 598:\penalty0 A133, Feb. 2017.
-\newblock \doi{10.1051/0004-6361/201628671}.
+\bibitem[Dumusque et~al.(2017)Dumusque, Borsa, Damasso, Diaz, Gregory, Hara,
+  Hatzes, Rajpaul, Tuomi, Aigrain, et~al.]{Dumusque:2017aa}
+X.~Dumusque, F.~Borsa, M.~Damasso, R.~F. Diaz, P.~Gregory, N.~Hara, A.~Hatzes,
+  V.~Rajpaul, M.~Tuomi, S.~Aigrain, et~al.
+\newblock Radial-velocity fitting challenge-ii. first results of the analysis
+  of the data set.
+\newblock \emph{Astronomy \& Astrophysics}, 598:\penalty0 A133, 2017.
 
 \bibitem[Efron and Tibshirani(1994)]{efron1994introduction}
 B.~Efron and R.~J. Tibshirani.
@@ -135,10 +117,10 @@ M.~Efroymson.
 \newblock \emph{Mathematical methods for digital computers}, pages 191--203,
   1960.
 
-\bibitem[{Feng} et~al.(2017){Feng}, {Tuomi}, and {Jones}]{Feng:2017aa}
-F.~{Feng}, M.~{Tuomi}, and H.~R.~A. {Jones}.
-\newblock {Evidence for at least three planet candidates orbiting HD20794}.
-\newblock \emph{ArXiv e-prints}, May 2017.
+\bibitem[Feng et~al.(2017)Feng, Tuomi, and Jones]{Feng:2017aa}
+F.~Feng, M.~Tuomi, and H.~R. Jones.
+\newblock Evidence for at least three planet candidates orbiting hd 20794.
+\newblock \emph{Astronomy \& Astrophysics}, 605:\penalty0 A103, 2017.
 
 \bibitem[Figueira et~al.(2013)Figueira, Santos, Pepe, Lovis, and
   Nardetto]{Figueira-2013}
@@ -147,15 +129,13 @@ P.~Figueira, N.~Santos, F.~Pepe, C.~Lovis, and N.~Nardetto.
   alternative indicators for planetary searches.
 \newblock \emph{Astronomy \& Astrophysics}, 557:\penalty0 A93, 2013.
 
-\bibitem[{Fischer} et~al.(2017){Fischer}, {Jurgenson}, {McCracken}, {Sawyer},
-  {Blackman}, and {Szymkowiak}]{Fischer:2017aa}
-D.~{Fischer}, C.~{Jurgenson}, T.~{McCracken}, D.~{Sawyer}, R.~{Blackman}, and
-  A.~E. {Szymkowiak}.
-\newblock {EXPRES: the EXtreme PREcision Spectrograph at the Discovery Channel
-  Telescope}.
-\newblock In \emph{American Astronomical Society Meeting Abstracts \#229},
-  volume 229 of \emph{American Astronomical Society Meeting Abstracts}, page
-  126.04, Jan. 2017.
+\bibitem[Fischer et~al.(2016)Fischer, Anglada-Escude, Arriagada, Baluev, Bean,
+  Bouchy, Buchhave, Carroll, Chakraborty, Crepp, et~al.]{fischer2016state}
+D.~A. Fischer, G.~Anglada-Escude, P.~Arriagada, R.~V. Baluev, J.~L. Bean,
+  F.~Bouchy, L.~A. Buchhave, T.~Carroll, A.~Chakraborty, J.~R. Crepp, et~al.
+\newblock State of the field: extreme precision radial velocities.
+\newblock \emph{Publications of the Astronomical Society of the Pacific},
+  128\penalty0 (964):\penalty0 066001, 2016.
 
 \bibitem[Gray(2009)]{Gray-2009}
 D.~F. Gray.
@@ -225,30 +205,13 @@ F.~Pepe, M.~Mayor, F.~Galland, D.~Naef, D.~Queloz, N.~Santos, S.~Udry, and
 \newblock \emph{Astronomy \& Astrophysics}, 388\penalty0 (2):\penalty0
   632--638, 2002.
 
-\bibitem[{Pepe} et~al.(2014){Pepe}, {Molaro}, {Cristiani}, {Rebolo}, {Santos},
-  {Dekker}, {M{\'e}gevand}, {Zerbi}, {Cabral}, {Di Marcantonio}, {Abreu},
-  {Affolter}, {Aliverti}, {Allende Prieto}, {Amate}, {Avila}, {Baldini},
-  {Bristow}, {Broeg}, {Cirami}, {Coelho}, {Conconi}, {Coretti}, {Cupani},
-  {D'Odorico}, {De Caprio}, {Delabre}, {Dorn}, {Figueira}, {Fragoso},
-  {Galeotta}, {Genolet}, {Gomes}, {Gonz{\'a}lez Hern{\'a}ndez}, {Hughes},
-  {Iwert}, {Kerber}, {Landoni}, {Lizon}, {Lovis}, {Maire}, {Mannetta},
-  {Martins}, {Monteiro}, {Oliveira}, {Poretti}, {Rasilla}, {Riva}, {Santana
-  Tschudi}, {Santos}, {Sosnowska}, {Sousa}, {Span{\'o}}, {Tenegi}, {Toso},
-  {Vanzella}, {Viel}, and {Zapatero Osorio}]{Pepe-2014}
-F.~{Pepe}, P.~{Molaro}, S.~{Cristiani}, R.~{Rebolo}, N.~C. {Santos},
-  H.~{Dekker}, D.~{M{\'e}gevand}, F.~M. {Zerbi}, A.~{Cabral}, P.~{Di
-  Marcantonio}, M.~{Abreu}, M.~{Affolter}, M.~{Aliverti}, C.~{Allende Prieto},
-  M.~{Amate}, G.~{Avila}, V.~{Baldini}, P.~{Bristow}, C.~{Broeg}, R.~{Cirami},
-  J.~{Coelho}, P.~{Conconi}, I.~{Coretti}, G.~{Cupani}, V.~{D'Odorico}, V.~{De
-  Caprio}, B.~{Delabre}, R.~{Dorn}, P.~{Figueira}, A.~{Fragoso}, S.~{Galeotta},
-  L.~{Genolet}, R.~{Gomes}, J.~I. {Gonz{\'a}lez Hern{\'a}ndez}, I.~{Hughes},
-  O.~{Iwert}, F.~{Kerber}, M.~{Landoni}, J.-L. {Lizon}, C.~{Lovis}, C.~{Maire},
-  M.~{Mannetta}, C.~{Martins}, M.~{Monteiro}, A.~{Oliveira}, E.~{Poretti},
-  J.~L. {Rasilla}, M.~{Riva}, S.~{Santana Tschudi}, P.~{Santos},
-  D.~{Sosnowska}, S.~{Sousa}, P.~{Span{\'o}}, F.~{Tenegi}, G.~{Toso},
-  E.~{Vanzella}, M.~{Viel}, and M.~R. {Zapatero Osorio}.
-\newblock {ESPRESSO: The next European exoplanet hunter}.
-\newblock \emph{ArXiv e-prints}, Jan. 2014.
+\bibitem[Pepe et~al.(2014)Pepe, Molaro, Cristiani, Rebolo, Santos, Dekker,
+  M{\'e}gevand, Zerbi, Cabral, Di~Marcantonio, et~al.]{Pepe-2014}
+F.~Pepe, P.~Molaro, S.~Cristiani, R.~Rebolo, N.~Santos, H.~Dekker,
+  D.~M{\'e}gevand, F.~Zerbi, A.~Cabral, P.~Di~Marcantonio, et~al.
+\newblock Espresso: The next european exoplanet hunter.
+\newblock \emph{Astronomische Nachrichten}, 335\penalty0 (1):\penalty0 8--20,
+  2014.
 
 \bibitem[Queloz et~al.(2001)Queloz, Henry, Sivan, Baliunas, Beuzit, Donahue,
   Mayor, Naef, Perrier, and Udry]{Queloz-2001}
@@ -258,40 +221,28 @@ D.~Queloz, G.~Henry, J.~Sivan, S.~Baliunas, J.~Beuzit, R.~Donahue, M.~Mayor,
 \newblock \emph{Astronomy \& Astrophysics}, 379\penalty0 (1):\penalty0
   279--287, 2001.
 
-\bibitem[{Queloz} et~al.(2009){Queloz}, {Bouchy}, {Moutou}, {Hatzes},
-  {H{\'e}brard}, {Alonso}, {Auvergne}, {Baglin}, {Barbieri}, {Barge}, {Benz},
-  {Bord{\'e}}, {Deeg}, {Deleuil}, {Dvorak}, {Erikson}, {Ferraz Mello},
-  {Fridlund}, {Gandolfi}, {Gillon}, {Guenther}, {Guillot}, {Jorda}, {Hartmann},
-  {Lammer}, {L{\'e}ger}, {Llebaria}, {Lovis}, {Magain}, {Mayor}, {Mazeh},
-  {Ollivier}, {P{\"a}tzold}, {Pepe}, {Rauer}, {Rouan}, {Schneider},
-  {Segransan}, {Udry}, and {Wuchterl}]{Queloz-2009}
-D.~{Queloz}, F.~{Bouchy}, C.~{Moutou}, A.~{Hatzes}, G.~{H{\'e}brard},
-  R.~{Alonso}, M.~{Auvergne}, A.~{Baglin}, M.~{Barbieri}, P.~{Barge},
-  W.~{Benz}, P.~{Bord{\'e}}, H.~J. {Deeg}, M.~{Deleuil}, R.~{Dvorak},
-  A.~{Erikson}, S.~{Ferraz Mello}, M.~{Fridlund}, D.~{Gandolfi}, M.~{Gillon},
-  E.~{Guenther}, T.~{Guillot}, L.~{Jorda}, M.~{Hartmann}, H.~{Lammer},
-  A.~{L{\'e}ger}, A.~{Llebaria}, C.~{Lovis}, P.~{Magain}, M.~{Mayor},
-  T.~{Mazeh}, M.~{Ollivier}, M.~{P{\"a}tzold}, F.~{Pepe}, H.~{Rauer},
-  D.~{Rouan}, J.~{Schneider}, D.~{Segransan}, S.~{Udry}, and G.~{Wuchterl}.
-\newblock {The CoRoT-7 planetary system: two orbiting super-Earths}.
-\newblock \emph{\aap}, 506:\penalty0 303--319, Oct. 2009.
-\newblock \doi{10.1051/0004-6361/200913096}.
+\bibitem[Queloz et~al.(2009)Queloz, Bouchy, Moutou, Hatzes, H{\'e}brard,
+  Alonso, Auvergne, Baglin, Barbieri, Barge, et~al.]{Queloz-2009}
+D.~Queloz, F.~Bouchy, C.~Moutou, A.~Hatzes, G.~H{\'e}brard, R.~Alonso,
+  M.~Auvergne, A.~Baglin, M.~Barbieri, P.~Barge, et~al.
+\newblock The corot-7 planetary system: two orbiting super-earths.
+\newblock \emph{Astronomy \& Astrophysics}, 506\penalty0 (1):\penalty0
+  303--319, 2009.
 
-\bibitem[{Rajpaul} et~al.(2015){Rajpaul}, {Aigrain}, {Osborne}, {Reece}, and
-  {Roberts}]{Rajpaul-2015}
-V.~{Rajpaul}, S.~{Aigrain}, M.~A. {Osborne}, S.~{Reece}, and S.~{Roberts}.
-\newblock {A Gaussian process framework for modelling stellar activity signals
-  in radial velocity data}.
-\newblock \emph{\mnras}, 452:\penalty0 2269--2291, Sept. 2015.
-\newblock \doi{10.1093/mnras/stv1428}.
+\bibitem[Rajpaul et~al.(2015)Rajpaul, Aigrain, Osborne, Reece, and
+  Roberts]{Rajpaul-2015}
+V.~Rajpaul, S.~Aigrain, M.~A. Osborne, S.~Reece, and S.~Roberts.
+\newblock A gaussian process framework for modelling stellar activity signals
+  in radial velocity data.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  452\penalty0 (3):\penalty0 2269--2291, 2015.
 
-\bibitem[{Robertson} et~al.(2014){Robertson}, {Mahadevan}, {Endl}, and
-  {Roy}]{Robertson-2014}
-P.~{Robertson}, S.~{Mahadevan}, M.~{Endl}, and A.~{Roy}.
-\newblock {Stellar activity masquerading as planets in the habitable zone of
-  the M dwarf Gliese 581}.
-\newblock \emph{Science}, 345:\penalty0 440--444, July 2014.
-\newblock \doi{10.1126/science.1253253}.
+\bibitem[Robertson et~al.(2014)Robertson, Mahadevan, Endl, and
+  Roy]{Robertson-2014}
+P.~Robertson, S.~Mahadevan, M.~Endl, and A.~Roy.
+\newblock Stellar activity masquerading as planets in the habitable zone of the
+  m dwarf gliese 581.
+\newblock \emph{Science}, page 1253253, 2014.
 
 \bibitem[Saar and Donahue(1997)]{Saar-1997b}
 S.~H. Saar and R.~A. Donahue.
