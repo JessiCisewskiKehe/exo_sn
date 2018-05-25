@@ -159,21 +159,37 @@ The barycenter is generally estimated by fitting a Normal density to the CCF and
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Why FWHM and BIS SPAN important?}
 
-If a RV signal is induced by activity, generally a strong correlation will be observed between the RV and chromospheric activity indicators like \logrhk\,or H-$\alpha$ \citep{Boisse-2009,Dumusque-2012,Robertson-2014}, but also between the RV and the FWHM of the CCF or its BIS SPAN \citep[][]{Queloz-2001,Boisse-2009,Queloz-2009,Dumusque-2016a}. It is therefore common now, that when fitting for a planetray signal, in addition to a Keplerian, the model includes in addition linear dependancies with the \logrhk, the FWHM and the BIS SPAN \citep{Dumusque:2017aa,Feng:2017aa}. It is also common to add a Gaussian process to the model to account for the correlated noise induced by stellar activity. The hyperparameters of the Gaussian process are generally trained on the different activity indicators \citep{Haywood-2014,Rajpaul-2015}. It is therefore essential for mitigating stellar activity to obtain activity indicators that are the most correlated to the RV's but also for which we can obtain the best precision.
+If an apparent RV signal is induced by activity, generally a strong correlation will be observed between the RV and chromospheric activity indicators like \logrhk\,or H-$\alpha$ \citep{Boisse-2009,Dumusque-2012,Robertson-2014}, but also between the RV and the FWHM of the CCF or its BIS SPAN \citep[][]{Queloz-2001,Boisse-2009,Queloz-2009,Dumusque-2016a}. 
+%
+It is therefore common now, that when fitting a set of RV's for a planetary signal, in addition to a Keplerian, the model includes in addition linear dependancy with the \logrhk, the FWHM and the BIS SPAN \citep{Dumusque:2017aa,Feng:2017aa}. \jessi{What is meant by ``a Keplerian''?  Is that a Keplerian signal?  Is this different from a planetary signal?}
+%
+It is also common to add a Gaussian process to the model to account for the correlated noise induced by stellar activity. The hyperparameters of the Gaussian process can be trained on different activity indicators \citep{Haywood-2014,Rajpaul-2015}. It is therefore essential for mitigating stellar activity to obtain activity indicators that are the most correlated with the RV's but also for which we can obtain the best precision.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Figueira indicators of stellar activity + other}
-Several works have derived indicators that are more sensitive to line asymmetry than the BIS SPAN. In \citet{Boisse-2011}, the authors develop $V_{span}$, a new indicator to derive the CCF asymmetry that is more sensitive than the BIS SPAN at low signal-to-noise ratio (SNR). \citet{Figueira-2013} studied the use of two new indicators, bi-Gauss and $V_{asy}$. The authors were able to show that when using bi-Gauss, the amplitude in asymmetry is 30\% larger, therefore allowing the detection of smaller-amplitude correlations with RV's variations. They also demonstrated that $V_{asy}$ seems to be the best indicator of line asymmetry at high SNR, as its correlation with RV is more significant than any other asymmetry indictors.
+Several indicators have been developed that are more sensitive to line asymmetry than the BIS SPAN. In \citet{Boisse-2011}, the authors develop $V_{span}$, an indicator of CCF asymmetry that is more sensitive than the BIS SPAN at low signal-to-noise ratio (SNR) \jessi{Can a few words be added to explain what this indicator is measuring?}. 
+%
+\citet{Figueira-2013} studied the use of two new indicators, bi-Gauss and $V_{asy}$. The authors were able to show that when using bi-Gauss, the amplitude in asymmetry is 30\% larger \jessi{larger than what?  BIS SPAN?}, therefore allowing the detection of smaller-amplitude correlations with RV's variations. \jessi{The previous sentence is a bit unclear.  I'm assuming the amplitude in asymmetry is just the amplitude of the asymmetry parameter vs. RV.  The second part of the sentence is what is unclear.  I think what is meant is ``allowing the detection of lower levels of activity'' since the correlation between the indicator and RV would be higher with the new indicator.}
+They also demonstrated that $V_{asy}$ seems to be a better indicator of line asymmetry at high SNR, as its correlation with RV is more significant than any of the previously proposed asymmetry indictors.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Why using a SN distribution?}
 In all the methods described above, the RV and the FWHM are derived using a Normal distribution fitted to the CCF, and the asymmetry is estimated using another approach. 
+%
+In this paper we propose to use a Skew Normal (SN) density to estimate with a single model fitting the RV, the FWHM and the asymmetry of the CCF, as this function includes a skewness parameter \citep[][]{Azzalini1985}. 
 
-In this paper we propose to use a Skew Normal (SN) distribution to derive at the same time the RV, the FWHM and the asymmetry of the CCF, as this function includes a skewness parameter \citep[][]{Azzalini1985}. In addition, we know that for solar-type stars and cooler dwarfs, the bisector of the CCF as a "C"-shape due to convective blueshift \citep{Dravins-1981, Gray-2009}. Therefore, fitting the CCF using a model that naturally includes an asymmetry, like the SN distribution, should give in principle more precise results.
+%In addition, we know that for solar-type stars and cooler dwarfs, the bisector of the CCF has a "C"-shape due to convective blueshift \citep{Dravins-1981, Gray-2009}. 
+%Therefore, fitting the CCF using a model that naturally includes an asymmetry, like the SN distribution, should give in principle more precise results.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Outline of paper}
-The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN distribution and describe its applicability for modeling the CCF,  showing that the SN distribution is a better representation of observed CCF than a Normal distribution, and study how the SN parameters relate to the RV, FWHM and BIS SPAN of the CCF. In Sec.~\ref{sec:31} we present a simple model to correct from stellar activity which extends the ones previously proposed \citep{Dumusque:2017aa,Feng:2017aa}. In Sec.~\ref{sec:soap} we study the SN fit to the CCF using simulations coming from SOAP 2.0. In Sec.~\ref{sec:4}, we compare on real observations the sensitivity of the SN parameters to stellar activity with respect to other existing indicators. In Sec.~\ref{sec:5} we derive error bars for the different CCF moments and finally we discuss our results and conclude in Sec.~\ref{sec:discu} and Sec.~\ref{sec:conclu}.
+The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN distribution, describe its applicability for modeling the CCF, and study how the SN parameters relate to the RV, FWHM and BIS SPAN of the CCF. 
+%
+In Sec.~\ref{sec:31} we propose an expanded linear model used to correct the estimated RV's from the inferred stellar activity, which extends the linear models previously proposed for this purpose \citep{Dumusque:2017aa,Feng:2017aa}. 
+%
+In Sec.~\ref{sec:soap} the performance of the SN fit to the CCF is investigated using simulations coming from the Spot Oscillation And Planet (SOAP) 2.0 \citep{Dumusque-2014b}, followed by an analysis of real observations in Sec.~\ref{sec:4}.
+%
+Sec.~\ref{sec:5} considers derived error bars for the different estimated CCF parameters, and finally a discussion of the results and conclusions are included in Sec.~\ref{sec:discu} and Sec.~\ref{sec:conclu}, respectively.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{The Skew Normal distribution} \label{sec:2}
