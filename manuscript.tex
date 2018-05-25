@@ -218,7 +218,7 @@ For reasons related to the interpretation of the parameters in Eq.~\ref{def:snd_
 where $\beta = \sqrt{\frac{2}{\pi}}\left(\frac{\alpha}{\sqrt{1+\alpha^2}}\right)$ \citep[e.g.][]{Arellano-2010}.
 
 By using Eq.~\ref{eq:snd_cp}, the new set of parameters $(\mu, \sigma^2, \gamma)$ provides a clearer interpretation of the behavior of the SN distribution. For the $\alpha$ values used in Fig.~\ref{fig:SN.plot}, the corresponding values of ($\mu$, $\sigma^2$, $\gamma$) are displayed in Table~\ref{tab:cp_values}.  In particular, $\mu$ and $\sigma^2$ are the actual mean and variance of the distribution, rather than simply a location and scale parameter, and $\gamma$ provides an measure of the skewness of the SN. 
-Along with the mean of the SN, we consider the median of the distribution as a measure of center, which is used in the proposed method. 
+Along with the mean of the SN, we consider the median of the distribution as a measure of center, which is used in the proposed method.  See Table~\ref{tab:cp_values} for the medians of the SN densities displayed in Fig.~\ref{fig:SN.plot}.
 %The median of the SN, and in general the median of an absolute continuous random variable, is defined as the value $m$ such that\footnote{We recall that when using a symmetric distribution such as the Normal distribution, the mean and the median are equivalent.}:
 %%
 %\begin{equation} \label{eq:snmed}
@@ -241,39 +241,46 @@ $\alpha$ & $\mu$ & $\sigma^2$ & $\gamma$  & Median \\
 10	&	 0.794	&	 0.370	&	 0.956 	& 	0.674\\
 \hline
    \end{tabular}
-   \caption{CP values $(\mu, \sigma^2, \gamma)$ corresponding to the $\alpha$ values shown in Fig.~\ref{fig:SN.plot}, with location parameter $\xi = 0$ and scale parameter $\omega = 1$. Values are rounded to three decimal places.}
+   \caption{CP values $(\mu, \sigma^2, \gamma)$ along with the median corresponding to the $\alpha$ values shown in Fig.~\ref{fig:SN.plot}, with location parameter $\xi = 0$ and scale parameter $\omega = 1$. Values are rounded to three decimal places.}
    \label{tab:cp_values}
 \end{table}
 %
-Further details about the parametrization from Eq.~\ref{def:snd_gen}, called \emph{Direct Parametrization} or DP, the CP, and general statistical properties of the SN are treated in rigorous mathematical and statistical viewpoints in the book by \cite{Azzalini2014}.
+Further details about the parametrization from Eq.~\ref{def:snd_gen}, called the \emph{Direct Parametrization} or DP, the CP, and general statistical properties of the SN are treated in rigorous mathematical and statistical viewpoints in the book by \cite{Azzalini2014}.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Fitting the Skew Normal distribution to the CCF} \label{sec:3}
 
 %The CCF represents the average shape of spectral lines and is expressed in flux as a function of radial-velocity.
-To fit the CCF using a SN distribution, we use a least-squares algorithm and the following model:
+To fit the CCF using a SN density shape, we use a least-squares algorithm and the following model:
 %
 \begin{eqnarray} \label{eq:3}
 f_{CCF}(y_i) = \mathrm{C} - \mathrm{A} \times SN(y_i;\mu, \sigma^2, \gamma), \quad i = 1, \ldots, n
 \end{eqnarray}
 %
-where C is an unknown offset fitting for the continuum of the CCF, A is the unknown contrast of the CCF and $\mu$, $\sigma^2$ and $\gamma$ are the mean, variance and skewness of the SN as defined is Sect. \ref{sec:2}.
-The values $y_1, \ldots, y_n$ are the different values of the abscisse of the CCF, generally with the dimension of a velocity.
+where C is an unknown offset for the continuum of the CCF, A is the unknown contrast of the CCF \jessi{what is meant by the ``contrast''?} and $\mu$, $\sigma^2$ and $\gamma$ are the mean, variance and skewness of the SN as defined above.
+The values $y_1, \ldots, y_n$ are the different values of the abscisse \jessi{what is this previous word?} of the CCF, generally with the dimension of a velocity. \jessi{what is meant by ``with the dimension of a velocity''?  Do you mean units?}
 
-Since the CCF presents a natural asymmetry due the convective blueshift, the SN distribution should in principle better catch this aspect, together with other changes in asymmetry, with respect to fitting a Normal distribution. To initially check this intuition, we compared the CCF residuals after fitting a Normal and a SN distribution for 2 stars. The first star is Alpha Centauri b, whose CCF's have high signal-to-noise ratio (SNR). The second star is Corot-7, whose CCF's have low SNR. Fig.~\ref{fig:Residual.comparison} shows that the SN seems to be a slightly better model to explain the shape of the CCF.%, in particular as the SNR decreases.
+%%%Since the CCF has an asymmetry due the convective blueshift, the SN density should in principle better catch this aspect, together with other changes in asymmetry, with respect to fitting a Normal distribution. 
+%%%To initially check this intuition, we compared the CCF residuals after fitting a Normal and a SN distribution for 2 stars. The first star is Alpha Centauri b, whose CCF's have high signal-to-noise ratio (SNR). The second star is Corot-7, whose CCF's have low SNR. Fig.~\ref{fig:Residual.comparison} shows that the SN seems to be a slightly better model to explain the shape of the CCF.%, in particular as the SNR decreases.
+%%%%
+%%%\begin{figure*}[htbp]
+%%%   \centering
+%%%\includegraphics[height = 2.5in]{[1]HD128621Residuals.pdf} 
+%%%\includegraphics[height = 2.5in]{[1]LRa01_E2Residuals.pdf} 
+%%%   \caption{Comparison between the Normal (black circles) and the SN (red crosses) residuals using CCF's from the star Alpha Centauri b (left) and Corot-7 (right). When looking at the residuals corresponding to the center of the CCF, the SN fit leads to slightly better results for both stars.} %Moreover, as the SNR decreases, the SN distribution shows smaller residuals respect the Normal ones.}
+%%%    \label{fig:Residual.comparison}
+%%%\end{figure*}
+%%%%
+
+When fitting a Normal distribution to the CCF, the estimated mean of the model is used as the estimated RV, the FWHM of the Normal density ($2\sqrt(2\ln2)\sigma$ with standard deviation $\sigma$) represents the width of the CCF.
+Because the Normal density is symmetric, the skewness is always equal to 0 so a separate approach is needed to estimate the skewness of the CCF.
+An estimated skewness parameter is generally obtained by calculating the BIS SPAN of the CCF \citep[see Sect. \ref{intro}, and e.g.][]{Queloz-2001}. 
 %
-\begin{figure*}[htbp]
-   \centering
-\includegraphics[height = 2.5in]{[1]HD128621Residuals.pdf} 
-\includegraphics[height = 2.5in]{[1]LRa01_E2Residuals.pdf} 
-   \caption{Comparison between the Normal (black circles) and the SN (red crosses) residuals using CCF's from the star Alpha Centauri b (left) and Corot-7 (right). When looking at the residuals corresponding to the center of the CCF, the SN fit leads to slightly better results for both stars.} %Moreover, as the SNR decreases, the SN distribution shows smaller residuals respect the Normal ones.}
-    \label{fig:Residual.comparison}
-\end{figure*}
-%
 
-When fitting a Normal distribution to the CCF, the mean of the fitted distribution is defined as the measured RV, the FWHM of the Normal distribution ($=2\sqrt(2\ln2)\sigma$) represents the width of the CCF and because the Normal distribution is symmetric, a  skewness parameter cannot be obtained directly from this fit. Such a parameter is generally obtain in a second step by calculating the BIS SPAN of the CCF \citep[see Sect. \ref{intro}, and e.g.][]{Queloz-2001}. When fitting a SN distribution, we define two indicators for the RV: the mean of the SN, defined as SN mean RV and the median of the SN, defined as SN median RV. We will discuss advantages and limits for both of these choices in Sec. \ref{sec:4} and Sec. \ref{sec:5}. We define the width of the SN, SN FWHM, in the same way as for the Normal distribution\footnote{Note that SN FWHM does not correspond to the width of the SN distribution at half maximum like in the Normal case.}, and finally the skewness of the CCF, SN GAMMA, is derived using the $\gamma$ parameter.
+With the proposed SN approach, we propose two estimators of the RV: the mean and median of the SN model fit (referred to as \emph{SN mean RV} and \emph{SN median RV}, respecitvely) , and present advantages and limitations for both of these choices in Sec. \ref{sec:4} and Sec. \ref{sec:5}. 
+The width of the SN, \emph{SN FWHM}, is defined in the same way as for the Normal distribution\footnote{Note that SN FWHM does not correspond to the width of the SN distribution at half maximum like in the Normal case.}, and finally the skewness of the CCF, \emph{SN GAMMA}, is estimated by the $\gamma$ parameter.
 
-To test the strength of the correlation between the estimated RV's and the different indicators used to evaluate stellar activity, we calculated the Pearson correlation coefficient, which in its general form is defined as:
+To evaluate the strength of the correlation between the estimated RV's and the different stellar activity indicators, we calculated the Pearson correlation coefficient, which in its general form is defined as:
 %
 \begin{equation}
 R (x,y)= \frac{cov(x,y)}{\sigma(x),\sigma(y)},
