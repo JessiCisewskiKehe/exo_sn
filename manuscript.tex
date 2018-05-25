@@ -194,13 +194,13 @@ Sec.~\ref{sec:5} considers derived error bars for the different estimated CCF pa
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{The Skew Normal distribution} \label{sec:2}
 
-The Skew Normal (SN) distribution is a class of probability distributions which includes the Normal distribution as a special case \citep{Azzalini1985}. The SN distribution has, in addition to a location and a scale parameter analogous to the Normal distribution's mean and standard deviation, a third parameter which describes the skewness of the distribution. Considering a random variable $Y\in \mathbb R$ (where $\mathbb R$ is the real line) which follows a SN distribution with location parameter $\xi \in \mathbb R$, scale parameter $\omega \in \mathbb R^{+}$ (i.e., the positive real line), and skewness parameter $\alpha \in \mathbb R$, its density at some value $y\in Y$ can be written as 
+The Skew Normal (SN) distribution is a class of probability distributions which includes the Normal distribution as a special case \citep{Azzalini1985}. The SN distribution has, in addition to a location and a scale parameter analogous to the Normal distribution's mean and standard deviation, a third parameter which describes the skewness (i.e. the asymmetry) of the distribution. Considering a random variable $Y\in \mathbb R$ (where $\mathbb R$ is the real line) which follows a SN distribution with location parameter $\xi \in \mathbb R$, scale parameter $\omega \in \mathbb R^{+}$ (i.e., the positive real line), and skewness parameter $\alpha \in \mathbb R$, its density at some value $y\in Y$ can be written as 
 \begin{equation} \label{def:snd_gen}
 SN(y;\xi, \omega, \alpha) = \frac{2}{\omega} \phi\left(\frac{y-\xi}{\omega}\right) \Phi\left(\frac{\alpha(y-\xi)}{\omega}\right),
 \end{equation}
 where $\phi$ and $\Phi$ are respectively the density function and the distribution function of a standard Normal distribution\footnote{A standard Normal distribution is a Normal distribution with a mean of 0 and a standard deviation of 1.}.
 The skewness parameter $\alpha$ quantifies the asymmetry of the SN. 
-Examples of SN densities under different skewness parameter values and the same location and scale parameters ($\xi = 0$ and $\omega = 1$) are displayed in Fig.~\ref{fig:SN.plot}.  A usual Normal distribution is the special case of the SN distribution when the skewness parameter $\alpha$ is equal to zero\footnote{This can be seen from Eq.~\ref{def:snd_gen}. If $\alpha = 0$ then $\Phi\left(\frac{\alpha(y-\xi)}{\omega}\right) = \Phi(0) = 0.5$ and therefore $SN(y;\xi, \omega, 0) = \frac{1}{\omega} \phi\left(\frac{y-\xi}{\omega}\right)$ which is the density or a Normal distribution. Note that $\Phi(0) = 0.5$ because $\Phi(0)$ is the the probability that a standard Normal random variable is less than or equal than 0.}.
+Examples of SN densities under different skewness parameter values and the same location and scale parameters ($\xi = 0$ and $\omega = 1$) are displayed in Fig.~\ref{fig:SN.plot}.  A usual Normal distribution is the special case of the SN distribution when the skewness parameter $\alpha$ is equal to zero\footnote{This can be seen from Eq.~\ref{def:snd_gen}. If $\alpha = 0$ then $\Phi\left(\frac{\alpha(y-\xi)}{\omega}\right) = \Phi(0) = 0.5$ and therefore $SN(y;\xi, \omega, 0) = \frac{1}{\omega} \phi\left(\frac{y-\xi}{\omega}\right)$ which is the density of a Normal distribution. Note that $\Phi(0) = 0.5$ because $\Phi(0)$ is the the probability that a standard Normal random variable is less than or equal than 0.}.
 %
 \begin{figure}[htbp]
    \centering
@@ -217,28 +217,28 @@ For reasons related to the interpretation of the parameters in Eq.~\ref{def:snd_
 %
 where $\beta = \sqrt{\frac{2}{\pi}}\left(\frac{\alpha}{\sqrt{1+\alpha^2}}\right)$ \citep[e.g.][]{Arellano-2010}.
 
-By using Eq.~\ref{eq:snd_cp}, the new set of parameters $(\mu, \sigma^2, \gamma)$ provides a more clear interpretation of the behavior of the SN distribution. For the $\alpha$ values used in Fig.~\ref{fig:SN.plot}, the corresponding values of ($\mu$, $\sigma^2$, $\gamma$) are displayed in Table~\ref{tab:cp_values}.  In particular, $\mu$ and $\sigma^2$ are the actual mean and variance of the distribution, rather than simply a location and scale parameter, and $\gamma$ becomes an variable that evaluate the skewness of the SN. 
-
-Beyond the mean of the SN, we introduce a second location parameter that will be largely used in the analyses: the median. The median of the SN, and in general the median of an absolute continuous random variable, is defined as the value $m$ such that\footnote{We recall that when using a symmetric distribution such as the Normal distribution, the mean and the median are equivalent.}:
-%
-\begin{equation} \label{eq:snmed}
-\int_{-\infty}^{m} SN(y;\xi, \omega, \alpha) = \frac{1}{2}.
-\end{equation}
+By using Eq.~\ref{eq:snd_cp}, the new set of parameters $(\mu, \sigma^2, \gamma)$ provides a clearer interpretation of the behavior of the SN distribution. For the $\alpha$ values used in Fig.~\ref{fig:SN.plot}, the corresponding values of ($\mu$, $\sigma^2$, $\gamma$) are displayed in Table~\ref{tab:cp_values}.  In particular, $\mu$ and $\sigma^2$ are the actual mean and variance of the distribution, rather than simply a location and scale parameter, and $\gamma$ provides an measure of the skewness of the SN. 
+Along with the mean of the SN, we consider the median of the distribution as a measure of center, which is used in the proposed method. 
+%The median of the SN, and in general the median of an absolute continuous random variable, is defined as the value $m$ such that\footnote{We recall that when using a symmetric distribution such as the Normal distribution, the mean and the median are equivalent.}:
+%%
+%\begin{equation} \label{eq:snmed}
+%\int_{-\infty}^{m} SN(y;\xi, \omega, \alpha) = \frac{1}{2}.
+%\end{equation}
 %
 
 %% Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering
    %\topcaption{Table captions are better up top} % requires the topcapt package
-   \begin{tabular}{|cccc|} % Column formatting, @{} suppresses leading/trailing space
+   \begin{tabular}{|ccccc|} % Column formatting, @{} suppresses leading/trailing space
 \hline
-$\alpha$ & $\mu$ & $\sigma^2$ & $\gamma$ \\
+$\alpha$ & $\mu$ & $\sigma^2$ & $\gamma$  & Median \\
 \hline
- -3 	&	 -0.757	&	 0.427	&	 -0.667 \\
-0	&	 0.000 	&	1.000	&	 0.000 \\
-2	&	 0.714	&	 0.491	&	 0.454\\
-6	&	 0.787	&	 0.381	&	 0.891\\
-10	&	 0.794	&	 0.370	&	 0.956\\
+ -3 	&	 -0.757	&	 0.427	&	 -0.667  	& 	-0.672\\
+0	&	 0.000 	&	1.000	&	 0.000 	& 	0.000\\
+2	&	 0.714	&	 0.491	&	 0.454 	& 	0.655\\
+6	&	 0.787	&	 0.381	&	 0.891 	& 	0.674\\
+10	&	 0.794	&	 0.370	&	 0.956 	& 	0.674\\
 \hline
    \end{tabular}
    \caption{CP values $(\mu, \sigma^2, \gamma)$ corresponding to the $\alpha$ values shown in Fig.~\ref{fig:SN.plot}, with location parameter $\xi = 0$ and scale parameter $\omega = 1$. Values are rounded to three decimal places.}
