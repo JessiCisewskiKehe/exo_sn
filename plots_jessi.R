@@ -25,12 +25,17 @@ gamma <- fgamma(beta)
 mu <- xi + omega*beta
 sig2 <- omega^2*(1-beta^2)
 
-round(cbind(alpha, mu, sig2, gamma),3)
 
+median_alpha <- sapply(1:length(alpha), function(ii) qsn(.5, xi = 0, omega = 1, alpha = alpha[ii]))
 
+round(cbind(alpha, mu, sig2, gamma, median_alpha),3)
 
+dp <- cbind(rep(0, length(alpha)), rep(1, length(alpha)), alpha)
+cp0 <- round(sapply(1:length(alpha), function(ii) dp2cp(dp[ii,], "SN")), 3)
+cp[2,] <-(cp0[2,])^2
+cp
 
-
+median_alpha_cp <- sapply(1:length(alpha), function(ii) qsn(.5, xi = 0, omega = 1, alpha = alpha[ii]))
 
 ################  Exploration of robust (wrt skewness) parameters
 x <- seq(-3.25, 3.25, length.out = 1000)
@@ -86,7 +91,11 @@ plot(x, dx[[1]], "n", xlab = "Y", ylab = "Density", ylim = c(0,.8), main = "")
 temp <- sapply(1:length(alpha), function(ii) lines(x, dx[[ii]], col = ii, lty = ii))
 
 # Remove skew portion
-temp <- sapply(1:length(alpha), function(ii) lines(x, dx[[ii]]/dx_rm[[ii]], col = ii, lty = ii))
+library(sfsmisc)
+norm1 <- integrate.xy(x, dx[[1]]/dx_rm[[1]])
+temp <- sapply(1:length(alpha), function(ii) lines(x, dx[[ii]]/dx_rm[[ii]]/2, col = ii, lty = ii))
+
+lines(x, dnorm(x, xi, omega), col = "yellow")
 
 
 

@@ -114,13 +114,21 @@
 %\abstract
 {\bf Abstract}\\
 % Context, Aims, Methods, Results, Conclu (not mandatory)
-Stellar activity is the main limitation to the detection of small-mass exoplanets using the radial-velocity (RV) technique. Stellar activity can be probed by measuring variations in the shape of the cross-correlation function (CCF) as a function of time. Those variations are measured using the different moments of the CCF. Therefore measuring with the best precision those moments is crucial to de-correlate exoplanet signals from spurious RV signals originating from stellar activity.
-
-We propose here to measure those moments using a Skew Normal (SN) distribution, which compared to the Normal distribution generally used, automatically includes an extra parameter to model the natural asymmetry of the CCF induced by convective blueshift.
-
-We analyze 5 stars with different activity levels and whose CCF's have different signal-to-noise ratio (SNR) levels. In each case, we compare the results obtained by fitting to the CCF respectively a Normal and a SN.  We also estimate rigorous errors for the different moments of the CCF using a bootstrap analysis.
-
-The correlation between the RV's and the asymmetry of the CCF and the correlation between the RV's and the width of the CCF are always stronger when using the parameters derived from the SN in the case of real observations. Therefore the CCF asymmetry and the CCF width derived using a SN are more sensitive to stellar activity, which allows to probe with a better precision stellar rotational periods, in addition to characterize more precisely stellar activity signals. The precision on the estimated set of RV's, derived using the median of the fitted SN distributions are on average $10\%$ smaller than the uncertainties calculated on the mean of the Normal. In addition, the uncertainties related to the asymmetry parameter derived from the SN are on average $15\%$ smaller than the ones calculated on the common Bisector Inverse Slope Span (BIS SPAN). We strongly encourage the use of the SN distribution rather than the Normal distribution, because this allows us to retrieve in one single fit the different moments of the CCF, because the derived moments better catch stellar activity signals and finally because the standard errors on the RV's and the the asymmetry parameter are smaller than the one estimated with the Normal fit.
+Stellar activity is one of the primary limitations to the detection of low-mass exoplanets using the radial-velocity (RV) technique. 
+Stellar activity can be probed by measuring variations in the shape of the cross-correlation function (CCF) as a function of time often using different moments of a modeled CCF. Therefore estimating the moments of the CCF with high precision is essential to de-correlate exoplanet signals from spurious RV signals originating from stellar activity.
+%
+We propose to estimate the moments of the CCF by first fitting a model using a Skew Normal (SN) density shape, which unlike the commonly employed Normal density,  includes an asymmetry parameter to capture the natural asymmetry of the CCF induced by convective blueshift. \jessi{is convective blueshift the only asymmetry-inducing variable of the CCF?}
+%
+The performance of the proposed method is compared to the Normal density using both simulated and real observations with varying levels of activity and signal-to-noise ratio (SNR) levels.
+%We analyze 5 stars with different activity levels and whose CCF's have different signal-to-noise ratio (SNR) levels. In each case, we compare the results obtained by fitting to the CCF respectively a Normal and a SN.  We also estimate rigorous errors for the different moments of the CCF using a bootstrap analysis.
+%
+When considering the real observations, the correlation between the RV's and the asymmetry of the CCF and the correlation between the RV's and the width of the CCF are stronger when using the parameters derived from the SN than the Normal approach. 
+This suggests that the CCF asymmetry and the CCF width derived using a SN may be more sensitive to stellar activity, which can be helpful with estimating stellar rotational periods and generally characterizing the stellar activity signals.
+%
+The estimated uncertainties in the estimated RV's using the proposed SN approach are on average $10\%$ smaller than the uncertainties calculated on the mean of the Normal, and the estimated uncertainties on the SN asymmetry parameter are on average $15\%$ smaller than the commonly used Bisector Inverse Slope Span (BIS SPAN) approach for estimating the asymmetry of the CCF. 
+%
+The derived benefits of using the proposed SN approach includes an asymmetry parameter along with several options for estimating the RV, while the Normal model only includes an RV estimate and requires a separate procedure for estimating the asymmetry.  Furthermore, the estimated uncertainties on the RV's and the asymmetry parameter are smaller in the SN setting.
+%The correlation between the RV's and the asymmetry of the CCF and the correlation between the RV's and the width of the CCF are always stronger when using the parameters derived from the SN in the case of real observations. Therefore the CCF asymmetry and the CCF width derived using a SN are more sensitive to stellar activity, which allows to probe with a better precision stellar rotational periods, in addition to characterize more precisely stellar activity signals. The precision on the estimated set of RV's, derived using the median of the fitted SN distributions are on average $10\%$ smaller than the uncertainties calculated on the mean of the Normal. In addition, the uncertainties related to the asymmetry parameter derived from the SN are on average $15\%$ smaller than the ones calculated on the common Bisector Inverse Slope Span (BIS SPAN). We strongly encourage the use of the SN distribution rather than the Normal distribution, because this allows us to retrieve in one single fit the different moments of the CCF, because the derived moments better catch stellar activity signals and finally because the standard errors on the RV's and the the asymmetry parameter are smaller than the one estimated with the Normal fit.
 
 %\keywords{techniques: radial velocities -- planetary systems -- stars: activity -- methods: data analysis}
 
@@ -130,44 +138,69 @@ The correlation between the RV's and the asymmetry of the CCF and the correlatio
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Goal of RV analysis}
 
-When working with radial velocities (RV's), the main limitation to the detection of small-mass exoplanets is not anymore the precision of the instruments used, but the different noises induced by the stars we are observing \citep[][]{Dumusque:2017aa}. Indeed, stellar oscillations, granulation phenomena and stellar activity all induce RV signals \citep{Saar-1997b, Queloz-2001, Desort-2007, Dumusque-2011a, Dumusque-2016a} that are beyond the meter-per-second precision reached by the best high-resolution spectrographs. It is therefore mandatory to understand better stellar signals and to find ways to correct for them, if in the near future we want to detect or confirm an Earth-twin planet using the RV technique. This is even more true now that instrument like ESPRESSO \citep{Pepe-2014} and EXPRESS \citep{fischer2016state} should have the stability to detect such signals. However, if solutions are not found to mitigate the impact of stellar activity, the detection or confirmation of potential Earth-twins will be extremely challenging.
+When working with radial velocities (RV's), one of the main limitations to the detection of small-mass exoplanets is no longer the precision of the instruments used, but the different sources of variability induced by the stars \citep[][]{Dumusque:2017aa} \jessi{We should add more citations here to new spectrographs...maybe EXPRES?}. 
+Stellar oscillations, granulation phenomena, and stellar activity can all induce apparent RV signals \citep{Saar-1997b, Queloz-2001, Desort-2007, Dumusque-2011a, Dumusque-2016a} that are beyond \jessi{what is meant by the word ``beyond'' here? Do you mean below the limit or above?  I think you mean above since they can induce singles that are greater than 1m/s, but we need to unambiguous here since this is a crucial point.  Beyond could also mean it is below the limit so hasn't been a concern.} the meter-per-second precision reached by the best high-resolution spectrographs \citep{fischer2016state}. \jessi{It seems the 1m/s spectrographs should be cited here...HARPS?}
+%
+It is therefore mandatory to better understand stellar signals and to develop methods to correct for them, if in the near future we want to detect or confirm an Earth-twin planet using the RV technique. This is even more true now that instrument like the Echelle SPectrograph for Rocky Exoplanet and Stable Spectroscopic Observations (ESPRESSO) \citep{Pepe-2014} and EXtreme PREcision Spectrometer (EXPRES) \citep{fischer2016state} should have the stability to detect such signals. However, if solutions are not found to mitigate the impact of stellar activity, the detection or confirmation of potential Earth-twins will be extremely challenging and false detections could plague the field.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Stellar activity effect on CCF, Normal fit plus FWHM and BIS SPAN indicators}
 
-Among the different stellar signals we are aware of, the one that is the most difficult to characterize and to correct for is the signal induced by stellar activity. Stellar activity is responsible for creating magnetic regions on the surface of stars, and those regions change locally the temperature and the convection, inducing spurious RV's variations \citep{Meunier-2010a, Dumusque-2014b}. In theory, it should be easy to differentiate between the pure Doppler-shift induced by a planet, that will shift the entire stellar spectrum and stellar activity, that modifies the shape of spectral lines and by doing so create a spurious shift of the stellar spectrum \citep{Saar-1997b,Hatzes-2002,Kurster2003,Lindegren-2003,Desort-2007,Lagrange-2010,Meunier-2010a,Dumusque-2014b}. However, on quiet GKM dwarfs, the main target for precise RV's measurements, stellar activity induce signals of a few \ms. This corresponds physically to variations smaller than 1/100th of a pixel on the detector.
+One of the most challenging stellar signal to characterize and to correct for is the signal induced by stellar activity. 
+Stellar activity is responsible for creating magnetic regions on the surface of stars, and those regions change locally the temperature and the convection, which can induce spurious RV's variations \citep{Meunier-2010a, Dumusque-2014b}. 
+In theory, it should be easy to differentiate between the pure Doppler-shift induced by a planet, which shifts the entire stellar spectrum, and stellar activity, which modifies the shape of spectral lines and by doing so create a spurious shift of the stellar spectrum \citep{Saar-1997b,Hatzes-2002,Kurster2003,Lindegren-2003,Desort-2007,Lagrange-2010,Meunier-2010a,Dumusque-2014b}. 
+However, on quiet GKM dwarfs, the main target for precise RV's measurements, stellar activity can induce signals of a few \ms. This corresponds physically to variations smaller than 1/100th of a pixel on the detector. \jessi{it seems the previous sentence is missing further justification for how it relates to the sentence that proceeds it.  Do we want to add something like, ``...smaller than 1/100th of a pixel on the detector making the changing shape of the spectral lines challenging to detect.''?}
 
-To be able to measure such tiny variations, we average the information of all the lines in the spectrum by cross correlating the stellar spectrum with a synthetic \citep[][]{Baranne-1996,Pepe-2002a} or an observed stellar template \citep[][]{Anglada-Escude-2012}. The result of this operation gives us the cross-correlation function (CCF). To measure the Doppler-shift between different spectra and therefore to retrieve the RV's of a star as a function of time, we calculate the variations of the CCF barycenter. The barycenter is generally estimated by fitting a Normal distribution to the CCF and taking its mean. Variations in line shape between different spectra, which indicate the presence of signals induced by stellar activity, is measured by analysing the different moments of the CCF. Usually, the width of the CCF is estimated using the FWHM of the fitted Normal distribution, and its asymmetry using the the bisector inverse slope span \citep[BIS SPAN,][]{Queloz-2001}.
+In order to measure such tiny variations, a common approach is to average the information of all the lines in the spectrum by cross correlating the stellar spectrum with a synthetic \citep[][]{Baranne-1996,Pepe-2002a} or an observed stellar template \citep[][]{Anglada-Escude-2012}. The result of this operation gives us the cross-correlation function (CCF).  The CCF gives the spectrum's cross-correlation with the template as the template is shifted according to different RVs.
+%
+To measure the Doppler-shift between different spectra and therefore to retrieve the RV's of a star as a function of time, the variations of the CCF barycenter are calculated. 
+The barycenter is generally estimated by fitting a Normal density to the CCF and retaining its mean. Variations in line shape between different spectra, which indicate the presence of signals induced by stellar activity, are measured by analyzing the different moments of the CCF. Usually, the width of the CCF is estimated using the full-width half-maximum (FWHM) of the fitted Normal density, and its asymmetry using the the bisector inverse slope span \citep[BIS SPAN,][]{Queloz-2001}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Why FWHM and BIS SPAN important?}
 
-If a RV signal is induced by activity, generally a strong correlation will be observed between the RV and chromospheric activity indicators like \logrhk\,or H-$\alpha$ \citep{Boisse-2009,Dumusque-2012,Robertson-2014}, but also between the RV and the FWHM of the CCF or its BIS SPAN \citep[][]{Queloz-2001,Boisse-2009,Queloz-2009,Dumusque-2016a}. It is therefore common now, that when fitting for a planetray signal, in addition to a Keplerian, the model includes in addition linear dependancies with the \logrhk, the FWHM and the BIS SPAN \citep{Dumusque:2017aa,Feng:2017aa}. It is also common to add a Gaussian process to the model to account for the correlated noise induced by stellar activity. The hyperparameters of the Gaussian process are generally trained on the different activity indicators \citep{Haywood-2014,Rajpaul-2015}. It is therefore essential for mitigating stellar activity to obtain activity indicators that are the most correlated to the RV's but also for which we can obtain the best precision.
+If an apparent RV signal is induced by activity, generally a strong correlation will be observed between the RV and chromospheric activity indicators like \logrhk\,or H-$\alpha$ \citep{Boisse-2009,Dumusque-2012,Robertson-2014}, but also between the RV and the FWHM of the CCF or its BIS SPAN \citep[][]{Queloz-2001,Boisse-2009,Queloz-2009,Dumusque-2016a}. 
+%
+It is therefore common now, that when fitting a set of RV's for a planetary signal, in addition to a Keplerian, the model includes in addition linear dependancy with the \logrhk, the FWHM and the BIS SPAN \citep{Dumusque:2017aa,Feng:2017aa}. \jessi{What is meant by ``a Keplerian''?  Is that a Keplerian signal?  Is this different from a planetary signal?}
+%
+It is also common to add a Gaussian process to the model to account for the correlated noise induced by stellar activity. The hyperparameters of the Gaussian process can be trained on different activity indicators \citep{Haywood-2014,Rajpaul-2015}. It is therefore essential for mitigating stellar activity to obtain activity indicators that are the most correlated with the RV's but also for which we can obtain the best precision.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Figueira indicators of stellar activity + other}
-Several works have derived indicators that are more sensitive to line asymmetry than the BIS SPAN. In \citet{Boisse-2011}, the authors develop $V_{span}$, a new indicator to derive the CCF asymmetry that is more sensitive than the BIS SPAN at low signal-to-noise ratio (SNR). \citet{Figueira-2013} studied the use of two new indicators, bi-Gauss and $V_{asy}$. The authors were able to show that when using bi-Gauss, the amplitude in asymmetry is 30\% larger, therefore allowing the detection of smaller-amplitude correlations with RV's variations. They also demonstrated that $V_{asy}$ seems to be the best indicator of line asymmetry at high SNR, as its correlation with RV is more significant than any other asymmetry indictors.
+Several indicators have been developed that are more sensitive to line asymmetry than the BIS SPAN. In \citet{Boisse-2011}, the authors develop $V_{span}$, an indicator of CCF asymmetry that is more sensitive than the BIS SPAN at low signal-to-noise ratio (SNR) \jessi{Can a few words be added to explain what this indicator is measuring?}. 
+%
+\citet{Figueira-2013} studied the use of two new indicators, bi-Gauss and $V_{asy}$. The authors were able to show that when using bi-Gauss, the amplitude in asymmetry is 30\% larger \jessi{larger than what?  BIS SPAN?}, therefore allowing the detection of smaller-amplitude correlations with RV's variations. \jessi{The previous sentence is a bit unclear.  I'm assuming the amplitude in asymmetry is just the amplitude of the asymmetry parameter vs. RV.  The second part of the sentence is what is unclear.  I think what is meant is ``allowing the detection of lower levels of activity'' since the correlation between the indicator and RV would be higher with the new indicator.}
+They also demonstrated that $V_{asy}$ seems to be a better indicator of line asymmetry at high SNR, as its correlation with RV is more significant than any of the previously proposed asymmetry indictors.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Why using a SN distribution?}
 In all the methods described above, the RV and the FWHM are derived using a Normal distribution fitted to the CCF, and the asymmetry is estimated using another approach. 
+%
+In this paper we propose to use a Skew Normal (SN) density to estimate with a single model fitting the RV, the FWHM and the asymmetry of the CCF, as this function includes a skewness parameter \citep[][]{Azzalini1985}. 
 
-In this paper we propose to use a Skew Normal (SN) distribution to derive at the same time the RV, the FWHM and the asymmetry of the CCF, as this function includes a skewness parameter \citep[][]{Azzalini1985}. In addition, we know that for solar-type stars and cooler dwarfs, the bisector of the CCF as a "C"-shape due to convective blueshift \citep{Dravins-1981, Gray-2009}. Therefore, fitting the CCF using a model that naturally includes an asymmetry, like the SN distribution, should give in principle more precise results.
+%In addition, we know that for solar-type stars and cooler dwarfs, the bisector of the CCF has a "C"-shape due to convective blueshift \citep{Dravins-1981, Gray-2009}. 
+%Therefore, fitting the CCF using a model that naturally includes an asymmetry, like the SN distribution, should give in principle more precise results.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Outline of paper}
-The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN distribution and describe its applicability for modeling the CCF,  showing that the SN distribution is a better representation of observed CCF than a Normal distribution, and study how the SN parameters relate to the RV, FWHM and BIS SPAN of the CCF. In Sec.~\ref{sec:31} we present a simple model to correct from stellar activity which extends the ones previously proposed \citep{Dumusque:2017aa,Feng:2017aa}. In Sec.~\ref{sec:soap} we study the SN fit to the CCF using simulations coming from SOAP 2.0. In Sec.~\ref{sec:4}, we compare on real observations the sensitivity of the SN parameters to stellar activity with respect to other existing indicators. In Sec.~\ref{sec:5} we derive error bars for the different CCF moments and finally we discuss our results and conclude in Sec.~\ref{sec:discu} and Sec.~\ref{sec:conclu}.
+The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN distribution, describe its applicability for modeling the CCF, and study how the SN parameters relate to the RV, FWHM and BIS SPAN of the CCF. 
+%
+In Sec.~\ref{sec:31} we propose an expanded linear model used to correct the estimated RV's from the inferred stellar activity, which extends the linear models previously proposed for this purpose \citep{Dumusque:2017aa,Feng:2017aa}. 
+%
+In Sec.~\ref{sec:soap} the performance of the SN fit to the CCF is investigated using simulations coming from the Spot Oscillation And Planet (SOAP) 2.0 \citep{Dumusque-2014b}, followed by an analysis of real observations in Sec.~\ref{sec:4}.
+%
+Sec.~\ref{sec:5} considers derived error bars for the different estimated CCF parameters, and finally a discussion of the results and conclusions are included in Sec.~\ref{sec:discu} and Sec.~\ref{sec:conclu}, respectively.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{The Skew Normal distribution} \label{sec:2}
 
-The Skew Normal (SN) distribution is a class of probability distributions which includes the Normal distribution as a special case \citep{Azzalini1985}. The SN distribution has, in addition to a location and a scale parameter analogous to the Normal distribution's mean and standard deviation, a third parameter which describes the skewness of the distribution. Considering a random variable $Y\in \mathbb R$ (where $\mathbb R$ is the real line) which follows a SN distribution with location parameter $\xi \in \mathbb R$, scale parameter $\omega \in \mathbb R^{+}$ (i.e., the positive real line), and skewness parameter $\alpha \in \mathbb R$, its density at some value $y\in Y$ can be written as 
+The Skew Normal (SN) distribution is a class of probability distributions which includes the Normal distribution as a special case \citep{Azzalini1985}. The SN distribution has, in addition to a location and a scale parameter analogous to the Normal distribution's mean and standard deviation, a third parameter which describes the skewness (i.e. the asymmetry) of the distribution. Considering a random variable $Y\in \mathbb R$ (where $\mathbb R$ is the real line) which follows a SN distribution with location parameter $\xi \in \mathbb R$, scale parameter $\omega \in \mathbb R^{+}$ (i.e., the positive real line), and skewness parameter $\alpha \in \mathbb R$, its density at some value $y\in Y$ can be written as 
 \begin{equation} \label{def:snd_gen}
 SN(y;\xi, \omega, \alpha) = \frac{2}{\omega} \phi\left(\frac{y-\xi}{\omega}\right) \Phi\left(\frac{\alpha(y-\xi)}{\omega}\right),
 \end{equation}
 where $\phi$ and $\Phi$ are respectively the density function and the distribution function of a standard Normal distribution\footnote{A standard Normal distribution is a Normal distribution with a mean of 0 and a standard deviation of 1.}.
 The skewness parameter $\alpha$ quantifies the asymmetry of the SN. 
-Examples of SN densities under different skewness parameter values and the same location and scale parameters ($\xi = 0$ and $\omega = 1$) are displayed in Fig.~\ref{fig:SN.plot}.  A usual Normal distribution is the special case of the SN distribution when the skewness parameter $\alpha$ is equal to zero\footnote{This can be seen from Eq.~\ref{def:snd_gen}. If $\alpha = 0$ then $\Phi\left(\frac{\alpha(y-\xi)}{\omega}\right) = \Phi(0) = 0.5$ and therefore $SN(y;\xi, \omega, 0) = \frac{1}{\omega} \phi\left(\frac{y-\xi}{\omega}\right)$ which is the density or a Normal distribution. Note that $\Phi(0) = 0.5$ because $\Phi(0)$ is the the probability that a standard Normal random variable is less than or equal than 0.}.
+Examples of SN densities under different skewness parameter values and the same location and scale parameters ($\xi = 0$ and $\omega = 1$) are displayed in Fig.~\ref{fig:SN.plot}.  A usual Normal distribution is the special case of the SN distribution when the skewness parameter $\alpha$ is equal to zero\footnote{This can be seen from Eq.~\ref{def:snd_gen}. If $\alpha = 0$ then $\Phi\left(\frac{\alpha(y-\xi)}{\omega}\right) = \Phi(0) = 0.5$ and therefore $SN(y;\xi, \omega, 0) = \frac{1}{\omega} \phi\left(\frac{y-\xi}{\omega}\right)$ which is the density of a Normal distribution. Note that $\Phi(0) = 0.5$ because $\Phi(0)$ is the the probability that a standard Normal random variable is less than or equal than 0.}.
 %
 \begin{figure}[htbp]
    \centering
@@ -184,63 +217,70 @@ For reasons related to the interpretation of the parameters in Eq.~\ref{def:snd_
 %
 where $\beta = \sqrt{\frac{2}{\pi}}\left(\frac{\alpha}{\sqrt{1+\alpha^2}}\right)$ \citep[e.g.][]{Arellano-2010}.
 
-By using Eq.~\ref{eq:snd_cp}, the new set of parameters $(\mu, \sigma^2, \gamma)$ provides a more clear interpretation of the behavior of the SN distribution. For the $\alpha$ values used in Fig.~\ref{fig:SN.plot}, the corresponding values of ($\mu$, $\sigma^2$, $\gamma$) are displayed in Table~\ref{tab:cp_values}.  In particular, $\mu$ and $\sigma^2$ are the actual mean and variance of the distribution, rather than simply a location and scale parameter, and $\gamma$ becomes an variable that evaluate the skewness of the SN. 
-
-Beyond the mean of the SN, we introduce a second location parameter that will be largely used in the analyses: the median. The median of the SN, and in general the median of an absolute continuous random variable, is defined as the value $m$ such that\footnote{We recall that when using a symmetric distribution such as the Normal distribution, the mean and the median are equivalent.}:
-%
-\begin{equation} \label{eq:snmed}
-\int_{-\infty}^{m} SN(y;\xi, \omega, \alpha) = \frac{1}{2}.
-\end{equation}
+By using Eq.~\ref{eq:snd_cp}, the new set of parameters $(\mu, \sigma^2, \gamma)$ provides a clearer interpretation of the behavior of the SN distribution. For the $\alpha$ values used in Fig.~\ref{fig:SN.plot}, the corresponding values of ($\mu$, $\sigma^2$, $\gamma$) are displayed in Table~\ref{tab:cp_values}.  In particular, $\mu$ and $\sigma^2$ are the actual mean and variance of the distribution, rather than simply a location and scale parameter, and $\gamma$ provides an measure of the skewness of the SN. 
+Along with the mean of the SN, we consider the median of the distribution as a measure of center, which is used in the proposed method.  See Table~\ref{tab:cp_values} for the medians of the SN densities displayed in Fig.~\ref{fig:SN.plot}.
+%The median of the SN, and in general the median of an absolute continuous random variable, is defined as the value $m$ such that\footnote{We recall that when using a symmetric distribution such as the Normal distribution, the mean and the median are equivalent.}:
+%%
+%\begin{equation} \label{eq:snmed}
+%\int_{-\infty}^{m} SN(y;\xi, \omega, \alpha) = \frac{1}{2}.
+%\end{equation}
 %
 
 %% Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering
    %\topcaption{Table captions are better up top} % requires the topcapt package
-   \begin{tabular}{|cccc|} % Column formatting, @{} suppresses leading/trailing space
+   \begin{tabular}{|ccccc|} % Column formatting, @{} suppresses leading/trailing space
 \hline
-$\alpha$ & $\mu$ & $\sigma^2$ & $\gamma$ \\
+$\alpha$ & $\mu$ & $\sigma^2$ & $\gamma$  & Median \\
 \hline
- -3 	&	 -0.757	&	 0.427	&	 -0.667 \\
-0	&	 0.000 	&	1.000	&	 0.000 \\
-2	&	 0.714	&	 0.491	&	 0.454\\
-6	&	 0.787	&	 0.381	&	 0.891\\
-10	&	 0.794	&	 0.370	&	 0.956\\
+ -3 	&	 -0.757	&	 0.427	&	 -0.667  	& 	-0.672\\
+0	&	 0.000 	&	1.000	&	 0.000 	& 	0.000\\
+2	&	 0.714	&	 0.491	&	 0.454 	& 	0.655\\
+6	&	 0.787	&	 0.381	&	 0.891 	& 	0.674\\
+10	&	 0.794	&	 0.370	&	 0.956 	& 	0.674\\
 \hline
    \end{tabular}
-   \caption{CP values $(\mu, \sigma^2, \gamma)$ corresponding to the $\alpha$ values shown in Fig.~\ref{fig:SN.plot}, with location parameter $\xi = 0$ and scale parameter $\omega = 1$. Values are rounded to three decimal places.}
+   \caption{CP values $(\mu, \sigma^2, \gamma)$ along with the median corresponding to the $\alpha$ values shown in Fig.~\ref{fig:SN.plot}, with location parameter $\xi = 0$ and scale parameter $\omega = 1$. Values are rounded to three decimal places.}
    \label{tab:cp_values}
 \end{table}
 %
-Further details about the parametrization from Eq.~\ref{def:snd_gen}, called \emph{Direct Parametrization} or DP, the CP, and general statistical properties of the SN are treated in rigorous mathematical and statistical viewpoints in the book by \cite{Azzalini2014}.
+Further details about the parametrization from Eq.~\ref{def:snd_gen}, called the \emph{Direct Parametrization} or DP, the CP, and general statistical properties of the SN are treated in rigorous mathematical and statistical viewpoints in the book by \cite{Azzalini2014}.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Fitting the Skew Normal distribution to the CCF} \label{sec:3}
 
 %The CCF represents the average shape of spectral lines and is expressed in flux as a function of radial-velocity.
-To fit the CCF using a SN distribution, we use a least-squares algorithm and the following model:
+To fit the CCF using a SN density shape, we use a least-squares algorithm and the following model:
 %
 \begin{eqnarray} \label{eq:3}
 f_{CCF}(y_i) = \mathrm{C} - \mathrm{A} \times SN(y_i;\mu, \sigma^2, \gamma), \quad i = 1, \ldots, n
 \end{eqnarray}
 %
-where C is an unknown offset fitting for the continuum of the CCF, A is the unknown contrast of the CCF and $\mu$, $\sigma^2$ and $\gamma$ are the mean, variance and skewness of the SN as defined is Sect. \ref{sec:2}.
-The values $y_1, \ldots, y_n$ are the different values of the abscisse of the CCF, generally with the dimension of a velocity.
+where C is an unknown offset for the continuum of the CCF, A is the unknown contrast of the CCF \jessi{what is meant by the ``contrast''?} and $\mu$, $\sigma^2$ and $\gamma$ are the mean, variance and skewness of the SN as defined above.
+The values $y_1, \ldots, y_n$ are the different values of the abscisse \jessi{what is this previous word?} of the CCF, generally with the dimension of a velocity. \jessi{what is meant by ``with the dimension of a velocity''?  Do you mean units?}
 
-Since the CCF presents a natural asymmetry due the convective blueshift, the SN distribution should in principle better catch this aspect, together with other changes in asymmetry, with respect to fitting a Normal distribution. To initially check this intuition, we compared the CCF residuals after fitting a Normal and a SN distribution for 2 stars. The first star is Alpha Centauri b, whose CCF's have high signal-to-noise ratio (SNR). The second star is Corot-7, whose CCF's have low SNR. Fig.~\ref{fig:Residual.comparison} shows that the SN seems to be a slightly better model to explain the shape of the CCF.%, in particular as the SNR decreases.
+%%%Since the CCF has an asymmetry due the convective blueshift, the SN density should in principle better catch this aspect, together with other changes in asymmetry, with respect to fitting a Normal distribution. 
+%%%To initially check this intuition, we compared the CCF residuals after fitting a Normal and a SN distribution for 2 stars. The first star is Alpha Centauri b, whose CCF's have high signal-to-noise ratio (SNR). The second star is Corot-7, whose CCF's have low SNR. Fig.~\ref{fig:Residual.comparison} shows that the SN seems to be a slightly better model to explain the shape of the CCF.%, in particular as the SNR decreases.
+%%%%
+%%%\begin{figure*}[htbp]
+%%%   \centering
+%%%\includegraphics[height = 2.5in]{[1]HD128621Residuals.pdf} 
+%%%\includegraphics[height = 2.5in]{[1]LRa01_E2Residuals.pdf} 
+%%%   \caption{Comparison between the Normal (black circles) and the SN (red crosses) residuals using CCF's from the star Alpha Centauri b (left) and Corot-7 (right). When looking at the residuals corresponding to the center of the CCF, the SN fit leads to slightly better results for both stars.} %Moreover, as the SNR decreases, the SN distribution shows smaller residuals respect the Normal ones.}
+%%%    \label{fig:Residual.comparison}
+%%%\end{figure*}
+%%%%
+
+When fitting a Normal distribution to the CCF, the estimated mean of the model is used as the estimated RV, the FWHM of the Normal density ($2\sqrt(2\ln2)\sigma$ with standard deviation $\sigma$) represents the width of the CCF.
+Because the Normal density is symmetric, the skewness is always equal to 0 so a separate approach is needed to estimate the skewness of the CCF.
+An estimated skewness parameter is generally obtained by calculating the BIS SPAN of the CCF \citep[see Sect. \ref{intro}, and e.g.][]{Queloz-2001}. 
 %
-\begin{figure*}[htbp]
-   \centering
-\includegraphics[height = 2.5in]{[1]HD128621Residuals.pdf} 
-\includegraphics[height = 2.5in]{[1]LRa01_E2Residuals.pdf} 
-   \caption{Comparison between the Normal (black circles) and the SN (red crosses) residuals using CCF's from the star Alpha Centauri b (left) and Corot-7 (right). When looking at the residuals corresponding to the center of the CCF, the SN fit leads to slightly better results for both stars.} %Moreover, as the SNR decreases, the SN distribution shows smaller residuals respect the Normal ones.}
-    \label{fig:Residual.comparison}
-\end{figure*}
-%
 
-When fitting a Normal distribution to the CCF, the mean of the fitted distribution is defined as the measured RV, the FWHM of the Normal distribution ($=2\sqrt(2\ln2)\sigma$) represents the width of the CCF and because the Normal distribution is symmetric, a  skewness parameter cannot be obtained directly from this fit. Such a parameter is generally obtain in a second step by calculating the BIS SPAN of the CCF \citep[see Sect. \ref{intro}, and e.g.][]{Queloz-2001}. When fitting a SN distribution, we define two indicators for the RV: the mean of the SN, defined as SN mean RV and the median of the SN, defined as SN median RV. We will discuss advantages and limits for both of these choices in Sec. \ref{sec:4} and Sec. \ref{sec:5}. We define the width of the SN, SN FWHM, in the same way as for the Normal distribution\footnote{Note that SN FWHM does not correspond to the width of the SN distribution at half maximum like in the Normal case.}, and finally the skewness of the CCF, SN GAMMA, is derived using the $\gamma$ parameter.
+With the proposed SN approach, we propose two estimators of the RV: the mean and median of the SN model fit (referred to as \emph{SN mean RV} and \emph{SN median RV}, respectively) , and present advantages and limitations for both of these choices in Sec. \ref{sec:4} and Sec. \ref{sec:5}. 
+The width of the SN, \emph{SN FWHM}, is defined in the same way as for the Normal distribution\footnote{Note that SN FWHM does not correspond to the width of the SN distribution at half maximum like in the Normal case.}, and finally the skewness of the CCF, \emph{SN GAMMA}, is estimated by the $\gamma$ parameter.
 
-To test the strength of the correlation between the estimated RV's and the different indicators used to evaluate stellar activity, we calculated the Pearson correlation coefficient, which in its general form is defined as:
+To evaluate the strength of the correlation between the estimated RV's and the different stellar activity indicators, we calculated the Pearson correlation coefficient, which in its general form is defined as:
 %
 \begin{equation}
 R (x,y)= \frac{cov(x,y)}{\sigma(x),\sigma(y)},
