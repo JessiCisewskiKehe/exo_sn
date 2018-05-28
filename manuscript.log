@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  24 MAY 2018 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  25 MAY 2018 09:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -911,6 +911,10 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 846.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 846.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 13C874D11A03C36BE77726AF6F601DC7;1338.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 846.
  ) 
 Here is how much of TeX's memory you used:
@@ -930,7 +934,7 @@ s/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /public/txfonts/txsyb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (44 pages, 1972649 bytes).
+Output written on manuscript.pdf (44 pages, 1972632 bytes).
 PDF statistics:
  990 PDF objects out of 1000 (max. 8388607)
  835 compressed objects within 9 object streams
