@@ -57,6 +57,13 @@ I.~Boisse, F.~Bouchy, G.~H{\'e}brard, X.~Bonfils, N.~Santos, and S.~Vauclair.
 \newblock Disentangling between stellar activity and planetary signals.
 \newblock \emph{Astronomy \& Astrophysics}, 528:\penalty0 A4, 2011.
 
+\bibitem[Cosentino et~al.(2012)Cosentino, Lovis, Pepe, Cameron, Latham,
+  Molinari, Udry, Bezawada, Black, Born, et~al.]{Cosentino-2012}
+R.~Cosentino, C.~Lovis, F.~Pepe, A.~C. Cameron, D.~W. Latham, E.~Molinari,
+  S.~Udry, N.~Bezawada, M.~Black, A.~Born, et~al.
+\newblock Harps-n: the new planet hunter at tng.
+\newblock In \emph{Proc. SPIE}, volume 8446, page 84461V, 2012.
+
 \bibitem[Davison and Hinkley(1997)]{davison1997bootstrap}
 A.~C. Davison and D.~V. Hinkley.
 \newblock \emph{Bootstrap methods and their application}, volume~1.
@@ -69,12 +76,6 @@ M.~Desort, A.-M. Lagrange, F.~Galland, S.~Udry, and M.~Mayor.
   quantitative diagnostics of stellar activity.
 \newblock \emph{Astronomy \& Astrophysics}, 473\penalty0 (3):\penalty0
   983--993, 2007.
-
-\bibitem[Dravins et~al.(1981)Dravins, Lindegren, and Nordlund]{Dravins-1981}
-D.~Dravins, L.~Lindegren, and {\AA}.~Nordlund.
-\newblock Solar granulation-influence of convection on spectral line
-  asymmetries and wavelength shifts.
-\newblock \emph{Astronomy and Astrophysics}, 96:\penalty0 345--364, 1981.
 
 \bibitem[Dumusque(2016)]{Dumusque-2016a}
 X.~Dumusque.
@@ -143,12 +144,6 @@ D.~A. Fischer, G.~Anglada-Escude, P.~Arriagada, R.~V. Baluev, J.~L. Bean,
 \newblock \emph{Publications of the Astronomical Society of the Pacific},
   128\penalty0 (964):\penalty0 066001, 2016.
 
-\bibitem[Gray(2009)]{Gray-2009}
-D.~F. Gray.
-\newblock The third signature of stellar granulation.
-\newblock \emph{The Astrophysical Journal}, 697\penalty0 (2):\penalty0 1032,
-  2009.
-
 \bibitem[Hatzes(2002)]{Hatzes-2002}
 A.~P. Hatzes.
 \newblock Starspots and exoplanets.
@@ -195,6 +190,21 @@ L.~Lindegren and D.~Dravins.
 \newblock The fundamental definition of ?radial velocity?
 \newblock \emph{Astronomy \& Astrophysics}, 401\penalty0 (3):\penalty0
   1185--1201, 2003.
+
+\bibitem[{Mayor} et~al.(2003){Mayor}, {Pepe}, {Queloz}, {Bouchy}, {Rupprecht},
+  {Lo Curto}, {Avila}, {Benz}, {Bertaux}, {Bonfils}, {Dall}, {Dekker},
+  {Delabre}, {Eckert}, {Fleury}, {Gilliotte}, {Gojak}, {Guzman}, {Kohler},
+  {Lizon}, {Longinotti}, {Lovis}, {Megevand}, {Pasquini}, {Reyes}, {Sivan},
+  {Sosnowska}, {Soto}, {Udry}, {van Kesteren}, {Weber}, and
+  {Weilenmann}]{Mayor-2003}
+M.~{Mayor}, F.~{Pepe}, D.~{Queloz}, F.~{Bouchy}, G.~{Rupprecht}, G.~{Lo Curto},
+  G.~{Avila}, W.~{Benz}, J.-L. {Bertaux}, X.~{Bonfils}, T.~{Dall}, H.~{Dekker},
+  B.~{Delabre}, W.~{Eckert}, M.~{Fleury}, A.~{Gilliotte}, D.~{Gojak}, J.~C.
+  {Guzman}, D.~{Kohler}, J.-L. {Lizon}, A.~{Longinotti}, C.~{Lovis},
+  D.~{Megevand}, L.~{Pasquini}, J.~{Reyes}, J.-P. {Sivan}, D.~{Sosnowska},
+  R.~{Soto}, S.~{Udry}, A.~{van Kesteren}, L.~{Weber}, and U.~{Weilenmann}.
+\newblock {Setting New Standards with HARPS}.
+\newblock \emph{The Messenger}, 114:\penalty0 20--24, Dec. 2003.
 
 \bibitem[Meunier et~al.(2010)Meunier, Desort, and Lagrange]{Meunier-2010a}
 N.~Meunier, M.~Desort, and A.-M. Lagrange.
