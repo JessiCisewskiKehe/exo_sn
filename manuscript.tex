@@ -324,8 +324,6 @@ In order to evaluate the performance of the proposed SN approach for modelling t
 
 \xavier{Fig.~\ref{fig:faculae} shows the barycentric variation of the CCF induced by a simulated equatorial faculae of size 3\% relative to the visible stellar hemisphere. We compare the barycentric variation as measured when fitting a Normal density and taking its mean (RV), and when fitting a SN density and taking its mean (SN mean RV) or its median (SN median RV). Although the different estimates for the RV present similar variation as a function of rotational phase, we note that SN mean RV present a smaller amplitude than the two others.}
 
-Since in this case we know that the variations in RV are only caused by the faculae, the evaluation of the correlations between the set of RV's and the asymmetry parameters can provide relevant information to understand the cause of the variations observed in RV's. Fig.~\ref{fig:faculae.corr} shows the correlations obtained using as RV respectively SN mean RV, SN median RV and RV. The $\gamma$ parameter shows a correlation with SN median RV equal to $-0.944$, which is stronger than the correlations between the other asymmetry indicators and their estimated RV's. When focusing on the width of the CCF, The correlation between SN FWHM and SN mean RV is the strongest one ($R^{2}=0.655$).
-
 \begin{figure*}[htbp]
    \centering
 \includegraphics[height = 2.5in]{RV_comparison_FACULAE.pdf} 
@@ -335,6 +333,8 @@ Since in this case we know that the variations in RV are only caused by the facu
     \label{fig:faculae}
 \end{figure*}
 
+\xavier{In Fig.~\ref{fig:faculae.corr}, we compare the correlation between the different RV estimates and the different asymmetry or width estimates. As we can see, the strength of the correlation between $\gamma$ and SN mean RV is extremely similar to the correlation between BIS SPAN and the RV, with a Pearson correlation coefficient} \xavier{$R=-0.75$}. \xavier{Moreover, the correlation between $\gamma$ and SN median RV is much stronger, reaching} \xavier{$R=-0.95$}. \xavier{When comparing the correlation between the width and the different RV estimates, we observe that the data draw a circle, which implies a phase shift between those two parameters. In this case we find no correlation between those parameters, however, the different estimates gives very similar results.}
+
 \begin{figure*}[htbp]
    \centering
 \includegraphics[height = 6in]{SOAP_FACULAE_Comparison_para_SN.pdf} 
@@ -342,7 +342,8 @@ Since in this case we know that the variations in RV are only caused by the facu
     \label{fig:faculae.corr}
 \end{figure*}
 
-Since all the variations in RV's displayed in Fig.~\ref{fig:faculae} are caused by the presence of a faculae on the photosphere of the star, we corrected the originally estimated set of RV's by using Eq.~\ref{eq:RV:correction}. The results of the correction are displayed in Fig.~\ref{fig:faculae.correction} and the statistical tests on the parameters involved in Eq.~\ref{eq:RV:correction} are summarized in Table \ref{table:faculae.test}. It is straightforward noticing that the proposed correction almost completely addresses the issue, providing a new set of RV's where there are not anymore spurious variations caused by the presence of the faculae. In particular the $R^{2}$ is extremely high regardless the fit that has been use (Normal or SN). We note also that the parameter $\beta_{4}$, associated with the interaction between $\gamma$ and SN FWHM (or BIS SPAN and FWHM) is not statistically significant to explain spurious variations caused by a faculae.
+Since the RV variation displayed in Fig.~\ref{fig:faculae} is caused by only stellar activity, in this case a faculae, \xavier{we applied the activity correction proposed in Eq.~\ref{eq:RV:correction} to check its efficient in in th ecase of a faculae.} The results of this correction are displayed in Fig.~\ref{fig:faculae.correction} and the statistical tests on the coefficients involved in Eq.~\ref{eq:RV:correction} are summarized in Table \ref{table:faculae.test}. 
+\xavier{To modify with respect to the new results. It is straightforward noticing that the proposed correction almost completely addresses the issue, providing a new set of RV's where there are not anymore spurious variations caused by the presence of the faculae. In particular the $R^{2}$ is extremely high regardless the fit that has been use (Normal or SN). We note also that the parameter $\beta_{4}$, associated with the interaction between $\gamma$ and SN FWHM (or BIS SPAN and FWHM) is not statistically significant to explain spurious variations caused by a faculae.}
 
 \begin{figure*}[htbp]
    \centering
