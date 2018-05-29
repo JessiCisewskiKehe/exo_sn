@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -56,6 +56,13 @@ I.~Boisse, C.~Moutou, A.~Vidal-Madjar, F.~Bouchy, F.~Pont, G.~H{\'e}brard,
 I.~Boisse, F.~Bouchy, G.~H{\'e}brard, X.~Bonfils, N.~Santos, and S.~Vauclair.
 \newblock Disentangling between stellar activity and planetary signals.
 \newblock \emph{Astronomy \& Astrophysics}, 528:\penalty0 A4, 2011.
+
+\bibitem[{Claret} and {Bloemen}(2011)]{Claret-2011}
+A.~{Claret} and S.~{Bloemen}.
+\newblock {Gravity and limb-darkening coefficients for the Kepler, CoRoT,
+  Spitzer, uvby, UBVRIJHK, and Sloan photometric systems}.
+\newblock \emph{\aap}, 529:\penalty0 A75, May 2011.
+\newblock \doi{10.1051/0004-6361/201116451}.
 
 \bibitem[Cosentino et~al.(2012)Cosentino, Lovis, Pepe, Cameron, Latham,
   Molinari, Udry, Bezawada, Black, Born, et~al.]{Cosentino-2012}
@@ -211,6 +218,15 @@ N.~Meunier, M.~Desort, and A.-M. Lagrange.
 \newblock Using the sun to estimate earth-like planets detection
   capabilities-ii. impact of plages.
 \newblock \emph{Astronomy \& Astrophysics}, 512:\penalty0 A39, 2010.
+
+\bibitem[{Oshagh} et~al.(2013){Oshagh}, {Boisse}, {Bou{\'e}}, {Montalto},
+  {Santos}, {Bonfils}, and {Haghighipour}]{Oshagh-2013a}
+M.~{Oshagh}, I.~{Boisse}, G.~{Bou{\'e}}, M.~{Montalto}, N.~C. {Santos},
+  X.~{Bonfils}, and N.~{Haghighipour}.
+\newblock {SOAP-T: a tool to study the light curve and radial velocity of a
+  system with a transiting planet and a rotating spotted star}.
+\newblock \emph{\aap}, 549:\penalty0 A35, Jan. 2013.
+\newblock \doi{10.1051/0004-6361/201220173}.
 
 \bibitem[Pepe et~al.(2002)Pepe, Mayor, Galland, Naef, Queloz, Santos, Udry, and
   Burnet]{Pepe-2002a}

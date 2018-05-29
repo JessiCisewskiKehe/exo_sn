@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 The style file: abbrvnat.bst
-Illegal, another \bibstyle command---line 179 of file manuscript.aux
+Illegal, another \bibstyle command---line 181 of file manuscript.aux
  : \bibstyle
  :          {aa}
 I'm skipping whatever remains of this command
@@ -17,45 +17,45 @@ Repeated entry---line 675 of file mybib-SNCCF.bib
 I'm skipping whatever remains of this entry
 Warning--empty journal in Arellano-2010
 Warning--there's a number but no series in belsley1991
-You've used 39 entries,
+You've used 41 entries,
             2773 wiz_defined-function locations,
-            859 strings with 13226 characters,
-and the built_in function-call counts, 24112 in all, are:
-= -- 1959
-> -- 2118
-< -- 22
-+ -- 714
-- -- 675
-* -- 2227
-:= -- 3869
-add.period$ -- 117
-call.type$ -- 39
-change.case$ -- 330
-chr.to.int$ -- 39
-cite$ -- 80
-duplicate$ -- 847
-empty$ -- 1496
-format.name$ -- 728
-if$ -- 4865
+            874 strings with 13745 characters,
+and the built_in function-call counts, 25136 in all, are:
+= -- 2045
+> -- 2205
+< -- 23
++ -- 743
+- -- 702
+* -- 2322
+:= -- 4038
+add.period$ -- 125
+call.type$ -- 41
+change.case$ -- 345
+chr.to.int$ -- 41
+cite$ -- 84
+duplicate$ -- 888
+empty$ -- 1559
+format.name$ -- 759
+if$ -- 5071
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 42
-newline$ -- 202
-num.names$ -- 156
-pop$ -- 637
+missing$ -- 44
+newline$ -- 214
+num.names$ -- 164
+pop$ -- 661
 preamble$ -- 1
-purify$ -- 295
+purify$ -- 308
 quote$ -- 0
-skip$ -- 767
+skip$ -- 800
 stack$ -- 0
-substring$ -- 700
-swap$ -- 89
+substring$ -- 704
+swap$ -- 93
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 409
+type$ -- 431
 warning$ -- 2
-while$ -- 170
+while$ -- 176
 width$ -- 0
-write$ -- 508
+write$ -- 538
 (There were 3 error messages)
