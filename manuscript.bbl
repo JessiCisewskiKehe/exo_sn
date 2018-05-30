@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{43}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Anglada-Escud{\'e} \& Butler(2012)}]{Anglada-Escude-2012}
@@ -178,5 +178,8 @@ Thompson, A., Watson, C., de~Mooij, E., \& Jess, D. 2017, Monthly Notices of
 
 \bibitem[{Wilks(1997)}]{wilks1997resampling}
 Wilks, D. 1997, Journal of Climate, 10, 65
+
+\bibitem[{{Zechmeister} \& {K{\"u}rster}(2009)}]{Zechmeister-2009}
+{Zechmeister}, M. \& {K{\"u}rster}, M. 2009, \aap, 496, 577
 
 \end{thebibliography}

@@ -14,45 +14,45 @@ I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Arellano-2010
 Warning-- there's a number but no series in belsley1991
-You've used 42 entries,
+You've used 43 entries,
             3039 wiz_defined-function locations,
-            952 strings with 13948 characters,
-and the built_in function-call counts, 23696 in all, are:
-= -- 1896
-> -- 2235
-< -- 20
-+ -- 773
-- -- 705
-* -- 2043
-:= -- 4417
-add.period$ -- 42
-call.type$ -- 42
-change.case$ -- 395
-chr.to.int$ -- 42
-cite$ -- 44
-duplicate$ -- 777
-empty$ -- 1133
-format.name$ -- 814
-if$ -- 4653
+            959 strings with 14146 characters,
+and the built_in function-call counts, 24102 in all, are:
+= -- 1933
+> -- 2257
+< -- 21
++ -- 780
+- -- 711
+* -- 2073
+:= -- 4490
+add.period$ -- 43
+call.type$ -- 43
+change.case$ -- 401
+chr.to.int$ -- 43
+cite$ -- 45
+duplicate$ -- 796
+empty$ -- 1159
+format.name$ -- 825
+if$ -- 4735
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 40
-newline$ -- 130
-num.names$ -- 168
-pop$ -- 400
+missing$ -- 41
+newline$ -- 133
+num.names$ -- 172
+pop$ -- 407
 preamble$ -- 1
-purify$ -- 395
+purify$ -- 401
 quote$ -- 0
-skip$ -- 699
+skip$ -- 716
 stack$ -- 0
-substring$ -- 865
+substring$ -- 886
 swap$ -- 15
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 366
+type$ -- 375
 warning$ -- 2
-while$ -- 162
+while$ -- 166
 width$ -- 0
-write$ -- 417
+write$ -- 427
 (There were 2 error messages)
