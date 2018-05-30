@@ -1,15 +1,15 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{The Skew Normal distribution}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Fitting the Skew Normal density to the CCF}{section.2}% 3
-\BOOKMARK [1][-]{section.3}{Radial Velocity correction function for stellar activity}{}% 4
+\BOOKMARK [1][-]{section.3}{Radial Velocity correction for stellar activity}{}% 4
 \BOOKMARK [1][-]{section.4}{Simulation Study}{}% 5
 \BOOKMARK [2][-]{subsection.4.1}{Faculae}{section.4}% 6
 \BOOKMARK [2][-]{subsection.4.2}{Spot}{section.4}% 7
 \BOOKMARK [2][-]{subsection.4.3}{Spot and planet}{section.4}% 8
 \BOOKMARK [2][-]{subsection.4.4}{Conclusions on the simulation study}{section.4}% 9
 \BOOKMARK [1][-]{section.5}{Real data application}{}% 10
-\BOOKMARK [2][-]{subsection.5.1}{Alpha Centauri B}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.2}{Doppler-shift added to Alpha Centauri B}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Comparison between the different CCF parameters derived with the Normal and the Skew Normal density}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.2}{Detection limits when using the RV derived with the Normal or the Skew Normal density}{section.5}% 12
 \BOOKMARK [1][-]{section.6}{Estimation of standard errors for the CCF parameters}{}% 13
 \BOOKMARK [2][-]{subsection.6.1}{Estimation of standard errors for the CCF parameters for the simulation study}{section.6}% 14
 \BOOKMARK [2][-]{subsection.6.2}{Estimation of standard errors for the CCF parameters for real stars}{section.6}% 15
