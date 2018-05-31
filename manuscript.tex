@@ -1,4 +1,5 @@
 \documentclass{aa}
+
 %\documentclass[referee]{aa}
 %
 \usepackage{pdflscape} % or {lscape}
@@ -289,19 +290,19 @@ where $x$ and $y$ are two quantitative variables, $cov(x,y)$ indicates the covar
 Exoplanets only produce a pure RV signal. On the contrary, stellar activity, in particular the presence of active regions on the stellar photosphere, do not produce blueshifts or redshifts of the entire stellar spectrum but can create spurious RV signals by modifying the shape of spectral lines.
 To track these variations in the shape of the spectral lines, the general approach consists in using the FWHM, the BIS SPAN or other indicators such as those introduced in \citet{Boisse-2011} or \citet{Figueira-2013}, which provide information on the width and asymmetry of the CCF. A strong correlation between the estimated RVs and one or more of these parameters provides an indication that stellar activity signals may be affecting the measurements.
 
-\xavier{When fitting for planetary signals in RV data, it is common to include in the fitted model, linear dependencies with the BIS SPAN and the FWHM, to take into account the signal induced by stellar activity \citep[e.g.][]{Dumusque:2017aa,Feng:2017aa}.
+When fitting for planetary signals in RV data, it is common to include linear dependencies with the BIS SPAN and the FWHM and to take into account the signal induced by stellar activity \citep[e.g.][]{Dumusque:2017aa,Feng:2017aa}.
 %Some people also include the \logrhk, however, \citet{Feng-2018} show that this is probably not a good choice as \logrhk and RV are not well correlated.
-In this paper, we propose to add additional parameters in the model to correct for stellar activity: first the amplitude parameter A of the CCF, generally referred to as the CCF contrast, and the interaction between the BIS SPAN and the FWHM (or $\gamma$ and SN FWHM in the SN case). The stellar activity correction we propose can therefore be written as:}
+We propose to add additional parameters in the model to correct for stellar activity: first the amplitude parameter A of the CCF, generally referred to as the CCF contrast, and the interaction between the BIS SPAN and the FWHM (or $\gamma$ and SN FWHM in the SN case). The stellar activity correction we propose can therefore be written as:
 %
 \begin{equation}
-RV_{\text{stellar activity}}= \beta_{0} + \beta_{1} A + \beta_{2} \gamma + \beta_{3} \text{SN FWHM} + \beta_{4} (\gamma  \text{SN FWHM})+\epsilon,
+RV_{\text{activity}}= \beta_{0} + \beta_{1} A + \beta_{2} \gamma + \beta_{3} \text{SN FWHM} + \beta_{4} (\gamma  \text{SN FWHM})+\epsilon,
 \label{eq:RV:correction}
 \end{equation}
 %
 where $\beta_{0}$ is the intercept and $\epsilon$ is the vector of the errors with mean equal to $0$ and covariance matrix equal to $\sigma^{2}I$ ($I$ defined as the identity matrix). 
 The contrast parameter $A$ accounts for the presence of a spot on the stellar surface, which produces a change in the amplitude of the CCF and not only on its asymmetry or width \citep[see e.g. Fig. 2 in ][]{Dumusque-2014b}.
 The reasons for including in Eq.~\ref{eq:RV:correction} a variable that quantifies the interaction between $\gamma$ and SN FWHM (or BIS SPAN and FWHM) will be better understood through the results of the examples presented in Sec.\ref{sec:soap}. 
-\xavier{This interaction term can accounts for possible interactions between SN FWHM (or FWHM) and $\gamma$ (or BIS SPAN), meaning that the two variables' association with the response, $RV_{\text{stellar activity}}$, depends also on the other variable.
+\xavier{This interaction term can accounts for possible interactions between SN FWHM (or FWHM) and $\gamma$ (or BIS SPAN), meaning that the two variables' association with the response, $RV_{\text{activity}}$, depends also on the other variable.
 }. \xavier{Umberto, Jessi, is this correct ?} \jessi{I modified the statement - is the modification clear?}
 %while the association between in this case BIS SPAN and FWHM (or $\gamma$ and SN FWHM) means that the values of one variable relate to the values of the other (since in this case we have two quantitative variables we talk about correlation), with the term interaction we mean that the effect that one variable has on the RV's is not constant. In particular the effect differs at different values of the other values. %As a consequence of this, if two variables are interacting the may or may not be associated.
 
@@ -468,11 +469,11 @@ In Fig.~\ref{fig:spot.plus.planet.corr}, we show the correlation between the dif
 In order to correct the RV's from the spurious variation caused by the spot, \xavier{we need to add to our model of activity correction, a signal to take into account the RV variation caused by the injected planet. The observed RV can therefore be modeled by a combination of the activity and the planet signal:}
 %
 \begin{equation}
-RV= RV_{\text{stellar activity}} + RV_{\text{planet}},
+RV= RV_{\text{activity}} + RV_{\text{planet}},
 \label{eq:RV:correction.overall}
 \end{equation}
 %
-\xavier{where $RV_{\text{stellar activity}}$ can be found in Eq.~\ref{eq:RV:correction}, and $RV_{\text{planet}}$, in the case of no eccentricity, can be modelled by the following sinusoidal function:}
+\xavier{where $RV_{\text{activity}}$ can be found in Eq.~\ref{eq:RV:correction}, and $RV_{\text{planet}}$, in the case of no eccentricity, can be modelled by the following sinusoidal function:}
 %
 \begin{equation}
 RV_{\text{exoplanet}}= K \sin \left(\frac{2 \pi}{P} (t - t_{0})\right),
