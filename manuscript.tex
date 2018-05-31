@@ -444,7 +444,9 @@ $\beta_{4}$            &     $2e-16$   &  $2e-16$ & $2e-16$\\
 $R^{2}$      &     $0.9959$    &  $0.9936$ & $0.9952$  \\
 \hline
 \end{tabular}
-\caption{\umberto{Evaluation of the linear combination used for correcting the RV's from spurious variations caused by a spot, according to Eq.~\ref{eq:RV:correction}. All the covariates are statistically useful to explain the variability in RV's caused by a spot, except the intercept and the width of the CCF. The estimated $R^{2}$ show that the proposed correction for stellar activity explains all the spurious variability in RV's.}}
+\caption{The p-values and coefficient of determination for the models fit using Eq.~\ref{eq:RV:correction} to correct the estimated RVs from spurious variations caused by a spot. 
+All the covariates are statistically significant to explain the variability in RV's caused by a spot, except the intercept and the width of the CCF.
+The estimated $R^{2}$ show that the proposed correction for stellar activity explains the vast majority of the spurious variability in the estimated RVs. \jessi{Isn't the width of the CCF parameter sig for N mean RV at 0.017?  Previously it was noted that a 5\% significance level was going to be used.}}
 \label{table:spot.test}
 \end{table}
 
@@ -524,7 +526,11 @@ $t_{0}$            &     $2e-16$   &  $2e-16$ & $2e-16$ \\
 $\text{Residuals}$      &     $0.71 \ms$    &  $ 0.66 \ms$ & $0.70 \ms$  \\
 \hline
 \end{tabular}
-\caption{Evaluation of the linear combination used for correcting the RV's, according to Eq.~\ref{eq:RV:correction.overall}. All the parameters are statistically helpful to address spurious variations in RV's except the FWHM. Concerning the keplerian parameters, the amplitude $K$ that provides relevance about the possibly presence of the exoplanet. Note that since non linear least squares are required, the residual standard error rather than the $R^2$ is displayed for each case.}
+\caption{The p-values and coefficient of determination for the models fit using Eq.~\ref{eq:RV:correction.overall} to correct the estimated RVs from spurious variations caused by a spot while also accounting for a true planet RV. 
+All the covariates are statistically significant to explain the variability in RV's caused by a spot, except the FWHM.
+Concerning the Keplerian parameters, the amplitude $K$ that provides relevance about the possibly presence of the exoplanet.
+Note that since nonlinear least squares was required, the residual standard error rather than the $R^2$ is displayed as a reference.
+}
 \label{table:spotplanet.test}
 \end{table}
 
