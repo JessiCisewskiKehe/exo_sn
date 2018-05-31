@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{39}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Anglada-Escud{\'e} \& Butler(2012)}]{Anglada-Escude-2012}
@@ -42,10 +42,6 @@ Boisse, I., Moutou, C., Vidal-Madjar, A., {et~al.} 2009, Astronomy \&
 Cosentino, R., Lovis, C., Pepe, F., {et~al.} 2012, in Proc. SPIE, Vol. 8446,
   84461V
 
-\bibitem[{Davison \& Hinkley(1997)}]{davison1997bootstrap}
-Davison, A.~C. \& Hinkley, D.~V. 1997, Bootstrap methods and their application,
-  Vol.~1 (Cambridge university press)
-
 \bibitem[{Desort {et~al.}(2007)Desort, Lagrange, Galland, Udry, \&
   Mayor}]{Desort-2007}
 Desort, M., Lagrange, A.-M., Galland, F., Udry, S., \& Mayor, M. 2007,
@@ -74,10 +70,6 @@ Dumusque, X., Pepe, F., Lovis, C., {et~al.} 2012, Nature, 491, 207
   Monteiro}]{Dumusque-2011a}
 Dumusque, X., Udry, S., Lovis, C., Santos, N.~C., \& Monteiro, M. 2011,
   Astronomy \& Astrophysics, 525, A140
-
-\bibitem[{Efron \& Tibshirani(1994)}]{efron1994introduction}
-Efron, B. \& Tibshirani, R.~J. 1994, An introduction to the bootstrap (CRC
-  press)
 
 \bibitem[{Efroymson(1960)}]{efroymson1960multiple}
 Efroymson, M. 1960, Mathematical methods for digital computers, 191
@@ -115,10 +107,6 @@ Kurster, M., Endl, M., Rouesnel, F., {et~al.} 2003, ASTRONOMY AND
 \bibitem[{Lagrange {et~al.}(2010)Lagrange, Desort, \& Meunier}]{Lagrange-2010}
 Lagrange, A.-M., Desort, M., \& Meunier, N. 2010, Astronomy \& Astrophysics,
   512, A38
-
-\bibitem[{Lahiri(2013)}]{lahiri2013resampling}
-Lahiri, S.~N. 2013, Resampling methods for dependent data (Springer Science \&
-  Business Media)
 
 \bibitem[{Lindegren \& Dravins(2003)}]{Lindegren-2003}
 Lindegren, L. \& Dravins, D. 2003, Astronomy \& Astrophysics, 401, 1185
@@ -175,9 +163,6 @@ Saar, S.~H. \& Donahue, R.~A. 1997, The Astrophysical Journal, 485, 319
   Jess}]{Thompson-2017}
 Thompson, A., Watson, C., de~Mooij, E., \& Jess, D. 2017, Monthly Notices of
   the Royal Astronomical Society: Letters, 468, L16
-
-\bibitem[{Wilks(1997)}]{wilks1997resampling}
-Wilks, D. 1997, Journal of Climate, 10, 65
 
 \bibitem[{{Zechmeister} \& {K{\"u}rster}(2009)}]{Zechmeister-2009}
 {Zechmeister}, M. \& {K{\"u}rster}, M. 2009, \aap, 496, 577
