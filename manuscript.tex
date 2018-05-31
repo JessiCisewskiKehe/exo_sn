@@ -252,7 +252,7 @@ f_{CCF}(x_i) = \mathrm{C} - \mathrm{A} \times SN(x_i;\mu, \sigma^2, \gamma), \qu
 \end{eqnarray}
 %
 where C is an unknown offset for the continuum of the CCF, A is the unknown amplitude of the CCF, commonly referred to as the contrast, and $\mu$, $\sigma^2$ and $\gamma$ are the mean, variance and skewness of the SN as defined above.
-The values $x_1, \ldots, x_n$ are the different values of the x-axis of the CCF, generally in the unit of a velocity.
+The values $x_1, \ldots, x_n$ are the different values of the x-axis of the CCF, generally in velocity units (e.g. \ms).
 
 %%%Since the CCF has an asymmetry due the convective blueshift, the SN density should in principle better catch this aspect, together with other changes in asymmetry, with respect to fitting a Normal density. 
 %%%To initially check this intuition, we compared the CCF residuals after fitting a Normal and a SN density for 2 stars. The first star is Alpha Centauri b, whose CCF's have high signal-to-noise ratio (SNR). The second star is Corot-7, whose CCF's have low SNR. Fig.~\ref{fig:Residual.comparison} shows that the SN seems to be a slightly better model to explain the shape of the CCF.%, in particular as the SNR decreases.
@@ -274,10 +274,10 @@ An estimated skewness parameter is generally obtained by calculating the BIS SPA
 With the proposed SN approach, we propose two estimators of the RV: the mean and median of the SN model fit (referred to as SN mean RV and SN median RV, respectively), and present advantages and limitations for both of these choices in Sec. \ref{sec:4} and Sec. \ref{sec:5}. 
 The width of the SN, SN FWHM, is defined in the same way as for the Normal density\footnote{Note that SN FWHM does not correspond to the width of the SN density at half maximum like in the Normal case.}, and finally the skewness of the CCF is estimated by the $\gamma$ parameter.
 
-To evaluate the strength of the correlation between the estimated RV's and the different stellar activity indicators, we calculated the Pearson correlation coefficient, which in its general form is defined as:
+To evaluate the strength of the correlation between the estimated RV's and the different stellar activity indicators, we calculated the Pearson correlation coefficient, $R$, which in its general form is defined as:
 %
 \begin{equation}
-R (x,y)= \frac{cov(x,y)}{\sigma(x),\sigma(y)},
+R (x,y)= \frac{cov(x,y)}{\sigma(x)\sigma(y)},
 \label{eq:Pearson:corr}
 \end{equation}
 %
