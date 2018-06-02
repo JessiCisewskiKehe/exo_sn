@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{41}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Anglada-Escud{\'e} \& Butler(2012)}]{Anglada-Escude-2012}
@@ -33,6 +33,10 @@ Boisse, I., Bouchy, F., H{\'e}brard, G., {et~al.} 2011, Astronomy \&
   H{\'e}brard, Bonfils, Croll, Delfosse, Desort, {et~al.}}]{Boisse-2009}
 Boisse, I., Moutou, C., Vidal-Madjar, A., {et~al.} 2009, Astronomy \&
   Astrophysics, 495, 959
+
+\bibitem[{{Borgniet} {et~al.}(2015){Borgniet}, {Meunier}, \&
+  {Lagrange}}]{Borgniet-2015}
+{Borgniet}, S., {Meunier}, N., \& {Lagrange}, A.-M. 2015, \aap, 581, A133
 
 \bibitem[{{Claret} \& {Bloemen}(2011)}]{Claret-2011}
 {Claret}, A. \& {Bloemen}, S. 2011, \aap, 529, A75
