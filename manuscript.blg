@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 The style file: aa.bst
 Database file #1: mybib-SNCCF.bib
@@ -11,48 +11,52 @@ Repeated entry---line 701 of file mybib-SNCCF.bib
  : @article{Robertson-2014
  :                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 812 of file mybib-SNCCF.bib
+ : @article{Faria-2016a
+ :                     ,
+I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Arellano-2010
 Warning-- there's a number but no series in belsley1991
-You've used 39 entries,
+You've used 40 entries,
             3039 wiz_defined-function locations,
-            940 strings with 13682 characters,
-and the built_in function-call counts, 22664 in all, are:
-= -- 1815
-> -- 2191
+            946 strings with 13894 characters,
+and the built_in function-call counts, 23290 in all, are:
+= -- 1865
+> -- 2256
 < -- 16
-+ -- 756
-- -- 693
-* -- 1973
-:= -- 4229
-add.period$ -- 39
-call.type$ -- 39
-change.case$ -- 379
-chr.to.int$ -- 39
-cite$ -- 41
-duplicate$ -- 726
-empty$ -- 1032
-format.name$ -- 795
-if$ -- 4442
++ -- 778
+- -- 714
+* -- 2030
+:= -- 4347
+add.period$ -- 40
+call.type$ -- 40
+change.case$ -- 390
+chr.to.int$ -- 40
+cite$ -- 42
+duplicate$ -- 744
+empty$ -- 1058
+format.name$ -- 818
+if$ -- 4564
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 37
-newline$ -- 121
-num.names$ -- 156
-pop$ -- 379
+missing$ -- 38
+newline$ -- 124
+num.names$ -- 160
+pop$ -- 389
 preamble$ -- 1
-purify$ -- 379
+purify$ -- 390
 quote$ -- 0
-skip$ -- 645
+skip$ -- 661
 stack$ -- 0
-substring$ -- 833
+substring$ -- 854
 swap$ -- 14
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 348
+type$ -- 357
 warning$ -- 2
-while$ -- 153
+while$ -- 157
 width$ -- 0
-write$ -- 387
-(There were 2 error messages)
+write$ -- 397
+(There were 3 error messages)

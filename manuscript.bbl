@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{40}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Anglada-Escud{\'e} \& Butler(2012)}]{Anglada-Escude-2012}
@@ -73,6 +73,11 @@ Dumusque, X., Udry, S., Lovis, C., Santos, N.~C., \& Monteiro, M. 2011,
 
 \bibitem[{Efroymson(1960)}]{efroymson1960multiple}
 Efroymson, M. 1960, Mathematical methods for digital computers, 191
+
+\bibitem[{Faria {et~al.}(2016)Faria, Haywood, Brewer, Figueira, Oshagh,
+  Santerne, \& Santos}]{Faria-2016a}
+Faria, J., Haywood, R., Brewer, B., {et~al.} 2016, Astronomy \& Astrophysics,
+  588, A31
 
 \bibitem[{Feng {et~al.}(2017)Feng, Tuomi, \& Jones}]{Feng:2017aa}
 Feng, F., Tuomi, M., \& Jones, H.~R. 2017, Astronomy \& Astrophysics, 605, A103
