@@ -75,9 +75,6 @@ Dumusque, X., Pepe, F., Lovis, C., {et~al.} 2012, Nature, 491, 207
 Dumusque, X., Udry, S., Lovis, C., Santos, N.~C., \& Monteiro, M. 2011,
   Astronomy \& Astrophysics, 525, A140
 
-\bibitem[{Efroymson(1960)}]{efroymson1960multiple}
-Efroymson, M. 1960, Mathematical methods for digital computers, 191
-
 \bibitem[{Faria {et~al.}(2016)Faria, Haywood, Brewer, Figueira, Oshagh,
   Santerne, \& Santos}]{Faria-2016a}
 Faria, J., Haywood, R., Brewer, B., {et~al.} 2016, Astronomy \& Astrophysics,
@@ -105,9 +102,6 @@ Hatzes, A.~P. 2002, Astronomische Nachrichten, 323, 392
 Haywood, R., Collier~Cameron, A., Queloz, D., {et~al.} 2014, Monthly notices of
   the royal astronomical society, 443, 2517
 
-\bibitem[{Hocking(1976)}]{hocking1976biometrics}
-Hocking, R.~R. 1976, Biometrics, 32, 1
-
 \bibitem[{Kurster {et~al.}(2003)Kurster, Endl, Rouesnel, Els, Kaufer, Brillant,
   Hatzes, Saar, \& Cochran}]{Kurster2003}
 Kurster, M., Endl, M., Rouesnel, F., {et~al.} 2003, ASTRONOMY AND
@@ -119,6 +113,9 @@ Lagrange, A.-M., Desort, M., \& Meunier, N. 2010, Astronomy \& Astrophysics,
 
 \bibitem[{Lindegren \& Dravins(2003)}]{Lindegren-2003}
 Lindegren, L. \& Dravins, D. 2003, Astronomy \& Astrophysics, 401, 1185
+
+\bibitem[{Lomb(1976)}]{Lomb-1976a}
+Lomb, N.~R. 1976, Astrophysics and Space Science, 39, 447
 
 \bibitem[{{Mayor} {et~al.}(2003){Mayor}, {Pepe}, {Queloz}, {Bouchy},
   {Rupprecht}, {Lo Curto}, {Avila}, {Benz}, {Bertaux}, {Bonfils}, {Dall},
@@ -167,6 +164,9 @@ Robertson, P., Mahadevan, S., Endl, M., \& Roy, A. 2014, Science, 1253253
 
 \bibitem[{Saar \& Donahue(1997)}]{Saar-1997b}
 Saar, S.~H. \& Donahue, R.~A. 1997, The Astrophysical Journal, 485, 319
+
+\bibitem[{{Scargle}(1982)}]{Scargle-1982}
+{Scargle}, J.~D. 1982, \apj, 263, 835
 
 \bibitem[{Thompson {et~al.}(2017)Thompson, Watson, de~Mooij, \&
   Jess}]{Thompson-2017}

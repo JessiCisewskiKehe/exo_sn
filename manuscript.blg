@@ -20,36 +20,36 @@ Warning--empty journal in Arellano-2010
 Warning-- there's a number but no series in belsley1991
 You've used 41 entries,
             3039 wiz_defined-function locations,
-            952 strings with 14136 characters,
-and the built_in function-call counts, 23747 in all, are:
-= -- 1904
+            953 strings with 14291 characters,
+and the built_in function-call counts, 23769 in all, are:
+= -- 1907
 > -- 2287
 < -- 16
-+ -- 788
++ -- 786
 - -- 723
-* -- 2069
-:= -- 4430
+* -- 2072
+:= -- 4433
 add.period$ -- 41
 call.type$ -- 41
 change.case$ -- 397
 chr.to.int$ -- 41
 cite$ -- 43
 duplicate$ -- 763
-empty$ -- 1085
+empty$ -- 1087
 format.name$ -- 830
-if$ -- 4655
+if$ -- 4662
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 39
 newline$ -- 127
 num.names$ -- 164
-pop$ -- 396
+pop$ -- 394
 preamble$ -- 1
 purify$ -- 397
 quote$ -- 0
-skip$ -- 678
+skip$ -- 681
 stack$ -- 0
-substring$ -- 878
+substring$ -- 882
 swap$ -- 14
 text.length$ -- 2
 text.prefix$ -- 0
@@ -58,5 +58,5 @@ type$ -- 366
 warning$ -- 2
 while$ -- 161
 width$ -- 0
-write$ -- 407
+write$ -- 408
 (There were 3 error messages)
