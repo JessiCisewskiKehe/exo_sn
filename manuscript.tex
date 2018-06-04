@@ -434,7 +434,9 @@ This is not surprising when looking at the circle shape drawn when plotting the 
    %
  (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std--red crosses) and the residuals from the usual correction (Usual corr. std--green triangles).The residuals have a smaller systematic component when using the proposed model of 
   Eq.~\ref{eq:RV:correction} (red crosses) compared to the usual model (green triangles).
-The tests of statistical significance on the parameters are presented in Table \ref{table:spot.test}.}
+The tests of statistical significance on the parameters are presented in Table \ref{table:spot.test}.
+\jessi{The SN Mean and Median bottom plots still show the two outliers - in the updated plots emailed out by Umberto it had looked like the outliers were at least somewhat resolved}
+}
     \label{fig:spot.correction}
 \end{center}
 \end{figure*}
@@ -477,8 +479,8 @@ The purpose of this example is to check if we are able to disentangle these two 
 Fig.~\ref{fig:spot.plus.planet} shows the variation observed in the CCF barycenter parameters. As in the case of the spot, all RV estimates show similar variations, with SN mean RV showing a slightly smaller amplitude.
 
 The correlation between the different CCF parameters are displayed in Fig.~\ref{fig:spot.plus.planet.corr}. 
-The correlations are weaker than in the case of the spot due to the planet inducing changes in RV without affecting the width or asymmetry of the CCF.  However, the strength of the correlations between the CCF asymmetry and RV are in the same order as with the spot-only model: $\gamma$--SN median RV, BIS SPAN--N mean RV and $\gamma$--SN mean RV, with $R$ values of $-0.84$, $-0.78$ and $-0.76$, respectively. 
-The variation seen in the width-RV phase space draw a circle like in the case of a spot, therefore, no correlation is observed between those two parameters.
+The correlations are weaker than in the case of the spot due to the planet inducing changes in RV without affecting the width or asymmetry of the CCF.  However, the strength of the correlations between the CCF asymmetry and RV are in the same order as with the spot-only model: $\gamma$--SN median RV has the highest correlation followed by BIS SPAN--N mean RV and then $\gamma$--SN mean RV, with $R$ values of $-0.84$, $-0.78$ and $-0.76$, respectively. 
+The patterns seen in the width-RV phase space in Fig.~\ref{fig:spot.plus.planet.corr} follow a circle similar to the spot-only model, and no correlation is observed between those two parameters.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -493,29 +495,30 @@ The variation seen in the width-RV phase space draw a circle like in the case of
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{SOAP_SPOT_PLANET_Comparison_para_SN.pdf} 
-   \caption{Evaluation of the correlation between the RVs and the asymmetry parameters when a spot is present on the photosphere of the star and a planet is injected.  In this case only the shape of the CCF changes as the spot moves, producing statistically significative correlations only between the RVs and the asymmetry parameter. The correlations between the RVs and the width parameter of the CCF is weaker than the previous case that considers only the presence of a spot on the photosphere of the star.}
+   \caption{Evaluation of the correlation between the RVs and the asymmetry parameters when a spot is present on the photosphere of the star and a planet is injected.  The shape of the CCF changes as the spot moves, producing statistically significative correlations only between the RVs and the asymmetry parameter. The correlations between the RVs and the width parameter of the CCF is weaker than the previous case that considers only the presence of a spot on the photosphere of the star.}
     \label{fig:spot.plus.planet.corr}
 \end{center}
 \end{figure*}
 
-In order to correct the RVs from the spurious variation caused by the spot, we need to add to our model of activity correction, a signal to take into account the RV variation caused by the injected planet. The observed RV can therefore be modeled as a combination of the activity and planetary signal:
+In order to correct the estimated RVs from the spurious variation caused by the spot, the proposed model for correcting the activity is added to a signal that takes into account the RV variation caused by a injected planet. The observed RV can therefore be modeled as a combination of the activity and planetary signals:
 %
 \begin{equation}
 RV= RV_{\text{activity}} + RV_{\text{planet}},
 \label{eq:RV:correction.overall}
 \end{equation}
 %
-where $RV_{\text{activity}}$ can be found in Eq.~\ref{eq:RV:correction}, and $RV_{\text{planet}}$, in the case of no eccentricity, can be modelled by the following sinusoidal function:
+where $RV_{\text{activity}}$ can be found in Eq.~\ref{eq:RV:correction}, and $RV_{\text{planet}}$, in the case with no eccentricity, can be modeled by the following sinusoidal function:
 %
 \begin{equation}
 RV_{\text{exoplanet}}= K \sin \left(\frac{2 \pi}{P} (t - t_{0})\right),
 \label{eq:RV:correction.planet}
 \end{equation}
 %
-where the amplitude $K$, the orbital period $P$ and the epoch at the periapsis $t_{0}$ are three unknown parameters that define the planetary orbit.
+with amplitude $K$, orbital period $P$, and an epoch at the periapsis $t_{0}$.  The previous three unknown parameters define the planetary orbit.
 
 %We note that the p--value associated with the amplitude parameter $K$ is particularly relevant for rejecting or not rejecting the assumption about the presence of an orbiting companion. Moreover we note also that Eq.~\ref{eq:RV:correction.planet} is highly non linear, meaning that the estimation of all the parameters involved in Eq.~\ref{eq:RV:correction.overall} has to be done numerically. %We used non linear least squares and the results are displayed in Fig.~\ref{fig:spotplanet.correction}. We can see how in this case we are able to disentangle the spurious variations in RVs caused by stellar activity from the pure Doppler-shift due to the planet. 
-The statistical tests conducted on the parameters, whose results are summarized in Table \ref{table:spotplanet.test}, shows that except for the width parameters with coefficient $\beta_3$, all the other Normal or SN parameters are significantly useful to explain the RV variation induce by a spot plus a planet. Always looking at Table \ref{table:spotplanet.test}, we see that the residuals, once corrected for stellar activity an the presence of the planet, lead to similar results, with SN mean RV giving the smallest value.
+The proposed model from Eqn~\eqref{eq:RV:correction.overall} was fit and the results of the estimated model are summarized summarized in Table \ref{table:spotplanet.test}.   Except for the width parameters with coefficient $\beta_3$, all the other Normal or SN parameters are significantly useful to explain the RV variation induce by a spot plus a planet. 
+It is also apparent that the residuals, once corrected for stellar activity and the presence of the planet, lead to similar results with SN mean RV giving the smallest value. \jessi{I'm not sure what the point of the previous sentence is - the SN mean RV residuals is similar to what?}
 
 %\begin{figure*}[htbp]
 %   \centering
