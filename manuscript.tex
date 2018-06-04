@@ -435,7 +435,6 @@ This is not surprising when looking at the circle shape drawn when plotting the 
  (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std--red crosses) and the residuals from the usual correction (Usual corr. std--green triangles).The residuals have a smaller systematic component when using the proposed model of 
   Eq.~\ref{eq:RV:correction} (red crosses) compared to the usual model (green triangles).
 The tests of statistical significance on the parameters are presented in Table \ref{table:spot.test}.
-\jessi{The SN Mean and Median bottom plots still show the two outliers - in the updated plots emailed out by Umberto it had looked like the outliers were at least somewhat resolved.  Also, it would be good to clarify what the std is in the top plots (e.g. Estimated RV std) since there are three sets of points.}
 }
     \label{fig:spot.correction}
 \end{center}
@@ -518,7 +517,7 @@ with amplitude $K$, orbital period $P$, and an epoch at the periapsis $t_{0}$.  
 
 %We note that the p--value associated with the amplitude parameter $K$ is particularly relevant for rejecting or not rejecting the assumption about the presence of an orbiting companion. Moreover we note also that Eq.~\ref{eq:RV:correction.planet} is highly non linear, meaning that the estimation of all the parameters involved in Eq.~\ref{eq:RV:correction.overall} has to be done numerically. %We used non linear least squares and the results are displayed in Fig.~\ref{fig:spotplanet.correction}. We can see how in this case we are able to disentangle the spurious variations in RVs caused by stellar activity from the pure Doppler-shift due to the planet. 
 The proposed model from Eqn~\eqref{eq:RV:correction.overall} was fit and the results of the estimated model are summarized summarized in Table \ref{table:spotplanet.test}.   Except for the width parameters with coefficient $\beta_3$, all the other Normal or SN parameters are significantly useful to explain the RV variation induce by a spot plus a planet. 
-It is also apparent that the residuals, once corrected for stellar activity and the presence of the planet, lead to similar results with SN mean RV giving the smallest value. \jessi{I'm not sure what the point of the previous sentence is - the SN mean RV residuals is similar to what?}
+\umberto{check if I understood correctly the meaning ... We also observe that the residuals, once corrected for stellar activity and the presence of the planet, are comparable for all the three analyses, with SN mean RV giving the smallest values.} \jessi{I'm not sure what the point of the previous sentence is - the SN mean RV residuals is similar to what?}
 
 %\begin{figure*}[htbp]
 %   \centering
@@ -616,7 +615,7 @@ For this analysis, we also include the asymmetry parameters derived in \citet{Bo
 It is clear in the case of Alpha Cen B, but also in the four other stars presented in Appendix \ref{appendix}, that the correlation found between $\gamma$ and SN mean RV is consistently the strongest. 
 In particular, for Alpha Cen B, the Pearson correlation coefficient is $R=0.74$, while it is at best $R=-0.42$ for all the other asymmetry--RV correlations not derived using the SN density fit.
 
-\jessi{This next paragraph is somewhat confusing because the other stars are now wrapped into the discussion without proper introduction.}
+\umberto{maybe we can just remove this sentence and note in the caption of the correlation plot for TauCeti that this is the only case in which the correlation using the common fit is higher.} \jessi{This next paragraph is somewhat confusing because the other stars are now wrapped into the discussion without proper introduction.}
 The correlation between SN FWHM and SN mean RV is the strongest for all the stars, except for the quietest star of all five, HD10700, for which the Pearson correlation coefficient is 0.53 for the Normal parameters and 0.42 for the SN parameters. This analysis shows that the parameters derived when using a SN density are more sensitive the stellar activity, and therefore using those parameters can lead to the detection of stellar activity, when the Normal parameters do not detect anything. This is the case for the asymmetry-RV correlation of HD10700, HD215152, Corot-7, and the width-RV correlation for HD215152 (see Appendix \ref{appendix}).
 
 %The correlations between $\gamma$ and SN mean RV, and also SN FWHM and SN mean RV
@@ -665,7 +664,7 @@ The evaluation of the $R^2$ shows that the proposed linear combination better ex
 \label{table:alphacent.test}
 \begin{tabular}{|c|c|c|c|}
 \hline
-Parameter          & \jessi{N mean RV}         &   SN mean RV &   SN median RV \\
+Parameter          & N mean RV         &   SN mean RV &   SN median RV \\
 \hline
 $\beta_{0}$            &    $0.49$    & $0.90 $  & $0.027$ \\
 \hline
@@ -804,6 +803,7 @@ Table \ref{table:summaryStars} summarizes the results obtained by the SN fit and
 \caption{Subset of notable correlations between the asymmetry or the FWHM parameters and the RVs for four stars: $\text{HD}192310$,  $\text{HD}10700$, $\text{HD}215152$ and $\text{Corot }7$. The complete results of the analyses of the correlations for the four stars are presented in Fig. \ref{fig:Gliese785:corrPlot}--\ref{fig:Corot7:corrPlot}.}
 \label{table:summaryStars}
 \begin{center}
+\scalebox{0.9}{
 \begin{tabular}{ccccccccc}
 \textbf{Star}          &\textbf{ \# CCFs}  &   \textbf{$\text{R}(\text{SN }\gamma, \text{Bis-Span})$} & \textbf{$\text{slope}(\text{SN }\gamma, \text{Bis-Span})$} &   \textbf{$\text{R}(\text{SN }\gamma, \text{SN mean RV})$}\\
 \hline
@@ -829,7 +829,7 @@ Table \ref{table:summaryStars} summarizes the results obtained by the SN fit and
  $\text{Corot }7$ & $0.092 (-0.058; 0.238)$ & $-0.335 (-0.228; -0.082)$ & $-0.709 (0.626;0.776)$ & $0.595 (0.489; 0.683)$ \\
 \hline
 \rule{0pt}{2ex}    & & & &\\
-\end{tabular}
+\end{tabular}}
 \end{center}
 \end{table*}
 }
@@ -859,7 +859,7 @@ Table \ref{table:summaryStars} summarizes the results obtained by the SN fit and
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{HD10700_[4]Comparison_para.pdf}  
-   \caption{Correlations between the asymmetry parameters and their corresponding RVs for $\text{HD}10700$. The last three plots show the correlation between the FWHM and the RVs for $\text{HD}10700$ using respectively the SN (SN mean RV and SN median RV) and the Normal fits. The correlations between the asymmetry parameters and their corresponding RVs are stronger when using the parameter SN mean RV obtained from the SN fit than the Normal one. The correlation between the FWHM and the RVs is stronger when using the parameter retrieved with the Normal distribution. The p--values associated with each $R$ are statistically different from $0$, except for the correlation between FIG BIS- and RV (p--values=0.36).}   
+   \caption{Correlations between the asymmetry parameters and their corresponding RVs for $\text{HD}10700$. The last three plots show the correlation between the FWHM and the RVs for $\text{HD}10700$ using respectively the SN (SN mean RV and SN median RV) and the Normal fits. The correlations between the asymmetry parameters and their corresponding RVs are stronger when using the parameter SN mean RV obtained from the SN fit than the Normal one. \umberto{The correlation between the FWHM and the RVs is, only for this quiet star, stronger when using the parameter retrieved with the Normal distribution}. The p--values associated with each $R$ are statistically different from $0$, except for the correlation between FIG BIS- and RV (p--values=0.36).}   
    \label{fig:Tau:corrPlot}
 \end{center}
 \end{figure*}
