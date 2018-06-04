@@ -616,7 +616,7 @@ For this analysis, we also include the asymmetry parameters derived in \citet{Bo
 It is clear in the case of Alpha Cen B, but also in the four other stars presented in Appendix \ref{appendix}, that the correlation found between $\gamma$ and SN mean RV is consistently the strongest. 
 In particular, for Alpha Cen B, the Pearson correlation coefficient is $R=0.74$, while it is at best $R=-0.42$ for all the other asymmetry--RV correlations not derived using the SN density fit.
 
-\jessi{The next paragraph is somewhat confusing because the other stars are now wrapped into the discussion without proper introduction.}
+\jessi{This next paragraph is somewhat confusing because the other stars are now wrapped into the discussion without proper introduction.}
 The correlation between SN FWHM and SN mean RV is the strongest for all the stars, except for the quietest star of all five, HD10700, for which the Pearson correlation coefficient is 0.53 for the Normal parameters and 0.42 for the SN parameters. This analysis shows that the parameters derived when using a SN density are more sensitive the stellar activity, and therefore using those parameters can lead to the detection of stellar activity, when the Normal parameters do not detect anything. This is the case for the asymmetry-RV correlation of HD10700, HD215152, Corot-7, and the width-RV correlation for HD215152 (see Appendix \ref{appendix}).
 
 %The correlations between $\gamma$ and SN mean RV, and also SN FWHM and SN mean RV
@@ -632,9 +632,15 @@ The correlation between SN FWHM and SN mean RV is the strongest for all the star
 \end{figure*}
 %
 
-In Fig \ref{fig:alphacent:correctionRV}, we study the efficiency of the stellar activity correction proposed in Sec.~\ref{sec:31}. The first observation we can make is that the RV measured with SN mean RV presents a rms 35\% larger than the RV measured when fitting a Normal density. In the case of SN median RV, we see as well a larger RV rms, however only 9\% larger. Even though we see those differences in RV, once we correct for the stellar activity using Eq.~\ref{eq:RV:correction}, we find the same RV residuals rms. 
+\jessi{I changed some things in the following paragraph that I'm not completely sure are accurate - please review}
+\jessi{The performance of the stellar activity correction proposed in Sec.~\ref{sec:31} is displayed in Fig~\ref{fig:alphacent:correctionRV}. 
+The RV estimated with SN mean RV has a std that is 35\% larger than the std of the RV estimated with the N mean RV, and the std of SN median RV is 9\% larger than that of the N mean RV.
+Even though we see these differences in the estimated RV, once we correct for the stellar activity using Eq.~\ref{eq:RV:correction}, 
+the remaining std of the residuals are essentially the same for all three approaches.
 %In the best case, for SN mean RV, we reduce the stellar activity signal by a factor of 2, while in the worst case, N mean RV, only by a factor 1.5. 
-Therefore, although it seems that the parameters derived using the SN density are more sensitive to stellar activity, we are not able to correct better for stellar activity signal using a linear combination of the different CCF parameters.
+Although it seems that the parameters derived using the SN density are more sensitive to stellar activity than with the N density, after correction using the proposed model, the methods appear to be similarly successful at addressing the stellar activity signal.
+%we are not able to correct better for stellar activity signal using a linear combination of the different CCF parameters.
+}
 
 When looking at the significance of the different parameters in the activity correction in Table~\ref{table:alphacent.test}, we see that the intercept is not significant for any of the correction, and BIS SPAN, with coefficient $\beta_2$, is not useful to explain stellar activity when using the parameters derived from the Normal density fit. However all the other parameters in the Normal and SN cases are useful to model stellar activity. By analyzing the values of $R^2$, we see that the correction is more efficient at explaining stellar activity when considering SN mean RV as the RV estimate. This is expected from the results above since for the three different RV estimates, we arrive to the same RV residual rms after correction for activity, but before correction, SN mean RV shows the largest RV rms.
 
