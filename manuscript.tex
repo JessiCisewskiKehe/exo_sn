@@ -336,7 +336,7 @@ of size 3\% relative to the visible stellar hemisphere. The faculae is face-on w
 \begin{center}
 \includegraphics[width=3.6in]{RV_comparison_FACULAE.pdf} 
 %\includegraphics[height = 2.5in]{RV_se_comparison_FACULAE.pdf} 
-\caption{RV estimates for N mean RV (red dashed line),  SN mean RV (black line) or SN median RV (cyan dots-dashed line). In this case, the CCFs have been generated using SOAP 2.0, considering an equatorial 3\% faculae on the simulated Sun. The star does one full rotation between phase -0.5 and 0.5, with the facula being seen face-on for phase $0$. The variations observed in SN mean RV are quite different from the variations measured in SN median RV and N mean RV.  \jessi{The cyan line is hard to see in the legend, and may be impossible in a black-and-white version - could the legend background be white?}
+\caption{RV estimates for N mean RV (red dashed line),  SN mean RV (black line) or SN median RV (cyan dots-dashed line). In this case, the CCFs have been generated using SOAP 2.0, considering an equatorial 3\% faculae on the simulated Sun. The star does one full rotation between phase -0.5 and 0.5, with the facula being seen face-on for phase $0$. The variations observed in SN mean RV are quite different from the variations measured in SN median RV and N mean RV.  
 }
    %\caption{(left) RVs changes as function of the orbital phase in the case in which a faculae is present on the photosphere of the star. SN mean RV seems to have the smallest spurious variations caused by the faculae. (right) Evaluation of the standard errors corresponding to the defined RVs. The standard errors retrieved for SN median RV are $10 \%$ smaller than the standard errors derived for RV. SN mean RV has the largest related uncertainties.}
     \label{fig:faculae}
@@ -471,11 +471,14 @@ $R^{2}$      &     $0.9959$    &  $0.9936$ & $0.9952$  \\
 
 \subsection{Spot and planet} \label{sec:soap.spot.planet}
 
-The last simulation presented consists in having a planetary signal influencing the CCF, in addition to the 1\% spot modeled before (see Sec.~\ref{sec:soap.spot}). The purpose of this example is to check if we are able to disentangle as efficiently the two different sources of variations when using the parameters derived using a Normal, or a SN fit to the CCF. In this case, we inject a planet with a semi-amplitude of 10 \ms, with no eccentricity, and with a period corresponding to one third of the stellar rotational period.
+The final simulation presented here includes a planetary signal influencing the CCF along with the 1\% spot modeled previously (see Sec.~\ref{sec:soap.spot}). 
+The purpose of this example is to check if we are able to disentangle these two different sources of variations when using the parameters derived using a Normal versus a SN fit to the CCF. In this scenario the planet is injected with a semi-amplitude of 10 \ms with no eccentricity and with a period corresponding to one third of the stellar rotational period \jessi{(i.e. one-third of 25 days)} \jessi{The previous i.e. I added is highlighted just so you can verify that indeed the rotation period is 25 days as noted at the beginning of this section}.
 
-Fig.~\ref{fig:spot.plus.planet} shows the variation observed in the CCF barycenter parameters. Like in the case of the spot, all RV estimates show very similar variations, with SN mean RV showing a slightly smaller amplitude.
+Fig.~\ref{fig:spot.plus.planet} shows the variation observed in the CCF barycenter parameters. As in the case of the spot, all RV estimates show similar variations, with SN mean RV showing a slightly smaller amplitude.
 
-In Fig.~\ref{fig:spot.plus.planet.corr}, we show the correlation between the different CCF parameters. Although observing weaker correlations than in the case of the spot, due to the fact that the planet induces changes in RV without inducing any change in width or asymmetry of the CCF, the correlation strengths between the CCF asymmetry and RV are in exactly the same order than in the case of the spot: $\gamma$--SN median RV, BIS SPAN--N mean RV and $\gamma$--SN mean RV, with $R$ values of $-0.84$, $-0.78$ and $-0.76$, respectively. The variation seen in the width-RV phase space draw a circle like in the case of a spot, therefore, no correlation is observed between those two parameters.
+The correlation between the different CCF parameters are displayed in Fig.~\ref{fig:spot.plus.planet.corr}. 
+The correlations are weaker than in the case of the spot due to the planet inducing changes in RV without affecting the width or asymmetry of the CCF.  However, the strength of the correlations between the CCF asymmetry and RV are in the same order as with the spot-only model: $\gamma$--SN median RV, BIS SPAN--N mean RV and $\gamma$--SN mean RV, with $R$ values of $-0.84$, $-0.78$ and $-0.76$, respectively. 
+The variation seen in the width-RV phase space draw a circle like in the case of a spot, therefore, no correlation is observed between those two parameters.
 
 \begin{figure}[htbp]
 \begin{center}
