@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  5 JUN 2018 13:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  5 JUN 2018 16:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -832,6 +832,7 @@ Now handling font encoding PD1 ...
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
+Package hyperref Info: Option `draft' set `true' on input line 4322.
 Package hyperref Info: Hyper figures OFF on input line 4446.
 Package hyperref Info: Link nesting OFF on input line 4451.
 Package hyperref Info: Hyper index ON on input line 4454.
@@ -997,8 +998,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring OFF on input line 84.
 
+
+Package hyperref Warning: Draft mode on.
+
+Package hyperref Info: Link coloring OFF on input line 84.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1011,515 +1015,396 @@ LaTeX Info: Redefining \ref on input line 84.
 LaTeX Info: Redefining \pageref on input line 84.
 LaTeX Info: Redefining \nameref on input line 84.
 
-(./manuscript.out) (./manuscript.out)
-\@outlinefile=\write3
-\openout3 = `manuscript.out'.
-
-
 
 
 IMPORTANT
 
-Class aa Warning: Around 463 words in the abstract instead of 300 (max). You sh
-ould rewrite your abstract on input line 119.
+Class aa Warning: Around 377 words in the abstract instead of 300 (max). You sh
+ould rewrite your abstract on input line 120.
 
 IMPORTANT 
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 130.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 133.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 130.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 130.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 133.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 133.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 130.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 133.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 130.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 133.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 130.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 133.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 130.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 133.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 130.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 133.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for T1+txss on input line 130.
+LaTeX Font Info:    Try loading font information for T1+txss on input line 133.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 130.
+(Font)              scaled to size 16.41594pt on input line 133.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 16.41594pt on input line 130.
+(Font)              scaled to size 16.41594pt on input line 133.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 130.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 133.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 130.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 133.
 
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 130.
+(Font)              scaled to size 8.54997pt on input line 133.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 8.54997pt on input line 130.
+(Font)              scaled to size 8.54997pt on input line 133.
 LaTeX Font Info:    Font shape `T1/txss/m/it' in size <9> not available
-(Font)              Font shape `T1/txss/m/sl' tried instead on input line 130.
+(Font)              Font shape `T1/txss/m/sl' tried instead on input line 133.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 8.54997pt on input line 130.
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 130.
+(Font)              scaled to size 8.54997pt on input line 133.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 133.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 1881) in paragraph at lines 130--130
-[][]\T1/txr/m/n/9 Branco Weiss Fellow--Society in Sci-ence (url: []$\T1/txtt/m/
-n/9 http : / / www .
+Underfull \hbox (badness 1881) in paragraph at lines 133--133
+[][]\T1/txr/m/n/9 Branco Weiss Fellow--Society in Sci-ence (url: $\T1/txtt/m/n/
+9 http : / / www .
  []
 
 Output from handle manuscript going to manuscript.llt
-\manuscript@file=\write4
-\openout4 = `manuscript.llt'.
+\manuscript@file=\write3
+\openout3 = `manuscript.llt'.
 
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 132.
+(Font)              scaled to size 10.40245pt on input line 135.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 10.40245pt on input line 132.
+(Font)              scaled to size 10.40245pt on input line 135.
 
-Underfull \vbox (badness 2837) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 154.
-
-
-[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \vbox (badness 8132) has occurred while \output is active []
-
-
-<Skew_Normal_densities_jjck.pdf, id=211, 1127.80943pt x 750.54713pt>
+<Skew_Normal_densities_jjck.pdf, id=16, 1127.80943pt x 750.54713pt>
 File: Skew_Normal_densities_jjck.pdf Graphic file (type pdf)
 
 <use Skew_Normal_densities_jjck.pdf>
-Package pdftex.def Info: Skew_Normal_densities_jjck.pdf used on input line 202.
+Package pdftex.def Info: Skew_Normal_densities_jjck.pdf used on input line 205.
 
 (pdftex.def)             Requested size: 249.7709pt x 166.2212pt.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 218.
-
-
-[2]
+ [2 <./Skew_Normal_densities_jjck.pdf>]
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 249.
+(Font)              scaled to size 9.49997pt on input line 252.
 LaTeX Font Info:    Font shape `T1/txss/m/it' in size <10> not available
-(Font)              Font shape `T1/txss/m/sl' tried instead on input line 249.
+(Font)              Font shape `T1/txss/m/sl' tried instead on input line 252.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 249.
+(Font)              scaled to size 9.49997pt on input line 252.
 
-
-Package hyperref Warning: Suppressing link with empty target on input line 311.
-
-
-[3 <./Skew_Normal_densities_jjck.pdf>]
-<RV_comparison_FACULAE.pdf, id=395, 722.7pt x 361.35pt>
+[3] <RV_comparison_FACULAE.pdf, id=119, 722.7pt x 361.35pt>
 File: RV_comparison_FACULAE.pdf Graphic file (type pdf)
 
 <use RV_comparison_FACULAE.pdf>
-Package pdftex.def Info: RV_comparison_FACULAE.pdf used on input line 336.
+Package pdftex.def Info: RV_comparison_FACULAE.pdf used on input line 339.
 (pdftex.def)             Requested size: 260.17244pt x 130.08589pt.
 
-Overfull \hbox (4.09764pt too wide) in paragraph at lines 336--339
+Overfull \hbox (4.09764pt too wide) in paragraph at lines 339--342
  [] 
  []
 
-<SOAP_FACULAE_Comparison_para_SN.pdf, id=398, 505.89pt x 505.89pt>
+<SOAP_FACULAE_Comparison_para_SN.pdf, id=120, 505.89pt x 505.89pt>
 File: SOAP_FACULAE_Comparison_para_SN.pdf Graphic file (type pdf)
 
 <use SOAP_FACULAE_Comparison_para_SN.pdf>
 Package pdftex.def Info: SOAP_FACULAE_Comparison_para_SN.pdf used on input line
- 349.
+ 352.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=40
-6, 505.89pt x 505.89pt>
+<FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=12
+1, 505.89pt x 505.89pt>
 File: FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf G
 raphic file (type pdf)
 
 <use FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVel
-ocity_vs_time.pdf used on input line 363.
+ocity_vs_time.pdf used on input line 366.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-Underfull \vbox (badness 2591) has occurred while \output is active []
-
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 371.
-
-
 [4 <./RV_comparison_FACULAE.pdf>]
-Underfull \vbox (badness 1817) has occurred while \output is active []
-
-
 Underfull \vbox (badness 5637) has occurred while \output is active []
 
 
-
-Package hyperref Warning: Suppressing link with empty target on input line 402.
-
-
-[5 <./SOAP_FACULAE_Comparison_para_SN.pdf>]
-<RV_comparison_SPOT.pdf, id=450, 722.7pt x 361.35pt>
+<RV_comparison_SPOT.pdf, id=131, 722.7pt x 361.35pt>
 File: RV_comparison_SPOT.pdf Graphic file (type pdf)
 
 <use RV_comparison_SPOT.pdf>
-Package pdftex.def Info: RV_comparison_SPOT.pdf used on input line 405.
+Package pdftex.def Info: RV_comparison_SPOT.pdf used on input line 408.
 (pdftex.def)             Requested size: 260.17244pt x 130.08589pt.
 
-Overfull \hbox (4.09764pt too wide) in paragraph at lines 405--407
+Overfull \hbox (4.09764pt too wide) in paragraph at lines 408--410
  [] 
  []
 
-<SOAP_SPOT_Comparison_para_SN.pdf, id=451, 505.89pt x 505.89pt>
+<SOAP_SPOT_Comparison_para_SN.pdf, id=132, 505.89pt x 505.89pt>
 File: SOAP_SPOT_Comparison_para_SN.pdf Graphic file (type pdf)
 
 <use SOAP_SPOT_Comparison_para_SN.pdf>
 Package pdftex.def Info: SOAP_SPOT_Comparison_para_SN.pdf used on input line 41
-5.
+8.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=459, 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./SOAP_FACULAE_Comparison_para_SN.pdf>]
+<Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=143, 
 505.89pt x 505.89pt>
 File: Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Grap
 hic file (type pdf)
 
 <use Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVeloci
-ty_vs_time.pdf used on input line 431.
+ty_vs_time.pdf used on input line 434.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package hyperref Warning: Suppressing link with empty target on input line 447.
-
-
-[6 <./FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
-<RV_comparison_SPOT_PLANET.pdf, id=486, 722.7pt x 361.35pt>
+ [6 <./FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
+]
+<RV_comparison_SPOT_PLANET.pdf, id=154, 722.7pt x 361.35pt>
 File: RV_comparison_SPOT_PLANET.pdf Graphic file (type pdf)
 
 <use RV_comparison_SPOT_PLANET.pdf>
-Package pdftex.def Info: RV_comparison_SPOT_PLANET.pdf used on input line 485.
+Package pdftex.def Info: RV_comparison_SPOT_PLANET.pdf used on input line 488.
 (pdftex.def)             Requested size: 260.17244pt x 130.08589pt.
 
-Overfull \hbox (4.09764pt too wide) in paragraph at lines 485--487
+Overfull \hbox (4.09764pt too wide) in paragraph at lines 488--490
  [] 
  []
 
-<SOAP_SPOT_PLANET_Comparison_para_SN.pdf, id=487, 505.89pt x 505.89pt>
+
+Underfull \vbox (badness 1635) has occurred while \output is active []
+
+
+<SOAP_SPOT_PLANET_Comparison_para_SN.pdf, id=155, 505.89pt x 505.89pt>
 File: SOAP_SPOT_PLANET_Comparison_para_SN.pdf Graphic file (type pdf)
 
 <use SOAP_SPOT_PLANET_Comparison_para_SN.pdf>
 Package pdftex.def Info: SOAP_SPOT_PLANET_Comparison_para_SN.pdf used on input 
-line 495.
+line 498.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
+ [7 <./RV_comparison_SPOT.pdf>]
+Underfull \vbox (badness 1571) has occurred while \output is active []
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 574.
-
-
-[7 <./RV_comparison_SPOT.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<HD12862_gamma_vs_bisspan.pdf, id=517, 505.89pt x 505.89pt>
+<HD12862_gamma_vs_bisspan.pdf, id=167, 505.89pt x 505.89pt>
 File: HD12862_gamma_vs_bisspan.pdf Graphic file (type pdf)
 
 <use HD12862_gamma_vs_bisspan.pdf>
-Package pdftex.def Info: HD12862_gamma_vs_bisspan.pdf used on input line 589.
+Package pdftex.def Info: HD12862_gamma_vs_bisspan.pdf used on input line 592.
 (pdftex.def)             Requested size: 260.1773pt x 260.17244pt.
 
-<HD12862_[2]RadialVelocityDifferences.pdf, id=518, 505.89pt x 505.89pt>
+<HD12862_[2]RadialVelocityDifferences.pdf, id=168, 505.89pt x 505.89pt>
 File: HD12862_[2]RadialVelocityDifferences.pdf Graphic file (type pdf)
 
 <use HD12862_[2]RadialVelocityDifferences.pdf>
 Package pdftex.def Info: HD12862_[2]RadialVelocityDifferences.pdf used on input
- line 590.
+ line 593.
 (pdftex.def)             Requested size: 260.1773pt x 260.17244pt.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 610.
-
-
-[8 <./SOAP_SPOT_Comparison_para_SN.pdf>]
-
-Package hyperref Warning: Suppressing link with empty target on input line 618.
-
-
-[9 <./Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
-<HD12862_[4]Comparison_para.pdf, id=561, 505.89pt x 505.89pt>
+ [8 <./SOAP_SPOT_Comparison_para_SN.pdf>] <HD12862_[4]Comparison_para.pdf, id=1
+79, 505.89pt x 505.89pt>
 File: HD12862_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD12862_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD12862_[4]Comparison_para.pdf used on input line 625.
+Package pdftex.def Info: HD12862_[4]Comparison_para.pdf used on input line 628.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
-
-<NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=567
+ [9 <./Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
+<NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=190
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 649.
+city_vs_time.pdf used on input line 655.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<detection_limits.pdf, id=581, 462.52798pt x 346.89601pt>
+[10 <./RV_comparison_SPOT_PLANET.pdf>]
+<detection_limits.pdf, id=200, 462.52798pt x 346.89601pt>
 File: detection_limits.pdf Graphic file (type pdf)
 
 <use detection_limits.pdf>
-Package pdftex.def Info: detection_limits.pdf used on input line 702.
+Package pdftex.def Info: detection_limits.pdf used on input line 719.
 (pdftex.def)             Requested size: 250.53772pt x 187.90244pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 718.
-
-
-[10 <./RV_comparison_SPOT_PLANET.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [11 <./SOAP_SPOT_PLANET_Comparison_para_SN.pdf>]
+Underfull \vbox (badness 4229) has occurred while \output is active []
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 722.
-
-
-[11 <./SOAP_SPOT_PLANET_Comparison_para_SN.pdf>]
-<[5]Errors_vs_SNR_all_stars.pdf, id=620, 505.89pt x 505.89pt>
+<[5]Errors_vs_SNR_all_stars.pdf, id=211, 505.89pt x 505.89pt>
 File: [5]Errors_vs_SNR_all_stars.pdf Graphic file (type pdf)
 
 <use [5]Errors_vs_SNR_all_stars.pdf>
-Package pdftex.def Info: [5]Errors_vs_SNR_all_stars.pdf used on input line 729.
+Package pdftex.def Info: [5]Errors_vs_SNR_all_stars.pdf used on input line 746.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
+Underfull \vbox (badness 6110) has occurred while \output is active []
+
+ [12 <./HD12862_gamma_vs_bisspan.pdf> <./HD12862_[2]RadialVelocityDifferences.p
+df>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 4036) has occurred while \output is active []
-
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 749.
-
-
-[12 <./HD12862_gamma_vs_bisspan.pdf> <./HD12862_[2]RadialVelocityDifferences.pd
-f>]
+ [13 <./HD12862_[4]Comparison_para.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [14 <./NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
+] [15 <./detection_limits.pdf>]
+Underfull \vbox (badness 2707) has occurred while \output is active []
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 753.
-
-
-[13 <./HD12862_[4]Comparison_para.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 761.
-
-
-[14 <./NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
-<HD19231_[4]Comparison_para.pdf, id=696, 505.89pt x 505.89pt>
+<HD19231_[4]Comparison_para.pdf, id=287, 505.89pt x 505.89pt>
 File: HD19231_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD19231_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD19231_[4]Comparison_para.pdf used on input line 838.
+Package pdftex.def Info: HD19231_[4]Comparison_para.pdf used on input line 855.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=697
+<NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=288
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 846.
+city_vs_time.pdf used on input line 863.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<HD10700_[4]Comparison_para.pdf, id=699, 505.89pt x 505.89pt>
+<HD10700_[4]Comparison_para.pdf, id=289, 505.89pt x 505.89pt>
 File: HD10700_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD10700_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD10700_[4]Comparison_para.pdf used on input line 859.
+Package pdftex.def Info: HD10700_[4]Comparison_para.pdf used on input line 876.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=700
+<NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=290
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 867.
+city_vs_time.pdf used on input line 884.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<HD21515_[4]Comparison_para.pdf, id=702, 505.89pt x 505.89pt>
+<HD21515_[4]Comparison_para.pdf, id=291, 505.89pt x 505.89pt>
 File: HD21515_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD21515_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD21515_[4]Comparison_para.pdf used on input line 880.
+Package pdftex.def Info: HD21515_[4]Comparison_para.pdf used on input line 897.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=703
+<NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=292
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 888.
+city_vs_time.pdf used on input line 905.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<LRa01_E_[4]Comparison_para.pdf, id=705, 505.89pt x 505.89pt>
+<LRa01_E_[4]Comparison_para.pdf, id=293, 505.89pt x 505.89pt>
 File: LRa01_E_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use LRa01_E_[4]Comparison_para.pdf>
-Package pdftex.def Info: LRa01_E_[4]Comparison_para.pdf used on input line 899.
+Package pdftex.def Info: LRa01_E_[4]Comparison_para.pdf used on input line 916.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=706
+<NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=294
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 907.
+city_vs_time.pdf used on input line 924.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-(./manuscript.bbl
-
-Package hyperref Warning: Suppressing link with empty target on input line 36.
-
-[15 <./detection_limits.pdf>]
+(./manuscript.bbl [16 <./[5]Errors_vs_SNR_all_stars.pdf>]
 Underfull \hbox (badness 1953) in paragraph at lines 107--109
 []\T1/txr/m/n/8 Kurster, M., Endl, M., Roues-nel, F., et al. 2003, AS-TRON-OMY 
 AND
  []
 
+(./manuscript.llt)) [17
 
-Package hyperref Warning: Suppressing link with empty target on input line 142.
-
-
-[16 <./[5]Errors_vs_SNR_all_stars.pdf>] (./manuscript.llt))
-
-Package hyperref Warning: Suppressing link with empty target on input line 1040
-.
-
-[17
-
-]
-
-Package hyperref Warning: Suppressing link with empty target on input line 1040
-.
-
-[18 <./HD19231_[4]Comparison_para.pdf>]
-
-Package hyperref Warning: Suppressing link with empty target on input line 1040
-.
-
-[19 <./NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
-
-Package hyperref Warning: Suppressing link with empty target on input line 1040
-.
-
-[20 <./HD10700_[4]Comparison_para.pdf>]
-
-Package hyperref Warning: Suppressing link with empty target on input line 1040
-.
-
-[21 <./NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
-
-Package hyperref Warning: Suppressing link with empty target on input line 1040
-.
-
-[22 <./HD21515_[4]Comparison_para.pdf>]
-
-Package hyperref Warning: Suppressing link with empty target on input line 1040
-.
-
-[23 <./NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
-
-Package hyperref Warning: Suppressing link with empty target on input line 1040
-.
-
-[24 <./LRa01_E_[4]Comparison_para.pdf>]
-
-Package hyperref Warning: Suppressing link with empty target on input line 1040
-.
-
-[25 <./NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1040.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1040.
-(./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1040.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1040.
-
-Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: F9558DEEE9739D57CD0CC6E54B64DBF1;1116.
+] [18 <./HD19231_[4]Comparison_para.pdf>] [19 <./NEW_CORRECTIONHD19231_[3]Corre
+ctionActivity_RadialVelocity_vs_time.pdf>] [20 <./HD10700_[4]Comparison_para.pd
+f>] [21 <./NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.p
+df>] [22 <./HD21515_[4]Comparison_para.pdf>] [23 <./NEW_CORRECTIONHD21515_[3]Co
+rrectionActivity_RadialVelocity_vs_time.pdf>] [24 <./LRa01_E_[4]Comparison_para
+.pdf>] [25 <./NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_tim
+e.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1057.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1057.
+ (./manuscript.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1057.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1057.
  ) 
 Here is how much of TeX's memory you used:
- 10410 strings out of 493014
- 147075 string characters out of 6133351
- 299748 words of memory out of 5000000
- 13533 multiletter control sequences out of 15000+600000
+ 10261 strings out of 493014
+ 145320 string characters out of 6133351
+ 287741 words of memory out of 5000000
+ 13516 multiletter control sequences out of 15000+600000
  121120 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,45p,2195b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,45p,2195b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxbmi.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016
@@ -1534,10 +1419,10 @@ b8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 al/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (25 pages, 2958993 bytes).
+Output written on manuscript.pdf (25 pages, 2944917 bytes).
 PDF statistics:
- 939 PDF objects out of 1000 (max. 8388607)
- 796 compressed objects within 8 object streams
- 127 named destinations out of 1000 (max. 500000)
- 244 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 299 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

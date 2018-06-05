@@ -8,8 +8,8 @@
 \usepackage{wasysym}
 \usepackage[varg]{txfonts}
 \usepackage{graphicx}
-\usepackage{hyperref}
-%\usepackage[draft]{hyperref}
+%\usepackage{hyperref}
+\usepackage[draft]{hyperref}
 \bibpunct{(}{)}{;}{a}{}{,} % to follow the A&A style
 \usepackage{longtable}
 
@@ -107,16 +107,19 @@ ESO (Chile), with the HARPS spectrograph at the 3.6-m telescope.}}
 {Stellar activity is one of the primary limitations to the detection of low-mass exoplanets using the radial-velocity (RV) technique. 
 Stellar activity can be probed by measuring time dependent variations in the shape of the cross-correlation function (CCF), often estimated using different parameters of the modeled CCF. Therefore estimating the moments of the CCF with high precision is essential to de-correlate the signal of an exoplanet from spurious RV signals originating from stellar activity.}
 %
-{We propose to estimate the parameters of the CCF by fitting a Skew Normal (SN) density shape which. Unlike the commonly employed Normal density, the SN density includes a skewness parameter to capture the asymmetry of the CCF induced by stellar activity and also the natural asymmetry induced by convective blueshift. Moreover, the SN distribution allows for different location parameters beyond the mean, such as the median of the CCF.}
+{We propose to estimate the parameters of the CCF by fitting a Skew Normal (SN) density which, unlike the commonly employed Normal density, includes a skewness parameter to capture the asymmetry of the CCF induced by stellar activity and also the natural asymmetry induced by convective blueshift.}
+%Moreover, the SN distribution allows for different location parameters beyond the mean, such as the median of the CCF.}
 %
 {The performances of the proposed method are compared to the commonly employed Normal density, using both simulations and real observations, with different levels of activity and signal-to-noise ratio (SNR) levels.}
 %We analyze 5 stars with different activity levels and whose CCF's have different signal-to-noise ratio (SNR) levels. In each case, we compare the results obtained by fitting to the CCF respectively a Normal and a SN.  We also estimate rigorous errors for the different moments of the CCF using a bootstrap analysis.
 %
-{When considering real observations, the correlation between the RVs and the asymmetry of the CCF and the correlation between the RVs and the width of the CCF are stronger when using the parameters estimated with the SN rather than the ones obtained with the commonly employed Normal density. In particular the strongest correlations have been obtained when using as location parameter the  mean of the SN.
-This suggests that the asymmetry of the CCF and the width of the CCF estimated using a SN may be more sensitive to stellar activity, which can be helpful when estimating stellar rotational periods and generally for characterizing stellar activity signals.
-The estimated uncertainties in the measured RVs using the proposed SN approach and as location parameter the median of the SN are on average $10\%$ smaller than the uncertainties calculated on the mean of the Normal. The estimated uncertainties on the asymmetry parameter of the SN are on average $15\%$ smaller than the uncertainties measured on the Bisector Inverse Slope Span (BIS SPAN), which is the commonly parameter used to evaluate the asymmetry of the CCF. }
-{We strongly encourage the use of the SN distribution to retrieve the different parameters of the CCF. The correlation between the mean of the SN and the asymmetry parameter of the CCF and the correlation between the mean of the SN and the width parameter of the CCF probe better stellar activity signals than when using the parameters retrieved with the Normal distribution. Using the SN distribution leads to smaller uncertainties for both the median of the SN and the asymmetry of the CCF than using the commonly employed Normal density. Finally, all the parameters are available in one single fit to the CCF.
+{When considering real observations, the correlation between the RVs and the asymmetry of the CCF and the correlation between the RVs and the width of the CCF are stronger when using the parameters estimated with the SN rather than the ones obtained with the commonly employed Normal density. In particular the strongest correlations have been obtained when using as RV estimate the  mean of the SN.
+This suggests that the asymmetry of the CCF and the width of the CCF estimated using a SN density may be more sensitive to stellar activity, which can be helpful when estimating stellar rotational periods and generally for characterizing stellar activity signals.
+The estimated uncertainties in the measured RVs using the proposed SN approach and as RV estimate the median of the SN are on average $10\%$ smaller than the uncertainties calculated on the mean of the Normal. The estimated uncertainties on the asymmetry parameter of the SN are on average $15\%$ smaller than the uncertainties measured on the Bisector Inverse Slope Span (BIS SPAN), which is the commonly parameter used to evaluate the asymmetry of the CCF. }
+{We strongly encourage the use of the SN distribution to retrieve the different parameters of the CCF as the correlations used to probe stellar activity are stronger and the measure of the RV and the CCF asymmetry are more precise.
 }
+%{We strongly encourage the use of the SN distribution to retrieve the different parameters of the CCF. The correlation between the mean of the SN and the asymmetry parameter of the CCF and the correlation between the mean of the SN and the width parameter of the CCF probe better stellar activity signals than when using the parameters retrieved with the Normal distribution. Using the SN distribution leads to smaller uncertainties for both the median of the SN and the asymmetry of the CCF than using the commonly employed Normal density. Finally, all the parameters are available in one single fit to the CCF.
+%}
 %
 %{The derived benefits of using the proposed SN approach includes an asymmetry parameter along with several options for estimating the RV, while the Normal model only includes an RV estimate and requires a separate procedure for estimating the asymmetry.  Furthermore, the estimated uncertainties on the RVs and the asymmetry parameter are smaller in the SN setting.}
 %The correlation between the RVs and the asymmetry of the CCF and the correlation between the RVs and the width of the CCF are always stronger when using the parameters derived from the SN in the case of real observations. Therefore the CCF asymmetry and the CCF width derived using a SN are more sensitive to stellar activity, which allows to probe with a better precision stellar rotational periods, in addition to characterize more precisely stellar activity signals. The precision on the estimated set of RVs, derived using the median of the fitted SN densities are on average $10\%$ smaller than the uncertainties calculated on the mean of the Normal. In addition, the uncertainties related to the asymmetry parameter derived from the SN are on average $15\%$ smaller than the ones calculated on the common Bisector Inverse Slope Span (BIS SPAN). We strongly encourage the use of the SN density rather than the Normal density, because this allows us to retrieve in one single fit the different moments of the CCF, because the derived moments better catch stellar activity signals and finally because the standard errors on the RVs and the the asymmetry parameter are smaller than the one estimated with the Normal fit.
@@ -574,7 +577,7 @@ For all the stars considered in the presented work, only CCFs that were derived 
 
 % A comparison with the results obtained by the classic approach is done, where the RV is estimated by retrieving the mean of the Normal density used to fit the CCF, along with the FWHM of the Normal density and the BIS SPAN or the other asymmetric parameters defined in \citet{Figueira-2013}. The latter parameters are calculated separately from the Normal fit that leads to the set of RVs of the star.
 
-\subsection{Comparison between the different CCF parameters derived with the Normal and the Skew Normal} \label{sec:alphacentb}
+\subsection{Comparison for Alpha Cen B of the different CCF parameters derived with the Normal and the Skew Normal} \label{sec:alphacentb}
 
 There were $1808$ CCFs analyzed that were derived from the spectra of Alpha Centauri B taken in 2010 by the HARPS spectrograph. Note that more observations were carried out this year, however only the data that were not significantly affected by contamination from Alpha Centauri A were used \citep[see][]{Dumusque-2012}. 
 The selected observations represent probably, among all RV data existing, the best sampled and most precise RV data set showing strong solar-like activity signal \citep{Thompson-2017, Dumusque-2012}.
@@ -610,14 +613,14 @@ This behavior is similar to the faculae simulated with SOAP 2.0 in see Sec.~\ref
 
 Similar to the analyses in Sec.~\ref{sec:soap}, we compare the correlation between the asymmetry or the width parameters of the CCF and the RV in Fig.~\ref{fig:alphacent:corrPlot}. 
 For this analysis, we also include the asymmetry parameters derived in \citet{Boisse-2011}, $V_{span}$ and in \citet{Figueira-2013}, BIS-, BIS+, Bi Gauss and $V_{asy}$, as these authors found those asymmetry parameters more correlated to the RVs than BIS SPAN. 
-It is clear in the case of Alpha Cen B, but also in the four other stars presented in Appendix \ref{appendix}, that the correlation found between $\gamma$ and SN mean RV is consistently the strongest. 
-In particular, for Alpha Cen B, the Pearson correlation coefficient is $R=0.74$, while it is at best $R=-0.42$ for all the other asymmetry--RV correlations not derived using the SN density fit.
-
-\umberto{maybe we can just remove this sentence and note in the caption of the correlation plot for TauCeti that this is the only case in which the correlation using the common fit is higher.} \jessi{This next paragraph is somewhat confusing because the other stars are now wrapped into the discussion without proper introduction.}
-The correlation between SN FWHM and SN mean RV is the strongest for all the stars, except for the quietest star of all five, HD10700, for which the Pearson correlation coefficient is 0.53 for the Normal parameters and 0.42 for the SN parameters. This analysis shows that the parameters derived when using a SN density are more sensitive the stellar activity, and therefore using those parameters can lead to the detection of stellar activity, when the Normal parameters do not detect anything. This is the case for the asymmetry-RV correlation of HD10700, HD215152, Corot-7, and the width-RV correlation for HD215152 (see Appendix \ref{appendix}).
-
+\jessi{This next paragraph is somewhat confusing because the other stars are now wrapped into the discussion without proper introduction.}
+\xavier{I create a new subsection after this one to discuss rapidly th eother stars}
+\xavier{It is clear in the case of Alpha Cen B, that the correlation found between $\gamma$ and SN mean RV is the strongest. 
+The Pearson correlation coefficient is $R=0.74$, while it is at best $R=0.42$ for all the other asymmetry--RV correlations not derived using the SN density fit.
+When looking at the correlation between the width and the RV estimate for Alpha Cen B, once again the correlation is the strongest for the SN parameters, with $R=0.82$ for SN FWHM-SN mean RV, while it is equals to $R=0.7$ for the correlation between FWHM and N mean RV.}
+%
 %The correlations between $\gamma$ and SN mean RV, and also SN FWHM and SN mean RV
-
+%
 %Because the median is a more robust index than the mean, the correlation between $\gamma$ and SN median RV is not as large as the correlation between $\gamma$ and SN mean RV, but it is nonetheless $1.5$ times larger than the correlation between the other common asymmetry parameters and their corresponding RVs. In other words, changes in the asymmetry of the CCF are better captured when using the SN mean RV. The correlation between FWHM and the RVs, either by using SN mean RV or SN median RV, is as well stronger when fitting a SN density rather than a Normal. All the correlations are statistically different from $0$. Recalling the analyses presented in Sec. \ref{sec:soap}, we could infer that Alpha Centauri B is dominated by faculae, because the correlations between the RVs and the width of the CCF are strong (in particular the correlation between SN mean RV and SN FWHM is $0.817$).
 %%
 \begin{figure*}[htbp]
@@ -629,15 +632,18 @@ The correlation between SN FWHM and SN mean RV is the strongest for all the star
 \end{figure*}
 %
 
-\jessi{I changed some things in the following paragraph that I'm not completely sure are accurate - please review}
-\jessi{The performance of the stellar activity correction proposed in Sec.~\ref{sec:31} is displayed in Fig~\ref{fig:alphacent:correctionRV}. 
-The RV estimated with SN mean RV has a std that is 35\% larger than the std of the RV estimated with the N mean RV, and the std of SN median RV is 9\% larger than that of the N mean RV.
+The performance of the stellar activity correction proposed in Sec.~\ref{sec:31} is displayed in Fig~\ref{fig:alphacent:correctionRV}. 
+For Alpha Cen B, the RV estimated with SN mean RV has a std that is 35\% larger than the std of the RV estimated with the N mean RV, and the std of SN median RV is 9\% larger than that of the N mean RV.
 Even though we see these differences in the estimated RV, once we correct for the stellar activity using Eq.~\ref{eq:RV:correction}, 
-the remaining std of the residuals are essentially the same for all three approaches.
+the remaining RV rms of the residuals are essentially the same for all three approaches.
 %In the best case, for SN mean RV, we reduce the stellar activity signal by a factor of 2, while in the worst case, N mean RV, only by a factor 1.5. 
-Although it seems that the parameters derived using the SN density are more sensitive to stellar activity than with the N density, after correction using the proposed model, the methods appear to be similarly successful at addressing the stellar activity signal.
+\xavier{Although, when studying the correlations between the different parameters, we see that the parameters derived using the SN density are more sensitive to stellar activity than with the Normal density,
+the proposed linear model for correcting stellar activity is not able to perform better in the SN case than in the Normal case.}
+\xavier{@Jessi: I deleted "after correction using the proposed model, the methods appear to be similarly successful at addressing the stellar activity signal" as it was giving the wrong impression that the SN parameters are useless}
+\xavier{Comparing the new correction proposed in Sec.~\ref{sec:31} to correct for activity and the usual correction only using a linear combination of the width and the asymmetry of the CCF, we see very similar efficiency. The new correction is however able to get RV rms that are 6\,\cms\,smaller than the usual correction.}
+%it seems that the parameters derived using the SN density are more sensitive to stellar activity than with the Normal density, after correction using the proposed model, the methods appear to be similarly successful at addressing the stellar activity signal.
 %we are not able to correct better for stellar activity signal using a linear combination of the different CCF parameters.
-}
+
 
 When looking at the statistical significance of the different parameters used for correcting activity in Table~\ref{table:alphacent.test}, we see that the intercept is not significant for any of the models, and BIS SPAN (coefficient $\beta_2$) does not statistically significantly help in explaining stellar activity when using the parameters derived from the Normal density fit. 
 However all the other parameters in the Normal and SN cases are statistically significant for modeling stellar activity. 
@@ -683,7 +689,18 @@ $R^{2}$      &     $0.57$    &  $0.78$ & $0.66$  \\
 %Both the proposed indicators coming from the SN density have advantages and limits: SN mean RV better catches changes in the asymmetry of the CCF but the resulting set of RVs ends up being contaminated by those spurious shifts caused by stellar activity that have been shortly presented in Sec. \ref{intro}. When using SN median RV, the final set of RVs is less affected by those spurious shifts caused by stellar activity, but at the same time this indicator is not able to catch as well as SN mean RV changes in the shape and in the width of the CCF. Once corrected from stellar activity using Eq.~\ref{eq:RV:correction}, the results are comparable. Anyway, both SN mean RV and SN median RV are useful to catch different aspects of the CCF and our suggestion is to use SN mean RV when interested in retrieving information about changes in the shape and/or the width of the CCF. In order to provide a set of RVs containing the smallest amount of spurious contamination imputable to stellar activity (i.e. before to run Eq.~\ref{eq:RV:correction}), our suggestion is to use instead SN median RV. 
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
-\subsection{Detection limits when using the RV derived with the Normal or the Skew Normal density} \label{sec:soap_real}
+\subsection{Comparison for HD192310, HD10700, HD215152 and Corot-7 of the different CCF parameters derived with the Normal and the Skew Normal} \label{sec:real_data_other_stars}
+
+\xavier{The preceding section was analysing the improvement brought by the SN parameters compared to the Nomral parameters and the BIS SPAN. Here we do a similar analysis for four other main sequence stars: HD192310, HD10700, HD215152 and Corot-7. The same correlation plots, and activity-correction plots that was found in the preceding section can be found found for those new stars in Appendix \ref{appendix}.
+
+When looking to the correlation between the parameters, we arrive to the same conclusions than for Alpha Cen B. The correlation between $\gamma$ and SN mean RV is always the strongest among all the other asymmetry-RV corrleations not derived with SN parameters. For the correlation between the width and the RV, the strongest correlation is also found for all the stars between SN FWHM and SN mean RV. There is one exception however, in the case of HD10700, the Pearson correlation coefficient between FWHM and N mean RV is equal to $R=0.53$, while it is only $R=0.42$ for the correlation between SN FWHM and SN mean RV.
+
+Except for the special case discussed above for HD10700, the analysis of those four stars, in addition to Alpha Cen B shows that the parameters derived when using a SN density are more sensitive to activity, and therefore using those parameters can lead to the detection of stellar activity, when the Normal parameters do not detect anything. This is the case for the asymmetry-RV correlation of HD10700, HD215152, Corot-7, and the width-RV correlation for HD215152 (see Appendix \ref{appendix}).
+
+In terms of activity correction, we see like in the case of Alpha Cen B, that although the RV rms is larger when measuring the RVs using SN mean RV compared to the RVs derived using N mean RV, after correcting for activity using the new model proposed in Sec.~\ref{sec:31}, both RV estimates gives similar residuals. We also see nearly no significant differences between the new correction proposed and the usual correction only using a linear combination of the width and the asymmetry of the CCF. There is only in the case of Corot-7 where the new correction is able to get a RV residual rms 30\,\cms smaller than the usual correction.}
+
+%-----------------------------------------------------------------------------------------------------------------------------------------------
+\subsection{Detection limits when using the RV derived with the Normal or the Skew Normal density} \label{sec:detect_limits}
 
 In the preceding section, we saw that the RV measured when considering a SN or a Normal density present different amplitudes, mainly in the case of SN mean RV. However, when correcting for stellar activity using the linear combination presented in Eq.~\ref{eq:RV:correction}, it seems that we are able to reach the same RV precision. In this section, we want to investigate if for some of the three different RV definitions presented in this paper, it is easier or more difficult to detect planetary signals when considering stellar activity. To do so, we estimated what would be the minimum amplitude of a planetray signal we could detect at different orbital periods when considering data affected by stellar activity.
 
@@ -753,7 +770,7 @@ When comparing the different RV estimates obtained from the mean of the Normal d
 
 Having an estimate of the RV that is more sensitive to stellar activity, like the mean of the SN, can help us to probe better stellar rotational periods, or understand better the covariance of stellar signals when fitting a Gaussian Process to the RVs \citep[e.g.][]{Faria-2016a, Haywood-2014}. We saw in the preceding section that the RV estimated derived by the mean of the SN is 60\% noisier than the RV derived by the mean of the Normal. This is not necessarily a negative aspect. Indeed, in the case were photon-noise is not dominant, stellar activity can be better characterized if its effect can be amplified by measuring SN mean RV, even if the white noise in the data is increased by 60\%.
 
-Even if the different RV estimates have different amplitudes, once we apply our new correction for stellar activity, we arrive exactly to the same RV rms in the residuals, meaning that for an activity correction based on a linear combination of CCF parameters, the SN density fit does not help. We note that when comparing the activity correction presented in this paper with the usual correction that only uses a linear combination of the CCF asymmetry and width, we only see a slight improvement brought by our proposed correction.
+Even if the different RV estimates have different amplitudes, once we apply our new correction for stellar activity, we arrive exactly to the same RV rms in the residuals, meaning that for an activity correction based on a linear combination of CCF parameters, the SN density fit does not help. We note that when comparing the activity correction presented in this paper with the usual correction that only uses a linear combination of the CCF asymmetry and width, we only see a slight improvement brought by our proposed correction. \xavier{We however encourage the community to use this new model if the goal is to reduce activity without considering the computationally expensive use of Gaussian Process. A further analysis of the p--value of each coefficient can be performed to see the ones that are not relevant and that can therefore be removed.}
 
 We checked if some RV estimates were better at finding planets in RV data affected by observed stellar signals. When using the new correction proposed in this paper to mitigate the effect from stellar activity, and when assesing planetary detection based on aperiodogram analysis, we find very similar detection limits for the three RV estimates presented in this paper. Therefore it seems that any of the RV estimate can be used to search for planetary signals.
 
