@@ -320,7 +320,6 @@ For a given configuration of spots and faculae on the stellar surface, SOAP 2.0 
 
 For the simulations discussed below, a star similar to the Sun was modeled, with a solar disc of one solar radius seen equator-on, and with a stellar rotational period set to 25.0 days.
 The stellar effective temperature is set to 5778 K
-%(NASA Planetary Fact Sheets)\jessi{Is there a full citation available for this NASA fact sheet?  Also, why is it referenced?  Is the effective temperature supposed to be similar to the Sun?}
 , and a quadratic limb-darkening relation with linear and quadratic coefficients 0.29 and 0.34 are used, respectively \citep[][]{Oshagh-2013a, Claret-2011}.
 In order to make the result of the simulations more comparable to real data obtained with the HARPS spectrograph discussed in Sect.~\ref{sec:4}, the SOAP 2.0 CCFs were generate with a width of 40 \kms\,and considering initial spectra with a spectral resolution of R=115'000.
 %\jessi{Is a resolution of ``115'000'' standard notation?  I'm not sure what it means.}
@@ -473,7 +472,7 @@ $R^{2}$      &     $0.9959$    &  $0.9936$ & $0.9952$  \\
 \subsection{Spot and planet} \label{sec:soap.spot.planet}
 
 The final simulation presented here includes a planetary signal influencing the CCF along with the 1\% spot modeled previously (see Sec.~\ref{sec:soap.spot}). 
-The purpose of this example is to check if we are able to disentangle these two different sources of variations when using the parameters derived using a Normal versus a SN fit to the CCF. In this scenario the planet is injected with a semi-amplitude of 10 \ms with no eccentricity and with a period corresponding to one third of the stellar rotational period \jessi{(i.e. one-third of 25 days)} \jessi{The previous i.e. I added is highlighted just so you can verify that indeed the rotation period is 25 days as noted at the beginning of this section}.
+The purpose of this example is to check if we are able to disentangle these two different sources of variations when using the parameters derived using a Normal versus a SN fit to the CCF. In this scenario the planet is injected with a semi-amplitude of 10 \ms with no eccentricity and with a period corresponding to one third of the stellar rotational period, i.e. one-third of 25 days.
 
 Fig.~\ref{fig:spot.plus.planet} shows the variation observed in the CCF barycenter parameters. As in the case of the spot, all RV estimates show similar variations, with SN mean RV showing a slightly smaller amplitude.
 
@@ -516,9 +515,8 @@ RV_{\text{exoplanet}}= K \sin \left(\frac{2 \pi}{P} (t - t_{0})\right),
 with amplitude $K$, orbital period $P$, and an epoch at the periapsis $t_{0}$.  The previous three unknown parameters define the planetary orbit.
 
 %We note that the p--value associated with the amplitude parameter $K$ is particularly relevant for rejecting or not rejecting the assumption about the presence of an orbiting companion. Moreover we note also that Eq.~\ref{eq:RV:correction.planet} is highly non linear, meaning that the estimation of all the parameters involved in Eq.~\ref{eq:RV:correction.overall} has to be done numerically. %We used non linear least squares and the results are displayed in Fig.~\ref{fig:spotplanet.correction}. We can see how in this case we are able to disentangle the spurious variations in RVs caused by stellar activity from the pure Doppler-shift due to the planet. 
-The proposed model from Eqn~\eqref{eq:RV:correction.overall} was fit and the results of the estimated model are summarized summarized in Table \ref{table:spotplanet.test}.   Except for the width parameters with coefficient $\beta_3$, all the other Normal or SN parameters are significantly useful to explain the RV variation induce by a spot plus a planet. 
-\umberto{check if I understood correctly the meaning ... We also observe that the residuals, once corrected for stellar activity and the presence of the planet, are comparable for all the three analyses, with SN mean RV giving the smallest values.} \jessi{I'm not sure what the point of the previous sentence is - the SN mean RV residuals is similar to what?}
-
+The proposed model from Eq.~\ref{eq:RV:correction.overall} was fitted to the RV data and the results of the estimated model are summarized in Table \ref{table:spotplanet.test}.   Except for the width parameters with coefficient $\beta_3$, all the other Normal or SN parameters are significantly useful to explain the RV variation induced by a spot plus a planet. 
+\xavier{We also observe that the RV residuals, once corrected for stellar activity and the presence of the planet, are comparable in terms of rms for all the three different RV estimates, with SN mean RV giving a slightly smaller value.}
 %\begin{figure*}[htbp]
 %   \centering
 %\includegraphics[height = 4in]{SPOT_PLANET_NEW_CORRECTION.pdf} 
@@ -579,7 +577,7 @@ For all the stars considered in the presented work, only CCFs that were derived 
 \subsection{Comparison between the different CCF parameters derived with the Normal and the Skew Normal} \label{sec:alphacentb}
 
 There were $1808$ CCFs analyzed that were derived from the spectra of Alpha Centauri B taken in 2010 by the HARPS spectrograph. Note that more observations were carried out this year, however only the data that were not significantly affected by contamination from Alpha Centauri A were used \citep[see][]{Dumusque-2012}. 
-The selected observations should represent the best sampled and most precise RV data set available for Alpha Centauri B \jessi{I added ``Alpha Centauri B'' - if the previous statement was to be more general, please remove} showing strong solar-like activity signal \citep{Thompson-2017, Dumusque-2012}.
+The selected observations represent probably, among all RV data existing, the best sampled and most precise RV data set showing strong solar-like activity signal \citep{Thompson-2017, Dumusque-2012}.
 
 First, the correlation between $\gamma$ and BIS SPAN is evaluated.
 In the left panel of Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relationship between $\gamma$ and the BIS SPAN is linear, with a slope equal to $720$ and a strong Pearson correlation coefficient of $R=0.95$. This strong correlation suggests that the $\gamma$ and BIS SPAN are measuring a similar asymmetry for the CCF. This strong correlation allows as well to convert the dimensionless $\gamma$ parameters into \ms\,using the slope of the correlation, in this case 720 \ms.
@@ -598,7 +596,7 @@ In the left panel of Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relati
 
 The right plot of Fig.~\ref{fig:alphacent:corr.gamma} displays the comparison between the RVs derived estimated using the SN density and the Normal density. 
 The amplitude of the activity signal is slightly stronger for the SN mean RV (in the top-right plot the black circles of the SN mean RV tend to be more extreme), while the signal measured using N mean RV or SN median RV tend to be similar. 
-This behavior is similar to the faculae (see Sec.~\ref{sec:soap.faculae}) suggesting that the activity signal could be due to faculae present on Alpha Centauri B; \jessi{the previous statement seems like rather weak evidence - is there more that could be said to strengthen this point?  Or are there plots that could be referenced/compared?}
+This behavior is similar to the faculae simulated with SOAP 2.0 in see Sec.~\ref{sec:soap.faculae}, suggesting that the activity signal could be due to faculae present on Alpha Centauri B. \xavier{Another argument in favour of the faculae, is the presence of the positive correlation between $\gamma$ and SN mean RV and SN FWHM and SN mean RV seen in Fig.~\ref{fig:alphacent:corrPlot}. In Sec.~\ref{sec:soap.spot}, we saw that a spot induces a negative correlation between $\gamma$ and SN mean RV and no correlation between SN FWHM and SN mean RV}.
 \citet{Dumusque-2014c} had previously suggested that the activity of Alpha Centauri B could be due to faculae.
 %When using SN mean RV, it is possible to observe more variations than the ones measured by the Normal fitting. This happens because the mean of the SN is more sensitive to stellar activity. In fact, because the SN includes an asymmetry parameter, SN mean RV gets more shifted in the direction of the asymmetry induced by stellar activity. On the other hand, when using SN median RV, smaller variations in RV are caused by changes in the asymmetry of the CCF, because this second location parameter is a more robust indicator than the mean. The bottom plot of Fig.~\ref{fig:alphacent:diff:RV} captures this aspect. Both indicators can be used to capture and summarise the different information available in the CCF, as will be shown in the remainder of this work.
 %%
@@ -610,7 +608,7 @@ This behavior is similar to the faculae (see Sec.~\ref{sec:soap.faculae}) sugges
 %\end{figure*}
 %
 
-Similar to the anayses in Sec.~\ref{sec:soap}, we compare the correlation between the asymmetry or the width parameters of the CCF and the RV in Fig.~\ref{fig:alphacent:corrPlot}. 
+Similar to the analyses in Sec.~\ref{sec:soap}, we compare the correlation between the asymmetry or the width parameters of the CCF and the RV in Fig.~\ref{fig:alphacent:corrPlot}. 
 For this analysis, we also include the asymmetry parameters derived in \citet{Boisse-2011}, $V_{span}$ and in \citet{Figueira-2013}, BIS-, BIS+, Bi Gauss and $V_{asy}$, as these authors found those asymmetry parameters more correlated to the RVs than BIS SPAN. 
 It is clear in the case of Alpha Cen B, but also in the four other stars presented in Appendix \ref{appendix}, that the correlation found between $\gamma$ and SN mean RV is consistently the strongest. 
 In particular, for Alpha Cen B, the Pearson correlation coefficient is $R=0.74$, while it is at best $R=-0.42$ for all the other asymmetry--RV correlations not derived using the SN density fit.
