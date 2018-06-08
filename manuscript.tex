@@ -89,14 +89,14 @@ ESO (Chile), with the HARPS spectrograph at the 3.6-m telescope.}}
 
 \author{U. Simola \inst{1}
 	    \thanks{\email{umberto.simola@helsinki.fi}}
-	    \and X. Dumusque\inst{3}
+	    \and X. Dumusque\inst{2}
 	    \thanks{Branco Weiss Fellow--Society in Science (url: \url{http://www.society-in-science.org})}    
-	    \and Jessi Cisewski-Kehe\inst{2}
+	    \and Jessi Cisewski-Kehe\inst{3}
 	    }
 
 \institute{Department of Mathematics and Statistics, University of Helsinki, Helsinki, Finland
-	      \and Department of Statistics and Data Science, Yale University, New Haven, CT, USA
 	      \and Observatoire de Gen\`eve, Universit\'e de Gen\`eve, 51 ch. des Maillettes, CH-1290 Versoix, Switzerland 
+	      \and Department of Statistics and Data Science, Yale University, New Haven, CT, USA
 	      }
 
 \date{Received XXX; accepted XXX}
@@ -441,7 +441,7 @@ The tests of statistical significance on the parameters are presented in Table \
 \end{center}
 \end{figure*}
 
-(top) The spurious RVs (black dots) caused by a spot in the simulated data using a Normal and a SN fit, the estimated RVs using Eq.~\ref{eq:RV:correction} (red crosses) and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$.
+\jessi{What is going on with the following paragraph?  why is "(top)" and "(bottom)" appearing?  Was this intended for a caption?  These should not appear in the body of the text - only captions} (top) The spurious RVs (black dots) caused by a spot in the simulated data using a Normal and a SN fit, the estimated RVs using Eq.~\ref{eq:RV:correction} (red crosses) and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$.
    %
  (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std) and the residuals from the usual correction (Usual corr. std), obtained fitting the function $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$.  The residuals have a smaller systematic component when using the proposed model of 
   Eq.~\ref{eq:RV:correction} (red crosses) compared to the usual model (green triangles).
@@ -792,9 +792,14 @@ Generally, when fitting for planetary signals, it is common to use a model compo
 The proposed model adds an additional term to account for the amplitude of the CCF, and an interaction term between the estimated asymmetry and the width parameters. 
 Using the simulated data from SOAP 2.0, this new model reduces the effect of the stellar activity signal by a factor of 2 and 3.5 over the usual model, for the facula and spot, respectively.
 
-\jessi{Note to myself:  continue from here}
-
-When moving to real data, we arrived to the same conclusions than the results of the SOAP 2.0 simulations regarding the strength of the correlation between the CCF asymmetry and the RV, as well as between the CCF width and the RV. We note however that although in the case of the simulated data, the stronger asymmetry-RV correlation was found between $\gamma$ and the median of the SN, in the case of real data, it was found between $\gamma$ and the mean of the SN. This can be due to the fact that in SOAP 2.0, the faculae is not modelled properly, as it uses as emerging spectrum the one from a spot. We know that the temperature between a spot and a faculae is significantly different, therefore their spectra should be different. In addition, there is always several active regions on a star, at different locations in longitude and latitude, which is not the case in our SOAP 2.0 simulations were only one active region was modelled at a time. This could also be responsible for the fact that we do not observe the same behavior for the mean and the median of the SN when we compare the SOAP 2.0 simulation and real data. Nevertheless, in both the simulated and the real cases, the parameters derived from the SN are more sensitive to activity than the parameters derived from a Normal fit. In addition, the correlation between the asymmetry and the mean of the SN is always stronger than any other parametrization of the CCF presented in \citet{Boisse-2011} and \citet{Figueira-2013}.
+Similar conclusions were reached with the real data as with the results of the SOAP 2.0 simulations regarding the strength of the correlation between the CCF asymmetry and the RV, as well as between the CCF width and the RV. 
+However, the simulated data stronger asymmetry-RV correlation between $\gamma$ and SN median RV while the real data had stronger correlations between $\gamma$ and SN mean RV. 
+There could be several reasons for this difference.
+\jessi{First, it may be due to the fact that in SOAP 2.0 uses a variation of a spot template spectrum as the model rather than a facula template spectrum so the SOAP spectra with a facula is not accurately modeling this type of activity}.  
+Because the temperature between a spot and a faculae is significantly different, their spectra should be different. 
+Additionally, there are expected to be multiple active regions on a star at different locations in longitude and latitude, while the SOAP 2.0 data used in the simulation study included only a single active region. 
+These reasons could also be responsible for the general differences observed in the behavior of the mean and the median of the SN between the SOAP 2.0 data and real data. \jessi{regarding the previous statement, would you say that there are also difference in the N mean RV generally between the SOAP and real data?  I wonder if that could somehow be tied in? }
+Nevertheless, in both the simulated and the real cases, the parameters derived from the SN are generally more sensitive to activity than the parameters derived from the Normal.  Also, the correlation between the asymmetry and the SN mean RV is always stronger than the parametrization of the CCF presented in \citet{Boisse-2011} and \citet{Figueira-2013}.  \jessi{it may be helpful here to emphasize why it is better fr the parameters to be more sensitive to activity}
 
 When comparing the different RV estimates obtained from the mean of the Normal density, the mean or the median of the SN density, we see that in the case of real data, the amplitude of stellar activity is larger for the mean of the SN, followed by the median of the SN and the mean of the Normal. Although there is a huge gap between the first and the second estimate, the difference between the second and the third is much smaller. The mean of the SN density is therefore more sensitive to variation in the CCF shape than the median of the SN or the mean of the Normal, which is not surprising as the SN density is able to model the asymmetry of the CCF, what the Normal density does not. 
 
