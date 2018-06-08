@@ -202,7 +202,7 @@ Examples of SN densities under different skewness parameter values and the same 
 \begin{figure}[t]
 \begin{center}
 \includegraphics[height = 2.3in]{Skew_Normal_densities_jjck.pdf} 
-   \caption{Density function of a random variable Y following the SN distribution $SN(\xi, \omega^{2}, \alpha)$ with location parameter $\xi = 0$, scale parameter $\omega = 1$ and different values of the skewness parameter $\alpha$ indicated by different colors and line types. Note that the solid black line has an $\alpha = 0$, making it a Normal distribution.}
+   \caption{Density function of a random variable Y following the SN distribution $SN(\xi, \omega^{2}, \alpha)$ with location parameter $\xi = 0$, scale parameter $\omega = 1$ and different values of the skewness parameter $\alpha$ indicated by different colors and line types. Note that the solid black line has an $\alpha = 0$ making it a Normal distribution.}
    \label{fig:SN.plot}
 \end{center}
 \end{figure}
@@ -337,7 +337,7 @@ of size 3\% relative to the visible stellar hemisphere. The faculae is face-on w
 \begin{center}
 \includegraphics[width=3.6in]{RV_comparison_FACULAE.pdf} 
 %\includegraphics[height = 2.5in]{RV_se_comparison_FACULAE.pdf} 
-\caption{RV estimates for N mean RV (red dashed line),  SN mean RV (black line) or SN median RV (cyan dots-dashed line). In this case, the CCFs have been generated using SOAP 2.0, considering an equatorial 3\% faculae on the simulated Sun. The star does one full rotation between phase -0.5 and 0.5, with the facula being seen face-on for phase $0$. The variations observed in SN mean RV are quite different from the variations measured in SN median RV and N mean RV.  
+\caption{RV estimates for N mean RV (red dashed line),  SN mean RV (black line), and SN median RV (cyan dots-dashed line). In this case, the CCFs were generated using SOAP 2.0 with an equatorial 3\% facula on the simulated Sun. The star does one full rotation between phase -0.5 and 0.5, with the facula being seen face-on for phase $0$. The variations observed in SN mean RV are notably different from the variations measured in SN median RV and N mean RV.  
 }
    %\caption{(left) RVs changes as function of the orbital phase in the case in which a faculae is present on the photosphere of the star. SN mean RV seems to have the smallest spurious variations caused by the faculae. (right) Evaluation of the standard errors corresponding to the defined RVs. The standard errors retrieved for SN median RV are $10 \%$ smaller than the standard errors derived for RV. SN mean RV has the largest related uncertainties.}
     \label{fig:faculae}
@@ -349,7 +349,7 @@ Correlations between the different RV estimates and the different CCF asymmetry 
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{SOAP_FACULAE_Comparison_para_SN.pdf} 
-   \caption{\emph{Left:} Correlations between the different asymmetry parameters and their corresponding RVs estimates in the case of an equatorial 3\% faculae on the simulated Sun. \emph{Right:} Correlations between the different width parameters and their corresponding RVs estimates for the same facula.
+   \caption{(left) Correlations between the different asymmetry parameters and their corresponding RV estimates in the case of an equatorial 3\% facula on the simulated Sun. (right) Correlations between the different width parameters and their corresponding RV estimates for the same facula.
    In the presence of a facula, both the shape and the width of the CCF change as the star rotates, producing statistically significant correlations.}
     \label{fig:faculae.corr}
 \end{center}
@@ -363,9 +363,9 @@ We see a slightly smaller rms after correction when using the SN parameters comp
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
-   \caption{(top) The spurious RVs (black dots) caused by a facula in the simulated data using a Normal and a SN fit, the estimated RVs using Eq.~\ref{eq:RV:correction} (red crosses) and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit.    
+   \caption{(top) The spurious estimated RVs (black dots) caused by a facula in the simulated data using a Normal and a SN fit, the estimated RVs using Eq.~\ref{eq:RV:correction} (red crosses), and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit.    
    %
- (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std--red crosses) and the residuals from the usual correction (Usual corr. std--green triangles). The residuals have a smaller systematic component when using the proposed model of 
+ (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std, red crosses) and the residuals from the usual correction (Usual corr. std, green triangles). The residuals have a smaller systematic component when using the proposed model of 
   Eq.~\ref{eq:RV:correction} (red crosses) compared to the usual model (green triangles).
 The tests of statistical significance on the parameters are presented in Table \ref{table:faculae.test}.
 }\label{fig:faculae.correction}
@@ -374,7 +374,7 @@ The tests of statistical significance on the parameters are presented in Table \
 
 \begin{table}
 \begin{center}
-\caption{P--values for the different coefficients used in Eq.~\ref{eq:RV:correction} for the correction from stellar activity induced by an equatorial 3\% facula on the simulated Sun. All the parameters corresponding to the Normal or SN variables are statistically significant to explain the spurious RV variations caused by a facula. The estimated $R^{2}$ show that the proposed correction for stellar activity explains the vast majority of the spurious variability seen in the different RV estimates.}
+\caption{P--values for the estimated coefficients from the model in Eq.~\ref{eq:RV:correction} for correcting stellar activity induced by an equatorial 3\% facula on the simulated Sun. All the parameters corresponding to the Normal or SN variables are statistically significant to explain the spurious RV variations caused by the facula. The estimated $R^{2}$ show that the proposed correction for stellar activity explains the vast majority of the spurious variability present in the different RV estimates.}
 \label{table:faculae.test}
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -406,7 +406,7 @@ Fig.~\ref{fig:spot.corr} shows the correlations between the asymmetry parameters
 \begin{center}
 \includegraphics[width=3.6in]{RV_comparison_SPOT.pdf} 
 %\includegraphics[height = 2.5in]{RV_se_comparison_PLANET_SPOT.pdf} 
-\caption{RV estimates for N mean RV (red dashed line),  SN mean RV (black line) or SN median RV (cyan dots-dashed line). In this case, the CCFs have been generated using SOAP 2.0, considering an equatorial 1\% spot on the simulated Sun. The star do one full rotation between phase -0.5 and 0.5, with the spot being seen face-on for phase 0. SN mean RV seems to have the smallest spurious variations caused by the spot.}
+\caption{RV estimates for N mean RV (red dashed line),  SN mean RV (black line) or SN median RV (cyan dots-dashed line) using CCFs generated from SOAP 2.0 with an equatorial 1\% spot on the simulated Sun. The star does one full rotation between phase -0.5 and 0.5, with the spot being seen face-on for phase 0. SN mean RV seems to have the smallest spurious variations caused by the spot.}
    %\caption{(left) RVs changes as function of the orbital phase in the case in which a spot is present on the photosphere of the star. SN mean RV seems to have the smallest spurious variations caused by the faculae. (right) Evaluation of the standard errors corresponding to the defined RVs. The standard errors retrieved for SN median RV are $10 \%$ smaller than the standard errors derived for RV. SN mean RV has the largest related uncertainties.}
     \label{fig:spot}
 \end{center}
@@ -415,7 +415,7 @@ Fig.~\ref{fig:spot.corr} shows the correlations between the asymmetry parameters
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{SOAP_SPOT_Comparison_para_SN.pdf} 
-   \caption{\emph{Left:} Correlations between the different asymmetry parameters and their corresponding RV estimates in the case of an equatorial 1\% spot on the simulated Sun. \emph{Right:} Correlations between the different width parameters and their corresponding RV estimates for the same spot. In the presence of a spot, both the shape and the width of the CCF change as the star rotates. However, only the asymmetry produces a statistically significant correlation with the different RV estimates. In the case of the correlation between the width parameters and their corresponding RV estimates the data produces a circle, meaning that those two quantities are not varying in phase.}
+   \caption{(left) Correlations between the different asymmetry parameters and their corresponding RV estimates in the case of an equatorial 1\% spot on the simulated Sun. (right) Correlations between the different width parameters and their corresponding RV estimates for the same spot. In the presence of a spot, both the shape and the width of the CCF change as the star rotates. However, only the asymmetry produces a statistically significant correlation with the different RV estimates. In the case of the correlation between the width parameters and their corresponding RV estimates the data produces a circle, meaning that those two quantities are not varying in phase. \jessi{why would you say the two quantities are not varying in phase?  they clearly are changing with phase...(?)}}
     \label{fig:spot.corr}
 \end{center}
 \end{figure*}
@@ -431,9 +431,9 @@ This is not surprising when looking at the circle shape drawn when plotting the 
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
-   \caption{(top) The spurious RVs (black dots) caused by a spot in the simulated data using a Normal and a SN fit, the estimated RVs using Eq.~\ref{eq:RV:correction} (red crosses) and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit.
+   \caption{(top) The spurious estimated RVs (black dots) caused by a spot in the simulated data, the estimated RVs using Eq.~\ref{eq:RV:correction} (red crosses) and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit.
    %
- (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std--red crosses) and the residuals from the usual correction (Usual corr. std--green triangles).The residuals have a smaller systematic component when using the proposed model of 
+ (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std, red crosses) and the residuals from the usual correction (Usual corr. std, green triangles). The residuals have a smaller systematic component when using the proposed model of 
   Eq.~\ref{eq:RV:correction} (red crosses) compared to the usual model (green triangles).
 The tests of statistical significance on the parameters are presented in Table \ref{table:spot.test}.
 }
@@ -527,7 +527,7 @@ The proposed model from Eq.~\ref{eq:RV:correction.overall} was fitted to the RV 
 
 \begin{table}
 \begin{center}
-\caption{P--values for the different coefficients used in Eq.~\ref{eq:RV:correction} for the correction of stellar activity induced by an equatorial 1\% spot on the simulated Sun and a planet with period one third of the rotational period and semi-amplitude 10\,\ms. All the parameters corresponding to the Normal or SN variables are statistically significant to explain the spurious RV variations caused by this spot plus planet, except for the width of the CCF. Note that since nonlinear least squares was required, the residual standard error rather than the $R^2$ is displayed as a reference.}
+\caption{P--values for the different coefficients used in Eq.~\ref{eq:RV:correction} for the correction of stellar activity induced by an equatorial 1\% spot on the simulated Sun, and a planet with period one third of the rotational period and a semi-amplitude 10\,\ms. All the parameters corresponding to the Normal or SN variables are statistically significant to explain the spurious RV variations caused by this spot plus planet, except for the width of the CCF. Note that since nonlinear least squares was required, the residual standard error rather than the $R^2$ is displayed as a reference. \jessi{is there a reason the actual model,  \eqref{eq:RV:correction.overall}, with the Doppler shift was not references?}}
 \label{table:spotplanet.test}
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -589,7 +589,7 @@ In the left panel of Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relati
 \begin{center}
 \includegraphics[height = 3.6in]{HD12862_gamma_vs_bisspan.pdf} 
 \includegraphics[height = 3.6in]{HD12862_[2]RadialVelocityDifferences.pdf} 
-   \caption{\emph{Left: }Correlation between $\gamma$ and the BIS SPAN for Alpha Centauri B. As we can see with the strong correlation, those two parameters measure the CCF asymmetry in the same way. \emph{Top right:} RVs as function of Julian Day for Alpha Centauri B in 2010. The RVs are retrieved using the mean of a Normal fitted to the CCF (red triangles), or the mean (black circles) or median (cyan crosses) of a SN density fitted to the CCF. \emph{Bottom right:} RV differences between the RVs derived when using the SN density and the RV derived when using the Normal density.}
+   \caption{(left) Correlation between $\gamma$ and the BIS SPAN for Alpha Centauri B. As we can see with the strong correlation, those two parameters measure the CCF asymmetry in the same way. (top right) RVs as function of Julian Day for Alpha Centauri B in 2010. The RVs are retrieved using the mean of a Normal fitted to the CCF (red triangles), or the mean (black circles) or median (cyan crosses) of a SN density fitted to the CCF. (bottom right) RV differences between the RVs derived when using the SN density and the RV derived when using the Normal density.}
    \label{fig:alphacent:corr.gamma}
 \end{center}
 \end{figure*}
