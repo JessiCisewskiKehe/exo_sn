@@ -441,12 +441,6 @@ The tests of statistical significance on the parameters are presented in Table \
 \end{center}
 \end{figure*}
 
-\jessi{What is going on with the following paragraph?  why is "(top)" and "(bottom)" appearing?  Was this intended for a caption?  These should not appear in the body of the text - only captions} (top) The spurious RVs (black dots) caused by a spot in the simulated data using a Normal and a SN fit, the estimated RVs using Eq.~\ref{eq:RV:correction} (red crosses) and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$.
-   %
- (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std) and the residuals from the usual correction (Usual corr. std), obtained fitting the function $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$.  The residuals have a smaller systematic component when using the proposed model of 
-  Eq.~\ref{eq:RV:correction} (red crosses) compared to the usual model (green triangles).
-The tests of statistical significance on the parameters are presented in Table \ref{table:spot.test}.
-
 \begin{table}
 \begin{center}
 \caption{P--values for the different coefficients used in Eq.~\ref{eq:RV:correction} for the correction of stellar activity induced by an equatorial 1\% spot on the simulated Sun. All the parameters corresponding to the Normal or SN parameters are statistically significant to explain the spurious RV variations caused by this spot, except for the width of the CCF when using SN mean RV or SN median RV as RV estimates. The estimated $R^{2}$ show that the proposed correction for stellar activity explains the vast majority of the spurious variability seen in the different RV estimates.}
@@ -651,7 +645,7 @@ This is not a surprising result since for the three different RV estimates, we a
    \caption{(top) The RVs (black dots) for Alpha Centauri B estimated using a SN and a Normal fit.
    %
  (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std, black dots) and the residuals from the usual correction (Usual corr. std, blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit. The residuals have a smaller systematic component when using the proposed model of 
-  Eq.~\ref{eq:RV:correction} (black dots) compared to the usual model (blue triangles). \jessi{The bottom plot has black triangles rather than black dots...}}
+  Eq.~\ref{eq:RV:correction} (black dots) compared to the usual model (blue triangles).}
    \label{fig:alphacent:correctionRV}
 \end{center}
 \end{figure*}
@@ -747,7 +741,7 @@ The CCF was calculated using this spectrum according to the method presented in 
 This process was repeated a hundred times in order to obtain a distribution for each CCF parameter. 
 The standard deviations of the resulting distributions provide standard errors for each CCF parameters.
 
-The standard errors were also computed for each CCF parameter for all the CCFs of HD215152, HD192310 and Corot-7. \jessi{Why weren't the others stars included?}
+The standard errors were also computed for each CCF parameter for all the CCFs of HD215152, HD192310 and Corot-7. \jessi{Why weren't the others stars included?} \umberto{because the computational time for Tau Ceti and Alpha Cent was much longer (there are much more CCF's).}
 This provides information on how the noise of each CCF parameter varies as a function of SNR, where the SNR measured at 550 nm on the original spectra varies between 10 and 500. 
 The combined results for all the stars considered are displayed in Fig.~\ref{fig:se}. 
 The top plots show the standard errors of the three different estimated RV's, the width, and the asymmetry estimates. 
@@ -760,13 +754,13 @@ This is not surprising as the three stars studied here are all main sequence K-d
 When comparing the three different estimates for the RV, the SN mean RV presents standard errors that are 60\% larger than the N mean RV. However, the SN median RV gives errors 10\% more precise than N mean RV. 
 The parameters describing the width of the CCF, FWHM and SN FWHM, have comparable standard errors. 
 Finally, for the asymmetry parameters, $\gamma$ has standard errors that are 15\% more precise than BIS SPAN. 
-In conclusion, when fitting a SN density to the CCF and using as RV estimates SN mean RV \jessi{I'm assuming you mean the median here?}, we are able to improve by 10\% the precision on the estimated RV, 15\% the precision on the estimated asymmetry, both without degrading the precision on the estimated width. 
+In conclusion, when fitting a SN density to the CCF and using as RV estimates SN median RV, we are able to improve by 10\% the precision on the estimated RV, 15\% the precision on the estimated asymmetry, both without degrading the precision on the estimated width. 
 SN mean RV should not be use to derive precise estimated RVs, except perhaps in specific conditions described below, as the precision on this parameter is 60\% worse than the precision on the RVs derived from N mean RV.
 %
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{[5]Errors_vs_SNR_all_stars.pdf} 
-   \caption{\jessi{The stars used should be noted here}  Comparison between the standard errors from the bootstrap analysis of the estimated RVs, FWHM, and asymmetry parameters. When using SN mean RV (black circles), the standard errors are in average $60\%$ larger than the standard errors of N mean RV (red triangles). However, the standard errors for SN median RV (cyan crosses) are on average $10\%$ smaller than the standard errors coming from the N mean RV. 
+   \caption{\textit{Bootstrap analyses on the stars HD215152, HD192310 and Corot-7}. Comparison between the standard errors from the bootstrap analysis of the estimated RVs, FWHM, and asymmetry parameters. When using SN mean RV (black circles), the standard errors are in average $60\%$ larger than the standard errors of N mean RV (red triangles). However, the standard errors for SN median RV (cyan crosses) are on average $10\%$ smaller than the standard errors coming from the N mean RV. 
    The use of the asymmetry SN parameter $\gamma$ leads to standard errors in average $15\%$ smaller than the standard errors related to the BIS SPAN. Note that for the asymmetry, the error in BIS SPAN is in \ms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN. \jessi{it would be good to have a "(top)" and "(bottom)" noted here.}}
    \label{fig:se}
 \end{center}
@@ -803,7 +797,7 @@ There could be several reasons for this difference.
 Because the temperature between a spot and a faculae is significantly different, their spectra should be different. 
 Additionally, there are expected to be multiple active regions on a star at different locations in longitude and latitude, while the SOAP 2.0 data used in the simulation study included only a single active region. 
 These reasons could also be responsible for the general differences observed in the behavior of the mean and the median of the SN between the SOAP 2.0 data and real data. \jessi{regarding the previous statement, would you say that there are also difference in the N mean RV generally between the SOAP and real data?  I wonder if that could somehow be tied in? }
-Nevertheless, in both the simulated and the real cases, the parameters derived from the SN are generally more sensitive to activity than the parameters derived from the Normal.  Also, the correlation between the asymmetry and the SN mean RV is always stronger than the parametrization of the CCF presented in \citet{Boisse-2011} and \citet{Figueira-2013}.  \jessi{it may be helpful here to emphasize why it is better fr the parameters to be more sensitive to activity}
+Nevertheless, in both the simulated and the real cases, the parameters derived from the SN are generally more sensitive to activity than the parameters derived from the Normal.  Also, the correlation between the asymmetry and the SN mean RV is always stronger than the parametrization of the CCF presented in \citet{Boisse-2011} and \citet{Figueira-2013}.  \jessi{it may be helpful here to emphasize why it is better for the parameters to be more sensitive to activity}
 
 Considering the different RV estimates of the real data, the amplitude of stellar activity tends to be largest for the SN mean RV, followed by the SN median RV, and then N mean RV. 
 Although there appears to be a larger difference between the SN mean RV and the SN median RV, the SN median RV is similar to the N mean RV. 
@@ -871,8 +865,8 @@ In this Appendix, a similar analysis as presented in Sec.~\ref{sec:4} is discuss
 
 Table~\ref{table:summaryStars} summarizes the results obtained by the SN and Normal models. 
 These results are consistent with those from the analysis of Alpha Centauri B. 
-The correlation between $\gamma$ and SN mean RV is stronger than the correlation between the BIS SPAN and Normal mean RV or between the asymmetry parameters derived in \citet{Boisse-2009} and \citet{Figueira-2013} and RV \jessi{was the RV for these other asymmetry papers the Normal mean RV?} for all the considered stars. 
-The correlation between SN FWHM and SN mean RV is stronger than the correlation between FWHM and RV \jessi{N mean RV?} for three of the four stars.  Also for all these stars the originally estimated RVs were corrected from spurious variations in RVs caused by stellar activity using Eq. \ref{eq:RV:correction}. 
+The correlation between $\gamma$ and SN mean RV is stronger than the correlation between the BIS SPAN and N mean RV or between the asymmetry parameters derived in \citet{Boisse-2009} and \citet{Figueira-2013} and N mean RV for all the considered stars. 
+The correlation between SN FWHM and SN mean RV is stronger than the correlation between FWHM and N mean RV for three of the four stars.  Also for all these stars the originally estimated RVs were corrected from spurious variations in RVs caused by stellar activity using Eq. \ref{eq:RV:correction}. 
 Fig. \ref{fig:HD192310:correctionRV}--\ref{fig:HD215152:correctionRV} show the resulting corrected RVs. 
 The stellar activity-corrected Normal and SN residuals are comparable for the stars $\text{HD}192310$ and $\text{HD}10700$.
 However, the rms of the residuals for $\text{HD}215152$ are 0.05\,\ms lower for the SN model than the Normal model, and the rms of the residuals for Corot-7 are 0.34\,\ms lower.  $\text{HD}215152$ and Corot-7 have  lower SNR than the other two analyzed stars.  \jessi{was the SNR of the four stars stated anywhere?  If not, if we want to keep the last point, we should note what the SNR of the stars are.}
@@ -931,7 +925,6 @@ However, the rms of the residuals for $\text{HD}215152$ are 0.05\,\ms lower for 
    \caption{(top) The RVs (black dots) for $\text{HD}192310$ estimated using a SN and a Normal fit.
    %
  (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std--black dots) and the residuals from the usual correction (Usual corr. std--blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit. The residuals for both the proposed correction from stellar activity are comparable.
- \jessi{black triangles on bottom row need to be updated to circles throughout the appendix}
  }
    \label{fig:HD192310:correctionRV}
 \end{center}
