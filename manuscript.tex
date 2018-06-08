@@ -622,7 +622,7 @@ When looking at the correlations between the width and the RV estimates for Alph
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{HD12862_[4]Comparison_para.pdf}  
-   \caption{(top three rows) Correlations between the asymmetry parameters and their corresponding estimated RVs for Alpha Centauri B. 
+   \caption{(top three rows) Correlations between the asymmetry parameters and their corresponding estimated RVs for Alpha Cen B. 
 (bottom row) The correlation between the FWHM and the estimated RVs for Alpha Centauri B. The correlations are stronger when using parameters derived from the SN fit than the Normal one. The estimated $R$'s are all statistically significant.} 
    \label{fig:alphacent:corrPlot}
 \end{center}
@@ -719,7 +719,8 @@ All three of the different RV estimators give similar detection limits. Though m
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[height = 2.6in]{detection_limits.pdf} 
-   \caption{Detection limits of planetary signals once we have removed from the raw RVs the linear combination of CCF parameters proposed in Eq.~\ref{eq:RV:correction} to correct for stellar activity. As we can see, when considering the different parametrization for the RV: N mean RV, SN mean RV and SN median RV, we arrive to very similar detection limits.}
+   \caption{Detection limits of planetary signals once the stellar activity signal is removed from the raw RVs using the model proposed in  Eq.~\ref{eq:RV:correction}. \jessi{For the black-and-white versions, it would be helpful to have different line types plotted}
+The different RV estimators have similar detection limits.}
    \label{fig:detection_limits}
 \end{center}
 \end{figure}
@@ -765,7 +766,8 @@ SN mean RV should not be use to derive precise estimated RVs, except perhaps in 
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{[5]Errors_vs_SNR_all_stars.pdf} 
-   \caption{\jessi{The stars used should be noted here}  Comparison between the standard errors using the bootstrap analysis for the RVs, the FWHM, and the asymmetry parameters. When using SN mean RV (black circles), the standard errors are in average $60\%$ larger than the standard errors retrieved when fitting a Normal density (red triangles). However, the standard errors for SN median RV (cyan crosses) are on average $10\%$ smaller than the standard errors coming from the N mean RV. The use of the asymmetry SN parameter $\gamma$ leads to standard errors in average $15\%$ smaller than the standard errors related to the BIS SPAN. Note that for the asymmetry, the error in BIS SPAN is in \ms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN. \jessi{it would be good to have a "(top)" and "(bottom)" noted here.}}
+   \caption{\jessi{The stars used should be noted here}  Comparison between the standard errors from the bootstrap analysis of the estimated RVs, FWHM, and asymmetry parameters. When using SN mean RV (black circles), the standard errors are in average $60\%$ larger than the standard errors of N mean RV (red triangles). However, the standard errors for SN median RV (cyan crosses) are on average $10\%$ smaller than the standard errors coming from the N mean RV. 
+   The use of the asymmetry SN parameter $\gamma$ leads to standard errors in average $15\%$ smaller than the standard errors related to the BIS SPAN. Note that for the asymmetry, the error in BIS SPAN is in \ms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN. \jessi{it would be good to have a "(top)" and "(bottom)" noted here.}}
    \label{fig:se}
 \end{center}
 \end{figure*}
@@ -878,7 +880,7 @@ However, the rms of the residuals for $\text{HD}215152$ are 0.05\,\ms lower for 
 
 \small{
 \begin{table*}[!t]
-\caption{Subset of notable correlations between the asymmetry or the FWHM parameters and the RVs for four stars: $\text{HD}192310$,  $\text{HD}10700$, $\text{HD}215152$ and $\text{Corot }7$. The complete results of the analyses of the correlations for the four stars are presented in Fig. \ref{fig:Gliese785:corrPlot}--\ref{fig:Corot7:corrPlot}.}
+\caption{Notable correlations between the asymmetry or the FWHM parameters and the RVs for four stars: $\text{HD}192310$,  $\text{HD}10700$, $\text{HD}215152$ and $\text{Corot }7$. The complete results of the analyses of the correlations for the four stars are presented in Fig. \ref{fig:Gliese785:corrPlot}--\ref{fig:Corot7:corrPlot}.}
 \label{table:summaryStars}
 \begin{center}
 \scalebox{0.9}{
@@ -916,7 +918,9 @@ However, the rms of the residuals for $\text{HD}215152$ are 0.05\,\ms lower for 
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{HD19231_[4]Comparison_para.pdf} 
-   \caption{Correlations between the asymmetry parameters and their corresponding RVs for $\text{HD}192310$.  The last three plots show the correlation between the FWHM and the RVs for $\text{HD}192310$ using respectively the SN (SN mean RV and SN median RV) and the Normal fits. The correlations are always stronger when using parameters derived from the SN fit than the Normal one. The p--values associated with each $R$ are statistically different from $0$.}   
+   \caption{(top three rows) Correlations between the asymmetry parameters and their corresponding RVs for $\text{HD}192310$.  
+   (bottom row) Correlations between the FWHM and the estimated RVs. 
+   The correlations are consistently stronger when using parameters derived from the SN than the Normal. The estimated $R$ are all statistically significant.}   
    \label{fig:Gliese785:corrPlot}
 \end{center}
 \end{figure*}
@@ -937,7 +941,10 @@ However, the rms of the residuals for $\text{HD}215152$ are 0.05\,\ms lower for 
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{HD10700_[4]Comparison_para.pdf}  
-   \caption{Correlations between the asymmetry parameters and their corresponding RVs for $\text{HD}10700$. The last three plots show the correlation between the FWHM and the RVs for $\text{HD}10700$ using respectively the SN (SN mean RV and SN median RV) and the Normal fits. The correlations between the asymmetry parameters and their corresponding RVs are stronger when using the parameter SN mean RV obtained from the SN fit than the Normal one. The correlation between the FWHM and the RVs is, only for this quiet star, stronger when using the parameter retrieved with the Normal distribution. The p--values associated with each $R$ are statistically different from $0$, except for the correlation between FIG BIS- and RV (p--values=0.36).}   
+   \caption{(top three rows) Correlations between the asymmetry parameters and their corresponding RVs for $\text{HD}10700$. 
+(bottom row) Correlations between the FWHM and the RVs for $\text{HD}10700$. 
+The correlations between the asymmetry parameters and their corresponding RVs are stronger when using the SN mean RV compared to N mean RV. 
+The correlation between the FWHM and the N mean RV, only for this quiet star, is stronger the the analogous correlations with the estimated SN RVs. The estimated $R$ are statistically significant, except for the correlation between FIG BIS and RV (p--values=0.36).}   
    \label{fig:Tau:corrPlot}
 \end{center}
 \end{figure*}
@@ -958,7 +965,10 @@ However, the rms of the residuals for $\text{HD}215152$ are 0.05\,\ms lower for 
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{HD21515_[4]Comparison_para.pdf}  
-   \caption{Correlations between the asymmetry parameters and their corresponding RVs for $\text{HD}215152$.The last three plots show the correlation between the FWHM and the RVs for $\text{HD}215152$ using respectively the SN (SN mean RV and SN median RV) and the Normal fits. The correlations between the asymmetry parameters and their corresponding RVs are stronger when using the parameter SN mean RV obtained from the SN fit than the Normal one. The p--values associated with each $R$ are, from the top to the bottom, from the left to the right: $2.2e-16,0.02,0.27, 0.05 ,7e-4,1e-5,1e-5,0.0007,0.0004,0.5,0.2$.}
+   \caption{(top three rows) Correlations between the asymmetry parameters and their corresponding RVs for $\text{HD}215152$. 
+(bottom row) Correlations between the FWHM and the RVs for $\text{HD}215152$. 
+The correlations are consistently stronger when using SN mean RV compared to N mean RV.
+The p--values associated with each $R$ are, from the top to the bottom, from the left to the right: $2.2e-16,0.02,0.27, 0.05 ,7e-4,1e-5,1e-5,0.0007,0.0004,0.5,0.2$. \jessi{It is probably best to just note the ones that do not have statistically significant p-values...}}
    \label{fig:HD215152:corrPlot}
 \end{center}
 \end{figure*}
@@ -977,7 +987,10 @@ However, the rms of the residuals for $\text{HD}215152$ are 0.05\,\ms lower for 
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{LRa01_E_[4]Comparison_para.pdf} 
-   \caption{Correlations between the asymmetry parameters and their corresponding RVs for $\text{Corot }7$. The last three plots show the correlation between the FWHM and the RVs for $\text{Corot }7$ using respectively the SN (SN mean RV and SN median RV) and the Normal fits. The correlations between the asymmetry parameters and their corresponding RVs are stronger when using the parameter SN mean RV obtained from the SN fit than the Normal one. The p--values associated with each $R$ are, from the top to the bottom, from the left to the right: $2.2e-16,2e-5,0.23,0.11,0.0055,0.0025,0.012,0.002,2.2e-16,2.2e-16,2.2e-16$. }
+   \caption{(top three rows) Correlations between the asymmetry parameters and their corresponding RVs for $\text{Corot }7$. 
+(bottom row) Correlations between the FWHM and the RVs for $\text{Corot }7$.
+The correlations are consistently stronger when using SN mean RV compared to N mean RV.
+The p--values associated with each $R$ are, from the top to the bottom, from the left to the right: $2.2e-16,2e-5,0.23,0.11,0.0055,0.0025,0.012,0.002,2.2e-16,2.2e-16,2.2e-16$. \jessi{maybe just note the ones that are not statistically significant.}}
    \label{fig:Corot7:corrPlot}
 \end{center}
 \end{figure*}
