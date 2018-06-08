@@ -495,7 +495,7 @@ The patterns seen in the width-RV phase space in Fig.~\ref{fig:spot.plus.planet.
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{SOAP_SPOT_PLANET_Comparison_para_SN.pdf} 
-   \caption{Evaluation of the correlation between the RVs and the asymmetry parameters when a spot is present on the photosphere of the star and a planet is injected.  The shape of the CCF changes as the spot moves, producing statistically significative correlations only between the RVs and the asymmetry parameter. The correlations between the RVs and the width parameter of the CCF is weaker than the previous case that considers only the presence of a spot on the photosphere of the star.}
+   \caption{Evaluation of the correlation between the RVs and the asymmetry parameters of the simulated data with a 1\% spot and an injected planetary signal.  The shape of the CCF changes as the spot moves, producing statistically significant correlations only between the estimated RVs and the asymmetry parameter. The correlations between the estimated RVs and the width parameter of the CCF is weaker than the case with only a spot.}
     \label{fig:spot.plus.planet.corr}
 \end{center}
 \end{figure*}
@@ -568,7 +568,7 @@ $\text{Residuals}$      &     $0.71 \ms$    &  $ 0.66 \ms$ & $0.70 \ms$  \\
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Real data application} \label{sec:4}
 
-In this Section we present the analysis conducted on the star Alpha Centauri B, comparing the result of fitting a CCF using the SN density defined in Sec. \ref{sec:3} with the usual approach based on fitting a Normal density for estimating the RV and asymmetry of the CCF. 
+In this Section we present the analysis conducted on the star Alpha Centauri B (Alpha Cen B), comparing the result of fitting a CCF using the SN density defined in Sec. \ref{sec:3} with the usual approach based on fitting a Normal density for estimating the RV and asymmetry of the CCF. 
 %to retrieve the RV and width of the CCF and calculating the bisector to derive the asymmetry parameter BIS SPAN. 
 Four other stars have been analyzed with the proposed method and details can be found in Appendix \ref{appendix}. 
 For all the stars considered in the presented work, only CCFs that were derived from spectra that had at least a SNR of 10 at 550 nm were selected. 
@@ -589,7 +589,8 @@ In the left panel of Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relati
 \begin{center}
 \includegraphics[height = 3.6in]{HD12862_gamma_vs_bisspan.pdf} 
 \includegraphics[height = 3.6in]{HD12862_[2]RadialVelocityDifferences.pdf} 
-   \caption{(left) Correlation between $\gamma$ and the BIS SPAN for Alpha Centauri B. As we can see with the strong correlation, those two parameters measure the CCF asymmetry in the same way. (top right) RVs as function of Julian Day for Alpha Centauri B in 2010. The RVs are retrieved using the mean of a Normal fitted to the CCF (red triangles), or the mean (black circles) or median (cyan crosses) of a SN density fitted to the CCF. (bottom right) RV differences between the RVs derived when using the SN density and the RV derived when using the Normal density.}
+   \caption{(left) Correlation between $\gamma$ and the BIS SPAN for Alpha Centauri B. The strong correlation suggests these two parameters are similarly measuring the asymmetry.
+(top right) RVs as function of Julian Day for Alpha Centauri B in 2010. The RVs are estimated using the mean of a Normal fitted to the CCF (red triangles), or the mean (black circles) or median (cyan crosses) of a SN density fitted to the CCF. (bottom right) Differences between the RVs estimated with the SN density and those from the Normal density.}
    \label{fig:alphacent:corr.gamma}
 \end{center}
 \end{figure*}
@@ -621,7 +622,8 @@ When looking at the correlations between the width and the RV estimates for Alph
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{HD12862_[4]Comparison_para.pdf}  
-   \caption{Correlations between the asymmetry parameters and their corresponding RVs for Alpha Centauri B. The last three plots show the correlation between the FWHM and the RVs for Alpha Centauri B using respectively the SN (SN mean RV and SN median RV) and the Normal fits. The correlations are always stronger when using parameters derived from the SN fit than the Normal one. The p--values associated with each $R$ is statistically different from $0$.} 
+   \caption{(top three rows) Correlations between the asymmetry parameters and their corresponding estimated RVs for Alpha Centauri B. 
+(bottom row) The correlation between the FWHM and the estimated RVs for Alpha Centauri B. The correlations are stronger when using parameters derived from the SN fit than the Normal one. The estimated $R$'s are all statistically significant.} 
    \label{fig:alphacent:corrPlot}
 \end{center}
 \end{figure*}
@@ -648,15 +650,15 @@ This is not a surprising result since for the three different RV estimates, we a
 \includegraphics[height = 6in]{NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
    \caption{(top) The RVs (black dots) for Alpha Centauri B estimated using a SN and a Normal fit.
    %
- (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std--black dots) and the residuals from the usual correction (Usual corr. std--blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit. The residuals have a smaller systematic component when using the proposed model of 
-  Eq.~\ref{eq:RV:correction} (black dots) compared to the usual model (blue triangles).}
+ (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std, black dots) and the residuals from the usual correction (Usual corr. std, blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit. The residuals have a smaller systematic component when using the proposed model of 
+  Eq.~\ref{eq:RV:correction} (black dots) compared to the usual model (blue triangles). \jessi{The bottom plot has black triangles rather than black dots...}}
    \label{fig:alphacent:correctionRV}
 \end{center}
 \end{figure*}
 
 \begin{table}
 \begin{center}
-\caption{P--values for the different coefficients used in Eq.~\ref{eq:RV:correction} for the correction from stellar activity in Alpha Cen B data. All the variables corresponding to the Normal or SN parameters are statistically significant to explain the spurious RV variations caused by stellar activity, except for the asymmetry of the CCF when using the Normal parameters (BIS SPAN).
+\caption{P--values for the different coefficients used in Eq.~\ref{eq:RV:correction} for the correction from stellar activity in Alpha Cen B data. All the variables corresponding to the Normal or SN parameters are statistically significant, except for the asymmetry of the CCF when using the BIS SPAN with the N mean RV.
 The evaluation of the $R^2$ shows that the proposed linear combination better explains variations in RVs due to the stellar activity when the RVs are derived using SN mean RV.}
 \label{table:alphacent.test}
 \begin{tabular}{|c|c|c|c|}
