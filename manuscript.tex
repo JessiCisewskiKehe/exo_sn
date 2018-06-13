@@ -109,12 +109,12 @@ Stellar activity can be probed by measuring time dependent variations in the sha
 {We propose to estimate the parameters of the CCF by fitting a Skew Normal (SN) density which, unlike the commonly employed Normal density, includes a skewness parameter to capture the asymmetry of the CCF induced by stellar activity and also the natural asymmetry induced by convective blueshift.}
 %Moreover, the SN distribution allows for different location parameters beyond the mean, such as the median of the CCF.}
 %
-{The performances of the proposed method are compared to the commonly employed Normal density, using both simulations and real observations, with different levels of activity and signal-to-noise ratio (SNR) levels.}
+{The performances of the proposed method are compared to the commonly employed Normal density using both simulations and real observations, with different levels of activity and signal-to-noise ratio (SNR) levels.}
 %We analyze 5 stars with different activity levels and whose CCF's have different signal-to-noise ratio (SNR) levels. In each case, we compare the results obtained by fitting to the CCF respectively a Normal and a SN.  We also estimate rigorous errors for the different moments of the CCF using a bootstrap analysis.
 %
 {When considering real observations, the correlation between the RV and the asymmetry of the CCF and the correlation between the RV and the width of the CCF are stronger when using the parameters estimated with the SN rather than the ones obtained with the commonly employed Normal density. In particular the strongest correlations have been obtained when using as estimate for the RV the mean of the SN. This suggests that the asymmetry of the CCF and the width of the CCF estimated using a SN density may be more sensitive to stellar activity, which can be helpful when estimating stellar rotational periods and in general when characterizing stellar activity signals.
-Using the proposed SN approach, the uncertainties estimated on the RV defined as the median of the SN are on average $10\%$ smaller than the uncertainties calculated on the mean of the Normal. The uncertainties estimated on the asymmetry parameter of the SN are on average $15\%$ smaller than the uncertainties measured on the Bisector Inverse Slope Span (BIS SPAN), which is the commonly parameter used to evaluate the asymmetry of the CCF. }
-{We strongly encourage the use of the SN densitty to retrieve the different parameters of the CCF since the correlations used to probe stellar activity are stronger than the ones retrieved by the common approach and because the estimation of RV and CCF asymmetry parameters are more precise.
+Using the proposed SN approach, the uncertainties estimated on the RV defined as the median of the SN are on average $10\%$ smaller than the uncertainties calculated on the mean of the Normal. The uncertainties estimated on the asymmetry parameter of the SN are on average $15\%$ smaller than the uncertainties measured on the Bisector Inverse Slope Span (BIS SPAN), which is the commonly used parameter to evaluate the asymmetry of the CCF. }
+{We strongly encourage the use of the SN density to retrieve the different parameters of the CCF since the correlations used to probe stellar activity are stronger than the ones retrieved by the common approach and because the uncertainties associated to the RV and the asymmetry of the CCF are both smaller than the ones retrieved by the commonly employed strategies.
 }
 %{We strongly encourage the use of the SN distribution to retrieve the different parameters of the CCF. The correlation between the mean of the SN and the asymmetry parameter of the CCF and the correlation between the mean of the SN and the width parameter of the CCF probe better stellar activity signals than when using the parameters retrieved with the Normal distribution. Using the SN distribution leads to smaller uncertainties for both the median of the SN and the asymmetry of the CCF than using the commonly employed Normal density. Finally, all the parameters are available in one single fit to the CCF.
 %}
@@ -136,56 +136,56 @@ Using the proposed SN approach, the uncertainties estimated on the RV defined as
 %\subsection{Goal of RV analysis}
 
 When working with radial-velocities data (RVs), one of the main limitations to the detection of small-mass exoplanets is no longer the precision of the instruments used, but the different sources of variability induced by the stars \citep[e.g.][]{Feng:2017aa, Dumusque:2017aa, Rajpaul-2015, Robertson-2014}. 
-Stellar oscillations, granulation phenomena, and stellar activity can all induce apparent RV signals that are above the meter-per-second precision \citep[e.g.][]{Saar-1997b, Queloz-2001, Desort-2007, Dumusque-2011a, Dumusque-2016a} reached by the best high-resolution spectrographs \citep[HARPS, HARPS-N,][]{Mayor-2003,Cosentino-2012}.
+Stellar oscillations, granulation phenomena, and stellar activity can all induce apparent RV signals that are above the meter-per-second (\ms) precision \citep[e.g.][]{Saar-1997b, Queloz-2001, Desort-2007, Dumusque-2011a, Dumusque-2016a} reached by the best high-resolution spectrographs \citep[HARPS, HARPS-N,][]{Mayor-2003,Cosentino-2012}.
 %
 It is therefore mandatory to better understand stellar signals and to develop methods to correct for them, if in the near future we want to detect or confirm an Earth-twin planet using the RV technique. This is even more true now that instruments like the Echelle SPectrograph for Rocky Exoplanet and Stable Spectroscopic Observations (ESPRESSO) \citep{Pepe-2014} and the EXtreme PREcision Spectrometer (EXPRES) \citep{fischer2016state} should reach the stability to detect such signals. However, if solutions are not found to mitigate the impact of stellar activity, the detection or confirmation of potential Earth-twins will be extremely challenging and false detections could plague the field.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Stellar activity effect on CCF, Normal fit plus FWHM and BIS SPAN indicators}
 
-One of the most challenging stellar signal to characterize and to correct for is the signal induced by stellar activity. 
+One of the most challenging stellar signals to characterize and to correct for are the signals induced by stellar activity. 
 Stellar activity is responsible for creating magnetic regions on the surface of stars, and those regions change locally the temperature and the convection, which can induce spurious RVs variations \citep[e.g.][]{Meunier-2010a, Dumusque-2014b, Borgniet-2015}. 
-In theory, it should be easy to differentiate between the pure Doppler-shift induced by a planet, which shifts the entire stellar spectrum, and stellar activity, which modifies the shape of spectral lines and by doing so create a spurious shift of the stellar spectrum \citep{Saar-1997b,Hatzes-2002,Kurster2003,Lindegren-2003,Desort-2007,Lagrange-2010,Meunier-2010a,Dumusque-2014b}. 
-However, on quiet GKM dwarfs, the main target for precise RVs measurements, stellar activity can induce signals of a few \ms. This corresponds physically to variations smaller than 1/100th of a pixel on the detector making the changing shape of the spectral lines challenging to detect.
+In theory, it should be easy to differentiate between the pure Doppler-shift induced by a planet, which shifts the entire stellar spectrum, and stellar activity, which modifies the shape of spectral lines and by doing so creates a spurious shift of the stellar spectrum \citep{Saar-1997b,Hatzes-2002,Kurster2003,Lindegren-2003,Desort-2007,Lagrange-2010,Meunier-2010a,Dumusque-2014b}. 
+However, on quiet GKM dwarfs, the main target for precise RVs measurements, stellar activity can induce signals of a few \ms. This corresponds physically to variations smaller than 1/100th of a pixel on the detector, making changing in the shape of the spectral lines challenging to detect.
 In order to measure such tiny variations, a common approach is to average the information of all the lines in the spectrum by cross correlating the stellar spectrum with a synthetic or an observed stellar template \citep[][]{Baranne-1996,Pepe-2002a, Anglada-Escude-2012}. The result of this operation gives us the cross-correlation function (CCF).  
 %The CCF gives the spectrum's cross-correlation with the template as the template is shifted according to different RVs.
 %
 To measure the Doppler-shift between different spectra and therefore to retrieve the RVs of a star as a function of time, the variations of the CCF barycenter are calculated. 
-The barycenter is generally estimated by fitting a Normal density to the CCF and retaining its mean. Variations in line shape between different spectra, which indicate the presence of signals induced by stellar activity, are measured by analyzing the different moments of the CCF. Usually, the width of the CCF is estimated using the full-width half-maximum (FWHM) of the fitted Normal density, and its asymmetry by calculating the CCF bisector and measuring the bisector inverse slope span \citep[BIS SPAN,][]{Queloz-2001}.
+The barycenter is generally estimated by fitting a Normal density to the CCF and retaining its mean. Variations in line shape between different spectra, which indicate the presence of signals induced by stellar activity, are measured by analyzing the different parameters of the CCF. Usually the width of the CCF is estimated using the full-width half-maximum (FWHM) of the fitted Normal density and its asymmetry by calculating the CCF bisector and measuring the bisector inverse slope span \citep[BIS SPAN,][]{Queloz-2001}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Why FWHM and BIS SPAN important?}
 
-If an apparent RV signal is induced by activity, generally a strong correlation will be observed between the RV and chromospheric activity indicators like \logrhk\,or H-$\alpha$ \citep{Boisse-2009,Dumusque-2012,Robertson-2014}, but also between the RV and the FWHM of the CCF or its BIS SPAN \citep[][]{Queloz-2001,Boisse-2009,Queloz-2009,Dumusque-2016a}. 
+If a spurious RV signal is induced by activity, generally a strong correlation will be observed between the RV and chromospheric activity indicators like \logrhk\,or H-$\alpha$ \citep{Boisse-2009,Dumusque-2012,Robertson-2014}, but also between the RV and the FWHM of the CCF or its BIS SPAN \citep[][]{Queloz-2001,Boisse-2009,Queloz-2009,Dumusque-2016a}. 
 %
-It is therefore common now, that when fitting a Keplerian signal to a set of RVs to look for a planet, the model includes in addition linear dependancies with the \logrhk, the FWHM and the BIS SPAN \citep{Dumusque:2017aa,Feng:2017aa}.
+Therefore a common strategy nowadays used when fitting a Keplerian signal to a set of RVs searching for a planet consists in including in the model linear dependancies with the \logrhk, the FWHM and the BIS SPAN \citep{Dumusque:2017aa,Feng:2017aa}.
 %
 It is also common to add a Gaussian process to the model to account for the correlated noise induced by stellar activity. The hyperparameters of the Gaussian process can be trained on different activity indicators \citep{Haywood-2014,Rajpaul-2015} or directly on the RVs \citep{Faria-2016a}. It is therefore essential for mitigating stellar activity to obtain activity indicators that are the most correlated with the RVs but also for which we can obtain the best precision.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Figueira indicators of stellar activity + other}
-Several indicators have been developed that are more sensitive to line asymmetry than the BIS SPAN. In \citet{Boisse-2011}, the authors develop $V_{span}$, which is the difference between the RV measured respectively by fitting a Normal density to the upper and the bottom part of the CCF. This CCF asymmetry parameter is shown to be more sensitive than the BIS SPAN at low signal-to-noise ratio (SNR).
+Several indicators have been developed that are more sensitive to line asymmetry than the BIS SPAN. In \citet{Boisse-2011}, the authors developed $V_{span}$, which is the difference between the RV measured respectively by fitting a Normal density to the upper and the bottom part of the CCF. This CCF asymmetry parameter is shown to be more sensitive than the BIS SPAN at low signal-to-noise ratio (SNR).
 %
-\citet{Figueira-2013} studied the use of new indicators, BIS-, BIS+, bi-Gauss and $V_{asy}$. The authors were able to show that when using bi-Gauss, the amplitude in asymmetry is 30\% larger than when using BIS SPAN, therefore allowing the detection of lower levels of activity. They also demonstrated that $V_{asy}$ seems to be a better indicator of line asymmetry at high SNR, as its correlation with RV is more significant than any of the previously proposed asymmetry indictors.
+\citet{Figueira-2013} studied the use of new indicators, BIS-, BIS+, bi-Gauss and $V_{asy}$. The authors were able to show that when using bi-Gauss, the amplitude in asymmetry is 30\% larger than when using BIS SPAN, therefore allowing the detection of lower levels of activity. They also demonstrated that $V_{asy}$ seems to be a better indicator of line asymmetry at high SNR, as its correlation with RV is significantly stronger than any other correlation between the previously proposed asymmetry indicators and RV.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Why using a SN density?}
 In all the methods described above, except bi-Gauss, the RV and the FWHM are derived using a Normal density fitted to the CCF, and the asymmetry is estimated using another approach. 
 %
-In this paper we propose to use a Skew Normal (SN) density to estimate with a single fit of the CCF, the RV, the FWHM and the asymmetry of the CCF, as this function includes a skewness parameter \citep[][]{Azzalini1985}. 
+In this paper we propose to use a Skew Normal (SN) density to estimate with a single fit of the CCF the RV, the FWHM and the asymmetry of the CCF, as this function includes a skewness parameter \citep[][]{Azzalini1985}. 
 
 %In addition, we know that for solar-type stars and cooler dwarfs, the bisector of the CCF has a "C"-shape due to convective blueshift \citep{Dravins-1981, Gray-2009}. 
 %Therefore, fitting the CCF using a model that naturally includes an asymmetry, like the SN density, should give in principle more precise results.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Outline of paper}
-The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN density, describe its applicability for modeling the CCF, and study how the SN parameters relate to the RV, FWHM and BIS SPAN of the CCF. 
+The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN density, describe its applicability for modelling the CCF and study how the SN parameters relate to mean of the Normal density, the FWHM and the BIS SPAN of the CCF. 
 %
-In Sec.~\ref{sec:31} we propose an expanded linear model to correct for stellar activity signals in RVs, which extends the linear models previously proposed for this purpose \citep[e.g.][]{Dumusque:2017aa,Feng:2017aa}. 
+In Sec.~\ref{sec:31} we propose a linear model to correct for stellar activity signals in RVs, which extends the linear models previously proposed for this purpose \citep[e.g.][]{Dumusque:2017aa,Feng:2017aa}. 
 %
 In Sec.~\ref{sec:soap} the performance of the SN fit to the CCF is investigated using simulations coming from the Spot Oscillation And Planet 2.0 code \citep[SOAP 2.0,][]{Dumusque-2014b}, followed by an analysis of real observations in Sec.~\ref{sec:4}.
 %
-Sec.~\ref{sec:5} considers derived error bars for the different estimated CCF parameters, and finally a discussion of the results and conclusions are included in Secs.~\ref{sec:discu} and ~\ref{sec:conclu}, respectively.
+In Sec.~\ref{sec:5} error bars for the different estimated CCF parameters are retrieved. Finally the discussion of the results and the conclusions are presented, respectively, in Secs.~\ref{sec:discu} and ~\ref{sec:conclu}.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{The Skew Normal distribution} \label{sec:2}
@@ -256,7 +256,7 @@ To fit the CCF using a SN density shape, we use a least-squares algorithm and th
 f_{CCF}(x_i) = \mathrm{C} - \mathrm{A} \times SN(x_i;\mu, \sigma^2, \gamma), \quad i = 1, \ldots, n
 \end{eqnarray}
 %
-where C is an unknown offset for the continuum of the CCF, A is the unknown amplitude of the CCF, some times referred to as the CCF contrast, and $\mu$, $\sigma^2$ and $\gamma$ are the mean, variance and skewness of the SN as defined above.
+where C is an unknown offset for the continuum of the CCF, A is the unknown amplitude of the CCF, sometimes referred to as the CCF contrast, and $\mu$, $\sigma^2$ and $\gamma$ are respectively the mean, the variance and the skewness of the SN as defined above.
 The values $x_1, \ldots, x_n$ are the different values of the x-axis of the CCF, generally in velocity units (e.g. \ms).
 
 %%%Since the CCF has an asymmetry due the convective blueshift, the SN density should in principle better catch this aspect, together with other changes in asymmetry, with respect to fitting a Normal density. 
@@ -271,8 +271,8 @@ The values $x_1, \ldots, x_n$ are the different values of the x-axis of the CCF,
 %%%\end{figure*}
 %%%%
 
-When fitting a Normal density to the CCF, the estimated mean of the model is used as the estimated RV, the FWHM of the Normal density\footnote{FWHM$=2\sqrt{2\ln2}\,\sigma$ with standard deviation $\sigma$} represents the width of the CCF.
-Because the Normal density is symmetric, the skewness is always equal to 0 so a separate approach is needed to estimate the skewness of the CCF.
+When fitting the commonly employed Normal density to the CCF, the estimated mean of the model is used as the estimated RV and the FWHM of the Normal density\footnote{FWHM$=2\sqrt{2\ln2}\,\sigma$ with standard deviation $\sigma$} represents the width of the CCF.
+Because the Normal density is symmetric, the skewness is not defined and therefore a separate approach is necessary to estimate the skewness of the CCF.
 An estimated skewness parameter is generally obtained by calculating the BIS SPAN of the CCF \citep[see Sect. \ref{intro}, and e.g.][]{Queloz-2001}. 
 %
 
@@ -286,17 +286,17 @@ R (x,y)= \frac{cov(x,y)}{\sigma(x)\sigma(y)},
 \label{eq:Pearson:corr}
 \end{equation}
 %
-where $x$ and $y$ are two quantitative variables, $cov(x,y)$ indicates the covariance between $x$ and $y$, and $\sigma(x)$ and $\sigma(y)$ represent their standard deviations.  A $p-$value for the statistical test having null hypothesis $H_{0}: R=0$ is provided, along with a $95\%$ confidence interval for $R$ when needed.
+where $x$ and $y$ are two quantitative variables, $cov(x,y)$ indicates the covariance between $x$ and $y$, and $\sigma(x)$ and $\sigma(y)$ represent their standard deviations.  A $p-$value for the statistical test having null hypothesis $H_{0}: R=0$ is provided.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Radial Velocity correction for stellar activity} \label{sec:31}
 
-Exoplanets only produce a pure RV signal. On the contrary, stellar activity, in particular the presence of active regions on the stellar photosphere, do not produce blueshifts or redshifts of the entire stellar spectrum but can create spurious RV signals by modifying the shape of spectral lines.
+Exoplanets only produce a pure RV signal. On the contrary, stellar activity, and in particular the presence of active regions on the stellar photosphere, do not produce blueshifts or redshifts of the entire stellar spectrum but can create spurious RV signals by modifying the shape of spectral lines.
 To track these variations in the shape of the spectral lines, the general approach consists in using the FWHM, the BIS SPAN or other indicators such as those introduced in \citet{Boisse-2011} or \citet{Figueira-2013}, which provide information on the width and asymmetry of the CCF. A strong correlation between the estimated RVs and one or more of these parameters provides an indication that stellar activity signals may be affecting the measurements.
 
 When fitting for planetary signals in RV data, it is common to include linear dependencies with the BIS SPAN and the FWHM to take into account the signal induced by stellar activity \citep[e.g.][]{Dumusque:2017aa,Feng:2017aa}.
 %Some people also include the \logrhk, however, \citet{Feng-2018} show that this is probably not a good choice as \logrhk and RV are not well correlated.
-We propose to add additional parameters in the model to correct for stellar activity: first the amplitude parameter A of the CCF, generally referred to as the CCF contrast, and the interaction between the BIS SPAN and the FWHM (or $\gamma$ and SN FWHM in the SN case). The stellar activity correction we propose can therefore be written as:
+We propose to add additional parameters in the model to correct for stellar activity: first the amplitude parameter A of the CCF, generally referred to as the CCF contrast, and as second the interaction between the BIS SPAN and the FWHM (or $\gamma$ and SN FWHM in the SN case). The stellar activity correction we propose can therefore be written as:
 %
 \begin{equation}
 RV_{\text{activity}}= \beta_{0} + \beta_{1} A + \beta_{2} \gamma + \beta_{3} \text{SN FWHM} + \beta_{4} (\gamma  \text{SN FWHM})+\epsilon,
@@ -311,13 +311,13 @@ This interaction term can account for possible interactions between SN FWHM (or 
 
 The proposed model is analyzed using statistical tests on the parameters $\beta_{0}$, $\beta_{1}$, $\beta_{2}$, $\beta_{3}$ and $\beta_{4}$ where the null hypothesis is $H_{0}: \beta_{i}=0$, for $i=0,\dots,4$. The significance level for the tests are set at $0.05$. The coefficient of determination, $R^2$, is used to assess how well the proposed linear combination of variables accounts for the variability of $RV_{\text{activity}}$. 
 
-The proposed function defined in Eq.~\ref{eq:RV:correction} is the result of statistical and astronomical considerations. In particular we checked that the correlations between the proposed parameters were not approaching one: if it was the case, the matrix needed to calculate the estimates would be singular, hence non invertible. This problem is known in statistics with the term multicollinearity. A detailed discussion of the topic can be found in the book by \citet{belsley1991}. In the analysis of real data presented in this work, we never observed a correlation coefficient exceeding $0.66$ between the asymmetry and width parameters and therefore, the problem of multicollinearity is avoided. Note that we investigated the statistical significant of the interaction term between $A$ and the width, and $A$ and the asymmetry of the CCF, however, those interaction were not relevant for accounting for stellar signal.
+The proposed function defined in Eq.~\ref{eq:RV:correction} is the result of statistical and astronomical considerations. In particular we checked that the correlations between the proposed parameters were not approaching one: if it was the case, the matrix needed to calculate the estimates would be singular, hence non invertible. This problem is known in statistics with the term multicollinearity. A detailed discussion of the topic can be found in the book by \citet{belsley1991}. In the analysis of real data presented in this work, we never observed a correlation coefficient exceeding $0.66$ between the asymmetry and width parameters and therefore the problem of multicollinearity is avoided. Note that we investigated the statistical significant of the interactions between respectively $A$ and the width of the CCF and $A$ and the asymmetry of the CCF; those two interactions were not relevant for accounting variations in $RV_{\text{activity}}$.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Simulation Study} \label{sec:soap}
 In order to evaluate the performance of the proposed SN approach for modelling the CCF and the benefit of using the proposed correction for stellar activity (See Eq.~\ref{eq:RV:correction}), we begin by considering a simulation study using spectra generated from the Spot Oscillation And Planet 2.0 code \citep[SOAP 2.0,][]{Dumusque-2014b}.
 
-For a given configuration of spots and faculae on the stellar surface, SOAP 2.0 gives as output the simulated CCF as a function of rotational phase. The code also returns the RV and the FWHM by fitting a Normal density to the CCF, and the BIS SPAN by calculating the bisector of the CCF. SOAP 2.0 gives noiseless CCFs affected by stellar activity, which are used to compare the benefits of a SN density fit to the CCF compared to a Normal density fit.
+For a given configuration of spots and faculae on the stellar surface, SOAP 2.0 gives as output the simulated CCF as a function of rotational phase. The code also returns the RV and the FWHM retrieved by fitting a Normal density to the CCF, and the BIS SPAN obtained by calculating the bisector of the CCF. SOAP 2.0 gives noiseless CCFs affected by stellar activity, which are used to compare the benefits of a SN density fit respect to a Normal density fit.
 
 For the simulations discussed below, a star similar to the Sun was modeled, with a solar disc of one solar radius seen equator-on, and with a stellar rotational period set to 25.0 days.
 The stellar effective temperature is set to 5778 K
@@ -328,9 +328,9 @@ In order to make the result of the simulations more comparable to real data obta
 
 \subsection{Faculae} \label{sec:soap.faculae}
 
-To see the impact of a facula on the different parameters of the CCF, we simulated the effect of an equatorial faculae
+To see the impact of a facula on the different parameters of the CCF, we simulated the effect of an equatorial facula
 %\jessi{Should a footnote be added here to explain that the SOAP 2.0 faculae are not simulated from actual faculae templates?} 
-of size 3\% relative to the visible stellar hemisphere. The faculae is face-on when the phase equals to 0. Note that a 3\% faculae is relatively large for the Sun; at maximum activity, big faculae have generally a size of 1\% \citep[e.g.][]{Borgniet-2015}. In Fig.~\ref{fig:faculae}, we compare the barycentric variation of the CCF as measured when fitting a Normal density and using its mean (N mean RV), and when fitting a SN density and taking its mean (SN mean RV) or its median (SN median RV). We see that all the different estimates of the CCF barycenter present a signal of similar amplitude, however the signal obtained with SN mean RV is different from the two others with a maximum amplitude happening at a different phase.
+of size 3\% relative to the visible stellar hemisphere. The facula is face-on when the phase equals to 0. Note that a 3\% faculae is relatively large for the Sun; at maximum activity, big faculae have generally a size of 1\% \citep[e.g.][]{Borgniet-2015}. In Fig.~\ref{fig:faculae}, we compare the barycentric variation of the CCF as measured when fitting a Normal density and using its mean (N mean RV), and when fitting a SN density and taking its mean (SN mean RV) or its median (SN median RV). We see that all the different estimates of the CCF barycenter present a signal of similar amplitude, however the signal obtained with SN mean RV is different from the two others with a maximum amplitude happening at a different phase.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -634,7 +634,7 @@ the proposed linear model for correcting from stellar activity is not able to pe
 
 
 When looking at the statistical significance of the different parameters used for correcting activity in Table~\ref{table:alphacent.test}, we see that the intercept is not significant for any of the models, and BIS SPAN (coefficient $\beta_2$) does not statistically significantly help in explaining stellar activity when using the parameters derived from the Normal density fit. 
-However all the other parameters in the Normal and SN cases are statistically significant for modeling stellar activity. 
+However all the other parameters in the Normal and SN cases are statistically significant for modelling stellar activity. 
 By analyzing the values of the coefficient of determination, $R^2$, we see that the model for the SN mean RV is able to capture the highest percentage of variability in the estimated RV. 
 This is not a surprising result since for the three different RV estimates, we arrive to the same RV residual rms after correction for activity, but before correction, SN mean RV shows the largest RV rms (see Fig~\ref{fig:alphacent:correctionRV}).
 
