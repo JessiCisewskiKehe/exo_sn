@@ -466,9 +466,9 @@ The Normal or SN parameters involved in Eq.~\ref{eq:RV:correction} are all stati
 \includegraphics[height = 6in]{Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
    \caption{(top) The spurious estimated RVs (black dots) caused by a spot in the simulated data, the estimated RVs using Eq.~\ref{eq:RV:correction} (red crosses) and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit.
    %
- (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std, red crosses) and the residuals from the usual correction (Usual corr. std, green triangles). The residuals have a smaller systematic component when using the proposed model of 
-  Eq.~\ref{eq:RV:correction} (red crosses) compared to the usual model (green triangles).
-The tests of statistical significance on the parameters are presented in Table \ref{table:spot.test}.
+ (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (red crosses) and the residuals from the usual correction (green triangles). 
+ The std. are also reported in the legend, and the residuals have a smaller systematic component when using the proposed model compared to the usual model.
+The tests of statistical significance on the parameters are presented in Table~\ref{table:spot.test}.
 }
     \label{fig:spot.correction}
 \end{center}
@@ -498,22 +498,28 @@ $R^{2}$      &     $0.9959$    &  $0.9936$ & $0.9952$  \\
 \end{center}
 \end{table}
 
+
+
+
+
+
+
 \subsection{Spot and planet} \label{sec:soap.spot.planet}
 
-The final simulation presented here includes a planetary signal influencing the CCF along with the 1\% spot modelled previously (see Sec.~\ref{sec:soap.spot}). 
-The purpose of this example is to check if we are able to disentangle these two different sources of variations when using the parameters derived using a Normal or a SN fit to the CCF. In this scenario the planet is injected with a semi-amplitude of 10 \ms with no eccentricity and with a period corresponding to one third of the stellar rotational period, i.e. one-third of 25 days.
+The final simulation includes a planetary signal influencing the CCF along with the 1\% spot modelled previously (see Sec.~\ref{sec:soap.spot}). 
+The purpose of this example is to check if we are able to disentangle these two different sources of variations when using the parameters derived using a Normal or a SN model for the CCF. In this scenario the planet is injected with a semi-amplitude of 10 \ms with no eccentricity and with a period corresponding to one-third of the stellar rotational period, i.e. one-third of 25 days.
 
 Fig.~\ref{fig:spot.plus.planet} shows the variations observed in the CCF barycenter parameters. As in the case of the spot, all RV estimates show similar variations, with SN mean RV showing a slightly smaller amplitude.
 
 The correlation between the different CCF parameters are displayed in Fig.~\ref{fig:spot.plus.planet.corr}. 
-The correlations are weaker than in the case of the spot due to the planet inducing changes in RV without affecting the width or the asymmetry of the CCF.  However, the strength of the correlations between the CCF asymmetry parameters and RV are comparable with the ones obtained for the spot-only model: $\gamma$--SN median RV has the strongest correlation ($R=-0.84$), followed by the correlation between BIS SPAN--N mean RV (($R=-0.78$)) and finally by the correlation between $\gamma$--SN mean RV ($R=-0.75$). 
-The patterns observed in the width-RV phase space correlations in Fig.~\ref{fig:spot.plus.planet.corr} follow a circle, similar to the spot-only model; no correlation is observed between those two parameters.
+The correlations are weaker than in the case of the spot due to the planet inducing changes in RV without affecting the width or the asymmetry of the CCF.  However, the order of the strength of the correlations between the CCF asymmetry parameters and RV are comparable with the ones obtained for the spot-only model: $\gamma$--SN median RV has the strongest correlation ($R=-0.84$), followed by the correlation between BIS SPAN--N mean RV ($R=-0.78$) and finally by the correlation between $\gamma$--SN mean RV ($R=-0.75$). 
+The patterns observed in the width-RV phase space correlations in Fig.~\ref{fig:spot.plus.planet.corr} follow a circle, similar to the spot-only model; no substantial correlation is observed between those two parameters.
 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width = 3.6in]{RV_comparison_SPOT_PLANET.pdf} 
 %\includegraphics[height = 2.5in]{RV_se_comparison_SPOT.pdf} 
- \caption{RV estimates for N mean RV (red dashed line),  SN mean RV (black line) or SN median RV (cyan dots-dashed line). In this case, the CCFs have been generated using SOAP 2.0, considering an equatorial 1\% spot on the simulated Sun in addition to a planet with a period of one third of the rotational period of the star and with an amplitude of 10\,\ms. The star do one full rotation between phase -0.5 and 0.5, with the spot being seen face-on for phase 0.}
+ \caption{RV estimates for N mean RV (red dashed line),  SN mean RV (black line) or SN median RV (cyan dotted-dashed line). In this case, the CCFs have been generated using SOAP 2.0, considering an equatorial 1\% spot on the simulated Sun in addition to a planet with a period of one-third of the rotational period of the star and with an amplitude of 10\,\ms. The star does one full rotation between phase -0.5 and 0.5, with the spot being seen face-on at phase 0.}
    %\caption{(left) RVs changes as function of the orbital phase in the case in which a spot is present on the photosphere of the star and a planet is injected. N mean RV seems to have the largest variations caused by the combined action of spot and planet. (right) Evaluation of the standard errors corresponding to the defined RVs. The standard errors retrieved for SN median RV are $10 \%$ smaller than the standard errors derived for RV. SN mean RV has the largest related uncertainties.}
     \label{fig:spot.plus.planet}
 \end{center}
@@ -522,12 +528,12 @@ The patterns observed in the width-RV phase space correlations in Fig.~\ref{fig:
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{SOAP_SPOT_PLANET_Comparison_para_SN.pdf} 
-   \caption{Evaluation of the correlation between the RVs and the asymmetry parameters of the simulated data with a 1\% spot and an injected planetary signal.  The shape of the CCF changes as the spot moves, producing statistically significant correlations only between the estimated RVs and the asymmetry parameter. The correlations between the estimated RVs and the width parameter of the CCF is weaker than the case with only a spot.}
+   \caption{Evaluation of the correlation between the RVs and the asymmetry parameters of the simulated data with a 1\% spot and an injected planetary signal.  The shape of the CCF changes as the spot moves, producing statistically significant correlations only between the estimated RVs and the asymmetry parameter. The correlations between the estimated RVs and the width parameter of the CCF are weaker than the case with only a spot.}
     \label{fig:spot.plus.planet.corr}
 \end{center}
 \end{figure*}
 
-In order to correct the estimated RVs from the spurious variation caused by the spot, the proposed model for correcting the activity is added to a signal that takes into account the RV variations caused by a injected planet. The observed RVs can therefore be modelled as a combination of the activity and the planetary signals:
+In order to correct the estimated RVs from the spurious variation caused by the spot, the proposed model for correcting the activity is added to a planetary signal model that takes into account the RV variations caused by a planet. The observed RVs can therefore be modelled as a combination of the activity and the planetary signals:
 %
 \begin{equation}
 RV= RV_{\text{activity}} + RV_{\text{planet}},
@@ -544,7 +550,7 @@ RV_{\text{exoplanet}}= K \sin \left(\frac{2 \pi}{P} (t - t_{0})\right),
 with amplitude $K$, orbital period $P$, and an epoch at the periapsis $t_{0}$.  The previous three unknown parameters define the planetary orbit.
 
 %We note that the p--value associated with the amplitude parameter $K$ is particularly relevant for rejecting or not rejecting the assumption about the presence of an orbiting companion. Moreover we note also that Eq.~\ref{eq:RV:correction.planet} is highly non linear, meaning that the estimation of all the parameters involved in Eq.~\ref{eq:RV:correction.overall} has to be done numerically. %We used non linear least squares and the results are displayed in Fig.~\ref{fig:spotplanet.correction}. We can see how in this case we are able to disentangle the spurious variations in RVs caused by stellar activity from the pure Doppler-shift due to the planet. 
-The proposed model from Eq.~\ref{eq:RV:correction.overall} was fitted to the RV data and the results of the estimated model are summarized in Table \ref{table:spotplanet.test}.   Except for the width parameters with coefficient $\beta_3$, all the other Normal or SN parameters are significantly useful to explain the RV variation induced by a spot plus a planet. We also observe that the RV residuals, once corrected for stellar activity and the presence of the planet, are comparable in terms of rms for all the three different RV estimates, with SN mean RV giving a slightly smaller value.
+The proposed model from Eq.~\ref{eq:RV:correction.overall} was fitted to the RV data and the results of the estimated model are summarized in Table~\ref{table:spotplanet.test}.   Except for the width parameters with coefficient $\beta_3$, all the other Normal or SN parameters are significantly useful to explain the RV variation induced by a spot plus a planet. We also observe that the RV residuals, once corrected for stellar activity and the presence of the planet, are comparable in terms of rms for all the three different RV estimates, with SN mean RV giving a slightly smaller value.
 %\begin{figure*}[htbp]
 %   \centering
 %\includegraphics[height = 4in]{SPOT_PLANET_NEW_CORRECTION.pdf} 
@@ -554,7 +560,7 @@ The proposed model from Eq.~\ref{eq:RV:correction.overall} was fitted to the RV 
 
 \begin{table}
 \begin{center}
-\caption{P--values for the different coefficients used in Eq.~\ref{eq:RV:correction} for the correction of stellar activity induced by an equatorial 1\% spot on the simulated Sun, and a planet with period one third of the rotational period and a semi-amplitude 10\,\ms. All the parameters corresponding to the Normal or SN variables are statistically significant to explain the spurious RV variations caused by this spot plus planet, except for the width of the CCF. Note that since nonlinear least squares was required, the residual standard error rather than the $R^2$ is displayed as a reference.}
+\caption{P-values for the different coefficients used in Eq.~\ref{eq:RV:correction} for the correction of stellar activity induced by an equatorial 1\% spot on the simulated Sun, and a planet with a period of one-third the rotational period of the star and a semi-amplitude  of 10\,\ms. All the parameters corresponding to the Normal or SN variables are statistically significant, except the width of the CCF. Note that since nonlinear least squares was required, the residual standard error rather than the $R^2$ is displayed as a reference.}
 \label{table:spotplanet.test}
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -591,6 +597,11 @@ $\text{Residuals}$      &     $0.71 \ms$    &  $ 0.66 \ms$ & $0.70 \ms$  \\
 %\xavier{is all this discussion really usefull ? Before moving to real cases, where the analyses on five stars are presented, we need to provide further considerations. First of all, looking ad the analyses conducted with SOAP 2.0, it seems that the largest correlation between an asymmetry parameter and a set of RVs happens to be when respectively $\gamma$ and SN median RV are used. This is a bit surprising, since as the shape of the CCF changes, we expect SN median RV to be more robust than SN mean RV. \umberto{A possible justification of this ...}. As second, when searching for stellar activity by deriving the correlation between the set of RVs and either an asymmetry parameter or the width of the CCF, the latter leads to weaker and hence less conclusive results if the active region is a spot. When stellar activity is dominated by faculae, both the shape and the width of the CCF changes as the faculae evolves on the photosphere of the star. Related to these last two considerations, we note that the interaction between the asymmetry and the width of the CCF is useful to explain part of the variability in the RVs if the active region is a spot but not when it is a faculae. The proposed function to correct for stellar activity addressed high level of spurious variations in RVs caused by active regions. In particular, respect to other common linear interpolation, we proposed to use as covariates also the amplitude parameter of the CCF and the interaction between $\gamma$ and SN FWHM (or BIS SPAN and FWHM). As a consequence of using the interaction between the asymmetry and the width of the CCF, we note that the FWHM (or SN FWHM) becomes statistically not significant, while this is not the case if the interaction term is not involved in the linear regression. Finally, the correlations involving the common indicators (i.e. RV, FWHM and BIS SPAN) are systematically weaker than the correlations obtained by fitting the SN to the CCF, suggesting that this density could be helpful when searching for active regions. We recall moreover that all the quantities needed for conducting the analyses of the CCF are directly available by just fitting the SN.}
 
 %In Sec. \ref{sec:5} we will present the evaluation of the standard errors associated with the parameters estimated for all the three presented cases. This step will point out how SN median RV minimizes the uncertainties respect using both SN mean RV and RV, therefore suggesting its use in order to properly define the set of RVs of the star.
+
+
+
+
+
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Real data application} \label{sec:4}
