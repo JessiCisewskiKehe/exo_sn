@@ -138,10 +138,10 @@ The uncertainties estimated on the asymmetry parameter of the SN are on average 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Goal of RV analysis}
 
-When working with radial-velocities data (RVs), one of the main limitations to the detection of small-mass exoplanets is no longer the precision of the instruments used, but the different sources of variability induced by the stars \citep[e.g.][]{Feng:2017aa, Dumusque:2017aa, Rajpaul-2015, Robertson-2014}. 
+When working with radial-velocities data (RVs), one of the main limitations to the detection of low-mass exoplanets is no longer the precision of the instruments used, but the different sources of variability induced by the stars \citep[e.g.][]{Feng:2017aa, Dumusque:2017aa, Rajpaul-2015, Robertson-2014}. 
 Stellar oscillations, granulation phenomena, and stellar activity can all induce apparent RV signals that are above the meter-per-second (\ms) precision \citep[e.g.][]{Saar-1997b, Queloz-2001, Desort-2007, Dumusque-2011a, Dumusque-2016a} reached by the best high-resolution spectrographs \citep[HARPS, HARPS-N,][]{Mayor-2003,Cosentino-2012}.
 %
-It is therefore mandatory to better understand stellar signals and to develop methods to correct for them, if in the near future we want to detect or confirm an Earth-twin planet using the RV technique. This is even more true now that instruments like the Echelle SPectrograph for Rocky Exoplanet and Stable Spectroscopic Observations (ESPRESSO) \citep{Pepe-2014} and the EXtreme PREcision Spectrometer (EXPRES) \citep{fischer2016state} should reach the stability to detect such signals. However, if solutions are not found to mitigate the impact of stellar activity, the detection or confirmation of potential Earth-twins will be extremely challenging and false detections could plague the field.
+It is therefore mandatory to better understand stellar signals and to develop methods to correct for them, if in the near future we want to detect or confirm an Earth-twin planet using the RV technique. This is even more true now that instruments like the Echelle SPectrograph for Rocky Exoplanet and Stable Spectroscopic Observations (ESPRESSO) \citep{Pepe-2014} and the EXtreme PREcision Spectrometer (EXPRES) \citep{fischer2016state} should reach the precision and stability to detect such signals. However, if solutions are not found to mitigate the impact of stellar activity, the detection or confirmation of potential Earth-twins will be extremely challenging and false detections could plague the field.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Stellar activity effect on CCF, Normal fit plus FWHM and BIS SPAN indicators}
@@ -149,31 +149,33 @@ It is therefore mandatory to better understand stellar signals and to develop me
 One of the most challenging stellar signals to characterize and to correct for are the signals induced by stellar activity. 
 Stellar activity is responsible for creating magnetic regions on the surface of stars, and those regions change locally the temperature and the convection, which can induce spurious RVs variations \citep[e.g.][]{Meunier-2010a, Dumusque-2014b, Borgniet-2015}. 
 In theory, it should be easy to differentiate between the pure Doppler-shift induced by a planet, which shifts the entire stellar spectrum, and stellar activity, which modifies the shape of spectral lines and by doing so creates a spurious shift of the stellar spectrum \citep{Saar-1997b,Hatzes-2002,Kurster2003,Lindegren-2003,Desort-2007,Lagrange-2010,Meunier-2010a,Dumusque-2014b}. 
-However, on quiet GKM dwarfs, the main target for precise RVs measurements, stellar activity can induce signals of a few \ms. This corresponds physically to variations smaller than 1/100th of a pixel on the detector, making changing in the shape of the spectral lines challenging to detect.
+However, on quiet GKM dwarfs, the main targets for precise RVs measurements, stellar activity can induce signals of a few \ms. 
+This corresponds physically to variations smaller than 1/100th of a pixel on the detector, making changes in the shape of the spectral lines challenging to detect.
 In order to measure such tiny variations, a common approach is to average the information of all the lines in the spectrum by cross correlating the stellar spectrum with a synthetic or an observed stellar template \citep[][]{Baranne-1996,Pepe-2002a, Anglada-Escude-2012}. The result of this operation gives us the cross-correlation function (CCF).  
 %The CCF gives the spectrum's cross-correlation with the template as the template is shifted according to different RVs.
 %
-To measure the Doppler-shift between different spectra and therefore to retrieve the RVs of a star as a function of time, the variations of the CCF barycenter are calculated. 
-The barycenter is generally estimated by fitting a Normal density to the CCF and retaining its mean. Variations in line shape between different spectra, which indicate the presence of signals induced by stellar activity, are measured by analyzing the different parameters of the CCF. Usually the width of the CCF is estimated using the full-width half-maximum (FWHM) of the fitted Normal density and its asymmetry by calculating the CCF bisector and measuring the bisector inverse slope span \citep[BIS SPAN,][]{Queloz-2001}.
+To measure the Doppler-shift between different spectra, and therefore to retrieve the RVs of a star as a function of time, the variations of the CCF barycenter are calculated. 
+The barycenter is generally estimated by the mean of  a Normal density shape fit to the CCF. 
+Variations in line shape between different spectra, which indicate the presence of signals induced by stellar activity, are measured by analyzing different parameters of models fit to the CCF. Usually the width of the CCF is estimated using the full-width half-maximum (FWHM) of the fitted Normal density and its asymmetry by calculating the CCF bisector and measuring the bisector inverse slope span \citep[BIS SPAN,][]{Queloz-2001}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Why FWHM and BIS SPAN important?}
 
 If a spurious RV signal is induced by activity, generally a strong correlation will be observed between the RV and chromospheric activity indicators like \logrhk\,or H-$\alpha$ \citep{Boisse-2009,Dumusque-2012,Robertson-2014}, but also between the RV and the FWHM of the CCF or its BIS SPAN \citep[][]{Queloz-2001,Boisse-2009,Queloz-2009,Dumusque-2016a}. 
 %
-Therefore a common strategy nowadays used when fitting a Keplerian signal to a set of RVs searching for a planet consists in including in the model linear dependancies with the \logrhk, the FWHM and the BIS SPAN \citep{Dumusque:2017aa,Feng:2017aa}.
+Therefore a common strategy when fitting a Keplerian signal to a set of estimated RVs in search of a planet is to include linear terms in the model to account for activity, such as the \logrhk, the FWHM, and the BIS SPAN \citep{Dumusque:2017aa,Feng:2017aa}.
 %
 It is also common to add a Gaussian process to the model to account for the correlated noise induced by stellar activity. The hyperparameters of the Gaussian process can be trained on different activity indicators \citep{Haywood-2014,Rajpaul-2015} or directly on the RVs \citep{Faria-2016a}. It is therefore essential for mitigating stellar activity to obtain activity indicators that are the most correlated with the RVs but also for which we can obtain the best precision.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Figueira indicators of stellar activity + other}
-Several indicators have been developed that are more sensitive to line asymmetry than the BIS SPAN. In \citet{Boisse-2011}, the authors developed $V_{span}$, which is the difference between the RV measured respectively by fitting a Normal density to the upper and the bottom part of the CCF. This CCF asymmetry parameter is shown to be more sensitive than the BIS SPAN at low signal-to-noise ratio (SNR).
+Several indicators have been developed that can be more sensitive to line asymmetry than the BIS SPAN. In \citet{Boisse-2011}, the authors developed $V_{span}$, which is the difference between the RV measured by fitting a Normal density to the upper and the lower parts of the CCF. This CCF asymmetry parameter is shown to be more sensitive than the BIS SPAN at low signal-to-noise ratio (SNR).
 %
 \citet{Figueira-2013} studied the use of new indicators, BIS-, BIS+, bi-Gauss and $V_{asy}$. The authors were able to show that when using bi-Gauss, the amplitude in asymmetry is 30\% larger than when using BIS SPAN, therefore allowing the detection of lower levels of activity. They also demonstrated that $V_{asy}$ seems to be a better indicator of line asymmetry at high SNR, as its correlation with RV is significantly stronger than any other correlation between the previously proposed asymmetry indicators and RV.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Why using a SN density?}
-In all the methods described above, except bi-Gauss, the RV and the FWHM are derived using a Normal density fitted to the CCF, and the asymmetry is estimated using another approach. 
+In all the methods described above, except bi-Gauss, the RV and the FWHM are derived using a Normal density fitted to the CCF, and the asymmetry is estimated using a separate approach. 
 %
 In this paper we propose to use a Skew Normal (SN) density to estimate with a single fit of the CCF the RV, the FWHM and the asymmetry of the CCF, as this function includes a skewness parameter \citep[][]{Azzalini1985}. 
 
@@ -182,13 +184,13 @@ In this paper we propose to use a Skew Normal (SN) density to estimate with a si
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Outline of paper}
-The paper is organized as follow. In Sec.~\ref{sec:2} we introduce the SN density, describe its applicability for modelling the CCF and study how the SN parameters relate to mean of the Normal density, the FWHM and the BIS SPAN of the CCF. 
+The paper is organized as follows. In Sec.~\ref{sec:2} we introduce the SN density, describe its applicability for modelling the CCF and study how the SN parameters relate to the mean of the Normal density, the FWHM, and the BIS SPAN of the CCF. 
 %
 In Sec.~\ref{sec:31} we propose a linear model to correct for stellar activity signals in RVs, which extends the linear models previously proposed for this purpose \citep[e.g.][]{Dumusque:2017aa,Feng:2017aa}. 
 %
 In Sec.~\ref{sec:soap} the performance of the SN fit to the CCF is investigated using simulations coming from the Spot Oscillation And Planet 2.0 code \citep[SOAP 2.0,][]{Dumusque-2014b}, followed by an analysis of real observations in Sec.~\ref{sec:4}.
 %
-In Sec.~\ref{sec:5} error bars for the different estimated CCF parameters are retrieved. Finally the discussion of the results and the conclusions are presented, respectively, in Secs.~\ref{sec:discu} and ~\ref{sec:conclu}.
+In Sec.~\ref{sec:5} error bars are computed for the different estimated CCF parameters. Finally the discussion of the results and the conclusions are presented in Secs.~\ref{sec:discu} and ~\ref{sec:conclu}, respectively.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{The Skew Normal distribution} \label{sec:2}
