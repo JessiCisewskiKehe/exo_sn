@@ -371,18 +371,19 @@ We investigate this feature further in the following two sections, where we cons
 \end{center}
 \end{figure*}
 
-Since the RV variations displayed in Fig.~\ref{fig:faculae} are caused only by stellar activity, in this case a facula, we applied the activity correction proposed in Eq.~\ref{eq:RV:correction} to check its performance in this setting. 
+The RV variations displayed in Fig.~\ref{fig:faculae} are caused only by stellar activity, in this case a facula, so we applied the activity correction proposed in Eq.~\ref{eq:RV:correction} to evaluate the performance of the model in this setting.
 The results of this correction are displayed in Fig.~\ref{fig:faculae.correction} and the statistical tests on the coefficients involved in Eq.~\ref{eq:RV:correction} are summarized in Table \ref{table:faculae.test}. 
-The proposed correction for stellar activity is able to account for the majority of the activity signal created by a facula, with a $R^2$ of our model larger than $0.99$. In addition, the rms of the different estimates of the RV reduces from about 3 \ms before correction to values below 0.15 \ms after correction.
-We see a slightly smaller rms after correction when using the SN parameters compared to the Normal parameters, however the different is probably not significant. When comparing the correction proposed in Eq.~\ref{eq:RV:correction} with what is generally used (i.e. a linear combination of only the asymmetry and width parameter), we see that the proposed correction is able to reduce the rms of the RV residuals by a factor of 2. Looking at the significance of the coefficients in table \ref{table:faculae.test}, we observe that all the SN or Normal parameters are relevant for the correction.
+The proposed correction for stellar activity is able to account for the majority of the activity signal created by a facula, with a $R^2$ larger than $0.99$. 
+In addition, the rms of the different estimates of the RV reduces from about 3 \ms before correcting for stellar activity to values below 0.15 \ms after correcting for stellar activity.
+We see a slightly smaller rms after correction when using the SN parameters compared to the Normal parameters.
+When comparing the correction proposed in Eq.~\ref{eq:RV:correction} with what is generally used (i.e. a linear combination of only the asymmetry and width parameters), we see that the proposed correction is able to reduce the rms of the RV residuals by a factor of 2. Looking at the significance of the coefficients in Table~\ref{table:faculae.test}, we observe that all the SN or Normal parameters are relevant for the correction.
 
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
-   \caption{(top) The spurious estimated RVs (black dots) caused by a facula in the simulated data using a Normal and a SN fit, the estimated RVs using Eq.~\ref{eq:RV:correction} (red crosses), and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit.    
+   \caption{(top) The spurious estimated RVs (black dots) caused by a facula in the simulated data using a Normal and a SN model, the estimated RVs using Eq.~\ref{eq:RV:correction} (red crosses), and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the Normal fit.    
    %
- (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std, red crosses) and the residuals from the usual correction (Usual corr. std, green triangles). The residuals have a smaller systematic component when using the proposed model of 
-  Eq.~\ref{eq:RV:correction} (red crosses) compared to the usual model (green triangles).
+ (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (red crosses) and the residuals from the usual correction (green triangles). The std. are also reported in the legend, and the residuals have a smaller systematic component when using the proposed model of Eq.~\ref{eq:RV:correction} compared to the usual model.
 The tests of statistical significance on the parameters are presented in Table \ref{table:faculae.test}.
 }\label{fig:faculae.correction}
 \end{center}
@@ -390,7 +391,7 @@ The tests of statistical significance on the parameters are presented in Table \
 
 \begin{table}
 \begin{center}
-\caption{P--values for the estimated coefficients from the model in Eq.~\ref{eq:RV:correction} for correcting stellar activity induced by an equatorial 3\% facula on the simulated Sun. All the parameters corresponding to the Normal or SN variables are statistically significant to explain the spurious RV variations caused by the facula. The estimated $R^{2}$ show that the proposed correction for stellar activity explains the vast majority of the spurious variability present in the different RV estimates.}
+\caption{P-values for the estimated coefficients from the model in Eq.~\ref{eq:RV:correction} for correcting stellar activity induced by an equatorial 3\% facula on the simulated Sun. All the parameters corresponding to the Normal or SN variables are statistically significant. The estimated $R^{2}$ show that the proposed correction for stellar activity explains the vast majority of the spurious variability present in the different RV estimates.}
 \label{table:faculae.test}
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -411,6 +412,15 @@ $R^{2}$      &     $0.9978$    &  $0.9985$ & $0.9981$  \\
 \end{tabular}
 \end{center}
 \end{table}
+
+
+
+
+
+
+
+
+
 
 \subsection{Spot} \label{sec:soap.spot}
 
