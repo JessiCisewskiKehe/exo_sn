@@ -199,14 +199,14 @@ The Skew Normal (SN) distribution is a class of probability distributions which 
 \begin{equation} \label{def:snd_gen}
 SN(y;\xi, \omega, \alpha) = \frac{2}{\omega} \phi\left(\frac{y-\xi}{\omega}\right) \Phi\left(\frac{\alpha(y-\xi)}{\omega}\right),
 \end{equation}
-where $\phi$ and $\Phi$ are respectively the density function and the distribution function of a standard Normal distribution\footnote{A standard Normal distribution is a Normal distribution with a mean of 0 and a standard deviation of 1.}.
+where $\phi$ and $\Phi$ are, respectively, the density function and the distribution function of a standard Normal distribution\footnote{A standard Normal distribution is a Normal distribution with a mean of 0 and a standard deviation of 1.}.
 The skewness parameter $\alpha$ quantifies the asymmetry of the SN. 
 Examples of SN densities under different skewness parameter values and the same location and scale parameters ($\xi = 0$ and $\omega = 1$) are displayed in Fig.~\ref{fig:SN.plot}.  A usual Normal distribution is the special case of the SN distribution when the skewness parameter $\alpha$ is equal to zero\footnote{This can be seen from Eq.~\ref{def:snd_gen}. If $\alpha = 0$ then $\Phi\left(\frac{\alpha(y-\xi)}{\omega}\right) = \Phi(0) = 0.5$ and therefore $SN(y;\xi, \omega, 0) = \frac{1}{\omega} \phi\left(\frac{y-\xi}{\omega}\right)$ which is the density of a Normal distribution. Note that $\Phi(0) = 0.5$ because $\Phi(0)$ is the the probability that a standard Normal random variable is less than or equal than 0.}.
 %
 \begin{figure}[t]
 \begin{center}
 \includegraphics[height = 2.3in]{Skew_Normal_densities_jjck.pdf} 
-   \caption{Density function of a random variable Y following the SN distribution $SN(\xi, \omega^{2}, \alpha)$ with location parameter $\xi = 0$, scale parameter $\omega = 1$ and different values of the skewness parameter $\alpha$ indicated by different colors and line types. Note that the solid black line has an $\alpha = 0$ making it a Normal distribution.}
+   \caption{Density function of a random variable $Y$ following the SN distribution $SN(\xi, \omega, \alpha)$ with location parameter $\xi = 0$, scale parameter $\omega = 1$ and different values of the skewness parameter $\alpha$ indicated by different colors and line types. Note that the solid black line has an $\alpha = 0$ making it a Normal distribution.}
    \label{fig:SN.plot}
 \end{center}
 \end{figure}
@@ -219,7 +219,7 @@ For reasons related to the interpretation of the parameters in Eq.~\ref{def:snd_
 %
 where $\beta = \sqrt{\frac{2}{\pi}}\left(\frac{\alpha}{\sqrt{1+\alpha^2}}\right)$ \citep[e.g.][]{Arellano-2010}.
 
-By using Eq.~\ref{eq:snd_cp}, the new set of parameters $(\mu, \sigma^2, \gamma)$ provides a clearer interpretation of the behavior of the SN distribution. For the $\alpha$ values used in Fig.~\ref{fig:SN.plot}, the corresponding values of ($\mu$, $\sigma^2$, $\gamma$) are displayed in Table~\ref{tab:cp_values}.  In particular, $\mu$ and $\sigma^2$ are the actual mean and variance of the distribution, rather than simply a location and scale parameter, and $\gamma$ provides an measure of the skewness of the SN. 
+By using Eq.~\ref{eq:snd_cp}, the new set of parameters $(\mu, \sigma^2, \gamma)$ provides a clearer interpretation of the behavior of the SN distribution. For the $\alpha$ values used in Fig.~\ref{fig:SN.plot}, the corresponding values of ($\mu$, $\sigma^2$, $\gamma$) are displayed in Table~\ref{tab:cp_values}.  In particular, $\mu$ and $\sigma^2$ are the actual mean and variance of the distribution, rather than simply a location and scale parameter, and $\gamma$ provides a measure of the skewness of the SN. 
 Along with the mean of the SN, we consider the median of the distribution as a measure of its barycenter.  See Table~\ref{tab:cp_values} for the medians of the SN densities displayed in Fig.~\ref{fig:SN.plot}.
 
 %The median of the SN, and in general the median of an absolute continuous random variable, is defined as the value $m$ such that\footnote{We recall that when using a symmetric distribution such as the Normal distribution, the mean and the median are equivalent.}:
@@ -249,7 +249,7 @@ $\alpha$ & $\mu$ & $\sigma^2$ & $\gamma$  & Median \\
 \end{center}
 \end{table}
 %
-Further details about the parametrization from Eq.~\ref{def:snd_gen}, called the \emph{Direct Parametrization} or DP, the CP, and general statistical properties of the SN are treated in rigorous mathematical and statistical viewpoints in the book by \cite{Azzalini2014}.
+Further details about the parametrization from Eq.~\ref{def:snd_gen}, called the \emph{Direct Parametrization} (DP), the CP, and general statistical properties of the SN can be found in \cite{Azzalini2014}.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Fitting the Skew Normal density to the CCF} \label{sec:3}
@@ -261,7 +261,7 @@ To fit the CCF using a SN density shape, we use a least-squares algorithm and th
 f_{CCF}(x_i) = \mathrm{C} - \mathrm{A} \times SN(x_i;\mu, \sigma^2, \gamma), \quad i = 1, \ldots, n
 \end{eqnarray}
 %
-where C is an unknown offset for the continuum of the CCF, A is the unknown amplitude of the CCF, sometimes referred to as the CCF contrast, and $\mu$, $\sigma^2$ and $\gamma$ are respectively the mean, the variance and the skewness of the SN as defined above.
+where C is an unknown offset for the continuum of the CCF, A is the unknown amplitude of the CCF, sometimes referred to as the CCF contrast, and $\mu$, $\sigma^2$ and $\gamma$ are, respectively, the mean, the variance, and the skewness of the SN as defined above.
 The values $x_1, \ldots, x_n$ are the different values of the x-axis of the CCF, generally in velocity units (e.g. \ms).
 
 %%%Since the CCF has an asymmetry due the convective blueshift, the SN density should in principle better catch this aspect, together with other changes in asymmetry, with respect to fitting a Normal density. 
@@ -276,7 +276,7 @@ The values $x_1, \ldots, x_n$ are the different values of the x-axis of the CCF,
 %%%\end{figure*}
 %%%%
 
-When fitting the commonly employed Normal density to the CCF, the estimated mean of the model is used as the estimated RV and the FWHM of the Normal density\footnote{FWHM$=2\sqrt{2\ln2}\,\sigma$ with standard deviation $\sigma$} represents the width of the CCF.
+When using a Normal density shape model for the CCF, the estimated mean is used as the estimated RV and the FWHM\footnote{FWHM$=2\sqrt{2\ln2}\,\sigma$ with standard deviation $\sigma$} is used to quantify the width of the CCF.
 Because the Normal density is symmetric, the skewness is not defined and therefore a separate approach is necessary to estimate the skewness of the CCF.
 An estimated skewness parameter is generally obtained by calculating the BIS SPAN of the CCF \citep[see Sect. \ref{intro}, and e.g.][]{Queloz-2001}. 
 %
@@ -287,11 +287,11 @@ The width of the SN, SN FWHM, is defined in the same way as for the Normal densi
 To evaluate the strength of the correlation between the estimated RVs and the different stellar activity indicators, we calculated the Pearson correlation coefficient, $R$, which in its general form is defined as:
 %
 \begin{equation}
-R (x,y)= \frac{cov(x,y)}{\sigma(x)\sigma(y)},
+R (x,y)= \frac{\text{cov}(x,y)}{\sigma(x)\sigma(y)},
 \label{eq:Pearson:corr}
 \end{equation}
 %
-where $x$ and $y$ are two quantitative variables, $cov(x,y)$ indicates the covariance between $x$ and $y$, and $\sigma(x)$ and $\sigma(y)$ represent their standard deviations.  A $p-$value for the statistical test having null hypothesis $H_{0}: R=0$ is provided.
+where $x$ and $y$ are two quantitative variables, $\text{cov}(x,y)$ indicates the covariance between $x$ and $y$, and $\sigma(x)$ and $\sigma(y)$ represent their standard deviations.  A $p$-value for the statistical test with null hypothesis $H_{0}: R=0$ is also generally provided.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Radial Velocity correction for stellar activity} \label{sec:31}
