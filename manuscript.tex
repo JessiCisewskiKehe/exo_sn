@@ -764,14 +764,20 @@ For HD10700, HD215152, and HD192310, the proposed and usual models had comparabl
 %%%We also observe slight differences in the rms between the new proposed correction and the usual correction, which uses only a linear combination of the width and the asymmetry of the CCF.  
 However, for Corot-7, the new correction is able to provide RV residual rms 30\,\cms \jessi{Should this be 23?} smaller than the one obtained with the usual correction.
 
+
+
+
+
+
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Detection limits when using the estimated RVs from the Normal or the Skew Normal models} \label{sec:detect_limits}
 
-In the previous section, we saw that the estimated RV measured when considering a SN or a Normal density resulted in different amplitudes, especially when using the SN mean RV. However, once corrected for stellar activity using the linear combination presented in Eq.~\ref{eq:RV:correction}, as shown in the bottom plots of Fig~\ref{fig:alphacent:correctionRV}, the rms of the residuals are essentially the same for all three approaches.
-In this section, we investigate the ability of the three different RV estimators' (N mean RV, SN mean RV, and SN median RV) to detect planetary signals among stellar activity.
+In the previous section, we saw that the estimated RV measured when considering a SN or a Normal density resulted in different amplitudes, especially when using the SN mean RV. 
+However, once corrected for stellar activity using the linear combination presented in Eq.~\ref{eq:RV:correction}, as shown in the bottom plots of Fig~\ref{fig:alphacent:correctionRV}, the rms of the residuals are essentially the same for all three approaches.
+In this section, we investigate the ability of the three different RV estimators (N mean RV, SN mean RV, and SN median RV) to detect planetary signals among stellar activity.
 To carryout this test, the minimum detected amplitude of a planetary signal is estimated at different orbital periods when considering data affected by stellar activity.
 
-In order to obtain CCFs affected by realistic stellar activity signals, the CCFs from Alpha Cen B used previously were considered. 
+In order to obtain CCFs affected by realistic stellar activity signals, the CCFs from Alpha Centauri B used previously were considered. 
 To simulate a planetary signal, the CCFs were blue- or red-shifted with the desired amplitude, period, and phase.
 Several RV data sets with the same stellar signal, but different planetary signals were injected using parameters corresponding to the following grid:
 \begin{itemize}
@@ -781,7 +787,7 @@ Several RV data sets with the same stellar signal, but different planetary signa
 \end{itemize}
 
 For each of the 4500 simulations considered, the activity correction presented in Eq.~\ref{eq:RV:correction} was applied, and signals in the residuals were investigated using a Generalized Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982, Zechmeister-2009}. 
-If a signal with a p--value\footnote{The p--values were estimated using a bootstrap procedure.} smaller than 1\% had a period compatible with the injected planetary period within an error budget of 20\%, the signal was considered significant and the corresponding planet considered detected. 
+If a signal with a P-value\footnote{The P-values were estimated using a bootstrap procedure.} smaller than 1\% had a period compatible with the injected planetary period within an error budget of 20\%, the signal was considered significant and the corresponding planet considered detected. 
 Finally, for each period considered, the minimum amplitude at which at least 50\% of the planets with different phases were detected was found. The results are shown in Fig.~\ref{fig:detection_limits}. 
 All three of the different RV estimators give similar detection limits. Though more investigations should be considered, these results suggest that any of the RV estimators can be used when searching for a planetary signal in RV data contaminated by stellar activity.
 
@@ -805,28 +811,32 @@ correction absorbs part of the planetary signal and a stronger planetary signal 
 
 In this section, we investigate how the photon noise influences the CCF parameters derived either by a Normal density or a SN density fit. 
 Because a CCF is obtained from a cross-correlation, each point of a CCF is correlated with the other points. Therefore, we cannot simply vary each point in the CCF by their respective error bars and then recalculate the best SN or Normal density fit to see how the CCF noise influences the estimation of the parameters of interest (i.e., N mean RV, SN mean RV, SN median RV, FWHM, SN FWHM, BIS SPAN and $\gamma$). 
-Instead, we go to the individual spectra where the individual measurements can be considered independent fo the other points.
+Instead, we go to the individual spectra where the individual measurements can be considered independent from the other points.
 The standard error on each point of a spectrum is given by the photon noise, which follows a Poisson distribution and is therefore estimated by taking the square-root of the measured flux.
 
 The following method was carried out in order to estimate the error bars on the different parameters derived from the CCF. 
 We first modify the values of all the points in the spectrum given their respective error bars. 
-To do so random Gaussian noise centered on the value of the point and with standard deviation the square-root of the flux was added across each spectrum. 
-The CCF was calculated using this spectrum according to the method presented in \citet{Pepe-2002a}, then fitted either a Normal or SN density to this CCF and recorded the different parameters. 
-This process was repeated a hundred times in order to obtain a distribution for each CCF parameter. 
-The standard deviations of the resulting distributions provide standard errors for each CCF parameters.
+To do so random Gaussian noise with standard deviation the square-root of the flux was added across each spectrum. 
+The CCF was calculated using this spectrum according to the method presented in \citet{Pepe-2002a}, then fit by either a Normal or SN density with the parameters recorded. 
+This process was repeated a hundred times in order to obtain a distribution for each CCF parameter, and the standard deviations of the resulting distributions provide estimates of the standard errors for the CCF parameters.
 
-The standard errors were computed for each CCF parameter for all the HARPS measurements of HD215152, HD192310 and Corot-7. These three stars include measurements that cover the range of SNR measured at 550 nm (SNR550) from 10 to 500, which represent a very low SNR and the saturation limit of the HARPS detector, respectively. HD10700 and Alpha Cen B were not included because they have a large number of measurements, which would require a substantial computational effort.
+The standard errors were computed for each CCF parameter for the HARPS measurements of HD215152, HD192310 and Corot-7. 
+These three stars include measurements that cover the range of SNR measured at 550 nm (SNR550) from 10 to 500, which represent a very low SNR and the saturation limit of the HARPS detector, respectively. 
+HD10700 and Alpha Centauri B were not included because they have a large number of measurements, which would require a substantial computational effort.
 The variation of the noise for each CCF parameter as a function of SNR550 is displayed in Fig.~\ref{fig:se}.
-The top plots show the standard errors of the three different estimated RV's, the width, and the asymmetry estimates. 
+The top row shows the standard errors of the three different estimated RV's, the width, and the asymmetry estimates. 
 Note that because BIS SPAN and $\gamma$ do not have the same units, the estimated slopes of the correlation between those two parameters to transform $\gamma$ in \ms were used (see Fig.~\ref{fig:alphacent:corr.gamma} and Table~\ref{table:summaryStars} for the value of the slope for each star). 
-The bottom plots show the ratio between the standard errors measured when using the SN parameters and the Normal parameters. Values smaller or larger than one will imply that standard errors from the SN parameters are respectively more or less precise than the Normal parameters.
+The bottom row shows the ratio between the standard errors measured when using the SN parameters and the Normal parameters. Values smaller (larger) than one will imply that standard errors from the SN parameters are more (less) precise than the Normal parameters.
 
-The different RV estimates all appear to follow a similar exponential decay. Considering each RV estimate individually, it appears that all the measurements follow the same curve even though the measurements are from three different stars. This suggests that for the stars considered, the precision in each RV estimate may be driven by the SNR of the analyzed spectra. This is not surprising as the three stars studied have very similar spectral types. They are all main sequence K-dwarfs. 
+The different RV estimates all appear to follow a similar exponential decay. Considering each RV estimate individually, it appears that all the measurements follow the same curve even though the measurements are from three different stars. This suggests that for the stars considered, the precision in each RV estimate may be driven by the SNR of the analyzed spectra. 
+This is not surprising as the three stars studied have very similar spectral types; they are all main sequence K-dwarfs. 
 
-When comparing the three different estimates for the RV, the SN mean RV presents standard errors that are 60\% larger than the N mean RV. However, the SN median RV gives errors 10\% more precise than N mean RV. 
+When comparing the three different estimates for the RV, the SN mean RV has standard errors that are 60\% larger than the N mean RV. However, the SN median RV gives errors 10\% more precise than N mean RV. 
 The parameters describing the width of the CCF, FWHM and SN FWHM, have comparable standard errors. 
 Finally, for the asymmetry parameters, $\gamma$ has standard errors that are 15\% more precise than BIS SPAN. 
-In conclusion, when fitting a SN density to the CCF and using as RV estimate SN median RV, we are able to improve by 10\% the precision on the estimated RV. using the SN density we are also able to improve by 15\% the precision on the estimated asymmetry parameter of the CCF. Both these improvements do not lead to a worse precision on the estimated width of the CCF.  SN mean RV should not be use to derive precise estimated RVs, except perhaps in specific conditions described below, as the precision on this parameter is 60\% worse than the precision on the RVs derived from N mean RV.
+In conclusion, when fitting a SN density to the CCF and using SN median RV as the RV estimate, we are able to improve the precision on the estimated RV by 10\%, using the SN density we are also able to improve by 15\% the precision on the estimated asymmetry parameter of the CCF.  However, the SN mean RV should not be use to derive precise RV estimates
+%%, except perhaps in specific conditions described below, 
+as the precision on this parameter is 60\% worse than the precision on the RVs derived from N mean RV.
 %
 \begin{figure*}[htbp]
 \begin{center}
