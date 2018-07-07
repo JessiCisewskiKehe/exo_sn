@@ -504,6 +504,10 @@ $R^{2}$      &     $0.9959$    &  $0.9936$ & $0.9952$  \\
 
 
 
+
+
+
+
 \subsection{Spot and planet} \label{sec:soap.spot.planet}
 
 The final simulation includes a planetary signal influencing the CCF along with the 1\% spot modelled previously (see Sec.~\ref{sec:soap.spot}). 
@@ -603,10 +607,19 @@ $\text{Residuals}$      &     $0.71 \ms$    &  $ 0.66 \ms$ & $0.70 \ms$  \\
 
 
 
+
+
+
+
+
+
+
+
+
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Real data application} \label{sec:4}
 
-In this Section we present the analysis conducted on the star Alpha Centauri B (Alpha Cen B), comparing the result of fitting a CCF using the SN density defined in Sec. \ref{sec:3} with the commonly employed approach based on fitting a Normal density for estimating the RV and retrieving the BIS SPAN for evaluating the asymmetry of the CCF. 
+The simulated SOAP data of the previous section were helpful in assessing the performance of the proposed methodology in a setting where the ground truth was known.  In this section we present an analysis conducted on real observations, in particular, the star Alpha Centauri B (Alpha Cen B), and compare the performance when fitting a CCF using the SN density defined in Sec. \ref{sec:3} with the commonly employed approach based on fitting a Normal density for estimating the RV and retrieving the BIS SPAN for evaluating the asymmetry of the CCF. 
 %to retrieve the RV and width of the CCF and calculating the bisector to derive the asymmetry parameter BIS SPAN. 
 Four other stars have been analyzed with the proposed method and details can be found in Appendix \ref{appendix}. 
 For all the stars considered in the presented work, only CCFs that were derived from spectra that had at least a SNR of 10 at 550 nm were selected. 
@@ -616,10 +629,11 @@ For all the stars considered in the presented work, only CCFs that were derived 
 \subsection{Comparison for Alpha Cen B of the different CCF parameters derived with the Normal and the Skew Normal} \label{sec:alphacentb}
 
 A total of $1808$ CCFs that were derived from the spectra of Alpha Centauri B taken in 2010 by the HARPS spectrograph have been analyzed. Note that more observations were carried out that year, however only the data that was not significantly affected by contamination from Alpha Centauri A was used \citep[see][]{Dumusque-2012}. 
-The selected observations represent probably, among all RV data existing, the best sampled and most precise RV data set showing strong solar-like activity signal \citep{Thompson-2017, Dumusque-2012}.
+The selected observations represent arguably, among all RV data existing, the best sampled and most precise RV data set showing strong solar-like activity signal \citep{Thompson-2017, Dumusque-2012}.
 
 First, the correlation between $\gamma$ and BIS SPAN is evaluated.
-In the left panel of Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relationship between $\gamma$ and the BIS SPAN is linear, with a slope equal to $720$ and a strong Pearson correlation coefficient of $R=0.95$. This strong correlation suggests that both $\gamma$ and BIS SPAN are measuring similar asymmetries for the CCFs. This strong correlation allows as well to convert the dimensionless $\gamma$ parameters into \ms\,using the slope of the correlation, in this case 720 \ms.
+In the left panel of Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relationship between $\gamma$ and the BIS SPAN is linear, with a slope equal to \jessi{See question in figure about this slope} $720$ and a strong Pearson correlation coefficient of $R=0.954$. This strong correlation suggests that both $\gamma$ and BIS SPAN are measuring similar asymmetries for the CCFs. 
+It also provides a conversion between the dimensionless $\gamma$ parameter into \ms\, using the slope of 720 \ms.
 %\xavier{As $\gamma$ has no units, this will allow us to compare the amplitude of the activity signal seen in $\gamma$ and in BIS SPAN, by using the slope of this correlation as a scaling factor}.
 
 %
@@ -627,8 +641,8 @@ In the left panel of Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relati
 \begin{center}
 \includegraphics[height = 3.6in]{HD12862_gamma_vs_bisspan.pdf} 
 \includegraphics[height = 3.6in]{HD12862_[2]RadialVelocityDifferences.pdf} 
-   \caption{(left) Correlation between $\gamma$ and the BIS SPAN for Alpha Centauri B. The strong correlation suggests these two parameters are similarly measuring the asymmetry.
-(top right) RVs as function of Julian Day for Alpha Centauri B in 2010. The RVs are estimated using the mean of a Normal fitted to the CCF (red triangles), or the mean (black circles) or median (cyan crosses) of a SN density fitted to the CCF. (bottom right) Differences between the RVs estimated with the SN density and those from the Normal density.}
+   \caption{(left) Correlation between $\gamma$ and the BIS SPAN for Alpha Centauri B. The strong correlation suggests these two parameters are similarly measuring the asymmetry. \jessi{How is the slope 720?  It looks like it should be around 0.0005.}
+(top right) RVs as function of Julian Day for Alpha Centauri B in 2010. The RVs are estimated using the mean of a Normal fitted to the CCF (red triangles), or the mean (black circles) or median (cyan pluses) of a SN density fitted to the CCF. (bottom right) Differences between the RVs estimated with the Normal density and those from the SN density.}
    \label{fig:alphacent:corr.gamma}
 \end{center}
 \end{figure*}
@@ -636,7 +650,12 @@ In the left panel of Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relati
 
 The right plot of Fig.~\ref{fig:alphacent:corr.gamma} displays the comparison between the RVs estimated using the SN density and the Normal density. 
 The amplitude of the activity signal is slightly stronger for the SN mean RV (in the top-right plot the black circles of the SN mean RV tend to show more variability), while the signal measured using N mean RV or SN median RV are comparable. 
-This behavior is similar to the one observed for the facula simulated with SOAP 2.0 in see Sec.~\ref{sec:soap.faculae}, suggesting that the activity signal could be due to faculae present on Alpha Centauri B. Another argument that suggests the presence of faculae, is the strong positive measured correlation between $\gamma$ and SN mean RV and SN FWHM and SN mean RV, as displayed in Fig.~\ref{fig:alphacent:corrPlot}. In Sec.~\ref{sec:soap.spot}, we saw that a spot induces a negative correlation between $\gamma$ and SN mean RV, while weak correlations are measured between SN FWHM and SN mean RV.
+%
+This behavior is similar to the one observed for the facula simulated with SOAP 2.0 in see Sec.~\ref{sec:soap.faculae}, suggesting that the activity signal could be due to faculae present on Alpha Centauri B.  
+%
+Another feature that suggests the presence of faculae is the strong positive measured correlation between $\gamma$ and SN mean RV and  between SN FWHM and SN mean RV, as displayed in Fig.~\ref{fig:alphacent:corrPlot}. 
+%
+In Sec.~\ref{sec:soap.spot}, we saw that a spot induces a negative correlation between $\gamma$ and SN mean RV and weak correlations are measured between SN FWHM and SN mean RV.
 \citet{Dumusque-2014c} had previously suggested that the activity of Alpha Centauri B could be due to faculae.
 %When using SN mean RV, it is possible to observe more variations than the ones measured by the Normal fitting. This happens because the mean of the SN is more sensitive to stellar activity. In fact, because the SN includes an asymmetry parameter, SN mean RV gets more shifted in the direction of the asymmetry induced by stellar activity. On the other hand, when using SN median RV, smaller variations in RV are caused by changes in the asymmetry of the CCF, because this second location parameter is a more robust indicator than the mean. The bottom plot of Fig.~\ref{fig:alphacent:diff:RV} captures this aspect. Both indicators can be used to capture and summarise the different information available in the CCF, as will be shown in the remainder of this work.
 %%
@@ -648,10 +667,10 @@ This behavior is similar to the one observed for the facula simulated with SOAP 
 %\end{figure*}
 %
 
-Similar to the analyses presented in Sec.~\ref{sec:soap}, looking at Fig.~\ref{fig:alphacent:corrPlot} we compare the correlations between the asymmetry or the width parameters of the CCF and the RV. 
-For this analysis, we also include the asymmetry parameters derived in \citet{Boisse-2011}, $V_{span}$ and in \citet{Figueira-2013}, BIS-, BIS+, Bi Gauss and $V_{asy}$, as these authors found those asymmetry parameters more correlated to the RVs than BIS SPAN. It is clear in the case of Alpha Cen B, that the correlation found between $\gamma$ and SN mean RV is the strongest. 
-The Pearson correlation coefficient is $R=0.74$, while it is at best $R=0.42$ for all the other asymmetry--RV correlations not derived using the SN density fit.
-When looking at the correlations between the width and the RV estimates for Alpha Cen B, the correlation is strongest for the SN parameters, with $R=0.82$ for SN FWHM-SN mean RV, while it is $R=0.70$ for FWHM and N mean RV.
+Similar to the analyses presented in Sec.~\ref{sec:soap}, in Fig.~\ref{fig:alphacent:corrPlot} we compare the correlations between the asymmetry or the width parameters of the CCF and the RV. 
+For this analysis, we also include the asymmetry parameters derived in \citet{Boisse-2011}, $V_{span}$ and in \citet{Figueira-2013}, BIS-, BIS+, Bi Gauss and $V_{asy}$, as these authors found those asymmetry parameters more correlated with the RVs than BIS SPAN. It is clear in the case of Alpha Centauri B that the correlation found between $\gamma$ and SN mean RV is the strongest. 
+The Pearson correlation coefficient is $R=0.74$, while the next strongest is $R=0.42$ for all the other asymmetry-RV correlations (except the $\gamma$-SN median RV, which is $R=0.56$).
+The correlations between the width and the RV estimates for Alpha Centauri B, the correlation is strongest for the SN parameters, with $R=0.82$ for SN FWHM-SN mean RV, compared to $R=0.70$ for FWHM-N mean RV.
 %
 %The correlations between $\gamma$ and SN mean RV, and also SN FWHM and SN mean RV
 %
@@ -660,27 +679,30 @@ When looking at the correlations between the width and the RV estimates for Alph
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{HD12862_[4]Comparison_para.pdf}  
-   \caption{(top three rows) Correlations between the asymmetry parameters and their corresponding estimated RVs for Alpha Cen B. 
-(bottom row) The correlation between the FWHM and the estimated RVs for Alpha Centauri B. The correlations are stronger when using parameters derived from the SN fit than the Normal one. The estimated $R$'s are all statistically significant.} 
+   \caption{(top three rows) Correlations between the asymmetry parameters and their corresponding estimated RVs for Alpha Centauri B. 
+(bottom row) The correlation between the FWHM and the estimated RVs. The correlations are stronger when using parameters derived from the SN fit than the Normal one. The estimated $R$'s are all statistically significant.} 
    \label{fig:alphacent:corrPlot}
 \end{center}
 \end{figure*}
 %
 
 Results illustrating the performance of the stellar activity correction proposed in Sec.~\ref{sec:31} are displayed in Fig~\ref{fig:alphacent:correctionRV}. 
-For Alpha Cen B, the RV estimated with SN mean RV has a std that is 35\% larger than the std of the RV estimated with the N mean RV, and the std of SN median RV is 9\% larger than that of the N mean RV.
-Even though we see these differences in the estimated RV, once we correct for stellar activity by using Eq.~\ref{eq:RV:correction}, 
+For Alpha Centauri B, the RV estimated with SN mean RV has a std that is 35\% larger than the std of the RV estimated with the N mean RV, and the std of SN median RV is 9\% larger than that of the N mean RV.
+Even though we see these differences in the estimated RV, once we correct for stellar activity using Eq.~\ref{eq:RV:correction}, 
 the rms of the residuals are essentially the same for all three approaches.
 %In the best case, for SN mean RV, we reduce the stellar activity signal by a factor of 2, while in the worst case, N mean RV, only by a factor 1.5. 
-Although when studying the correlations between the different parameters we see that the parameters retrieved by using the SN density are more sensitive to stellar activity than the ones obtained with a Normal density fit,
-the proposed linear model for correcting from stellar activity is not able to perform better in the SN case than in the Normal case. When comparing the new correction for stellar activity proposed in Sec.~\ref{sec:31} with the usual correction, that uses only a linear combination of the width and the asymmetry of the CCF, we end up with very similar results. The new correction is however able to get RV rms that are 6\,\cms\,smaller than the usual correction.
+Although the correlations between the different parameters from the SN density are more sensitive to stellar activity than those obtained with a Normal density fit,
+the proposed linear model that corrects for stellar activity does not necessarily perform better in the SN case than in the Normal case. 
+The new correction for stellar activity proposed in Sec.~\ref{sec:31} performed similarly to the usual correction that uses only a linear combination of the width and the asymmetry of the CCF, but has RV rms that are 6\,\cms\,smaller than the usual correction. \jessi{Should this be 8\cms?}
+
+%%with the usual correction that uses only a linear combination of the width and the asymmetry of the CCF, we end up with very similar results. The new correction is however able to get RV rms that are 6\,\cms\,smaller than the usual correction.
 %it seems that the parameters derived using the SN density are more sensitive to stellar activity than with the Normal density, after correction using the proposed model, the methods appear to be similarly successful at addressing the stellar activity signal.
 %we are not able to correct better for stellar activity signal using a linear combination of the different CCF parameters.
 
-When looking at the statistical tests of the different parameters used for correcting activity in Table~\ref{table:alphacent.test}, we see that the BIS SPAN (coefficient $\beta_2$) does not statistically helpful in explaining stellar activity when using the parameters derived from the Normal density fit. 
-However all the other parameters in the Normal and SN cases are statistically significant for modelling stellar activity. 
+The results of the statistical tests of the different parameters used for correcting activity can be found in Table~\ref{table:alphacent.test}.  The BIS SPAN (coefficient $\beta_2$) is not statistically significant for the parameters derived from the Normal density fit. 
+However, all the other parameters in the Normal and SN cases are statistically significant for modelling stellar activity. 
 By analyzing the values of the coefficient of determination, $R^2$, we see that the model for the SN mean RV is able to capture the highest percentage of variability in the estimated RV. 
-This is not a surprising result since for the three different RV estimates, we arrive to the same RV residual rms after correction for activity, but before correction, SN mean RV shows the largest RV rms (see Fig~\ref{fig:alphacent:correctionRV}).
+This is not a surprising result since the three different RV estimates have the same RV residual rms after correction for activity, but before correction, the SN mean RV had the largest RV rms (see Fig~\ref{fig:alphacent:correctionRV}).
 
 \begin{figure*} 
 \begin{center}
