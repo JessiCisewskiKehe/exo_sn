@@ -709,16 +709,15 @@ This is not a surprising result since the three different RV estimates have the 
 \includegraphics[height = 6in]{NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
    \caption{(top) The RVs (black dots) for Alpha Centauri B estimated using a SN and a Normal fit.
    %
- (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std, black dots) and the residuals from the usual correction (Usual corr. std, blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit. The residuals have a smaller systematic component when using the proposed model of 
-  Eq.~\ref{eq:RV:correction} (black dots) compared to the usual model (blue triangles).}
-   \label{fig:alphacent:correctionRV}
+ (bottom) The residuals from the model fit using Eq.~\ref{eq:RV:correction} (New corr. std, black dots) and the residuals from the usual correction (Usual corr. std, blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit. The residuals have a smaller systematic component when using the proposed model of  Eq.~\ref{eq:RV:correction} (black dots) compared to the usual model (blue triangles).}
+\label{fig:alphacent:correctionRV}
 \end{center}
 \end{figure*}
 
 \begin{table}
 \begin{center}
-\caption{P--values for the different coefficients used in Eq.~\ref{eq:RV:correction} for the correction from stellar activity in Alpha Cen B data. All the variables corresponding to the Normal or SN parameters are statistically significant, except for the asymmetry of the CCF when using the BIS SPAN with the N mean RV.
-The evaluation of the $R^2$ shows that the proposed linear combination better explains variations in RVs due to the stellar activity when the RVs are derived using SN mean RV.}
+\caption{P-values for the different coefficients used in Eq.~\ref{eq:RV:correction} for the correction from stellar activity in Alpha Centauri B data. All the variables corresponding to the Normal or SN parameters are statistically significant, except for the asymmetry of the CCF when using the BIS SPAN with the N mean RV.
+The $R^2$ shows that the proposed linear combination explains the most variability in RVs due to the stellar activity when the RVs are estimated with the SN mean RV.}
 \label{table:alphacent.test}
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -742,17 +741,28 @@ $R^{2}$      &     $0.57$    &  $0.78$ & $0.66$  \\
 
 %Both the proposed indicators coming from the SN density have advantages and limits: SN mean RV better catches changes in the asymmetry of the CCF but the resulting set of RVs ends up being contaminated by those spurious shifts caused by stellar activity that have been shortly presented in Sec. \ref{intro}. When using SN median RV, the final set of RVs is less affected by those spurious shifts caused by stellar activity, but at the same time this indicator is not able to catch as well as SN mean RV changes in the shape and in the width of the CCF. Once corrected from stellar activity using Eq.~\ref{eq:RV:correction}, the results are comparable. Anyway, both SN mean RV and SN median RV are useful to catch different aspects of the CCF and our suggestion is to use SN mean RV when interested in retrieving information about changes in the shape and/or the width of the CCF. In order to provide a set of RVs containing the smallest amount of spurious contamination imputable to stellar activity (i.e. before to run Eq.~\ref{eq:RV:correction}), our suggestion is to use instead SN median RV. 
 
+
+
+
+
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Comparison for HD192310, HD10700, HD215152 and Corot-7 of the different CCF parameters derived with the Normal and the Skew Normal} \label{sec:real_data_other_stars}
 
-In the previous section we evaluated the improvement obtained by the SN parameters compared to the Normal parameters and the BIS SPAN. We carryout similar analyses for four other main sequence stars: HD192310, HD10700, HD215152 and Corot-7. The same correlations plots and activity--after--correction plots displayed in the previous section for Alpha Cen B can be found found for those new four stars in Appendix \ref{appendix}.
+In the previous section we evaluated the improvement obtained by the SN parameters compared to the Normal parameters and the BIS SPAN. We carryout similar analyses for four other main sequence stars: HD192310, HD10700, HD215152 and Corot-7. The same correlations plots and residual plots displayed in the previous section for Alpha Centauri B can be found found for those new four stars in Appendix~\ref{appendix}. \jessi{Add explicit references to the datasets}
 
-The correlations between the parameters of these additional stars are similar to those obtained for Alpha Cen B. The correlation between $\gamma$ and SN mean RV is the strongest among all the asymmetry-RV correlations. Concerning the correlations between the width parameters and the estimated RV, the strongest correlation often is between SN FWHM and SN mean RV. However, there is one exception in the case of HD10700 where the Pearson correlation coefficient between FWHM and N mean RV is equal to $R=0.53$, while it is $R=0.42$ between SN FWHM and SN mean RV.
+The correlations between the parameters of these additional stars are similar to those obtained for Alpha Centauri B. The correlation between $\gamma$ and SN mean RV is the strongest among all the asymmetry-RV correlations. 
+%
+Between the width parameters and the estimated RV, the strongest correlation often is between SN FWHM and SN mean RV. 
+However, there is one exception in the case of HD10700 where the Pearson correlation coefficient between FWHM and N mean RV is equal to $R=0.53$, while it is $R=0.42$ between SN FWHM and SN mean RV, and $R=0.5$ between SN FWHM and SN median RV.
 
-Except for the special case discussed above for HD10700, the analyses of those four stars, in addition to the analyses on Alpha Cen B, shows that the parameters derived when using a SN density are more sensitive to activity.  Therefore using the SN parameters, and in particular defining RV as SN mean RV, can lead to better detection of stellar activity over the Normal parameters. 
-This is the case for the evaluation of the asymmetry-RV correlations for  Alpha Cen B, HD10700, HD215152, HD192310 and Corot-7, and the width-RV correlation for Alpha Cen B, HD215152, HD192310 and Corot-7 (see Appendix \ref{appendix}).
+Except for the special case discussed above for HD10700, the analyses of those four stars, in addition to the analyses on Alpha Centauri B, show that the parameters derived when using a SN density are generally more sensitive to activity.  
+Therefore using the SN parameters, and in particular estimating RV using SN mean RV, can lead to better detection of stellar activity over the Normal parameters. 
+More specifically, this is the case for the evaluation of the asymmetry-RV correlations for Alpha Centauri B, HD10700, HD215152, HD192310 and Corot-7, and the width-RV correlation for Alpha Centauri B, HD215152, HD192310 and Corot-7 (see Appendix \ref{appendix}).
 
-In terms of correction for stellar activity, in the case of Alpha Cen B we see that although the RV rms is larger when measuring the RVs using SN mean RV (compared to the RVs obtained using N mean RV), once corrected for activity using the new model proposed in Sec.~\ref{sec:31}, both RVs estimates provides similar residuals. We also observe slight differences in the rms between the new proposed correction and the usual correction, which uses only a linear combination of the width and the asymmetry of the CCF.  For Corot-7 the new correction is able to provide RV residual rms 30\,\cms smaller than the one obtained with the usual correction.
+When correcting for stellar activity for  Alpha Centauri B, although the uncorrected RV rms was larger for SN mean RV (compared to the RVs obtained using N mean RV), once corrected for activity using the new model proposed in Sec.~\ref{sec:31}, both RVs estimates had similar residuals. 
+For HD10700, HD215152, and HD192310, the proposed and usual models had comparable corrected RV rms.
+%%%We also observe slight differences in the rms between the new proposed correction and the usual correction, which uses only a linear combination of the width and the asymmetry of the CCF.  
+However, for Corot-7, the new correction is able to provide RV residual rms 30\,\cms \jessi{Should this be 23?} smaller than the one obtained with the usual correction.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Detection limits when using the estimated RVs from the Normal or the Skew Normal models} \label{sec:detect_limits}
