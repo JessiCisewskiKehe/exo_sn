@@ -856,49 +856,69 @@ as the precision on this parameter is 60\% worse than the precision on the RVs d
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Discussion} \label{sec:discu}
 
-When fitting a SN density to the CCF, parameters that describe the RV (i.e. the CCF barycenter), the amplitude (sometimes called the CCF contrast), the width and the asymmetry of the CCF can all be estimated in a single model framework.
+When fitting a SN density shape to the CCF, parameters used to define the RV (i.e. the CCF barycenter), the amplitude (sometimes called the CCF contrast), the width and the asymmetry of the CCF can all be estimated in a single model framework.
 For the estimation of the RV, we investigated the use of the mean and the median of the SN density. 
-Then the width is derived using the variance of the SN density (SN FWHM$=2\sqrt{2ln(2)\sigma^2}$) and the asymmetry by using $\gamma$, the naturally available skewness parameter of the SN density.
+The width is derived using the variance of the SN density (SN FWHM$=2\sqrt{2ln(2)\sigma^2}$) and the asymmetry by using $\gamma$, skewness parameter of the SN density.
 
-To evaluate the performance of the proposed SN framework, tests on both simulated and real data were carried out and compared to the commonly employed approach consisting of fitting a Normal density shape (for estimating the RV and FWHM) and then separately deriving the BIS SPAN (for estimating the asymmetry).
-The simulated CCFs were generated using the SOAP 2.0 code, which can simulate activity signals induced by a spot or a facula on a solar-like star. The results of the simulation study suggest that the parameters derived from the SN density fit are more sensitive to activity than the parameters obtained by the usual Normal method. 
-In this case, sensitivity was measured using the correlation between the asymmetry and the estimated RVs; both SN mean RV and SN median RV had a stronger correlation with gamma than the correlation between N mean RV and BIS SPAN. 
+To evaluate the performance of the proposed SN framework, tests on both simulated and real data were carried out and compared to the commonly employed approach of fitting a Normal density shape (for estimating the RV and FWHM) and then separately deriving the BIS SPAN (for estimating the asymmetry).
+The simulated CCFs were generated using the SOAP 2.0 code, which can simulate activity signals induced by a spot or a facula on a solar-like star. The results of the simulation study suggest that the parameters derived from the SN density fit are more sensitive to activity than the parameters obtained by the usual Normal method, making them more useful indicators of activity.
+In this case, sensitivity was measured using the correlation between the asymmetry parameter and the estimated RVs; both SN mean RV and SN median RV had a stronger correlation with $\gamma$ than the correlation between N mean RV and BIS SPAN. 
 Moreover, the correlation between the FWHM and the estimated RVs is also stronger when using the parameters from the SN compared to the parameters from the Normal. 
 The SN parameters continued to have stronger correlations than the Normal in the setting where a planetary signal was added the SOAP 2.0 with a single spot.
 
-We also propose a new model to correct the estimated RV data for stellar activity signals. 
-Generally, when fitting for planetary signals, it is common to use a model composed of one or several Keplerian signals to account for the planets, in addition to a linear combination of the FWHM and BIS SPAN to account for stellar activity signals. 
-The proposed model adds an additional term to account for the amplitude of the CCF, and an interaction term between the estimated asymmetry and the width parameters. 
-Using the simulated data from SOAP 2.0, this new model reduces the effect of the stellar activity signal by a factor of 2 and 3.5 over the usual model, respectively for the facula and spot.
 
 The conclusion found for the SOAP 2.0 simulations that the correlation between the CCF asymmetry and the estimated RV, as well as between the CCF width and the estimated RV, is stronger for the SN parameters than the Normal ones also holds when using real data.
 %
-However, the stronger asymmetry-RV correlation for the simulated data is between $\gamma$ and SN median RV, while it is between $\gamma$ and SN mean RV for the real data.
-There could be several reasons for this difference. It may be due to the fact that SOAP 2.0 uses the spectrum of a spot as input to model the stellar activity induced by a facula.
-Because the temperature between a spot and a faculae is significantly different, their spectra should be different. 
-Additionally, there are expected to be multiple active regions on a star at different locations in longitude and latitude, while the SOAP 2.0 data used in the simulation study included only a single active region. 
+However, the strongest asymmetry-RV correlation for the simulated data is between $\gamma$ and SN median RV, while it is between $\gamma$ and SN mean RV for the real data.
+There could be several reasons for this difference. 
+First, noting that the SOAP 2.0 is a simulation and, hence, is an imperfect representation of reality so it is not unexpected that there are differences between the simulated and real data.
+For example, some differences may be due to the fact that SOAP 2.0 uses the spectrum of a spot as input to model the activity induced by a facula.
+Because the temperature between a spot and a facula is significantly different, their spectra should be different. 
+Additionally, there are expected to be multiple active regions on a star at different locations in longitude and latitude, while the SOAP 2.0 data used in the simulation study included only a single active region on the equator. 
 %\xavier{The fact that we also find significant differences between the simulated and real data for the correlations between BIS SPAN and N mean RV and between FWHM and N mean RV shows that the SOAP 2.0 simulation studied here are too simple to explain the complexity of stellar activity in real RV observations.}
 %\jessi{What are these differences for Normal case?  The specific difference for the SN is the strength of the correlations with the SN mean RV compared to the SN median RV.  When I look at the SOAP vs. real data for the Normal, I do not notice anything specifically different other than different patterns, but that is not surprising.}
 %\umberto{I suggest to comment only about the differences for the SN case, since for the Normal I do not see differences between the analyses with SOAP2.0 and real stars.}
-Nevertheless, in both the simulated and the real cases, the parameters derived from the SN are generally more sensitive to activity than the parameters derived from the Normal.  Also, the correlation between the asymmetry and the SN mean RV is always stronger than the parametrization of the CCF presented in \citet{Boisse-2011} and \citet{Figueira-2013}. Since if an apparent RV signal is induced by activity generally a strong correlation will be observed between the RV and the FWHM of the CCF or its BIS SPAN, to use the SN density to fit the CCF leads to a better understanding of the spurious variations in RV caused by stellar activity.
+Nevertheless, in both the simulated and the real cases, the parameters derived from the SN are generally more sensitive to activity than the parameters derived from the Normal.  Also, the correlation between the asymmetry and the SN mean RV is consistently stronger than the parametrization of the CCF presented in \citet{Boisse-2011} and \citet{Figueira-2013}. 
+Because the apparent RV signal induced by activity  
+results in a stronger correlation with the SN parameters
+than between the apparent RV signal and the FWHM of the CCF or its BIS SPAN, this suggests the SN model of the CCF can lead to a better understanding of the spurious variations in RV caused by stellar activity.
 
 Considering the different RV estimates of the real data, the amplitude of stellar activity tends to be largest for the SN mean RV, followed by the SN median RV, and finally by N mean RV. 
 Although there appears to be a larger difference between the SN mean RV and the SN median RV, the SN median RV is similar to the N mean RV. 
-Hence, the mean of the SN density appears to be more sensitive to variation in the CCF shape than the median of the SN or the mean of the Normal.  %This is not surprising as the SN density is able to model the asymmetry of the CCF, what the Normal density does not. \jessi{The previous sentence does not follow from the points made in the paragraph.}
+Hence, the mean of the SN density appears to be more sensitive to variation in the CCF shape than the median of the SN or the mean of the Normal.  
+%This is not surprising as the SN density is able to model the asymmetry of the CCF, what the Normal density does not. \jessi{The previous sentence does not follow from the points made in the paragraph.}
 
-Having an estimator of RV that is more sensitive to stellar activity, such as the SN mean RV, can help with better probing stellar rotational periods or better understanding the covariance of stellar signals when fitting a Gaussian Process to the RVs \citep[e.g.][]{Faria-2016a, Haywood-2014}. 
-We saw in the previous section that the SN mean RV estimator is 60\% noisier than the N mean RV estimator. 
+Having an estimator of RV that is more sensitive to stellar activity, such as the SN mean RV, can also help to better probe stellar rotational periods or to better understand the covariance of stellar signals when fitting a Gaussian Process to the RVs \citep[e.g.][]{Faria-2016a, Haywood-2014}. 
+We saw that the SN mean RV estimator is 60\% noisier than the N mean RV estimator. 
 This is not necessarily a negative aspect. 
-Indeed, in the case were photon-noise is not dominant, stellar activity can be better characterized if its effect can be amplified by measuring the SN mean RV, even if the uncertainties related to this parameter are increased by 60\%.
+For example, in the case where photon-noise is not dominant, stellar activity can be better characterized if its effect can be amplified by measuring the SN mean RV, even if the uncertainties related to this parameter are increased by 60\%.
+\jessi{I'm not sure I agree with the previous statements - more uncertainty means you would be less certain if the RV estimate is due to actual stellar activity or just photon noise}
 
-Even if the different RV estimators generally have different amplitudes, once the new correction for stellar activity is applied, the residuals of the model have similar rms.
-When comparing the activity correction proposed in this paper with the usual correction that only uses a linear combination of the CCF asymmetry and width, for the simulations based on the presence of a facula or a spot the new proposed correction almost entirely explains the spurious variations in RV. However, when moving to real data, there is just a slight improvement by using the proposed correction function for stellar activity. Anyway, we encourage the community to use this new simple linear model if the goal is to reduce activity without considering the computationally expensive use of Gaussian Process. 
-A further analysis of the p--value for each coefficient can be performed to see the ones that are not relevant and that can therefore be removed.
 
+
+
+
+
+We also propose a new model to correct the estimated RV data for stellar activity signals. 
+Generally, when fitting for planetary signals, it is common to use a model composed of one or several Keplerian signals to account for the planets, in addition to a linear combination of the FWHM and BIS SPAN to account for stellar activity signals. 
+The proposed model adds to the linear model a term to account for the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. 
+Using the simulated data from SOAP 2.0, this new model reduces the effect of the stellar activity signal by factors of about 2 and 3.5 over the usual model for the facula and spot, respectively.
+
+
+
+Even if the different RV estimators result in different amplitudes, once the proposed correction for stellar activity is applied, the residuals of the model have similar rms.
+When comparing the activity correction proposed in this paper with the usual correction that only uses a linear combination of the CCF asymmetry and width, for the simulations based on the presence of a facula or a spot the new proposed correction almost entirely explains the spurious variations in RV. However, when moving to real data, there is just a slight improvement by using the proposed correction function for stellar activity. 
+A further analysis can be performed to see if certain components of the model are not relevant and that can therefore be removed.
+
+
+
+\jessi{The following paragraph needs to be updated with the new results}
 A test was carried out to see if some RV estimates were better at finding planets in RV data affected by observed stellar signals. 
 When using the new correction proposed in this paper to mitigate the effect from stellar activity and when assessing planetary detection based on a periodogram analysis, we find very similar detection limits for the three RV estimators presented in this paper. 
 \umberto{trying to understand why we get better results for P=20 days when using the usual correction}
 Therefore it seems that any of the RV estimate can be used to search for planetary signals.
+
+
 
 Finally, we investigated the precision of each of the SN and Normal parameters including the BIS SPAN. It turns out that the SN mean RV should not be used to get precise RVs as the standard errors on this parameter is 60\% greater than the N mean RV. 
 However, the SN median RV is 10\% more precise than the N mean RV. 
