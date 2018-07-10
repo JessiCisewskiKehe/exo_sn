@@ -892,7 +892,7 @@ Having an estimator of RV that is more sensitive to stellar activity, such as th
 We saw that the SN mean RV estimator is 60\% noisier than the N mean RV estimator. 
 This is not necessarily a negative aspect. 
 For example, in the case where photon-noise is not dominant, stellar activity can be better characterized if its effect can be amplified by measuring the SN mean RV, even if the uncertainties related to this parameter are increased by 60\%.
-\jessi{I'm not sure I agree with the previous statements - more uncertainty means you would be less certain if the RV estimate is due to actual stellar activity or just photon noise}
+\jessi{I'm not sure I agree with the previous statements - more uncertainty means you would be less certain if the RV estimate is due to actual stellar activity or just photon noise.  It is also stated throughout that precise estimates are needed (e.g. in the conclusion)}
 
 
 
@@ -926,23 +926,32 @@ Regarding the asymmetry estimates, we observe that $\gamma$ has a precision 15\%
 
 %Finally, we also encourage the use of bootstrapping to estimate more realistic errors on the different parameters of the Normal or SN fitted to the CCF, mainly in the low SNR regime where a gain of 50\% can be reached. This takes significantly more time, but note that 100 bootstrapped dataset are enough to get a good estimation of errors.
 
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion} \label{sec:conclu}
 
+When searching for low-mass exoplanets using the RV technique, it is necessary to retrieve precise estimates of the RV and also to account for variations induced by stellar activity in order to avoid false detections.  
+Stellar activity such as spots and faculae can lead to shape variations in the spectra features, which then results in shape variations of the CCF.
+The correlations between the width or asymmetry of the CCF and the estimated RV are commonly used as a way to detect if the RVs are affected by stellar activity signals.   
+Because the presence of real planets would result in only a shift in the CCF (not a change of its shape), strong correlations between the shape features of the CCF and the estimated RVs suggest that stellar activity may be present.
 
-When searching for low-mass exoplanets using the RV technique, it is necessary to retrieve precise estimates of the RV and also to account for variations induced by stellar activity in order to avoid false detections.  Stellar activity such as spots and faculae can lead to shape variations in the spectra features, which then results in shape variations of the CCF.
-The correlations between the width or asymmetry of the CCF and the estimated RV are commonly used as a way to detect if the RVs are affected by stellar activity signals.   Because the presence of real planets would result in only a shift in the CCF (not a change on its shape), strong correlations between the shape features of the CCF and the estimated RVs suggest that stellar activity may be present.
 
-In this paper, a new approach for measuring shape changes in the CCF is proposed using the SN density to estimate the RV and the shape of the CCF. 
-This new method is compared to a commonly used method based on a Normal density fit to the CCF.  The mean of the Normal density is used as the estimated RV and the FWHM estimates the width of the CCF.  Because the Normal density does not have any skewness, another method is necessary to estimate the asymmetry of the CCF; for this goal the BIS SPAN is often employed.
+
+In this paper, a new approach for quantifying shape changes in the CCF is proposed using the SN density, which can be used to estimate the RV, and the width and skewness of the CCF. 
+This new method is compared to a commonly used method based on a Normal density fit to the CCF.  The mean of the Normal density is used as the estimated RV and the FWHM estimates the width of the CCF.  Because the Normal density does not have any skewness, another method is necessary to estimate the asymmetry of the CCF, such as the often employed BIS SPAN.
 In addition, the proposed SN approach is compared to other parameterizations of the CCF asymmetry that have been shown to be sensitive to activity signals \citep[][]{Boisse-2011,Figueira-2013}.
 
-In the different tests carried out for this work, the SN parameters performed at least as well (and often times better) as the parameters from the Normal approach and the BIS SPAN.
-The SN parameters $\gamma$, SN FWHM and SN mean RV always show stronger correlation than the correlations between any of the parameters derived by the Normal and the BIS SPAN, or the different asymmetry parametrizations presented in \citet{Boisse-2011} and \citet{Figueira-2013}. 
+In the different tests carried out for this work, the SN parameters performed at least as well as (and often times better than) the parameters from the Normal approach and the BIS SPAN.
+The SN parameters $\gamma$, SN FWHM, and SN mean RV consistently had stronger correlation than those between any of the parameters derived by the Normal and the BIS SPAN, or the different asymmetry parametrizations presented in \citet{Boisse-2011} and \citet{Figueira-2013}. 
 This suggests the SN parameters may be better at probing stellar activity signals than the other methods. 
-In addition, the uncertainties measured on SN median RV and $\gamma$ are respectively 10\% and 15\% smaller than the corresponding uncertainties on N mean RV and BIS SPAN.
+In addition, the uncertainties measured on SN median RV and $\gamma$ are respectively 10\% and 15\% smaller than the corresponding uncertainties on N mean RV and BIS SPAN, though the SN mean RV had uncertainties 60\% greater than the N mean RV.
 
-Because of the advantages of using the proposed SN approach over the commonly employed approach based on the Normal density fit to the CCF and the BIS SPAN or the asymmetry parameters described in \citet{Boisse-2011} and \citet{Figueira-2013}, to fit a SN density to the CCF may be more useful for detecting stellar activity than the previously proposed parametrizations.
+Because of the advantages of using the proposed SN approach over the commonly employed approach based on the Normal density fit to the CCF and the BIS SPAN or the asymmetry parameters described in \citet{Boisse-2011} and \citet{Figueira-2013}, a SN density model for the CCF may be more useful for detecting stellar activity than the previously proposed parametrizations.
 Correlations between $\gamma$ and the SN mean RV, and between the width and the SN mean RV can be used to probe stellar activity signals in RV data, and the SN median RV can be used to estimate RV.
 
 
