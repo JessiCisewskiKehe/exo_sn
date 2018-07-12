@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{44}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Anglada-Escud{\'e} \& Butler(2012)}]{Anglada-Escude-2012}
@@ -46,6 +46,14 @@ Boisse, I., Moutou, C., Vidal-Madjar, A., {et~al.} 2009, Astronomy \&
 Cosentino, R., Lovis, C., Pepe, F., {et~al.} 2012, in Proc. SPIE, Vol. 8446,
   84461V
 
+\bibitem[{{Delisle} {et~al.}(2018){Delisle}, {S{\'e}gransan}, {Dumusque},
+  {Diaz}, {Bouchy}, {Lovis}, {Pepe}, {Udry}, {Alonso}, {Benz}, {Coffinet},
+  {Cameron}, {Deleuil}, {Figueira}, {Gillon}, {Curto}, {Mayor}, {Mordasini},
+  {Motalebi}, {Moutou}, {Pollacco}, {Pompei}, {Queloz}, {Santos}, \&
+  {Wyttenbach}}]{Delisle:2018aa}
+{Delisle}, J.-B., {S{\'e}gransan}, D., {Dumusque}, X., {et~al.} 2018, \aap,
+  614, A133
+
 \bibitem[{Desort {et~al.}(2007)Desort, Lagrange, Galland, Udry, \&
   Mayor}]{Desort-2007}
 Desort, M., Lagrange, A.-M., Galland, F., Udry, S., \& Mayor, M. 2007,
@@ -82,6 +90,10 @@ Faria, J., Haywood, R., Brewer, B., {et~al.} 2016, Astronomy \& Astrophysics,
 
 \bibitem[{Feng {et~al.}(2017)Feng, Tuomi, \& Jones}]{Feng:2017aa}
 Feng, F., Tuomi, M., \& Jones, H.~R. 2017, Astronomy \& Astrophysics, 605, A103
+
+\bibitem[{{Feng} {et~al.}(2017){Feng}, {Tuomi}, {Jones}, {Barnes},
+  {Anglada-Escud{\'e}}, {Vogt}, \& {Butler}}]{Feng:2017ac}
+{Feng}, F., {Tuomi}, M., {Jones}, H.~R.~A., {et~al.} 2017, \aj, 154, 135
 
 \bibitem[{Figueira {et~al.}(2013)Figueira, Santos, Pepe, Lovis, \&
   Nardetto}]{Figueira-2013}
@@ -132,6 +144,10 @@ Meunier, N., Desort, M., \& Lagrange, A.-M. 2010, Astronomy \& Astrophysics,
 \bibitem[{{Oshagh} {et~al.}(2013){Oshagh}, {Boisse}, {Bou{\'e}}, {Montalto},
   {Santos}, {Bonfils}, \& {Haghighipour}}]{Oshagh-2013a}
 {Oshagh}, M., {Boisse}, I., {Bou{\'e}}, G., {et~al.} 2013, \aap, 549, A35
+
+\bibitem[{{Pepe} {et~al.}(2011){Pepe}, {Lovis}, {S{\'e}gransan}, {Benz},
+  {Bouchy}, {Dumusque}, {Mayor}, {Queloz}, {Santos}, \& {Udry}}]{Pepe-2011}
+{Pepe}, F., {Lovis}, C., {S{\'e}gransan}, D., {et~al.} 2011, \aap, 534, A58
 
 \bibitem[{Pepe {et~al.}(2002)Pepe, Mayor, Galland, Naef, Queloz, Santos, Udry,
   \& Burnet}]{Pepe-2002a}
