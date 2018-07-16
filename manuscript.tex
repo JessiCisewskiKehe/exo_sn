@@ -800,7 +800,7 @@ Several RV data sets with the same stellar signal, but different planetary signa
 \item 10 different phases, evenly sampled between 0 and 2$\pi$.
 \end{itemize}
 
-For each of the 4500 simulations \jessi{please expand on how the above setting results in 4500 simulations} considered, the proposed model from Eq.~\eqref{eq:RV:correction.overall} was fit. 
+For each of the 4500 simulations we derived at first the corresponding three set of RV, namely N mean RV, SN mean RV and SN median RV. Then, the proposed model from Eq.~\eqref{eq:RV:correction.overall} was fit. 
 The use of Eq.~\eqref{eq:RV:correction.overall} leads to some additional comments.
 First, we note that both the function that corrects for stellar activity and the Keplerian signal must be simultaneously considered, as was carried out in Sec.~\ref{sec:soap.spot.planet}. 
 Because of the non-linearity of the model that defines the orbital parameters of the exoplanets, non-linear least squares \citep[][]{levenberg1944method,marquardt1963algorithm,teunissen1990nonlinear} was used. 
@@ -819,7 +819,7 @@ We selected as initial value for $t_0$ that epoch for which the largest RV was m
 %
 When providing an initial value for the orbital period $P$, an initial value far from the true one can result in the non-linear least squares algorithm getting stuck in local modes \citep[][]{levenberg1944method,marquardt1963algorithm} and, hence, incorrect estimates for the parameters of Eq.~\eqref{eq:RV:correction.overall}.
 %
-In Sec. \ref{sec:soap.spot.planet}, because the semi-amplitude of the injected exoplanet was equal to 10 \ms, \jessi{how is this a reason?  do you mean because the injected RV was large?} a good initial guess for the orbital period was available and local modes were avoided. 
+In Sec. \ref{sec:soap.spot.planet}, because the semi-amplitude of the injected exoplanet was equal to 10 \ms, the Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982} was able to detect a significant clear pick close to the true orbital period, allowing the procedure to achieve the global maximum.
 %
 In order to avoid issues with the convergence of the algorithm, the initial guess for $P$ was set to be a value close to the true orbital period for all datasets and methods considered.
 %
@@ -827,7 +827,7 @@ This simplification is reasonable in our setting because our main interest is in
 %
 This requires correct estimation of the orbital parameters of the exoplanets so to bypass one of the computational challenges related to the non-linearity of the Keplerian signal, we assumed to have a good initial guess for the orbital period. 
 %
-Correctly estimating the orbital parameters of an extrasolar planet, in particular when no assumption on the eccentricity of the orbit are available, is something to investigate in future analyses. \jessi{I don't think the previous statement is necessary - all we are doing when fixing P close to the truth is avoiding computational issues...in practice with a single dataset, more work would be done to ensure the algorithm converged.}
+%Correctly estimating the orbital parameters of an extrasolar planet, in particular when no assumption on the eccentricity of the orbit are available, is something to investigate in future analyses. \jessi{I don't think the previous statement is necessary - all we are doing when fixing P close to the truth is avoiding computational issues...in practice with a single dataset, more work would be done to ensure the algorithm converged.}
 
 Once the parameters involved in Eq.~\eqref{eq:RV:correction.overall} have been estimated,  signals in the residuals, defined as $RV - RV_{\text{activity}}$, were analyzed using a Generalized Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982, Zechmeister-2009}. 
 If a signal with a P-value\footnote{The P-values were estimated using a bootstrap procedure.} smaller than 1\% had a period compatible with the injected planetary period within an error budget of 20\%, the signal was considered significant and the corresponding planet considered detected.  
