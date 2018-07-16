@@ -648,7 +648,7 @@ A total of $1808$ CCFs that were derived from the spectra of Alpha Centauri B ta
 The selected observations represent arguably, among all RV data existing, the best sampled and most precise RV data set showing strong solar-like activity signal \citep{Thompson-2017, Dumusque-2012}.
 
 First, the correlation between $\gamma$ and BIS SPAN is evaluated.
-In the left panel of Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relationship between $\gamma$ and the BIS SPAN is linear, with a slope equal to \jessi{See question in figure about this slope} $720$ and a strong Pearson correlation coefficient of $R=0.954$. This strong correlation suggests that both $\gamma$ and BIS SPAN are measuring similar asymmetries for the CCFs. 
+In the left panel of Fig.~\ref{fig:alphacent:corr.gamma}, we see that the relationship between $\gamma$ and the BIS SPAN is linear, with a slope equal to $0.00072$ and a strong Pearson correlation coefficient of $R=0.954$. This strong correlation suggests that both $\gamma$ and BIS SPAN are measuring similar asymmetries for the CCFs. 
 It also provides a conversion between the dimensionless $\gamma$ parameter into \ms\, using the slope of 720 \ms.
 %\xavier{As $\gamma$ has no units, this will allow us to compare the amplitude of the activity signal seen in $\gamma$ and in BIS SPAN, by using the slope of this correlation as a scaling factor}.
 
@@ -657,8 +657,7 @@ It also provides a conversion between the dimensionless $\gamma$ parameter into 
 \begin{center}
 \includegraphics[height = 3.6in]{HD12862_gamma_vs_bisspan.pdf} 
 \includegraphics[height = 3.6in]{HD12862_[2]RadialVelocityDifferences.pdf} 
-   \caption{(left) Correlation between $\gamma$ and the BIS SPAN for Alpha Centauri B. The strong correlation suggests these two parameters are similarly measuring the asymmetry. \jessi{How is the slope 720?  It looks like it should be around 0.0005.} \xavier{Indeed, you can simply invert the x and y axis}
-(top right) RVs as function of Julian Day for Alpha Centauri B in 2010. The RVs are estimated using the mean of a Normal fitted to the CCF (red triangles), or the mean (black circles) or median (cyan pluses) of a SN density fitted to the CCF. (bottom right) Differences between the RVs estimated with the Normal density and those from the SN density.}
+   \caption{(left) Correlation between $\gamma$ and the BIS SPAN for Alpha Centauri B. The strong correlation suggests these two parameters are similarly measuring the asymmetry. (top right) RVs as function of Julian Day for Alpha Centauri B in 2010. The RVs are estimated using the mean of a Normal fitted to the CCF (red triangles), or the mean (black circles) or median (cyan pluses) of a SN density fitted to the CCF. (bottom right) Differences between the RVs estimated with the Normal density and those from the SN density.}
    \label{fig:alphacent:corr.gamma}
 \end{center}
 \end{figure*}
@@ -763,7 +762,7 @@ $R^{2}$      &     $0.57$    &  $0.78$ & $0.66$  \\
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Comparison for HD192310, HD10700, HD215152 and Corot-7 of the different CCF parameters derived with the Normal and the Skew Normal} \label{sec:real_data_other_stars}
 
-In the previous section we evaluated the improvement obtained by the SN parameters compared to the Normal parameters and the BIS SPAN. We carryout similar analyses for four other main sequence stars: HD192310, HD10700, HD215152 and Corot-7. The same correlations plots and residual plots displayed in the previous section for Alpha Centauri B can be found found for those new four stars in Appendix~\ref{appendix}. \jessi{Add explicit references to the datasets}
+In the previous section we evaluated the improvement obtained by the SN parameters compared to the Normal parameters and the BIS SPAN. We carryout similar analyses for four other main sequence stars: HD192310 \citep[K2V,][]{Pepe-2011}, HD10700 \citep[G8V,][]{Feng:2017ac}, HD215152 \citep[K3V,][]{Delisle:2018aa} and finally Corot-7 \citep[K0V,][]{Haywood-2014}. The same correlations plots and residual plots displayed in the previous section for Alpha Centauri B can be found found for those new four stars in Appendix~\ref{appendix}.
 
 The correlations between the parameters of these additional stars are similar to those obtained for Alpha Centauri B. The correlation between $\gamma$ and SN mean RV is the strongest among all the asymmetry-RV correlations. 
 %
@@ -801,25 +800,20 @@ Several RV data sets with the same stellar signal, but different planetary signa
 \item 10 different phases, evenly sampled between 0 and 2$\pi$.
 \end{itemize}
 
-For each of the 4500 simulations considered, the activity correction presented in Eq.~\ref{eq:RV:correction} was applied, and signals in the residuals were investigated using a Generalized Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982, Zechmeister-2009}. 
-If a signal with a P-value\footnote{The P-values were estimated using a bootstrap procedure.} smaller than 1\% had a period compatible with the injected planetary period within an error budget of 20\%, the signal was considered significant and the corresponding planet considered detected. 
-Finally, for each period considered, the minimum amplitude at which at least 80\% of the planets with different phases were detected was found. The results are shown in Fig.~\ref{fig:detection_limits}. 
-All three of the different RV estimators give similar detection limits. Though more investigations should be considered, these results suggest that any of the RV estimators can be used when searching for a planetary signal in RV data contaminated by stellar activity.
+\umberto{For each of the 4500 simulations considered, Eq. \ref{eq:RV:correction.overall} was applied. The use of Eq. \ref{eq:RV:correction.overall} leads to some additional comments. First of all we note that both the function that corrects for stellar activity and the keplerian signal must be simultaneously considered, as shown in Sec. \ref{sec:soap.spot.planet}. Because of the non linearity of the model that defines the orbital parameters of the exoplanets, non linear least squares \citep[][]{levenberg1944method,marquardt1963algorithm,teunissen1990nonlinear} must be used. In order to run the algorithm, a set of initial values for the parameters of interest has to be provided. Concerning the parameters related to the activity correction, we have chosen as initial values the ones obtained by only considering Eq.~\ref{eq:RV:correction}. The selection of the initial values for the orbital parameters of the exoplanet is more challenging. In the present study we assumed the circularity of the orbit, hence the parameters to estimate are the amplitude $K$, the epoch at the periapsis $t_0$ and the orbital period $P$. As initial value for $K$ we selected the maximum measured RV. The epoch at the periapsis $t_0$ is defined as that epoch such that the distance between the planet and the star is the smallest. Since in our simulation study the orbit of the planet in circular, the distance star--planet does not change over time, making the choice for $t_0$ arbitrary. We selected as initial value for $t_0$ that epoch for which the largest RV was measured. When providing an initial value for the orbital period $P$, we note that an initial value far from the true one can result in the non linear least squares algorithm to get stuck in local modes  \citep[][]{levenberg1944method,marquardt1963algorithm}, providing a wrong set of estimates for all the parameters of Eq. \ref{eq:RV:correction.overall} We note that in  Sec. \ref{sec:soap.spot.planet}, because the amplitude was equal to $K=10 \ms$, a good initial guess for the orbital period was available and local modes were avoided. For this reason we selected as initial guess for $P$ a value close to the true orbital period. This simplification is motivated by the fact that we are mainly interested in evaluating the goodness of the activity correction function presented in Eq.~\ref{eq:RV:correction} respect to the usual one, based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit. In order to properly do that, we need to correctly estimating the orbital parameters of the exoplanets as well. Because of the challenges related to the non linearity of the keplerian signal, we assumed to have a good initial guess for the orbital period. However, how to correctly estimating the orbital parameters of the extrasolar planet, in particular when no assumption on the eccentricity of the orbit are available, is something to investigate in future analyses.
+
+Once the parameters involved in Eq. \ref{eq:RV:correction.overall} have been estimated,  signals in the residuals, defined as $RV - RV_{\text{activity}}$, were investigated using a Generalized Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982, Zechmeister-2009}. If a signal with a P-value\footnote{The P-values were estimated using a bootstrap procedure.} smaller than 1\% had a period compatible with the injected planetary period within an error budget of 20\%, the signal was considered significant and the corresponding planet considered detected.  Finally, for each period considered, the minimum amplitude at which at least 80\% of the planets with different phases were detected was found. The results are shown in Fig.~\ref{fig:detection_limits}, where we also considered the usual function that corrects for stellar activity. We can see that the new correction for stellar activity based on Eq.~\ref{eq:RV:correction} slightly improves the detection limit of the exoplanet. Concerning the type of location parameter that defines the RV, all three of the different RV estimators give similar detection limits. Though more investigations should be considered, these results suggest that any of the RV estimators can be used when searching for a planetary signal in RV data contaminated by stellar activity.
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[height = 2.6in]{detection_limits.pdf} 
-   \caption{Detection limits of planetary signals once the stellar activity signal is removed from the raw RVs using the model proposed in  Eq.~\ref{eq:RV:correction}. \jessi{For the black-and-white versions, it would be helpful to have different line types plotted}
-The different RV estimators have similar detection limits.}
+   \caption{Detection limits of planetary signals once the stellar activity signal is removed from the raw RVs using the model proposed in Eq.~\ref{eq:RV:correction} (solid lines) or the usual correction based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit (dashed lines). The correction for stellar activity based on Eq.~\ref{eq:RV:correction} slightly improves the detection limit and the different RV estimators have similar detection limits.}
    \label{fig:detection_limits}
 \end{center}
 \end{figure}
 
-Although the detection limits remain relatively constant for the periods  $\leq$15 days, there is a notable increase in the detection limit at 20 and 30 days. 
-This is likely due to the periods of the simulated planets, 20 days and 30 days, are close to the first harmonic or to the rotational period of the star \citep[36.7 days,][]{Dumusque-2012}
-and therefore close to the semi-periodicity of the stellar activity signal. In such a case, the activity 
-correction absorbs part of the planetary signal and a stronger planetary signal is needed at these periods in order for them to be detected.
-
+Although the detection limits remain relatively constant for the periods  $\leq$20 days, there is a notable increase in the detection limit at 25 days. 
+This is likely caused by the fact that the periods of the simulated planets at 25 days are close to the first harmonic or to the rotational period of the star \citep[36.7 days,][]{Dumusque-2012} and therefore close to the semi-periodicity of the stellar activity signal.}
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Estimation of standard errors for the CCF parameters} \label{sec:5}
@@ -907,7 +901,7 @@ We saw that the SN mean RV estimator is 60\% noisier than the N mean RV estimato
 This is not necessarily a negative aspect. 
 For example, in the case where photon-noise is not dominant, stellar activity can be better characterized if its effect can be amplified by measuring the SN mean RV, even if the uncertainties related to this parameter are increased by 60\%.
 \jessi{I'm not sure I agree with the previous statements - more uncertainty means you would be less certain if the RV estimate is due to actual stellar activity or just photon noise.  It is also stated throughout that precise estimates are needed (e.g. in the conclusion)}
-
+\umberto{Xavier, can you please develop a little bit this statement? If I understood correctly, since the correlation between the width and the asymmetry of the CCF with SN mean RV is almost always the strongest, if the star is particularly active we are willing to ``sacrifice'' the precision of the RV if we can end up with a clear indication of strong activity by the star. Is it correct?}
 
 
 
@@ -924,15 +918,8 @@ Even if the different RV estimators result in different amplitudes, once the pro
 When comparing the activity correction proposed in this paper with the usual correction that only uses a linear combination of the CCF asymmetry and width, for the simulations based on the presence of a facula or a spot the new proposed correction almost entirely explains the spurious variations in RV. However, when moving to real data, there is just a slight improvement by using the proposed correction function for stellar activity. 
 A further analysis can be performed to see if certain components of the model are not relevant and that can therefore be removed.
 
-
-
-\jessi{The following paragraph needs to be updated with the new results}
-A test was carried out to see if some RV estimates were better at finding planets in RV data affected by observed stellar signals. 
-When using the new correction proposed in this paper to mitigate the effect from stellar activity and when assessing planetary detection based on a periodogram analysis, we find very similar detection limits for the three RV estimators presented in this paper. 
-\umberto{trying to understand why we get better results for P=20 days when using the usual correction}
-Therefore it seems that any of the RV estimate can be used to search for planetary signals.
-
-
+A test was carried out to see if some RV estimates were better at finding planets in RV data affected by observed stellar signals. The new correction based on Eq.~\ref{eq:RV:correction} proposed in this paper to mitigate the effect from stellar activity slightly improves the detection limit respect to the usual one based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit.
+Concerning the definition of the RV using the SN or the Normal fit, all three of the different RV estimators give similar detection limits. Therefore it seems that any of the RV estimate can be used to search for planetary signals.
 
 Finally, we investigated the precision of each of the SN and Normal parameters including the BIS SPAN. It turns out that the SN mean RV should not be used to get precise RVs as the standard errors on this parameter is 60\% greater than for N mean RV. 
 However, the SN median RV is 10\% more precise than the N mean RV. 
@@ -967,6 +954,7 @@ In addition, the uncertainties measured on SN median RV and $\gamma$ are respect
 
 Because of the advantages of using the proposed SN approach over the commonly employed approach based on the Normal density fit to the CCF and the BIS SPAN or the asymmetry parameters described in \citet{Boisse-2011} and \citet{Figueira-2013}, a SN density model for the CCF may be more useful for detecting stellar activity than the previously proposed parametrizations.
 Correlations between $\gamma$ and the SN mean RV, and between the width and the SN mean RV can be used to probe stellar activity signals in RV data, and the SN median RV can be used to estimate RV.
+\umberto{We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, this new proposed correction reduces the effect of the stellar activity signal by factors of about 2 and 3.5 over the usual model respectively for the facula and spot. When using real data and when injecting a fake planets, the detection limit slightly improved if using the new correction for stellar activity over the usual one.}
 We therefore strongly encourage the community to use this proposed SN parametrisation of the CCF.
 
 
