@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{47}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Anglada-Escud{\'e} \& Butler(2012)}]{Anglada-Escude-2012}
@@ -123,11 +123,18 @@ Kurster, M., Endl, M., Rouesnel, F., {et~al.} 2003, ASTRONOMY AND
 Lagrange, A.-M., Desort, M., \& Meunier, N. 2010, Astronomy \& Astrophysics,
   512, A38
 
+\bibitem[{Levenberg(1944)}]{levenberg1944method}
+Levenberg, K. 1944, Quarterly of applied mathematics, 2, 164
+
 \bibitem[{Lindegren \& Dravins(2003)}]{Lindegren-2003}
 Lindegren, L. \& Dravins, D. 2003, Astronomy \& Astrophysics, 401, 1185
 
 \bibitem[{Lomb(1976)}]{Lomb-1976a}
 Lomb, N.~R. 1976, Astrophysics and Space Science, 39, 447
+
+\bibitem[{Marquardt(1963)}]{marquardt1963algorithm}
+Marquardt, D.~W. 1963, Journal of the society for Industrial and Applied
+  Mathematics, 11, 431
 
 \bibitem[{{Mayor} {et~al.}(2003){Mayor}, {Pepe}, {Queloz}, {Bouchy},
   {Rupprecht}, {Lo Curto}, {Avila}, {Benz}, {Bertaux}, {Bonfils}, {Dall},
@@ -183,6 +190,9 @@ Saar, S.~H. \& Donahue, R.~A. 1997, The Astrophysical Journal, 485, 319
 
 \bibitem[{{Scargle}(1982)}]{Scargle-1982}
 {Scargle}, J.~D. 1982, \apj, 263, 835
+
+\bibitem[{Teunissen(1990)}]{teunissen1990nonlinear}
+Teunissen, P. 1990
 
 \bibitem[{Thompson {et~al.}(2017)Thompson, Watson, de~Mooij, \&
   Jess}]{Thompson-2017}

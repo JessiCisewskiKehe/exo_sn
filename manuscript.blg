@@ -1,62 +1,63 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
+This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 The style file: aa.bst
 Database file #1: mybib-SNCCF.bib
-Repeated entry---line 680 of file mybib-SNCCF.bib
+Repeated entry---line 707 of file mybib-SNCCF.bib
  : @article{Feng:2017aa
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 701 of file mybib-SNCCF.bib
+Repeated entry---line 728 of file mybib-SNCCF.bib
  : @article{Robertson-2014
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 812 of file mybib-SNCCF.bib
+Repeated entry---line 839 of file mybib-SNCCF.bib
  : @article{Faria-2016a
  :                     ,
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Arellano-2010
 Warning-- there's a number but no series in belsley1991
-You've used 44 entries,
+Warning--empty journal in teunissen1990nonlinear
+You've used 47 entries,
             3039 wiz_defined-function locations,
-            974 strings with 15544 characters,
-and the built_in function-call counts, 26645 in all, are:
-= -- 2121
-> -- 2671
-< -- 16
-+ -- 915
-- -- 849
-* -- 2349
-:= -- 4977
-add.period$ -- 44
-call.type$ -- 44
-change.case$ -- 451
-chr.to.int$ -- 44
-cite$ -- 46
-duplicate$ -- 817
-empty$ -- 1166
-format.name$ -- 962
-if$ -- 5220
+            992 strings with 15948 characters,
+and the built_in function-call counts, 27616 in all, are:
+= -- 2205
+> -- 2704
+< -- 19
++ -- 931
+- -- 858
+* -- 2411
+:= -- 5163
+add.period$ -- 47
+call.type$ -- 47
+change.case$ -- 466
+chr.to.int$ -- 47
+cite$ -- 50
+duplicate$ -- 869
+empty$ -- 1241
+format.name$ -- 974
+if$ -- 5408
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 42
-newline$ -- 136
-num.names$ -- 176
-pop$ -- 445
+missing$ -- 45
+newline$ -- 145
+num.names$ -- 188
+pop$ -- 460
 preamble$ -- 1
-purify$ -- 451
+purify$ -- 466
 quote$ -- 0
-skip$ -- 730
+skip$ -- 775
 stack$ -- 0
-substring$ -- 948
+substring$ -- 1005
 swap$ -- 14
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 393
-warning$ -- 2
-while$ -- 173
+type$ -- 420
+warning$ -- 3
+while$ -- 184
 width$ -- 0
-write$ -- 438
+write$ -- 466
 (There were 3 error messages)
