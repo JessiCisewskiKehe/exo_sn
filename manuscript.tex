@@ -800,39 +800,48 @@ Several RV data sets with the same stellar signal, but different planetary signa
 \item 10 different phases, evenly sampled between 0 and 2$\pi$.
 \end{itemize}
 
-For each of the 4500 simulations we derived at first the corresponding three set of RV, namely N mean RV, SN mean RV and SN median RV. Then, the proposed model from Eq.~\eqref{eq:RV:correction.overall} was fit. 
-The use of Eq.~\eqref{eq:RV:correction.overall} leads to some additional comments.
-First, we note that both the function that corrects for stellar activity and the Keplerian signal must be simultaneously considered, as was carried out in Sec.~\ref{sec:soap.spot.planet}. 
-Because of the non-linearity of the model that defines the orbital parameters of the exoplanets, non-linear least squares \citep[][]{levenberg1944method,marquardt1963algorithm,teunissen1990nonlinear} was used. 
-%
-In order to run the algorithm, a set of initial values for the parameters of interest has to be provided. 
-%
-For the stellar activity correction, the initial values were set at those obtained by only considering Eq.~\eqref{eq:RV:correction}. 
-The selection of the initial values for the orbital parameters of the exoplanet is more challenging. 
-In the present study we assumed a circular orbit, hence the parameters to estimate are the amplitude $K$, the epoch at the periapsis $t_0$, and the orbital period $P$. 
-The initial value for $K$ was set to the maximum measured RV \jessi{what does this mean?  when was the rv measured?}. 
-The epoch at the periapsis $t_0$ is defined as that epoch such that the distance between the planet and the star is the smallest \jessi{how is this known?  where is this value coming from?}.
-%
-Since in our simulation study the orbit of the planet in circular, the distance between the star and planet does not change over time, making the choice for $t_0$ arbitrary \jessi{do you mean the choice of the initial $t_0$ arbitrary?}. 
-%
-We selected as initial value for $t_0$ that epoch for which the largest RV was measured \jessi{again, when was the rv measured?}. 
-%
-When providing an initial value for the orbital period $P$, an initial value far from the true one can result in the non-linear least squares algorithm getting stuck in local modes \citep[][]{levenberg1944method,marquardt1963algorithm} and, hence, incorrect estimates for the parameters of Eq.~\eqref{eq:RV:correction.overall}.
-%
-In Sec. \ref{sec:soap.spot.planet}, because the semi-amplitude of the injected exoplanet was equal to 10 \ms, the Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982} was able to detect a significant clear pick close to the true orbital period, allowing the procedure to achieve the global maximum.
-%
-In order to avoid issues with the convergence of the algorithm, the initial guess for $P$ was set to be a value close to the true orbital period for all datasets and methods considered.
-%
-This simplification is reasonable in our setting because our main interest is in evaluating the goodness of the activity correction function presented in Eq.~\eqref{eq:RV:correction} compared to the usual one using $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit or  $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal model of the CCF. 
-%
-This requires correct estimation of the orbital parameters of the exoplanets so to bypass one of the computational challenges related to the non-linearity of the Keplerian signal, we assumed to have a good initial guess for the orbital period. 
+For each of the 4500 simulations we derived at first the corresponding three set of RV, namely N mean RV, SN mean RV and SN median RV. 
+\xavier{On each of those RV sets, we performed an analysis similar to Sec.~\ref{sec:soap.spot.planet}, i.e. fitting the activity signal using Eq.~\eqref{eq:RV:correction}
+or the usual correction along with a circular planetary signal (see Eq.~\eqref{eq:RV:correction.overall}). Because of the non-linearity of the model to account for the
+planet, we used a non-linear least squares for the fit \citep[][]{levenberg1944method,marquardt1963algorithm,teunissen1990nonlinear}. Such a model requires
+initial conditions close to the real solution, otherwise the algorithm can converge to a local minimum. Because our goal here is to compare the planetary detection limits
+using the three different RV estimates and the two different activity model proposed, and not to discuss what is the best method to explore the parameter space, we 
+initialised the minimisation algorithm to the real period of the planetary signal injected to avoid being blocked in a local minimum. We also selected as initial amplitude the peak-to-peak amplitude of the RV data set.
+The argument of periapsis $t_0$ was initialised to the time when the RV were crossing 0 since we use a sinusoidal function to fit the planetary signal (see Eq.~\eqref{eq:RV:correction.planet}).}
+
+%Then, the proposed model from Eq.~\eqref{eq:RV:correction.overall} was fit. 
+%The use of Eq.~\eqref{eq:RV:correction.overall} leads to some additional comments.
+%First, we note that both the function that corrects for stellar activity and the Keplerian signal must be simultaneously considered, as was carried out in Sec.~\ref{sec:soap.spot.planet}. 
+%Because of the non-linearity of the model that defines the orbital parameters of the exoplanets, non-linear least squares \citep[][]{levenberg1944method,marquardt1963algorithm,teunissen1990nonlinear} was used. 
+%%
+%In order to run the algorithm, a set of initial values for the parameters of interest has to be provided. 
+%%
+%For the stellar activity correction, the initial values were set at those obtained by only considering Eq.~\eqref{eq:RV:correction}. 
+%The selection of the initial values for the orbital parameters of the exoplanet is more challenging. 
+%In the present study we assumed a circular orbit, hence the parameters to estimate are the amplitude $K$, the epoch at the periapsis $t_0$, and the orbital period $P$. 
+%The initial value for $K$ was set to the maximum measured RV \jessi{what does this mean?  when was the rv measured?}. 
+%The epoch at the periapsis $t_0$ is defined as that epoch such that the distance between the planet and the star is the smallest \jessi{how is this known?  where is this value coming from?}.
+%%
+%Since in our simulation study the orbit of the planet in circular, the distance between the star and planet does not change over time, making the choice for $t_0$ arbitrary \jessi{do you mean the choice of the initial $t_0$ arbitrary?}. 
+%%
+%We selected as initial value for $t_0$ that epoch for which the largest RV was measured \jessi{again, when was the rv measured?}. 
+%%
+%When providing an initial value for the orbital period $P$, an initial value far from the true one can result in the non-linear least squares algorithm getting stuck in local modes \citep[][]{levenberg1944method,marquardt1963algorithm} and, hence, incorrect estimates for the parameters of Eq.~\eqref{eq:RV:correction.overall}.
+%%
+%In Sec. \ref{sec:soap.spot.planet}, because the semi-amplitude of the injected exoplanet was equal to 10 \ms, the Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982} was able to detect a significant clear pick close to the true orbital period, allowing the procedure to achieve the global maximum.
+%%
+%In order to avoid issues with the convergence of the algorithm, the initial guess for $P$ was set to be a value close to the true orbital period for all datasets and methods considered.
+%%
+%This simplification is reasonable in our setting because our main interest is in evaluating the goodness of the activity correction function presented in Eq.~\eqref{eq:RV:correction} compared to the usual one using $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit or  $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal model of the CCF. 
+%%
+%This requires correct estimation of the orbital parameters of the exoplanets so to bypass one of the computational challenges related to the non-linearity of the Keplerian signal, we assumed to have a good initial guess for the orbital period. 
 %
 %Correctly estimating the orbital parameters of an extrasolar planet, in particular when no assumption on the eccentricity of the orbit are available, is something to investigate in future analyses. \jessi{I don't think the previous statement is necessary - all we are doing when fixing P close to the truth is avoiding computational issues...in practice with a single dataset, more work would be done to ensure the algorithm converged.}
 
 Once the parameters involved in Eq.~\eqref{eq:RV:correction.overall} have been estimated,  signals in the residuals, defined as $RV - RV_{\text{activity}}$, were analyzed using a Generalized Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982, Zechmeister-2009}. 
 If a signal with a P-value\footnote{The P-values were estimated using a bootstrap procedure.} smaller than 1\% had a period compatible with the injected planetary period within an error budget of 20\%, the signal was considered significant and the corresponding planet considered detected.  
-For each period considered, the minimum amplitude at which at least 80\% of the planets with different phases were detected was found. 
-The results for the proposed and usual correction are shown in Fig.~\ref{fig:detection_limits}. 
+{\xavier{For each period considered, we searched for the minimum amplitude at which at least 80\% of the planets with different phases were detected.
+This minimum amplitude detected as a function of period is shown in Fig.~\ref{fig:detection_limits} for the three different RV estimates (N mean RV, SN mean RV, and SN median RV) when using the new stellar activity correction proposed in this paper (see Eq.~\eqref{eq:RV:correction}), and when using the usual activity correction.}
 We can see that the new correction for stellar activity based on Eq.~\eqref{eq:RV:correction} slightly improves the detection limit of the exoplanet compared to the usual approach, and the three estimators of RV give similar detection limits.
 These results suggest that any of the RV estimators can be used when searching for a planetary signal in RV data contaminated by stellar activity, though additional investigation is needed.
 
