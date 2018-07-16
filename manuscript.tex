@@ -829,18 +829,25 @@ This requires correct estimation of the orbital parameters of the exoplanets so 
 %
 Correctly estimating the orbital parameters of an extrasolar planet, in particular when no assumption on the eccentricity of the orbit are available, is something to investigate in future analyses. \jessi{I don't think the previous statement is necessary - all we are doing when fixing P close to the truth is avoiding computational issues...in practice with a single dataset, more work would be done to ensure the algorithm converged.}
 
-Once the parameters involved in Eq.~\eqref{eq:RV:correction.overall} have been estimated,  signals in the residuals, defined as $RV - RV_{\text{activity}}$, were investigated using a Generalized Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982, Zechmeister-2009}. If a signal with a P-value\footnote{The P-values were estimated using a bootstrap procedure.} smaller than 1\% had a period compatible with the injected planetary period within an error budget of 20\%, the signal was considered significant and the corresponding planet considered detected.  Finally, for each period considered, the minimum amplitude at which at least 80\% of the planets with different phases were detected was found. The results are shown in Fig.~\ref{fig:detection_limits}, where we also considered the usual function that corrects for stellar activity. We can see that the new correction for stellar activity based on Eq.~\ref{eq:RV:correction} slightly improves the detection limit of the exoplanet. Concerning the type of location parameter that defines the RV, all three of the different RV estimators give similar detection limits. Though more investigations should be considered, these results suggest that any of the RV estimators can be used when searching for a planetary signal in RV data contaminated by stellar activity.
+Once the parameters involved in Eq.~\eqref{eq:RV:correction.overall} have been estimated,  signals in the residuals, defined as $RV - RV_{\text{activity}}$, were analyzed using a Generalized Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982, Zechmeister-2009}. 
+If a signal with a P-value\footnote{The P-values were estimated using a bootstrap procedure.} smaller than 1\% had a period compatible with the injected planetary period within an error budget of 20\%, the signal was considered significant and the corresponding planet considered detected.  
+For each period considered, the minimum amplitude at which at least 80\% of the planets with different phases were detected was found. 
+The results for the proposed and usual correction are shown in Fig.~\ref{fig:detection_limits}. 
+We can see that the new correction for stellar activity based on Eq.~\eqref{eq:RV:correction} slightly improves the detection limit of the exoplanet compared to the usual approach, and the three estimators of RV give similar detection limits.
+These results suggest that any of the RV estimators can be used when searching for a planetary signal in RV data contaminated by stellar activity, though additional investigation is needed.
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[height = 2.6in]{detection_limits.pdf} 
-   \caption{Detection limits of planetary signals once the stellar activity signal is removed from the raw RVs using the model proposed in Eq.~\ref{eq:RV:correction} (solid lines) or the usual correction based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit (dashed lines). The correction for stellar activity based on Eq.~\ref{eq:RV:correction} slightly improves the detection limit and the different RV estimators have similar detection limits.}
+   \caption{Detection limits of planetary signals once the stellar activity signal is removed from the raw RVs using the model proposed in Eq.~\ref{eq:RV:correction} (solid lines) or the usual correction based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit (dashed lines). The correction for stellar activity based on Eq.~\ref{eq:RV:correction} slightly improves the detection limit and the different RV estimators have similar detection limits.
+ \jessi{to be consistent with other figures, "NEW" and "USUAL" should only have the first letter uppercase.}
+   }
    \label{fig:detection_limits}
 \end{center}
 \end{figure}
 
 Although the detection limits remain relatively constant for the periods  $\leq$20 days, there is a notable increase in the detection limit at 25 days. 
-This is likely caused by the fact that the periods of the simulated planets at 25 days are close to the first harmonic or to the rotational period of the star \citep[36.7 days,][]{Dumusque-2012} and therefore close to the semi-periodicity of the stellar activity signal.
+This is likely caused by the fact that the periods of the simulated planets at 25 days are close to the first harmonic or to the rotational period of the star \citep[36.7 days,][]{Dumusque-2012} and therefore close to the semi-periodicity of the stellar activity signal. \jessi{wouldn't a period of 30 be considered closer to the rotation period and so should also be higher based on this reasoning?}
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Estimation of standard errors for the CCF parameters} \label{sec:5}
