@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  16 JUL 2018 21:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  17 JUL 2018 00:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1282,7 +1282,7 @@ Underfull \vbox (badness 4229) has occurred while \output is active []
 File: [5]Errors_vs_SNR_all_stars.pdf Graphic file (type pdf)
 
 <use [5]Errors_vs_SNR_all_stars.pdf>
-Package pdftex.def Info: [5]Errors_vs_SNR_all_stars.pdf used on input line 895.
+Package pdftex.def Info: [5]Errors_vs_SNR_all_stars.pdf used on input line 897.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
@@ -1305,80 +1305,77 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] [15 <./detection_limits.pdf>]
 Underfull \vbox (badness 4036) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [16 <./[5]Errors_vs_SNR_all_stars.pdf>]
-<HD19231_[4]Comparison_para.pdf, id=304, 505.89pt x 505.89pt>
+<HD19231_[4]Comparison_para.pdf, id=301, 505.89pt x 505.89pt>
 File: HD19231_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD19231_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD19231_[4]Comparison_para.pdf used on input line 1075
+Package pdftex.def Info: HD19231_[4]Comparison_para.pdf used on input line 1079
 .
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=305
+<NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=302
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 1085.
+city_vs_time.pdf used on input line 1089.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<HD10700_[4]Comparison_para.pdf, id=306, 505.89pt x 505.89pt>
+<HD10700_[4]Comparison_para.pdf, id=303, 505.89pt x 505.89pt>
 File: HD10700_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD10700_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD10700_[4]Comparison_para.pdf used on input line 1099
+Package pdftex.def Info: HD10700_[4]Comparison_para.pdf used on input line 1103
 .
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=307
+<NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=304
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 1109.
+city_vs_time.pdf used on input line 1113.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<HD21515_[4]Comparison_para.pdf, id=308, 505.89pt x 505.89pt>
+<HD21515_[4]Comparison_para.pdf, id=305, 505.89pt x 505.89pt>
 File: HD21515_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD21515_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD21515_[4]Comparison_para.pdf used on input line 1122
+Package pdftex.def Info: HD21515_[4]Comparison_para.pdf used on input line 1126
 .
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=309
+<NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=306
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 1134.
+city_vs_time.pdf used on input line 1138.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<LRa01_E_[4]Comparison_para.pdf, id=310, 505.89pt x 505.89pt>
+<LRa01_E_[4]Comparison_para.pdf, id=307, 505.89pt x 505.89pt>
 File: LRa01_E_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use LRa01_E_[4]Comparison_para.pdf>
-Package pdftex.def Info: LRa01_E_[4]Comparison_para.pdf used on input line 1145
+Package pdftex.def Info: LRa01_E_[4]Comparison_para.pdf used on input line 1149
 .
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-<NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=311
+<NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf, id=308
 , 505.89pt x 505.89pt>
 File: NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf Gr
 aphic file (type pdf)
 
 <use NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 1156.
+city_vs_time.pdf used on input line 1160.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
 (./manuscript.bbl
@@ -1394,41 +1391,37 @@ adialVelocity_vs_time.pdf>] [22 <./HD21515_[4]Comparison_para.pdf>] [23 <./NEW_
 CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>] [24 <./LRa
 01_E_[4]Comparison_para.pdf>] [25 <./NEW_CORRECTIONLRa01_E_[3]CorrectionActivit
 y_RadialVelocity_vs_time.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1289.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1289.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1293.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1293.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1289.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1289.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 843 ({)
-### bottom level 
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1293.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1293.
+ ) 
 Here is how much of TeX's memory you used:
  10267 strings out of 493014
  145429 string characters out of 6133351
- 296279 words of memory out of 5000000
+ 295180 words of memory out of 5000000
  13522 multiletter control sequences out of 15000+600000
  121120 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,45p,2195b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxbmi.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/txfonts/txsyb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
-w/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helve
-tic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (25 pages, 2659376 bytes).
+ 41i,13n,45p,2195b,366s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxbmi.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/txfonts/txex.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txf
+onts/txsyb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhv
+b8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on manuscript.pdf (25 pages, 2657254 bytes).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
+ 441 PDF objects out of 1000 (max. 8388607)
  299 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)

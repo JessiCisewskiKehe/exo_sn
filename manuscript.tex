@@ -840,23 +840,25 @@ The argument of periapsis $t_0$ was initialised to the time when the RV were cro
 
 Once the parameters involved in Eq.~\eqref{eq:RV:correction.overall} have been estimated,  signals in the residuals, defined as $RV - RV_{\text{activity}}$, were analyzed using a Generalized Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982, Zechmeister-2009}. 
 If a signal with a P-value\footnote{The P-values were estimated using a bootstrap procedure.} smaller than 1\% had a period compatible with the injected planetary period within an error budget of 20\%, the signal was considered significant and the corresponding planet considered detected.  
-{\xavier{For each period considered, we searched for the minimum amplitude at which at least 80\% of the planets with different phases were detected.
+\xavier{For each period considered, we searched for the minimum amplitude at which at least 80\% of the planets with different phases were detected.
 This minimum amplitude detected as a function of period is shown in Fig.~\ref{fig:detection_limits} for the three different RV estimates (N mean RV, SN mean RV, and SN median RV) when using the new stellar activity correction proposed in this paper (see Eq.~\eqref{eq:RV:correction}), and when using the usual activity correction.}
-We can see that the new correction for stellar activity based on Eq.~\eqref{eq:RV:correction} slightly improves the detection limit of the exoplanet compared to the usual approach, and the three estimators of RV give similar detection limits.
-These results suggest that any of the RV estimators can be used when searching for a planetary signal in RV data contaminated by stellar activity, though additional investigation is needed.
+We can see that the new correction for stellar activity based on Eq.~\eqref{eq:RV:correction} \xavier{improves by 12\% on average} the detection limit of the exoplanet compared to the usual approach, and the three estimators of RV give similar detection limits.
+These results therefore suggest that any of the RV estimators can be used when searching for a planetary signal in RV data contaminated by stellar activity, \xavier{and using our new model to account for stellar activity allows to detect planetary signals with a slightly smaller amplitude that the usual correction using only a linear correlation with the FWHM and BIS SPAN.}
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[height = 2.6in]{detection_limits.pdf} 
-   \caption{Detection limits of planetary signals once the stellar activity signal is removed from the raw RVs using the model proposed in Eq.~\ref{eq:RV:correction} (solid lines) or the usual correction based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit (dashed lines). The correction for stellar activity based on Eq.~\ref{eq:RV:correction} slightly improves the detection limit and the different RV estimators have similar detection limits.
- \jessi{to be consistent with other figures, "NEW" and "USUAL" should only have the first letter uppercase.}
-   }
+   \caption{Detection limits of planetary signals once the stellar activity signal is removed from the raw RVs using the model proposed in Eq.~\ref{eq:RV:correction} (solid lines) or the usual correction based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit (dashed lines). The correction for stellar activity based on Eq.~\ref{eq:RV:correction} \xavier{improves by 12\% on average} the detection limit and the different RV estimators have similar detection limits.}
    \label{fig:detection_limits}
 \end{center}
 \end{figure}
 
-Although the detection limits remain relatively constant for the periods  $\leq$20 days, there is a notable increase in the detection limit at 25 days. 
-This is likely caused by the fact that the periods of the simulated planets at 25 days are close to the first harmonic or to the rotational period of the star \citep[36.7 days,][]{Dumusque-2012} and therefore close to the semi-periodicity of the stellar activity signal. \jessi{wouldn't a period of 30 be considered closer to the rotation period and so should also be higher based on this reasoning?}
+%Although the detection limits remain relatively constant for the periods  $\leq$20 days, there is a notable increase in the detection limit at 25 days. 
+%This is probably due to interaction between the planetary signal and the stellar activity, however 
+%
+%the fact that the simulated planets at 25 days are close to the first harmonic or to the rotational period of the star \citep[36.7 days,][]{Dumusque-2012}.
+%However this reasoning 
+%This is likely caused by the fact that the periods of the simulated planets at 25 days are close to the first harmonic or to the rotational period of the star \citep[36.7 days,][]{Dumusque-2012} and therefore close to the semi-periodicity of the stellar activity signal. \jessi{wouldn't a period of 30 be considered closer to the rotation period and so should also be higher based on this reasoning?}
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Estimation of standard errors for the CCF parameters} \label{sec:5}
@@ -941,13 +943,15 @@ This implies that the mean of the SN density appears to be more sensitive to var
 
 Having an estimator of RV that is more sensitive to stellar activity, such as the SN mean RV, can also help to better probe stellar rotational periods or to better understand the covariance of stellar signals when fitting a Gaussian Process to the RVs \citep[e.g.][]{Faria-2016a, Haywood-2014}. 
 We saw that the SN mean RV estimator is 60\% noisier than the N mean RV estimator. 
-This is not necessarily a negative aspect. 
-For example, in the case where photon-noise is not dominant, stellar activity can be better characterized if its effect can be amplified by measuring the SN mean RV, even if the uncertainties related to this parameter are increased by 60\%.
-\jessi{I'm not sure I agree with the previous statements - more uncertainty means you would be less certain if the RV estimate is due to actual stellar activity or just photon noise.  It is also stated throughout that precise estimates are needed (e.g. in the conclusion)}
-\umberto{Xavier, can you please develop a little bit this statement? If I understood correctly, since the correlation between the width and the asymmetry of the CCF with SN mean RV is almost always the strongest, if the star is particularly active we are willing to ``sacrifice'' the precision of the RV if we can end up with a clear indication of strong activity by the star. Is it correct?}
-
-
-
+\xavier{This is of course a problem for photon-noise limited observations. However, when looking at bright
+stars like $\alpha$\,Centauri\,B or HD10700, increasing the photon noise by 60\% will not have any impact
+on the RV precision as the instrumental noise will dominate the data. Therefore, for bright targets, stellar activity 
+can be better characterized by using SN mean RV as this RV estimate is more sensitive to it.}
+%
+%This is not necessarily a negative aspect. 
+%For example, in the case where photon-noise is not dominant, stellar activity can be better characterized if its effect can be amplified by measuring the SN mean RV, even if the uncertainties related to this parameter are increased by 60\%.
+%\jessi{I'm not sure I agree with the previous statements - more uncertainty means you would be less certain if the RV estimate is due to actual stellar activity or just photon noise.  It is also stated throughout that precise estimates are needed (e.g. in the conclusion)}
+%\umberto{Xavier, can you please develop a little bit this statement? If I understood correctly, since the correlation between the width and the asymmetry of the CCF with SN mean RV is almost always the strongest, if the star is particularly active we are willing to ``sacrifice'' the precision of the RV if we can end up with a clear indication of strong activity by the star. Is it correct?}
 
 
 We also propose a new model to correct the estimated RV data for stellar activity signals. 
@@ -997,7 +1001,7 @@ In addition, the uncertainties measured on SN median RV and $\gamma$ are respect
 
 Because of the advantages of using the proposed SN approach over the commonly employed approach based on the Normal density fit to the CCF and the BIS SPAN or the asymmetry parameters described in \citet{Boisse-2011} and \citet{Figueira-2013}, a SN density model for the CCF may be more useful for detecting stellar activity than the previously proposed parametrizations.
 Correlations between $\gamma$ and the SN mean RV, and between the width and the SN mean RV can be used to probe stellar activity signals in RV data, and the SN median RV can be used to estimate RV.
-\umberto{We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, this new proposed correction reduces the effect of the stellar activity signal by factors of about 2 and 3.5 over the usual model respectively for the facula and spot. When using real data and when injecting a fake planets, the detection limit slightly improved if using the new correction for stellar activity over the usual one.}
+We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, this new proposed correction reduces the effect of the stellar activity signal by factors of about 2 and 3.5 over the usual model respectively for the facula and spot. \xavier{When applying this model on real data, the improvement is not as large, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.}
 We therefore strongly encourage the community to use this proposed SN parametrisation of the CCF.
 
 
