@@ -388,6 +388,7 @@ We investigate this feature further in the following two sections, where we cons
 \includegraphics[height = 6in]{SOAP_FACULAE_Comparison_para_SN.pdf} 
    \caption{(left) Correlations between the different asymmetry parameters and their corresponding RV estimates in the case of an equatorial 3\% facula on the simulated Sun. (right) Correlations between the different width parameters and their corresponding RV estimates for the same facula.
    In the presence of a facula, both the shape and the width of the CCF change as the star rotates, producing statistically significant correlations.
+ \jessi{Are all these correlations statistically significant?  Even the bottom left?  If not, the previous statement should be modified}
    }
     \label{fig:faculae.corr}
 \end{center}
@@ -901,8 +902,8 @@ as the precision on this parameter is 60\% worse than the precision on the RVs d
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{[5]Errors_vs_SNR_all_stars.pdf} 
-   \caption{\textit{Bootstrap analyses on the stars HD215152, HD192310 and Corot-7}. (top) Comparison between the standard errors from the bootstrap analysis of the estimated RVs, FWHM, and asymmetry parameters using the SN fit and the common strategy (Normal fit and BIS SPAN). (bottom) Ratio between the standard errors retrieved on the parameters derived from the common strategy and the corresponding standard errors retrieved on the parameters derived from the SN fit. When using SN mean RV (black circles), the standard errors are in average $60\%$ larger than the standard errors of N mean RV (red triangles). However, the standard errors for SN median RV (cyan pluses) are on average $10\%$ smaller than the standard errors coming from the N mean RV. 
-   The use of the asymmetry SN parameter $\gamma$ leads to standard errors in average $15\%$ smaller than the standard errors related to the BIS SPAN. Note that for the asymmetry, the error in BIS SPAN is in \ms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN.}
+   \caption{Results of the bootstrap analyses on the stars HD215152, HD192310 and Corot-7. (top) Comparison between the standard errors from the bootstrap analysis of the estimated RVs, FWHM, and asymmetry parameters using the SN fit and the common strategy (Normal fit and BIS SPAN). (bottom) Ratio between the standard errors estimated on the parameters derived from the common strategy and the corresponding standard errors estimated on the parameters derived from the SN fit. When using SN mean RV (black circles), the standard errors are in average $60\%$ larger than the standard errors of N mean RV (red triangles). However, the standard errors for SN median RV (cyan pluses) are on average $10\%$ smaller than the standard errors coming from the N mean RV. 
+   The use of the asymmetry SN parameter $\gamma$ leads to standard errors in average $15\%$ smaller than the standard errors related to the BIS SPAN. Note that for asymmetry, the error in BIS SPAN is in \ms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN.}
    \label{fig:se}
 \end{center}
 \end{figure*}
@@ -1045,7 +1046,7 @@ Corot-7 has therefore on average a much lower SNR at 550 nm than the others star
 
 \small{
 \begin{table*}[!t]
-\caption{Notable correlations between the asymmetry or the FWHM parameters and the RVs for four stars: $\text{HD}192310$,  $\text{HD}10700$, $\text{HD}215152$ and $\text{Corot }7$. The complete results of the analyses of the correlations for the four stars are presented in Fig. \ref{fig:Gliese785:corrPlot}, \ref{fig:Tau:corrPlot}, \ref{fig:HD215152:corrPlot}, and \ref{fig:Corot7:corrPlot}.}
+\caption{Notable correlations between the asymmetry or the FWHM parameters and the estimated RVs for four stars: $\text{HD}192310$,  $\text{HD}10700$, $\text{HD}215152$ and $\text{Corot }7$. The complete results of the analyses of the correlations for the four stars are presented in Fig. \ref{fig:Gliese785:corrPlot}, \ref{fig:Tau:corrPlot}, \ref{fig:HD215152:corrPlot}, and \ref{fig:Corot7:corrPlot}.}
 \label{table:summaryStars}
 \begin{center}
 \scalebox{0.9}{
@@ -1095,7 +1096,7 @@ Corot-7 has therefore on average a much lower SNR at 550 nm than the others star
 \includegraphics[height = 6in]{NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
    \caption{(top) The RVs (black dots) for $\text{HD}192310$ estimated using a SN and a Normal fit.
    %
- (bottom) The residuals from the model fit using Eq.~\eqref{eq:RV:correction} (New corr. std--black dots) and the residuals from the usual correction (Usual corr. std--blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit. The residuals for both the proposed correction from stellar activity are comparable.
+ (bottom) The residuals from the model fit using Eq.~\eqref{eq:RV:correction} (New corr. std--black dots) and the residuals from the usual correction (Usual corr. std--blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the Normal fit. The residuals for both the proposed correction from stellar activity are comparable.
  }
    \label{fig:HD192310:correctionRV}
 \end{center}
@@ -1119,7 +1120,7 @@ The correlations are consistently stronger when using SN mean RV compared to N m
 \includegraphics[height = 6in]{NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
    \caption{(top) The RVs (black dots) for $\text{HD}10700$ estimated using a SN and a Normal fit.
    %
- (bottom) The residuals from the model fit using Eq.~\eqref{eq:RV:correction} (New corr. std--black dots) and the residuals from the usual correction (Usual corr. std--blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit. The residuals for both the proposed correction from stellar activity are comparable.}
+ (bottom) The residuals from the model fit using Eq.~\eqref{eq:RV:correction} (New corr. std--black dots) and the residuals from the usual correction (Usual corr. std--blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the Normal fit. The residuals for both the proposed correction from stellar activity are comparable.}
    \label{fig:HD10700:correctionRV}
 \end{center}
 \end{figure*}
@@ -1144,7 +1145,7 @@ The p--values associated with each $R$ are not statistically significant for the
 \includegraphics[height = 6in]{NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
    \caption{(top) The RVs (black dots) for $\text{HD}215152$ estimated using a SN and a Normal fit.
    %
- (bottom) The residuals from the model fit using Eq.~\eqref{eq:RV:correction} (New corr. std--black dots) and the residuals from the usual correction (Usual corr. std--blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit. The residuals for both the proposed correction from stellar activity are comparable.}
+ (bottom) The residuals from the model fit using Eq.~\eqref{eq:RV:correction} (New corr. std--black dots) and the residuals from the usual correction (Usual corr. std--blue triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the Normal fit. The residuals for both the proposed correction from stellar activity are comparable.}
    \label{fig:HD215152:correctionRV}
 \end{center}
 \end{figure*}
