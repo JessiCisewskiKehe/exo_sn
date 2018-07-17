@@ -227,7 +227,7 @@ Examples of SN densities under different skewness parameter values and the same 
 \begin{figure}[t]
 \begin{center}
 \includegraphics[height = 2.3in]{Skew_Normal_densities_jjck.pdf} 
-   \caption{Density function of a random variable $Y$ following the SN distribution $SN(\xi, \omega, \alpha)$ with location parameter $\xi = 0$, scale parameter $\omega = 1$ and different values of the skewness parameter $\alpha$ indicated by different colors and line types. Note that the solid black line has an $\alpha = 0$ making it a Normal distribution.}
+   \caption{Density function of a random variable $Y$ following a SN distribution $SN(\xi, \omega, \alpha)$ with location parameter $\xi = 0$, scale parameter $\omega = 1$ and different values of the skewness parameter $\alpha$ indicated by different colors and line types. Note that the solid black line has an $\alpha = 0$ making it a Normal distribution.}
    \label{fig:SN.plot}
 \end{center}
 \end{figure}
@@ -292,7 +292,7 @@ The values $x_1, \ldots, x_n$ are the different values of the x-axis of the CCF,
 %%%   \centering
 %%%\includegraphics[height = 2.5in]{[1]HD128621Residuals.pdf} 
 %%%\includegraphics[height = 2.5in]{[1]LRa01_E2Residuals.pdf} 
-%%%   \caption{Comparison between the Normal (black circles) and the SN (red crosses) residuals using CCF's from the star Alpha Centauri B (left) and Corot-7 (right). When looking at the residuals corresponding to the center of the CCF, the SN fit leads to slightly better results for both stars.} %Moreover, as the SNR decreases, the SN density shows smaller residuals respect the Normal ones.}
+%%%   \caption{Comparison between the Normal (black circles) and the SN (red pluses) residuals using CCF's from the star Alpha Centauri B (left) and Corot-7 (right). When looking at the residuals corresponding to the center of the CCF, the SN fit leads to slightly better results for both stars.} %Moreover, as the SNR decreases, the SN density shows smaller residuals respect the Normal ones.}
 %%%    \label{fig:Residual.comparison}
 %%%\end{figure*}
 %%%%
@@ -387,7 +387,8 @@ We investigate this feature further in the following two sections, where we cons
 \begin{center}
 \includegraphics[height = 6in]{SOAP_FACULAE_Comparison_para_SN.pdf} 
    \caption{(left) Correlations between the different asymmetry parameters and their corresponding RV estimates in the case of an equatorial 3\% facula on the simulated Sun. (right) Correlations between the different width parameters and their corresponding RV estimates for the same facula.
-   In the presence of a facula, both the shape and the width of the CCF change as the star rotates, producing statistically significant correlations.}
+   In the presence of a facula, both the shape and the width of the CCF change as the star rotates, producing statistically significant correlations.
+   }
     \label{fig:faculae.corr}
 \end{center}
 \end{figure*}
@@ -402,9 +403,9 @@ When comparing the correction proposed in Eq.~\eqref{eq:RV:correction} with what
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{FACULAE_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
-   \caption{(top) The spurious estimated RVs (black dots) caused by a facula in the simulated data using a Normal and a SN model, the estimated RVs using Eq.~\eqref{eq:RV:correction} (red crosses), and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the Normal fit.    
+   \caption{(top) The spurious estimated RVs (black dots) caused by a facula in the simulated data using a Normal and a SN model, the estimated RVs using Eq.~\eqref{eq:RV:correction} (red pluses), and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the Normal fit.    
    %
- (bottom) The residuals from the model fit using Eq.~\eqref{eq:RV:correction} (red crosses) and the residuals from the usual correction (green triangles). The std. are also reported in the legend, and the residuals have a smaller systematic component when using the proposed model of Eq.~\eqref{eq:RV:correction} compared to the usual model.
+ (bottom) The residuals from the model fit using Eq.~\eqref{eq:RV:correction} (red pluses) and the residuals from the usual correction (green triangles). The std. are also reported in the legend, and the residuals have a smaller systematic component when using the proposed model of Eq.~\eqref{eq:RV:correction} compared to the usual model.
 The tests of statistical significance on the parameters are presented in Table \ref{table:faculae.test}.
 }\label{fig:faculae.correction}
 \end{center}
@@ -485,9 +486,9 @@ The Normal or SN parameters involved in Eq.~\eqref{eq:RV:correction} are all sta
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{Spot_NEW_CORRECTION_[3]CorrectionActivity_RadialVelocity_vs_time.pdf} 
-   \caption{(top) The spurious estimated RVs (black dots) caused by a spot in the simulated data, the estimated RVs using Eq.~\eqref{eq:RV:correction} (red crosses) and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit.
+   \caption{(top) The spurious estimated RVs (black dots) caused by a spot in the simulated data, the estimated RVs using Eq.~\eqref{eq:RV:correction} (red pluses) and the estimated RVs using the usual correction for stellar activity (green triangles), based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit.
    %
- (bottom) The residuals from the model fit using Eq.~\eqref{eq:RV:correction} (red crosses) and the residuals from the usual correction (green triangles). 
+ (bottom) The residuals from the model fit using Eq.~\eqref{eq:RV:correction} (red pluses) and the residuals from the usual correction (green triangles). 
  The std. are also reported in the legend, and the residuals have a smaller systematic component when using the proposed model compared to the usual model.
 The tests of statistical significance on the parameters are presented in Table~\ref{table:spot.test}.
 }
@@ -681,7 +682,7 @@ as we saw in Sec.~\ref{sec:soap.spot} a spot induces a negative correlation betw
 %\begin{figure*}[htbp]
 %   \centering
 %\includegraphics[height = 3in]{HD12862_[2]RadialVelocityDifferences.pdf} 
-%   \caption{(top) RVs as function of Julian Day for Alpha Centauri B. The RVs are retrieved using the mean of the Normal (red triangles), SN mean RV (black circles), SN median RV (cyan crosses). (bottom) RV differences between Normal RV and SN mean RV (black circles) and between Normal RV and a SN median RV (cyan crosses).}
+%   \caption{(top) RVs as function of Julian Day for Alpha Centauri B. The RVs are retrieved using the mean of the Normal (red triangles), SN mean RV (black circles), SN median RV (cyan pluses). (bottom) RV differences between Normal RV and SN mean RV (black circles) and between Normal RV and a SN median RV (cyan pluses).}
 %   \label{fig:alphacent:diff:RV}
 %\end{figure*}
 %
@@ -900,7 +901,7 @@ as the precision on this parameter is 60\% worse than the precision on the RVs d
 \begin{figure*}[htbp]
 \begin{center}
 \includegraphics[height = 6in]{[5]Errors_vs_SNR_all_stars.pdf} 
-   \caption{\textit{Bootstrap analyses on the stars HD215152, HD192310 and Corot-7}. (top) Comparison between the standard errors from the bootstrap analysis of the estimated RVs, FWHM, and asymmetry parameters using the SN fit and the common strategy (Normal fit and BIS SPAN). (bottom) Ratio between the standard errors retrieved on the parameters derived from the common strategy and the corresponding standard errors retrieved on the parameters derived from the SN fit. When using SN mean RV (black circles), the standard errors are in average $60\%$ larger than the standard errors of N mean RV (red triangles). However, the standard errors for SN median RV (cyan crosses) are on average $10\%$ smaller than the standard errors coming from the N mean RV. 
+   \caption{\textit{Bootstrap analyses on the stars HD215152, HD192310 and Corot-7}. (top) Comparison between the standard errors from the bootstrap analysis of the estimated RVs, FWHM, and asymmetry parameters using the SN fit and the common strategy (Normal fit and BIS SPAN). (bottom) Ratio between the standard errors retrieved on the parameters derived from the common strategy and the corresponding standard errors retrieved on the parameters derived from the SN fit. When using SN mean RV (black circles), the standard errors are in average $60\%$ larger than the standard errors of N mean RV (red triangles). However, the standard errors for SN median RV (cyan pluses) are on average $10\%$ smaller than the standard errors coming from the N mean RV. 
    The use of the asymmetry SN parameter $\gamma$ leads to standard errors in average $15\%$ smaller than the standard errors related to the BIS SPAN. Note that for the asymmetry, the error in BIS SPAN is in \ms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN.}
    \label{fig:se}
 \end{center}
@@ -1256,12 +1257,12 @@ The p--values associated with each $R$ are not statistically significant for the
 %
 %We start by calculating the standard errors of the parameters retrieved in Sec. \ref{sec:soap}, where with SOAP we produced CCF's presenting spurious variations in RVs caused by a faculae or by a spot. In the third and final case we considered, beyond the spot, a planetary signal that produces pure Doppler-shifts in the CCF's.
 %
-%Fig.~\ref{fig:se.soap.faculae} shows the results of the bootstrap analysis performed when a faculae is present on the photosphere of the star. The series of three plots in the top of Fig.~\ref{fig:se.soap.faculae} shows the different errors for the RVs, defined as RV (red triangles), SN mean RV (black circles) or SN median RV (cyan crosses), the width of the CCF, defined as FWHM (red triangles) or SN FWHM (black circles) and the asymmetry of the CCF, defined as $\gamma$ (black circles) or BIS SPAN (red triangles). In the series of three plots in the bottom of Fig.~\ref{fig:se.soap.faculae} we show the ratio between errors associated to the parameters derived from the bootstrap analysis fitting the SN and the errors associated to the parameters derived from the bootstrap analysis fitting the Normal density.  We used the same notation also for the other two cases, where respectively a spot is present on the photosphere of the star (Fig.~\ref{fig:se.soap.spot}) and a spot and a planet are introducing both spurious and pure variations in the RVs (Fig.~\ref{fig:se.soap.spot.planet}). Concerning the standard errors related to the RVs if a faculae is creating spurious signals, the ratio between the RV error measured by the bootstrap using the SN and Normal fitting is $1.4$, when using SN mean RV and $0.8$ when using SN median RV. By using SN median RV we get standard errors $20\%$ smaller than using the Normal fit and its corresponding mean. Regarding the errors in width of the CCF, we see that the bootstrap analysis for the Normal and the SN are comparable. Therefore, the precision in the width of the CCF is the comparable if we fit a Normal or a SN to the CCF. Finally, for the errors in evaluating the asymmetry of the CCF, we see that, when fitting the SN to the CCF, the asymmetry errors are $20\%$ smaller. Therefore, the SN fit gives a better precision in CCF asymmetry than what can be reached using BIS SPAN.
+%Fig.~\ref{fig:se.soap.faculae} shows the results of the bootstrap analysis performed when a faculae is present on the photosphere of the star. The series of three plots in the top of Fig.~\ref{fig:se.soap.faculae} shows the different errors for the RVs, defined as RV (red triangles), SN mean RV (black circles) or SN median RV (cyan pluses), the width of the CCF, defined as FWHM (red triangles) or SN FWHM (black circles) and the asymmetry of the CCF, defined as $\gamma$ (black circles) or BIS SPAN (red triangles). In the series of three plots in the bottom of Fig.~\ref{fig:se.soap.faculae} we show the ratio between errors associated to the parameters derived from the bootstrap analysis fitting the SN and the errors associated to the parameters derived from the bootstrap analysis fitting the Normal density.  We used the same notation also for the other two cases, where respectively a spot is present on the photosphere of the star (Fig.~\ref{fig:se.soap.spot}) and a spot and a planet are introducing both spurious and pure variations in the RVs (Fig.~\ref{fig:se.soap.spot.planet}). Concerning the standard errors related to the RVs if a faculae is creating spurious signals, the ratio between the RV error measured by the bootstrap using the SN and Normal fitting is $1.4$, when using SN mean RV and $0.8$ when using SN median RV. By using SN median RV we get standard errors $20\%$ smaller than using the Normal fit and its corresponding mean. Regarding the errors in width of the CCF, we see that the bootstrap analysis for the Normal and the SN are comparable. Therefore, the precision in the width of the CCF is the comparable if we fit a Normal or a SN to the CCF. Finally, for the errors in evaluating the asymmetry of the CCF, we see that, when fitting the SN to the CCF, the asymmetry errors are $20\%$ smaller. Therefore, the SN fit gives a better precision in CCF asymmetry than what can be reached using BIS SPAN.
 %
 %\begin{figure*}[htbp]
 %\begin{center}
 %\includegraphics[height = 6in]{RV_comparison_FACULAE_standard_errors.pdf} 
-%   \caption{Faculae Case. Comparison between the standard errors using the bootstrap analysis for the RVs, the FWHM and the asymmetry parameter. When using SN mean RV (black circles), the standard errors are in average $40\%$ larger than the standard errors retrieved fitting a Normal (red triangles). However, if using SN median RV (cyan crosses), the standard errors are in average $20\%$ smaller than the standard errors coming from the Normal fit. To use as asymmetry parameter $\gamma$ of the SN leads to standard errors in average $20\%$ smaller than the standard errors related to the BIS SPAN. \umberto{explain what happens for those CCF 15 to 19 where s.e. decrease.} Note that for the asymmetry, the error in BIS SPAN is in \kms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN.}
+%   \caption{Faculae Case. Comparison between the standard errors using the bootstrap analysis for the RVs, the FWHM and the asymmetry parameter. When using SN mean RV (black circles), the standard errors are in average $40\%$ larger than the standard errors retrieved fitting a Normal (red triangles). However, if using SN median RV (cyan pluses), the standard errors are in average $20\%$ smaller than the standard errors coming from the Normal fit. To use as asymmetry parameter $\gamma$ of the SN leads to standard errors in average $20\%$ smaller than the standard errors related to the BIS SPAN. \umberto{explain what happens for those CCF 15 to 19 where s.e. decrease.} Note that for the asymmetry, the error in BIS SPAN is in \kms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN.}
 %   \label{fig:se.soap.faculae}
 %\end{center}
 %\end{figure*}
@@ -1271,7 +1272,7 @@ The p--values associated with each $R$ are not statistically significant for the
 %\begin{figure*}[htbp]
 %\begin{center}
 %\includegraphics[height = 6in]{RV_comparison_SPOT_standard_errors.pdf} 
-%   \caption{Spot case. Comparison between the standard errors using the bootstrap analysis for the RVs, the FWHM and the asymmetry parameter. When using SN mean RV (black circles), the standard errors are in average $30\%$ larger than the standard errors retrieved fitting a Normal (red triangles). However, if using SN median RV (cyan crosses), the standard errors are in average $20\%$ smaller than the standard errors coming from the Normal fit. To use as asymmetry parameter $\gamma$ of the SN leads to standard errors in average $20\%$ smaller than the standard errors related to the BIS SPAN. Note that for the asymmetry, the error in BIS SPAN is in \kms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN.}
+%   \caption{Spot case. Comparison between the standard errors using the bootstrap analysis for the RVs, the FWHM and the asymmetry parameter. When using SN mean RV (black circles), the standard errors are in average $30\%$ larger than the standard errors retrieved fitting a Normal (red triangles). However, if using SN median RV (cyan pluses), the standard errors are in average $20\%$ smaller than the standard errors coming from the Normal fit. To use as asymmetry parameter $\gamma$ of the SN leads to standard errors in average $20\%$ smaller than the standard errors related to the BIS SPAN. Note that for the asymmetry, the error in BIS SPAN is in \kms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN.}
 %   \label{fig:se.soap.spot}
 %\end{center}
 %\end{figure*}
@@ -1281,7 +1282,7 @@ The p--values associated with each $R$ are not statistically significant for the
 %\begin{figure*}[htbp]
 %\begin{center}
 %\includegraphics[height = 6in]{RV_comparison_SPOT_PLANET_standard_errors.pdf} 
-%   \caption{Spot and Planet case. Comparison between the standard errors using the bootstrap analysis for the RVs, the FWHM and the asymmetry parameter. When using SN mean RV (black circles), the standard errors are in average $30\%$ larger than the standard errors retrieved fitting a Normal (red triangles). However, if using SN median RV (cyan crosses), the standard errors are in average $20\%$ smaller than the standard errors coming from the Normal fit. To use as asymmetry parameter $\gamma$ of the SN leads to standard errors in average $15\%$ smaller than the standard errors related to the BIS SPAN. Note that for the asymmetry, the error in BIS SPAN is in \kms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN.}
+%   \caption{Spot and Planet case. Comparison between the standard errors using the bootstrap analysis for the RVs, the FWHM and the asymmetry parameter. When using SN mean RV (black circles), the standard errors are in average $30\%$ larger than the standard errors retrieved fitting a Normal (red triangles). However, if using SN median RV (cyan pluses), the standard errors are in average $20\%$ smaller than the standard errors coming from the Normal fit. To use as asymmetry parameter $\gamma$ of the SN leads to standard errors in average $15\%$ smaller than the standard errors related to the BIS SPAN. Note that for the asymmetry, the error in BIS SPAN is in \kms. To be able to compare the errors in $\gamma$ and BIS SPAN, we multiplied the error in $\gamma$ by the slope of the correlation between $\gamma$ and BIS SPAN.}
 %   \label{fig:se.soap.spot.planet}
 %\end{center}
 %\end{figure*}
