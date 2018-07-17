@@ -917,7 +917,7 @@ as the precision on this parameter is 60\% worse than the precision on the RVs d
 
 When fitting a SN density shape to the CCF, parameters used to define the RV (i.e. the CCF barycenter), the amplitude (sometimes called the CCF contrast), the width and the asymmetry of the CCF can all be estimated in a single model framework.
 For the estimation of the RV, we investigated the use of the mean and the median of the SN density. 
-The width is derived using the variance of the SN density (SN FWHM$=2\sqrt{2ln(2)\sigma^2}$) and the asymmetry by using $\gamma$, skewness parameter of the SN density.
+The width is derived using the variance of the SN density (SN FWHM$=2\sqrt{2\text{ln}(2)\sigma^2}$) and the asymmetry by using $\gamma$, skewness parameter of the SN density.
 
 To evaluate the performance of the proposed SN framework, tests on both simulated and real data were carried out and compared to the commonly employed approach of fitting a Normal density shape (for estimating the RV and FWHM) and then separately deriving the BIS SPAN (for estimating the asymmetry).
 The simulated CCFs were generated using the SOAP 2.0 code, which can simulate activity signals induced by a spot or a facula on a solar-like star. The results of the simulation study suggest that the parameters derived from the SN density fit are more sensitive to activity than the parameters obtained by the usual Normal method, making them more useful indicators of activity.
@@ -942,7 +942,7 @@ Because the apparent RV signal induced by activity
 results in a stronger correlation with the SN parameters
 than between the apparent RV signal and the FWHM of the CCF or its BIS SPAN, this suggests the SN model of the CCF can lead to a better understanding of the spurious variations in RV caused by stellar activity.
 
-Considering the different RV estimates of the real data, the amplitude of stellar activity tends to be largest for the SN mean RV, followed by the SN median RV and N mean RV that are extremely similar. 
+Considering the different RV estimates of the real data, the amplitude of stellar activity tends to be largest for the SN mean RV, followed by the SN median RV and N mean R, which behave similarly. 
 This implies that the mean of the SN density appears to be more sensitive to variation in the CCF shape than the median of the SN or the mean of the Normal.  
 %This is not surprising as the SN density is able to model the asymmetry of the CCF, what the Normal density does not. \jessi{The previous sentence does not follow from the points made in the paragraph.}
 
@@ -950,8 +950,10 @@ Having an estimator of RV that is more sensitive to stellar activity, such as th
 We saw that the SN mean RV estimator is 60\% noisier than the N mean RV estimator. 
 %\xavier{This is of course a problem for photon-noise limited observations.} 
 However, when looking at bright
-stars like $\alpha$\,Centauri\,B or HD10700, increasing the photon noise by 60\% will not have any impact
-on the RV precision as the instrumental noise will dominate the data. Therefore, for bright targets, stellar activity 
+stars like $\alpha$\,Centauri\,B or HD10700, increasing the photon noise by 60\% will not have significant impact
+on the RV precision as the instrumental noise will dominate the data. 
+\jessi{I modified the previous statement to read "significant impact" rather than "any impact" - "any" seems very extreme and unless we directly investigated this or have a good reference, I suggest this modification.}
+Therefore, for bright targets, stellar activity 
 can be better characterized by using SN mean RV as this RV estimate is more sensitive to it.
 %
 %This is not necessarily a negative aspect. 
