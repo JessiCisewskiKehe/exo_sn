@@ -801,13 +801,13 @@ Several RV data sets with the same stellar signal, but different planetary signa
 \end{itemize}
 
 For each of the 4500 simulations we derived at first the corresponding three set of RV, namely N mean RV, SN mean RV and SN median RV. 
-\xavier{On each of those RV sets, we performed an analysis similar to Sec.~\ref{sec:soap.spot.planet}, i.e. fitting the activity signal using Eq.~\eqref{eq:RV:correction}
+On each of those RV sets, we performed an analysis similar to Sec.~\ref{sec:soap.spot.planet}, i.e. fitting the activity signal using Eq.~\eqref{eq:RV:correction}
 or the usual correction along with a circular planetary signal (see Eq.~\eqref{eq:RV:correction.overall}). Because of the non-linearity of the model to account for the
 planet, we used a non-linear least squares for the fit \citep[][]{levenberg1944method,marquardt1963algorithm,teunissen1990nonlinear}. Such a model requires
 initial conditions close to the real solution, otherwise the algorithm can converge to a local minimum. Because our goal here is to compare the planetary detection limits
 using the three different RV estimates and the two different activity model proposed, and not to discuss what is the best method to explore the parameter space, we 
 initialised the minimisation algorithm to the real period of the planetary signal injected to avoid being blocked in a local minimum. We also selected as initial amplitude the peak-to-peak amplitude of the RV data set.
-The argument of periapsis $t_0$ was initialised to the time when the RV were crossing 0 since we use a sinusoidal function to fit the planetary signal (see Eq.~\eqref{eq:RV:correction.planet}).}
+The argument of periapsis $t_0$ was initialised to the time when the RV were crossing 0 since we use a sinusoidal function to fit the planetary signal (see Eq.~\eqref{eq:RV:correction.planet}).
 
 %Then, the proposed model from Eq.~\eqref{eq:RV:correction.overall} was fit. 
 %The use of Eq.~\eqref{eq:RV:correction.overall} leads to some additional comments.
@@ -840,15 +840,15 @@ The argument of periapsis $t_0$ was initialised to the time when the RV were cro
 
 Once the parameters involved in Eq.~\eqref{eq:RV:correction.overall} have been estimated,  signals in the residuals, defined as $RV - RV_{\text{activity}}$, were analyzed using a Generalized Lomb-Scargle periodogram \citep[][]{Lomb-1976a, Scargle-1982, Zechmeister-2009}. 
 If a signal with a P-value\footnote{The P-values were estimated using a bootstrap procedure.} smaller than 1\% had a period compatible with the injected planetary period within an error budget of 20\%, the signal was considered significant and the corresponding planet considered detected.  
-\xavier{For each period considered, we searched for the minimum amplitude at which at least 80\% of the planets with different phases were detected.
-This minimum amplitude detected as a function of period is shown in Fig.~\ref{fig:detection_limits} for the three different RV estimates (N mean RV, SN mean RV, and SN median RV) when using the new stellar activity correction proposed in this paper (see Eq.~\eqref{eq:RV:correction}), and when using the usual activity correction.}
-We can see that the new correction for stellar activity based on Eq.~\eqref{eq:RV:correction} \xavier{improves by 12\% on average} the detection limit of the exoplanet compared to the usual approach, and the three estimators of RV give similar detection limits.
-These results therefore suggest that any of the RV estimators can be used when searching for a planetary signal in RV data contaminated by stellar activity, \xavier{and using our new model to account for stellar activity allows to detect planetary signals with a slightly smaller amplitude that the usual correction using only a linear correlation with the FWHM and BIS SPAN.}
+For each period considered, we searched for the minimum amplitude at which at least 80\% of the planets with different phases were detected.
+This minimum amplitude detected as a function of period is shown in Fig.~\ref{fig:detection_limits} for the three different RV estimates (N mean RV, SN mean RV, and SN median RV) when using the new stellar activity correction proposed in this paper (see Eq.~\eqref{eq:RV:correction}), and when using the usual activity correction.
+We can see that the new correction for stellar activity based on Eq.~\eqref{eq:RV:correction} improves by 12\% on average the detection limit of the exoplanet compared to the usual approach, and the three estimators of RV give similar detection limits.
+These results therefore suggest that any of the RV estimators can be used when searching for a planetary signal in RV data contaminated by stellar activity, and using our new model to account for stellar activity allows to detect planetary signals with a slightly smaller amplitude that the usual correction using only a linear correlation with the FWHM and BIS SPAN.
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[height = 2.6in]{detection_limits.pdf} 
-   \caption{Detection limits of planetary signals once the stellar activity signal is removed from the raw RVs using the model proposed in Eq.~\ref{eq:RV:correction} (solid lines) or the usual correction based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit (dashed lines). The correction for stellar activity based on Eq.~\ref{eq:RV:correction} \xavier{improves by 12\% on average} the detection limit and the different RV estimators have similar detection limits.}
+   \caption{Detection limits of planetary signals once the stellar activity signal is removed from the raw RVs using the model proposed in Eq.~\ref{eq:RV:correction} (solid lines) or the usual correction based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit (dashed lines). The correction for stellar activity based on Eq.~\ref{eq:RV:correction} improves by 12\% on average the detection limit and the different RV estimators have similar detection limits.}
    \label{fig:detection_limits}
 \end{center}
 \end{figure}
@@ -1001,7 +1001,7 @@ In addition, the uncertainties measured on SN median RV and $\gamma$ are respect
 
 Because of the advantages of using the proposed SN approach over the commonly employed approach based on the Normal density fit to the CCF and the BIS SPAN or the asymmetry parameters described in \citet{Boisse-2011} and \citet{Figueira-2013}, a SN density model for the CCF may be more useful for detecting stellar activity than the previously proposed parametrizations.
 Correlations between $\gamma$ and the SN mean RV, and between the width and the SN mean RV can be used to probe stellar activity signals in RV data, and the SN median RV can be used to estimate RV.
-We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, this new proposed correction reduces the effect of the stellar activity signal by factors of about 2 and 3.5 over the usual model respectively for the facula and spot. \xavier{When applying this model on real data, the improvement is not as large, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.}
+We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, this new proposed correction reduces the effect of the stellar activity signal by factors of about 2 and 3.5 over the usual model respectively for the facula and spot. When applying this model on real data, the improvement is not as huge, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.
 We therefore strongly encourage the community to use this proposed SN parametrisation of the CCF.
 
 
@@ -1016,7 +1016,7 @@ We therefore strongly encourage the community to use this proposed SN parametris
 The authors thank Yale's Center for Research Computing for their help and resources with some of the computational aspects of this work.
 XD is grateful to The Branco Weiss Fellowship--Society in Science for its financial support.
 JCK was partially supported by the National Science Foundation under Grant AST 1616086 and by the National Aeronautics and Space Administration under grant 80NSSC18K0443.
-US was partially supported by Fondazione CARIPARO. \umberto{check if there is a code or something}
+US was partially supported by Fondazione CARIPARO and thanks the IT-University of Helsinki for the computational resources provided to execute part of the analyses of the present work.
 The authors are grateful to all technical and scientific collaborators of the HARPS Consortium, ESO Headquarters and ESO La Silla who have contributed with their extraordinary passion and valuable work to the success of the HARPS project.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
