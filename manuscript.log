@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 JUL 2018 09:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 JUL 2018 09:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1417,10 +1417,6 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1299.
  (./manuscript.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1299.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1299.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  10328 strings out of 492995
@@ -1444,7 +1440,7 @@ b8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 al/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (25 pages, 2656595 bytes).
+Output written on manuscript.pdf (25 pages, 2656594 bytes).
 PDF statistics:
  441 PDF objects out of 1000 (max. 8388607)
  299 compressed objects within 3 object streams
