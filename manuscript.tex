@@ -964,17 +964,17 @@ can be better characterized by using SN mean RV as this RV estimate is more sens
 
 We also propose a new model to correct the estimated RV data for stellar activity signals. 
 Generally, when fitting for planetary signals, it is common to use a model composed of one or several Keplerian signals to account for the planets, in addition to a linear combination of the FWHM and BIS SPAN to account for stellar activity signals. 
-The proposed model adds to the linear model a term to account for the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. 
+The proposed model adds a term to the linear model to account for the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. 
 Using the simulated data from SOAP 2.0, this new model reduces the effect of the stellar activity signal by factors of about 2 and 3.5 over the usual model for the facula and spot, respectively.
 
 
 
 Even if the different RV estimators result in different amplitudes, once the proposed correction for stellar activity is applied, the residuals of the model have similar rms.
 When comparing the activity correction proposed in this paper with the usual correction that only uses a linear combination of the CCF asymmetry and width, for the simulations based on the presence of a facula or a spot the new proposed correction almost entirely explains the spurious variations in RV. However, when moving to real data, there is just a slight improvement by using the proposed correction function for stellar activity. 
-A further analysis can be performed to see if certain components of the model are not relevant and that can therefore be removed.
+Additional analysis can be performed for new datasets to see if certain components of the model are not relevant and, therefore, could be removed.
 
-A test was carried out to see if some RV estimates were better at finding planets in RV data affected by observed stellar signals. The new correction based on Eq.~\eqref{eq:RV:correction} proposed in this paper to mitigate the effect from stellar activity slightly improves the detection limit respect to the usual one based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the normal fit.
-Concerning the definition of the RV using the SN or the Normal fit, all three of the different RV estimators give similar detection limits. Therefore it seems that any of the RV estimate can be used to search for planetary signals.
+A test was carried out to see if some RV estimates were better at finding planets in RV data affected by observed stellar signals. The new correction based on Eq.~\eqref{eq:RV:correction} proposed in this paper to mitigate the effect from stellar activity slightly improves the detection limit respect to the usual one based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the Normal fit.
+Concerning the definition of the RV using the SN or the Normal fit, all three of the different RV estimators give similar detection limits. Therefore it seems that any of the RV estimators can be used to search for planetary signals.
 
 Finally, we investigated the precision of each of the SN and Normal parameters including the BIS SPAN. It turns out that the SN mean RV should not be used to get precise RVs as the standard errors on this parameter is 60\% greater than for N mean RV. 
 However, the SN median RV is 10\% more precise than the N mean RV. 
@@ -1005,14 +1005,11 @@ In addition, the proposed SN approach is compared to other parameterizations of 
 In the different tests carried out for this work, the SN parameters performed at least as well as, and most of the times better than the parameters from the Normal approach and the BIS SPAN.
 The SN parameters $\gamma$, SN FWHM, and SN mean RV consistently had stronger correlation than those between any of the parameters derived by the Normal and the BIS SPAN, or the different asymmetry parametrizations presented in \citet{Boisse-2011} and \citet{Figueira-2013}. 
 This suggests the SN parameters may be better at probing stellar activity signals than the other methods. 
-In addition, the uncertainties measured on SN median RV and $\gamma$ are respectively 10\% and 15\% smaller than the corresponding uncertainties on N mean RV and BIS SPAN, though the SN mean RV had uncertainties 60\% greater than the N mean RV.
+In addition, the uncertainties measured on SN median RV and $\gamma$ are, respectively, 10\% and 15\% smaller than the corresponding uncertainties on N mean RV and BIS SPAN, though the SN mean RV had uncertainties 60\% greater than the N mean RV.
 
 Because of the advantages of using the proposed SN approach over the commonly employed approach based on the Normal density fit to the CCF and the BIS SPAN or the asymmetry parameters described in \citet{Boisse-2011} and \citet{Figueira-2013}, a SN density model for the CCF may be more useful for detecting stellar activity than the previously proposed parametrizations.
 Correlations between $\gamma$ and the SN mean RV, and between the width and the SN mean RV can be used to probe stellar activity signals in RV data, and the SN median RV can be used to estimate RV.
-We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, this new proposed correction reduces the effect of the stellar activity signal by factors of about 2 and 3.5 over the usual model respectively for the facula and spot. When applying this model on real data, the improvement is not as huge, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.
-We therefore strongly encourage the community to use this proposed SN parametrisation of the CCF.
-
-
+We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, this new proposed correction reduces the effect of the stellar activity signal by factors of about 2 and 3.5 over the usual model, respectively, for the facula and spot. When applying this model on real data, the improvement is not as substantial, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.
 
 %the RVs of the star can be calculated as the mean of the SN, whereas its asymmetry parameter $\gamma$ can be naturally used for retrieving information about the asymmetry of the CCF. Because of the natural correlation between the RVs and the asymmetry parameter, a linear combination of both $\gamma$ and the FWHM has been implemented for correcting the RVs from stellar activity, allowing us to retrieve a more precise RVs. 
 
@@ -1041,8 +1038,8 @@ The correlation between SN FWHM and SN mean RV is stronger than the correlation 
 Also for all these stars, the originally estimated RVs were corrected from spurious variations caused by stellar activity using Eq. \ref{eq:RV:correction} and Fig.~\ref{fig:HD192310:correctionRV}, \ref{fig:HD10700:correctionRV}, \ref{fig:HD215152:correctionRV}, and \ref{fig:Corot-7:correctionRV}, show the corrected RVs. 
 Once corrected from stellar activity, the Normal and SN residuals are comparable for the stars $\text{HD}192310$, $\text{HD}10700$ and $\text{HD}215152$.
 However, the rms of the residuals for Corot-7 are 0.23\,\ms\,lower for the SN model than the Normal model.  %\xavier{$\text{HD}215152$ and Corot-7 have in average a lower SNR at 550 nm than HD10700 and HD192310, 273, 207, 141 and 44, respectively.}
-The average SNR at 550 nm for the stars \text{HD}10700, \text{HD}192310, $\text{HD}215152$ and Corot-7 are respectively 273, 207, 141 and 44.
-Corot-7 has therefore on average a much lower SNR at 550 nm than the others stars, which could be a potential explanation for this small improvement. However further tests on several stars should be perform to confirm this statement. 
+The average SNR at 550 nm for the stars \text{HD}10700, \text{HD}192310, $\text{HD}215152$ and Corot-7 are, respectively, 273, 207, 141, and 44.
+Corot-7 has therefore on average a much lower SNR at 550 nm than the others stars, which could be a potential explanation for this small improvement. Additional tests should be performed to confirm this statement. 
 
 
 \small{
