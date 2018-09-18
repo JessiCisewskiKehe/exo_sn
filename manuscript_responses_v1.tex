@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin = .75in]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{xcolor}
+
+
+
+
+
+
+\begin{document}
+\begin{center}
+{\bf Measuring precise radial velocities and cross-correlation function line-profile variations using a Skew Normal density (AA/2018/33895)\\
+Response to reviewer comments}
+\end{center}
+
+Contained in this report are responses to comments made by the reviewer of the manuscript titled ``Measuring precise radial velocities and cross-correlation function line-profile variations using a Skew Normal density'' (AA/2018/33895) by Simola, Dumusque, and Cisewski-Kehe.  We would like to begin by thanking the reviewer for the helpful comments both in this review and the original manuscript.  We are grateful for these helpful suggestions, and believe they have dramatically improved this work along with giving us an opportunity to clarify ambiguities.  Below we address the new comments individually.  
+
+
+%%%-----------------------------------------------------------------------
+\section{Responses to Reviewer}
+%%%-----------------------------------------------------------------------
+
+{\bf This paper presents a new method for dealing with the activity signal - the Skew Normal (SN) distribution as opposed to the Normal (Gaussian) distribution for fitting the CCF. The basis for this technique is that stellar activity in the form of spots, plage, etc. will alter the shapes of the spectral line profiles and this mimics the signal of a planet. This activity introduces an asymmetry in the CCD, which traditionally is measured via line bisectors. Since the SN distribution can model this one can, in principle, achieve an RV measurement that is less sensitive to activity.
+
+This is the second round at refereeing this paper and I must say that I am a bit more enthused about it. The basic premise of the SN starts out promising, but in the end I do not see it as a breakthrough method. It is like a book where the opening chapter draws you in, but the ending leaves you a bit unsatisfied.
+I agree that the method is slightly more sensitive to activity. In the simulations their method also results in a better correction to the RV and they seem to improve the detection limit for low amplitude signals. But this is only a slight improvement. To my eye the SN and N derived RVs look very similar and produce virtually identical residual RVs. One exception is Alp Cen B where the SN method seems to produce residual that are more flat, not as much curvature as the traditional method. The detection limit is indeed decreased to lower amplitude, but only by about 10\%. But I guess if you are looking for low-amplitude signals, every improvement helps.
+
+So, my conclusion after reading the paper is that it is an interesting method, but as a reader I would see no compelling reason why I should use it. Another reader may reach a different conclusion and for this reason I think that the paper should be published. I am always reluctant to prevent a paper from being published just because of my own bias or opinion. The readers are intelligent; they can draw their own conclusions. The authors have presented a new and novel method, carefully tested it on synthetic and real data, and drew a conclusion. We may disagree on the utility of the method, but in the final analysis it is each individual reader should decide on the merits of the method. My job as a referee is to check that there is nothing fundamentally wrong with the paper and as far as I can tell this is not the case.} 
+\bigskip
+
+\noindent RESPONSE:  
+
+\bigskip
+
+
+\subsection{Detailed Comment Responses}
+
+\begin{enumerate}
+\item {\bf Reference for Arellano \& Azzalini 2010 has no journal or volume number in the references. Also Azallini 1985 has only ``171'' in the references. Is this volume or a page? One of these is missing.}
+%
+\item[]  RESPONSE:  Thank you for finding these typos.  Both references have been updated:  the Arellano \& Azzalini 2010 is XXX, and Azallini 1985 is Volume 12 with pages 171 -- 178 (we added the missing volume number).
+\bigskip
+%
+%
+\item {\bf Section 3 \\
+``Exoplanets only produce a pure RV signal.'' What do you mean by pure? To me activity and pulsations also produces ``pure'' RV signals. Do you mean to say exoplanets generally produce an RV signal without an accompanying change in the spectral line shapes?}
+%
+\item[]  RESPONSE:  
+\bigskip
+%
+%
+\item {\bf The authors did a simulation using faculae or spots. The real situated is more complicated in that stars usually have both spots and faculae. Faculae seem to produce a gamma-SN mean RV correlation that is in the opposite sense to that for spots, i.e. they would cancel. Have the authors considered a more realistic case with a mixture of spots and faculae? [Editor note: also, I did not see the temperature of the spots/faculae mentioned; please add it if I didn't just miss it, or make it more prominent otherwise]}
+%
+\item[]  RESPONSE:  
+\bigskip
+%
+%
+\item {\bf The simulations are fine, but they appear to be due to data with no noise. I presume when you add noise slight differences in correlation will be more difficult to discern. You should consider adding some realistic level of noise to the data.}
+%
+\item[]  RESPONSE:  
+\bigskip
+%
+%
+\item {\bf I found that the suggestion that the correlation between gamma and SN RV is due primarily to faculae is an interesting one. Possibly this can emerge as a useful diagnostic for this.}
+%
+\item[]  RESPONSE:  
+\bigskip
+%
+%
+\item {\bf I am very puzzled by the ``circle'' correlation plots, especially for the one spot case(top right of Fig. 6). I can understand the effects of spots on the line width by thinking about line profile variations in rapidly rotating stars with large spots (e.g RS Cvn systems). When the spot is on the approaching limb the distortion in the line profile is in the blue wing of the line. This makes the line profile V-shaped (minimum FWHM) but the RV is at a maximum + velocity. At disk center the spot produces a bump in the core of the line profile (no RV), but makes the profile fat (maximum FWHM). When the spot is on the receding limb the line is narrow again (minimum FWHM) but now with a maximum negative velocity. So, I should expect some correlation, possibly a triangle shaped, not a circle. In fact in the appendix CoRoT-7 and HD 192310 doe show a nice correlation of the RV with fwhm. Do the authors have a plausible explanation as to why the correlation plots make a circle?}
+%
+\item[]  RESPONSE:  
+\bigskip
+%
+%
+\item {\bf Section 6, column 2 last paragraph\\
+
+``This suggests that for the stars considered, the precision in each RV estimate may be driven by the SNR of the analyzed spectra. This is not surprising as the three stars studied have very similar spectral types; they are all main sequence K-dwarfs.'' \\
+
+Excuse me, but for an instrument with no systematic errors isn't the RV error driven simply by the SNR? (And what is meant by ``estimate''? Don't you mean error?) If you have a component due to activity, that is not an error in you measurement, but simply a real (but unwanted) signal coming from your star. Yes, these are all main sequence dwarfs, but they have different levels of activity. In short, I am not sure what the authors are trying to say here, it is unclear.}
+%
+\item[]  RESPONSE:  
+\bigskip
+%
+%
+\item {\bf One final comment: The language of this version is vastly improved from the first version. I commend the authors for taking the effort to do this.}
+%
+\item[]  RESPONSE:  Thank you!
+\bigskip
+%
+%
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}  
