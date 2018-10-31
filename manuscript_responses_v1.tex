@@ -64,7 +64,7 @@ So, my conclusion after reading the paper is that it is an interesting method, b
 %
 \item {\bf The simulations are fine, but they appear to be due to data with no noise. I presume when you add noise slight differences in correlation will be more difficult to discern. You should consider adding some realistic level of noise to the data.}
 %
-\item[]  RESPONSE:  
+\item[]  RESPONSE:  We considered the noise on the different parameters of the Normal and SN fit to the CCF for a SNR of 100, which is typical for high-precision RV measurements. The noise for the different parameters can be found in Figure 14
 \bigskip
 %
 %
@@ -86,7 +86,11 @@ So, my conclusion after reading the paper is that it is an interesting method, b
 
 Excuse me, but for an instrument with no systematic errors isn't the RV error driven simply by the SNR? (And what is meant by ``estimate''? Don't you mean error?) If you have a component due to activity, that is not an error in you measurement, but simply a real (but unwanted) signal coming from your star. Yes, these are all main sequence dwarfs, but they have different levels of activity. In short, I am not sure what the authors are trying to say here, it is unclear.}
 %
-\item[]  RESPONSE:  
+\item[]  RESPONSE:  {\color{green} The RV error is driven by three different parameters. As can be seen in Bouchy et al. (2005, A\&A 431), $\sigma_{RV} = \frac{3\sqrt{FWHM}}{SNR\times C}$, where C is the CCF contrast. Therefore the RV error is not only dependant on SNR. For stars with a similar spectral type, FWHM and C are similar, therefore $\sigma_{RV}$ is mainly driven by the SNR.
+We changed the paragraph as follow: 
+
+The standard errors for the different RV estimates all appear to follow a similar exponential decay as a function of S/N, even though the measurements are from three different stars. This suggests that for the stars considered, the precision in RV is mainly driven by the S/N of the analyzed spectra. As shown in Bouchy et al. 2015, the RV precision when fitting a Normal to the CCF is proportional to the S/N, the FWHM of the CCF and its contrast. In out case, all the three stars studied are all main sequence K-dwarfs, which imply that their CCF FWHM and contrast is similar, which explains why the RV precision is driven by the S/N only.
+}
 \bigskip
 %
 %

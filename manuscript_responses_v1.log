@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  31 OCT 2018 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  31 OCT 2018 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -247,7 +247,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 Here is how much of TeX's memory you used:
  2793 strings out of 493014
  38090 string characters out of 6133351
- 109254 words of memory out of 5000000
+ 110254 words of memory out of 5000000
  6308 multiletter control sequences out of 15000+600000
  9806 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -259,11 +259,12 @@ pe1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb>
-Output written on manuscript_responses_v1.pdf (3 pages, 95913 bytes).
+ic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb>
+Output written on manuscript_responses_v1.pdf (3 pages, 108456 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -109,8 +109,8 @@ ESO (Chile), with the HARPS spectrograph at the 3.6-m telescope.}}
 %{We propose to estimate the parameters of the CCF by fitting a Skew Normal (SN) density which, unlike the commonly employed Normal density, includes a skewness parameter to capture the asymmetry of the CCF induced by stellar activity and also the natural asymmetry induced by convective blueshift.}
 %%Moreover, the SN distribution allows for different location parameters beyond the mean, such as the median of the CCF.}
 %%
-%{The performances of the proposed method are compared to the commonly employed Normal density using both simulations and real observations, with different levels of activity and signal-to-noise ratio (SNR) levels.}
-%%We analyze 5 stars with different activity levels and whose CCF's have different signal-to-noise ratio (SNR) levels. In each case, we compare the results obtained by fitting to the CCF respectively a Normal and a SN.  We also estimate rigorous errors for the different moments of the CCF using a bootstrap analysis.
+%{The performances of the proposed method are compared to the commonly employed Normal density using both simulations and real observations, with different levels of activity and signal-to-noise ratio (S/N) levels.}
+%%We analyze 5 stars with different activity levels and whose CCF's have different signal-to-noise ratio (S/N) levels. In each case, we compare the results obtained by fitting to the CCF respectively a Normal and a SN.  We also estimate rigorous errors for the different moments of the CCF using a bootstrap analysis.
 %%
 %{When considering real observations, the correlation between the RV and the asymmetry of the CCF and the correlation between the RV and the width of the CCF are stronger when using the parameters estimated with the SN rather than the ones obtained with the commonly employed Normal density. 
 %In particular the strongest correlations have been obtained when using the mean of the SN as an estimate for the RV. 
@@ -130,7 +130,7 @@ by stellar activity.}
 {We propose to estimate the variations in shape of the CCF by fitting a Skew Normal (SN) density which, unlike the commonly employed Normal density, includes a skewness parameter to capture the asymmetry of the CCF induced by stellar activity and the convective blueshift.
 }
 %
-{The performances of the proposed method are compared to the commonly employed Normal density using both simulations and real observations, with different levels of activity and signal-to-noise ratio (SNR) levels.}
+{The performances of the proposed method are compared to the commonly employed Normal density using both simulations and real observations, with different levels of activity and signal-to-noise ratio (S/N) levels.}
 %
 {When considering real observations, the correlation between the RV and the asymmetry of the CCF and between the RV and the width of the CCF are stronger when using the parameters estimated with the SN density rather than the ones obtained with the commonly employed Normal density. 
 In particular the strongest correlations have been obtained when using the mean of the SN as an estimate for the RV. 
@@ -190,9 +190,9 @@ It is also common to add a Gaussian process to the model to account for the corr
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Figueira indicators of stellar activity + other}
-Several indicators have been developed that can be more sensitive to line asymmetry than the BIS SPAN. In \citet{Boisse-2011}, the authors developed $V_{span}$, which is the difference between the RV measured by fitting a Normal density to the upper and the lower parts of the CCF. This CCF asymmetry parameter is shown to be more sensitive than the BIS SPAN at low signal-to-noise ratio (SNR).
+Several indicators have been developed that can be more sensitive to line asymmetry than the BIS SPAN. In \citet{Boisse-2011}, the authors developed $V_{span}$, which is the difference between the RV measured by fitting a Normal density to the upper and the lower parts of the CCF. This CCF asymmetry parameter is shown to be more sensitive than the BIS SPAN at low signal-to-noise ratio (S/N).
 %
-\citet{Figueira-2013} studied the use of new indicators, BIS-, BIS+, bi-Gauss and $V_{asy}$. The authors were able to show that when using bi-Gauss, the amplitude in asymmetry is 30\% larger than when using BIS SPAN, therefore allowing the detection of lower levels of activity. They also demonstrated that $V_{asy}$ seems to be a better indicator of line asymmetry at high SNR, as its correlation with RV is significantly stronger than any other correlation between the previously proposed asymmetry indicators and RV.
+\citet{Figueira-2013} studied the use of new indicators, BIS-, BIS+, bi-Gauss and $V_{asy}$. The authors were able to show that when using bi-Gauss, the amplitude in asymmetry is 30\% larger than when using BIS SPAN, therefore allowing the detection of lower levels of activity. They also demonstrated that $V_{asy}$ seems to be a better indicator of line asymmetry at high S/N, as its correlation with RV is significantly stronger than any other correlation between the previously proposed asymmetry indicators and RV.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Why using a SN density?}
@@ -286,13 +286,13 @@ where C is an unknown offset for the continuum of the CCF, A is the unknown ampl
 The values $x_1, \ldots, x_n$ are the different values of the x-axis of the CCF, generally in velocity units (e.g. \ms).
 
 %%%Since the CCF has an asymmetry due the convective blueshift, the SN density should in principle better catch this aspect, together with other changes in asymmetry, with respect to fitting a Normal density. 
-%%%To initially check this intuition, we compared the CCF residuals after fitting a Normal and a SN density for 2 stars. The first star is Alpha Centauri B, whose CCF's have high signal-to-noise ratio (SNR). The second star is Corot-7, whose CCF's have low SNR. Fig.~\ref{fig:Residual.comparison} shows that the SN seems to be a slightly better model to explain the shape of the CCF.%, in particular as the SNR decreases.
+%%%To initially check this intuition, we compared the CCF residuals after fitting a Normal and a SN density for 2 stars. The first star is Alpha Centauri B, whose CCF's have high signal-to-noise ratio (S/N). The second star is Corot-7, whose CCF's have low S/N. Fig.~\ref{fig:Residual.comparison} shows that the SN seems to be a slightly better model to explain the shape of the CCF.%, in particular as the S/N decreases.
 %%%%
 %%%\begin{figure*}[htbp]
 %%%   \centering
 %%%\includegraphics[height = 2.5in]{[1]HD128621Residuals.pdf} 
 %%%\includegraphics[height = 2.5in]{[1]LRa01_E2Residuals.pdf} 
-%%%   \caption{Comparison between the Normal (black circles) and the SN (red pluses) residuals using CCF's from the star Alpha Centauri B (left) and Corot-7 (right). When looking at the residuals corresponding to the center of the CCF, the SN fit leads to slightly better results for both stars.} %Moreover, as the SNR decreases, the SN density shows smaller residuals respect the Normal ones.}
+%%%   \caption{Comparison between the Normal (black circles) and the SN (red pluses) residuals using CCF's from the star Alpha Centauri B (left) and Corot-7 (right). When looking at the residuals corresponding to the center of the CCF, the SN fit leads to slightly better results for both stars.} %Moreover, as the S/N decreases, the SN density shows smaller residuals respect the Normal ones.}
 %%%    \label{fig:Residual.comparison}
 %%%\end{figure*}
 %%%%
@@ -645,7 +645,7 @@ $\text{Residuals}$      &     $0.71 \ms$    &  $ 0.66 \ms$ & $0.70 \ms$  \\
 The simulated SOAP data of the previous section were helpful in assessing the performance of the proposed methodology in a setting where the ground truth was known.  In this section we present an analysis conducted on real observations, in particular, the star Alpha Centauri B, and compare the performance when fitting a CCF using the SN density defined in Sec. \ref{sec:3} with the commonly employed approach based on fitting a Normal density for estimating the RV and retrieving the BIS SPAN for evaluating the asymmetry of the CCF. 
 %to retrieve the RV and width of the CCF and calculating the bisector to derive the asymmetry parameter BIS SPAN. 
 Four other stars have been analyzed with the proposed method and details can be found in Appendix \ref{appendix}. 
-For all the stars considered in the presented work, only CCFs that were derived from spectra that had at least a SNR of 10 at 550 nm were selected. 
+For all the stars considered in the presented work, only CCFs that were derived from spectra that had at least a S/N of 10 at 550 nm were selected. 
 
 % A comparison with the results obtained by the classic approach is done, where the RV is estimated by retrieving the mean of the Normal density used to fit the CCF, along with the FWHM of the Normal density and the BIS SPAN or the other asymmetric parameters defined in \citet{Figueira-2013}. The latter parameters are calculated separately from the Normal fit that leads to the set of RVs of the star.
 
@@ -882,15 +882,14 @@ The CCF was calculated using this spectrum according to the method presented in 
 This process was repeated a hundred times in order to obtain a distribution for each CCF parameter, and the standard deviations of the resulting distributions provide estimates of the standard errors for the CCF parameters.
 
 The standard errors were computed for each CCF parameter for the HARPS measurements of HD215152, HD192310 and Corot-7. 
-These three stars include measurements that cover the range of SNR measured at 550 nm (SNR550) from 10 to 500, which represent the very low SNR limit and the saturation limit of the HARPS detector, respectively. 
+These three stars include measurements that cover the range of S/N measured at 550 nm (S/N550) from 10 to 500, which represent the very low S/N limit and the saturation limit of the HARPS detector, respectively. 
 HD10700 and Alpha Centauri B were not included because they have a large number of measurements, which would require a substantial computational effort.
-The variation of the noise for each CCF parameter as a function of SNR550 is displayed in Fig.~\ref{fig:se}.
+The variation of the noise for each CCF parameter as a function of S/N550 is displayed in Fig.~\ref{fig:se}.
 The top row shows the standard errors of the three different estimated RVs, the width, and the asymmetry estimates. 
 Note that because BIS SPAN and $\gamma$ do not have the same units, the estimated slopes of the correlation between those two parameters to transform $\gamma$ in \ms were used (see Fig.~\ref{fig:alphacent:corr.gamma} and Table~\ref{table:summaryStars} for the value of the slope for each star). 
 The bottom row shows the ratio between the standard errors measured when using the SN parameters and the Normal parameters. Values smaller (larger) than one will imply that standard errors from the SN parameters are more (less) precise than the Normal parameters.
 
-The different RV estimates all appear to follow a similar exponential decay. Considering each RV estimate individually, it appears that all the measurements follow the same curve even though the measurements are from three different stars. This suggests that for the stars considered, the precision in each RV estimate may be driven by the SNR of the analyzed spectra. 
-This is not surprising as the three stars studied have very similar spectral types; they are all main sequence K-dwarfs. 
+{\bf The standard errors for the different RV estimates all appear to follow a similar exponential decay as a function of S/N, even though the measurements are from three different stars. This suggests that for the stars considered, the precision in RV is mainly driven by the S/N of the analyzed spectra. As shown in \citet{Bouchy:2005aa}, the RV precision when fitting a Normal to the CCF is proportional to the S/N, the FWHM of the CCF and its contrast. In out case, all the three stars studied are all main sequence K-dwarfs, which imply that their CCF FWHM and contrast is similar, which explains why the RV precision is driven by the S/N only.}
 
 When comparing the three different estimates for the RV, SN mean RV has standard errors that are 60\% larger than N mean RV. However, SN median RV gives errors 10\% more precise than N mean RV. 
 The parameters describing the width of the CCF, FWHM and SN FWHM, have comparable standard errors. 
@@ -981,7 +980,7 @@ Finally, we investigated the precision of each of the SN and Normal parameters i
 However, SN median RV is 10\% more precise than N mean RV. 
 Regarding the asymmetry estimates, we observe that $\gamma$ has a precision 15\% better than the BIS SPAN.
 
-%Finally, we also encourage the use of bootstrapping to estimate more realistic errors on the different parameters of the Normal or SN fitted to the CCF, mainly in the low SNR regime where a gain of 50\% can be reached. This takes significantly more time, but note that 100 bootstrapped dataset are enough to get a good estimation of errors.
+%Finally, we also encourage the use of bootstrapping to estimate more realistic errors on the different parameters of the Normal or SN fitted to the CCF, mainly in the low S/N regime where a gain of 50\% can be reached. This takes significantly more time, but note that 100 bootstrapped dataset are enough to get a good estimation of errors.
 
 
 
@@ -1038,9 +1037,9 @@ The correlation between $\gamma$ and SN mean RV is stronger than the correlation
 The correlation between SN FWHM and SN mean RV is stronger than the correlation between FWHM and N mean RV for three of the four stars.  
 Also for all these stars, the originally estimated RVs were corrected from spurious variations caused by stellar activity using Eq. \ref{eq:RV:correction} and Fig.~\ref{fig:HD192310:correctionRV}, \ref{fig:HD10700:correctionRV}, \ref{fig:HD215152:correctionRV}, and \ref{fig:Corot-7:correctionRV}, show the corrected RVs. 
 Once corrected from stellar activity, the Normal and SN residuals are comparable for the stars $\text{HD}192310$, $\text{HD}10700$ and $\text{HD}215152$.
-However, the rms of the residuals for Corot-7 are 0.23\,\ms\,lower for the SN model than the Normal model.  %\xavier{$\text{HD}215152$ and Corot-7 have in average a lower SNR at 550 nm than HD10700 and HD192310, 273, 207, 141 and 44, respectively.}
-The average SNR at 550 nm for the stars \text{HD}10700, \text{HD}192310, $\text{HD}215152$ and Corot-7 are, respectively, 273, 207, 141, and 44.
-Corot-7 has therefore on average a much lower SNR at 550 nm than the others stars, which could be a potential explanation for this small improvement. Additional tests should be performed to confirm this statement. 
+However, the rms of the residuals for Corot-7 are 0.23\,\ms\,lower for the SN model than the Normal model.  %\xavier{$\text{HD}215152$ and Corot-7 have in average a lower S/N at 550 nm than HD10700 and HD192310, 273, 207, 141 and 44, respectively.}
+The average S/N at 550 nm for the stars \text{HD}10700, \text{HD}192310, $\text{HD}215152$ and Corot-7 are, respectively, 273, 207, 141, and 44.
+Corot-7 has therefore on average a much lower S/N at 550 nm than the others stars, which could be a potential explanation for this small improvement. Additional tests should be performed to confirm this statement. 
 
 
 \small{
