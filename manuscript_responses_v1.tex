@@ -58,7 +58,13 @@ So, my conclusion after reading the paper is that it is an interesting method, b
 %
 \item {\bf The authors did a simulation using faculae or spots. The real situated is more complicated in that stars usually have both spots and faculae. Faculae seem to produce a gamma-SN mean RV correlation that is in the opposite sense to that for spots, i.e. they would cancel. Have the authors considered a more realistic case with a mixture of spots and faculae? [Editor note: also, I did not see the temperature of the spots/faculae mentioned; please add it if I didn't just miss it, or make it more prominent otherwise]}
 %
-\item[]  RESPONSE:  The purpose of the study using the SOAP simulations was to consider a simplified setting in which we can isolate the effects of a spot and a facula on the various activity measures.  There are many different possible combinations of spots and faculae that could be considered, but we preferred to keep the activity level simple in order to aid in the interpretation of the results.  The real observations used help to provide insight into how the various activity measures behave with realistic activity levels.  The temperature of the spot and facula has now been added to the beginning of Section 4. The temperature difference of the spot with the photosphere is $\Delta T_{spot} = -663$ K and the temperature difference of the facula is dependant on the centre-to-limb angle $\theta$,  $\Delta T_{plage} = 250.9 - 407.7\,\cos{\theta} + 190.9\,\cos^2 \theta$ K (Meunier et al. 2010). 
+\item[]  RESPONSE:  The purpose of the study using the SOAP simulations was to consider a simplified setting in which we can isolate the effects of a spot and a facula on the various activity measures.  There are many different possible combinations of spots and faculae that could be considered, but we preferred to keep the activity level simple in order to aid in the interpretation of the results.  The real observations used help to provide insight into how the various activity measures behave with realistic activity levels.  
+
+Regarding the cancelation of the correlation between gamma and SN mean RV between spots and faculae, we do believe that faculae would take over and therefore create a positive correlation. If we compare the gamma - SN mean RV correlation in Figure 3 and 6, indeed the amplitude in gamma and RV are similar, 
+
+This positive correlation is seen in all the stars in the Appendix. This is because the faculae over spot ratio on the Sun is about 10 (Chapman-2001). If we compare the correlation between 
+
+The temperature of the spot and facula has now been added to the beginning of Section 4. The temperature difference of the spot with the photosphere is $\Delta T_{spot} = -663$ K and the temperature difference of the facula is dependant on the centre-to-limb angle $\theta$,  $\Delta T_{plage} = 250.9 - 407.7\,\cos{\theta} + 190.9\,\cos^2 \theta$ K (Meunier et al. 2010). 
 \bigskip
 %
 %
@@ -76,7 +82,21 @@ So, my conclusion after reading the paper is that it is an interesting method, b
 %
 \item {\bf I am very puzzled by the ``circle'' correlation plots, especially for the one spot case(top right of Fig. 6). I can understand the effects of spots on the line width by thinking about line profile variations in rapidly rotating stars with large spots (e.g RS Cvn systems). When the spot is on the approaching limb the distortion in the line profile is in the blue wing of the line. This makes the line profile V-shaped (minimum FWHM) but the RV is at a maximum + velocity. At disk center the spot produces a bump in the core of the line profile (no RV), but makes the profile fat (maximum FWHM). When the spot is on the receding limb the line is narrow again (minimum FWHM) but now with a maximum negative velocity. So, I should expect some correlation, possibly a triangle shaped, not a circle. In fact in the appendix CoRoT-7 and HD 192310 doe show a nice correlation of the RV with fwhm. Do the authors have a plausible explanation as to why the correlation plots make a circle?}
 %
-\item[]  RESPONSE:  
+\item[]  RESPONSE:  {\color{blue} In the figures shown at the end of this report, we plot how the RV, FWHM and CCF asymmetry varies as a function of stellar rotation phase when a 1\% equatorial spot is present on the stellar surface. Phase 0 correspond to the spot on the center of the visible hemisphere. We also show the correlation between SN FWHM and SN mean RV. The number close to each circle goes from 0 to 100 and corresponds to phase -0.5 to 0.5. Looking at how the RV and the FWHM evolves as a function of phase, it is not surprising to see such a "circle" pattern in the correlation plot.
+
+We believe that your comparison with rapid rotating stars is similar to what is happening here. When the spot is on the approaching limb, we have a minimum FWHM and a maximum RV, as for point ~35, then when the spot is in the center, the FWHM is maximum, like for point 52, and finally when the spot is on the receding limb the velocity is minimum and the FWHM minimum as well, like for point ~64. The only difference is that in our case we are speaking about slow rotators and probably the limited resolution of the instruments plays a role in getting a shape that is slightly different.
+
+The fact that we see nice RV-FWHM correlations for HD192310 and Corot-7 is likely because faculae are dominating the stellar activity signal (see Fig. 3). Note that on the Sun the filling factor of faculae is approximatively 10 times larger than the one of spots (Chapman-2001). In Figure 3 we show the results for a 3\% facula, and in Figure 6 the results for a 1\% spot. If we consider that the faculae/spots ratio is similar on HD192310 and Corot-7, then the faculae effect would largely dominate, therefore inducing a strong positive correlation.}
+
+
+\begin{figure*}[!h]
+\begin{center}
+\includegraphics[height = 3in]{SPOT_newPLOTS_comment6.pdf} 
+\includegraphics[height = 3in]{SPOT_new_corrPLOTS_comment6.pdf} 
+   \caption{\emph{Top:} SOAP 2.0 simulation for a 1\% equatorial spot. From top to bottom, we can see the CCF RV, the CCF asymmetry and the CCF width. Phase 0 correspond to the spot on the center of the visible hemisphere, In total, there is 100 simulated measurement, from phase -0.5 to 0.5. \emph{Bottom:} Correlation between SN FWHM and SN mean RV. The number around each circle corresponds to stellar rotation phase. Numbers goes from 0 to 100, which corresponds to phase -0.5 to 0.5.}
+   \label{fig:se}
+\end{center}
+\end{figure*}
 \bigskip
 %
 %
@@ -86,10 +106,10 @@ So, my conclusion after reading the paper is that it is an interesting method, b
 
 Excuse me, but for an instrument with no systematic errors isn't the RV error driven simply by the SNR? (And what is meant by ``estimate''? Don't you mean error?) If you have a component due to activity, that is not an error in you measurement, but simply a real (but unwanted) signal coming from your star. Yes, these are all main sequence dwarfs, but they have different levels of activity. In short, I am not sure what the authors are trying to say here, it is unclear.}
 %
-\item[]  RESPONSE:  {\color{green} The RV error is driven by three different parameters. As can be seen in Bouchy et al. (2005, A\&A 431), $\sigma_{RV} = \frac{3\sqrt{FWHM}}{SNR\times C}$, where C is the CCF contrast. Therefore the RV error is not only dependant on SNR. For stars with a similar spectral type, FWHM and C are similar, therefore $\sigma_{RV}$ is mainly driven by the SNR.
+\item[]  RESPONSE:  {\color{blue} The RV error is driven by three different parameters. As can be seen in Bouchy et al. (2005, A\&A 431), $\sigma_{RV} = \frac{3\sqrt{FWHM}}{SNR\times C}$, where C is the CCF contrast. Therefore the RV error is not only dependant on SNR. For stars with a similar spectral type, FWHM and C are similar, therefore $\sigma_{RV}$ is mainly driven by the SNR.
 We changed the paragraph as follow: 
 
-The standard errors for the different RV estimates all appear to follow a similar exponential decay as a function of S/N, even though the measurements are from three different stars. This suggests that for the stars considered, the precision in RV is mainly driven by the S/N of the analyzed spectra. As shown in Bouchy et al. 2015, the RV precision when fitting a Normal to the CCF is proportional to the S/N, the FWHM of the CCF and its contrast. In out case, all the three stars studied are all main sequence K-dwarfs, which imply that their CCF FWHM and contrast is similar, which explains why the RV precision is driven by the S/N only.
+The standard errors for the different RV estimates all appear to follow a similar exponential decay as a function of S/N, even though the measurements are from three different stars. This suggests that for the stars considered, the precision in RV is mainly driven by the S/N of the analyzed spectra. As shown in Bouchy et al. 2015, the RV precision is proportional to the S/N, the FWHM of the CCF and its contrast. In our case, all three stars studied are all main sequence K-dwarfs, which imply that their CCF FWHM and contrast is similar, which explains why the RV precision is driven by the S/N only.
 }
 \bigskip
 %
