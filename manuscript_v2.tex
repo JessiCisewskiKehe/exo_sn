@@ -1,5 +1,4 @@
 \documentclass{aa}
-
 %\documentclass[referee]{aa}
 %
 \usepackage{pdflscape} % or {lscape}
@@ -317,7 +316,7 @@ where $x$ and $y$ are two quantitative variables, $\text{cov}(x,y)$ indicates th
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Radial Velocity correction for stellar activity} \label{sec:31}
 
-Exoplanets only produce a pure RV signal (i.e., exoplanets induce a Doppler shift of the entire stellar spectrum). On the contrary stellar activity and, in particular, the presence of active regions on the stellar photosphere, do not produce blueshifts or redshifts of the entire stellar spectrum but can create spurious RV signals by modifying the shape of spectral lines.
+\textbf{Exoplanets only produce a pure RV signal (i.e., exoplanets induce a Doppler shift of the entire stellar spectrum)}. On the contrary stellar activity and, in particular, the presence of active regions on the stellar photosphere, do not produce blueshifts or redshifts of the entire stellar spectrum but can create spurious RV signals by modifying the shape of spectral lines.
 To track these variations in the shape of the spectral lines, a common approach consists in using the FWHM, the BIS SPAN, or other indicators such as those introduced in \citet{Boisse-2011} or \citet{Figueira-2013}, which provide information on the width and asymmetry of the CCF. A strong correlation between the estimated RVs and one or more of these parameters provides an indication that stellar activity signals may be affecting the measurements.
 
 When fitting for planetary signals in RV data, it is common to include linear dependencies with the BIS SPAN and the FWHM to take into account the signal induced by stellar activity \citep[e.g.][]{Dumusque:2017aa,Feng:2017aa}.
@@ -352,7 +351,7 @@ The code also returns the RV and the FWHM estimated using a Normal model for the
 SOAP 2.0 gives noiseless CCFs affected by stellar activity, which are used to compare the performances of SN and Normal models of the CCF.
 
 For the simulations discussed below, a star similar to the Sun was modelled with a solar disc of one solar radius seen equator-on, and a stellar rotational period set to 25.0 days.
-The stellar effective temperature is set to 5778 K, and a quadratic limb-darkening relation with linear and quadratic coefficients 0.29 and 0.34, respectively \citep[][]{Oshagh-2013a, Claret-2011}. {\bf The temperature difference of the spot with the photosphere is $\Delta T_{spot} = -663$ K and the temperature difference of the facula is dependant on the centre-to-limb angle $\theta$,  $\Delta T_{plage} = 250.9 - 407.7\,\cos{\theta} + 190.9\,\cos^2 \theta$ K \citep[][]{Meunier-2010a}}.
+The stellar effective temperature is set to 5778 K, and a quadratic limb-darkening relation with linear and quadratic coefficients 0.29 and 0.34, respectively \citep[][]{Oshagh-2013a, Claret-2011}. {\bf The temperature difference of the spot with the photosphere is $\Delta T_{spot} = -663$ K and the temperature difference of the facula depends on the centre-to-limb angle $\theta$,  $\Delta T_{plage} = 250.9 - 407.7\,\cos{\theta} + 190.9\,\cos^2 \theta$ K \citep[][]{Meunier-2010a}}.
 In order to make the result of the simulations more comparable to real data obtained with the HARPS spectrograph discussed in Sect.~\ref{sec:4}, the SOAP 2.0 CCFs were generated with a width of 40 \kms\, and considering initial spectra with resolution of R=115'000.
 
 
@@ -889,7 +888,7 @@ The top row shows the standard errors of the three different estimated RVs, the 
 Note that because BIS SPAN and $\gamma$ do not have the same units, the estimated slopes of the correlation between those two parameters to transform $\gamma$ in \ms were used (see Fig.~\ref{fig:alphacent:corr.gamma} and Table~\ref{table:summaryStars} for the value of the slope for each star). 
 The bottom row shows the ratio between the standard errors measured when using the SN parameters and the Normal parameters. Values smaller (larger) than one will imply that standard errors from the SN parameters are more (less) precise than the Normal parameters.
 
-{\bf The standard errors for the different RV estimates all appear to follow a similar exponential decay as a function of S/N, even though the measurements are from three different stars. This suggests that for the stars considered, the precision in RV is mainly driven by the S/N of the analyzed spectra. As shown in \citet{Bouchy:2005aa}, the RV precision is proportional to the S/N, the FWHM of the CCF and its contrast. In our case, all three stars studied are all main sequence K-dwarfs, which imply that their CCF FWHM and contrast is similar, which explains why the RV precision is driven by the S/N only.}
+{\bf The standard errors for the different RV estimates all appear to follow a similar exponential decay as a function of S/N, even though the measurements are from three different stars. This suggests that, for the considered stars, the precision in RV is mainly driven by the S/N of the analyzed spectra. As shown in \citet{Bouchy:2005aa}, the RV precision is proportional to the S/N, the FWHM of the CCF and its contrast. In our case all three studied stars are main sequence K-dwarfs, which imply that their CCF FWHM and contrast are similar and explains why the RV precision is driven by the S/N only.}
 
 When comparing the three different estimates for the RV, SN mean RV has standard errors that are 60\% larger than N mean RV. However, SN median RV gives errors 10\% more precise than N mean RV. 
 The parameters describing the width of the CCF, FWHM and SN FWHM, have comparable standard errors. 
