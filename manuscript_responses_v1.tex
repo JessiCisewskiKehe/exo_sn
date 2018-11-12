@@ -58,7 +58,7 @@ So, my conclusion after reading the paper is that it is an interesting method, b
 %
 \item {\bf The authors did a simulation using faculae or spots. The real situated is more complicated in that stars usually have both spots and faculae. Faculae seem to produce a gamma-SN mean RV correlation that is in the opposite sense to that for spots, i.e. they would cancel. Have the authors considered a more realistic case with a mixture of spots and faculae? [Editor note: also, I did not see the temperature of the spots/faculae mentioned; please add it if I didn't just miss it, or make it more prominent otherwise]}
 %
-\item[]  RESPONSE:  The purpose of the study using the SOAP simulations was to consider a simplified setting in which we can isolate the effects of a spot and a facula on the various activity measures.  There are many different possible combinations of spots and faculae that could be considered, but we preferred to keep the activity level simple in order to aid in the interpretation of the results.  The real observations used help to provide insight into how the various activity measures behave with realistic activity levels. We added a sentence at the end of Section 4 that now reads:``We consider a simplified setting with a single spot or a single facula in order to isolate the effects of those active regions on the various activity measures.''
+\item[]  RESPONSE:  The purpose of the study using the SOAP simulations was to consider a simplified setting in which we can isolate the effects of a spot and a facula on the various activity measures.  There are many different possible combinations of spots and faculae that could be considered, but we preferred to keep the activity level simple in order to aid in the interpretation of the results.  The real observations used help to provide insight into how the various activity measures behave with realistic activity levels.  
 
 Regarding the cancelation of the correlation between gamma and SN mean RV between spots and faculae, we expect that faculae would dominate and therefore create a positive correlation. 
 If we compare the gamma - SN mean RV correlation in Figure 3 (facula) and 6 (spot), indeed the amplitude in gamma and SN mean RV are similar, and we might think about cancelation. 
@@ -71,7 +71,16 @@ The temperature of the spot and facula has now been added to the beginning of Se
 %
 \item {\bf The simulations are fine, but they appear to be due to data with no noise. I presume when you add noise slight differences in correlation will be more difficult to discern. You should consider adding some realistic level of noise to the data.}
 %
-\item[]  RESPONSE:  We considered the noise on the different parameters of the Normal and SN fit to the CCF for a SNR of 100, which is typical for high-precision RV measurements. The noise for the different parameters can be found in Figure 14
+\item[]  RESPONSE:  We considered the noise on the different parameters of the Normal and SN fit to the CCF for a SNR of 100, which is typical for high-precision RV measurements. We updated the entire Section 4 of the manuscript with the obtained results. 
+
+We also accordingly rewritten a couple of sentences in the Discussions presented in Section 7 and in the Conclusions of Section 8:
+\begin{itemize}
+\item In this case, sensitivity was measured using the correlation between the asymmetry parameter and the estimated RVs; {\bf{in the spot case SN median RV had a stronger correlation with $\gamma$ than the correlation between N mean RV and BIS SPAN.}} Moreover, the correlation between the FWHM and the estimated RVs is also stronger, {\bf{for all the considered cases}}, when using the parameters from the SN compared to the parameters from the Normal. 
+
+\item We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, {\bf{this new proposed correction reduces the effect of the stellar activity signal by 15 \% and 6 \%}} over the usual model, respectively, for facula and spot. When applying this model on real data, the improvement is not as substantial, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.
+\end{itemize}
+
+
 \bigskip
 %
 %
