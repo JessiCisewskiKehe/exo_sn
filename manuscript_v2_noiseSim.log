@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.19)  16 NOV 2018 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.19)  16 NOV 2018 16:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1287,13 +1287,14 @@ Package pdftex.def Info: NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelo
 city_vs_time.pdf used on input line 739.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
-[10 <./RV_comparison_SPOTandPLANET_withNoise.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1448) has occurred while \output is active []
 
- [11 <./SOAP_SPOTandPLANET_Comparison_para_SN_withNoise.pdf>]
-<detection_limits.pdf, id=211, 867.24pt x 650.43pt>
+ [10 <./RV_comparison_SPOTandPLANET_withNoise.pdf>] [11 <./SOAP_SPOTandPLANET_C
+omparison_para_SN_withNoise.pdf>] <detection_limits.pdf, id=211, 867.24pt x 650
+.43pt>
 File: detection_limits.pdf Graphic file (type pdf)
- <use detection_limits.pdf>
+
+<use detection_limits.pdf>
 Package pdftex.def Info: detection_limits.pdf used on input line 866.
 (pdftex.def)             Requested size: 250.52715pt x 187.90244pt.
 
@@ -1301,13 +1302,10 @@ Package pdftex.def Info: detection_limits.pdf used on input line 866.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 6110) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12 <./HD12862_gamma_vs_bisspan.pdf> <./HD12862_[2]RadialVelocityDifferences.p
 df>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 <[5]Errors_vs_SNR_all_stars.pdf, id=229, 505.89pt x 505.89pt>
 File: [5]Errors_vs_SNR_all_stars.pdf Graphic file (type pdf)
 
@@ -1321,12 +1319,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [13 <./HD12862_[4]Comparison_para.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [14 <./NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
-] [15 <./detection_limits.pdf>]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [15 <./detection_limits.pdf>]
+Underfull \vbox (badness 4036) has occurred while \output is active []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Underfull \vbox (badness 4036) has occurred while \output is active []
 
  [16 <./[5]Errors_vs_SNR_all_stars.pdf>]
 <HD19231_[4]Comparison_para.pdf, id=302, 505.89pt x 505.89pt>
@@ -1407,29 +1411,31 @@ Underfull \hbox (badness 1953) in paragraph at lines 124--126
 AND
  []
 
-[17] (./manuscript_v2_noiseSim.llt)) [18
-
-] [19 <./HD19231_[4]Comparison_para.pdf>] [20 <./NEW_CORRECTIONHD19231_[3]Corre
-ctionActivity_RadialVelocity_vs_time.pdf>] [21 <./HD10700_[4]Comparison_para.pd
-f>] [22 <./NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.p
-df>] [23 <./HD21515_[4]Comparison_para.pdf>] [24 <./NEW_CORRECTIONHD21515_[3]Co
-rrectionActivity_RadialVelocity_vs_time.pdf>] [25 <./LRa01_E_[4]Comparison_para
-.pdf>] [26 <./NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_tim
-e.pdf>]
+(./manuscript_v2_noiseSim.llt)) [17] [18 <./HD19231_[4]Comparison_para.pdf>]
+[19 <./NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>]
+[20 <./HD10700_[4]Comparison_para.pdf>] [21 <./NEW_CORRECTIONHD10700_[3]Correct
+ionActivity_RadialVelocity_vs_time.pdf>] [22 <./HD21515_[4]Comparison_para.pdf>
+] [23 <./NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf
+>] [24 <./LRa01_E_[4]Comparison_para.pdf>] [25 <./NEW_CORRECTIONLRa01_E_[3]Corr
+ectionActivity_RadialVelocity_vs_time.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1307.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1307.
  (./manuscript_v2_noiseSim.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1307.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1307.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  10327 strings out of 492995
  146417 string characters out of 6132704
- 303465 words of memory out of 5000000
+ 302839 words of memory out of 5000000
  13594 multiletter control sequences out of 15000+600000
  119167 words of font info for 216 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,45p,2207b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,45p,2207b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/txfonts/rtxbmi.pfb></usr/local/texlive/2017/
@@ -1445,10 +1451,10 @@ local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript_v2_noiseSim.pdf (26 pages, 2676241 bytes).
+Output written on manuscript_v2_noiseSim.pdf (25 pages, 2675175 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 304 compressed objects within 4 object streams
+ 446 PDF objects out of 1000 (max. 8388607)
+ 302 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
