@@ -311,7 +311,7 @@ R (x,y)= \frac{\text{cov}(x,y)}{\sigma(x)\sigma(y)},
 \label{eq:Pearson:corr}
 \end{equation}
 %
-where $x$ and $y$ are two quantitative variables, $\text{cov}(x,y)$ indicates the covariance between $x$ and $y$, and $\sigma(x)$ and $\sigma(y)$ represent their standard deviations.  A $p$-value for the statistical test with null hypothesis $H_{0}: R=0$ is also generally provided.
+where $x$ and $y$ are two quantitative variables, $\text{cov}(x,y)$ indicates the covariance between $x$ and $y$, and $\sigma(x)$ and $\sigma(y)$ represent their standard deviations.  A $p$-value for the statistical test with null hypothesis $H_{0}: R= 0$ is also generally provided.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Radial Velocity correction for stellar activity} \label{sec:31}
@@ -352,8 +352,8 @@ SOAP 2.0 gives noiseless CCFs affected by stellar activity, which are used to co
 
 For the simulations discussed below, a star similar to the Sun was modelled with a solar disc of one solar radius seen equator-on, and a stellar rotational period set to 25.0 days.
 The stellar effective temperature is set to 5778 K, and a quadratic limb-darkening relation with linear and quadratic coefficients 0.29 and 0.34, respectively \citep[][]{Oshagh-2013a, Claret-2011}. {\bf The temperature difference of the spot with the photosphere is $\Delta T_{spot} = -663$ K and the temperature difference of the facula depends on the centre-to-limb angle $\theta$,  $\Delta T_{plage} = 250.9 - 407.7\,\cos{\theta} + 190.9\,\cos^2 \theta$ K \citep[][]{Meunier-2010a}}.
-In order to make the result of the simulations more comparable to real data obtained with the HARPS spectrograph discussed in Sect.~\ref{sec:4}, the SOAP 2.0 CCFs were generated with a width of 40 \kms\, and considering initial spectra with resolution of R=115'000.
-{\bf{ We consider an SNR=100 for our simulations.}}
+In order to make the result of the simulations more comparable to real data obtained with the HARPS spectrograph discussed in Sect.~\ref{sec:4}, the SOAP 2.0 CCFs were generated with a width of 40 \kms\, and considering initial spectra with resolution of R= 115'000.
+{\bf{ We consider an SNR= 100 for our simulations.}}
 
 
 
@@ -400,8 +400,8 @@ The results of this correction are displayed in Fig.~\ref{fig:faculae.correction
 The proposed correction for stellar activity is able to account for the majority of the activity signal created by a facula, with a {\bf{$R^2$ larger than $0.98$.}}
 %In addition, the rms of the different estimates of the RV reduces from about {\bf{6 \ms}} before correcting for stellar activity to values below {\bf{1.2 \ms}} after correcting for stellar activity.
 %We see a slightly smaller rms after correction when using the SN parameters compared to the Normal parameters.
-{\bf{In addition the rms for N mean RV reduces from 8.02 \ms before correcting for stellar activity to {\color{red}1.02} \ms after correcting for stellar activity using the proposed linear model; the respective values for the SN median RV are 7.07 \ms to 0.88 \ms and for the SN mean RV are 5.9 \ms to 0.88 \ms.}}
-When comparing the correction proposed in Eq.~\eqref{eq:RV:correction} with what is generally used (i.e. a linear combination of only the asymmetry and width parameters), we see that the proposed correction is able to reduce the rms of the RV residuals by {\color{red} \bf an additional 14.5 -} {\bf{15\%}} {\color{red} \bf [I think we should emphasize the proposed correction is in addition to the usual correction, and it seems the range of improvement is actually 14.5-15\%]}. Looking at the significance of the coefficients in Table~\ref{table:faculae.test}, we observe that {\bf{all the parameters corresponding to the SN variables are statistically significant. When using the Normal variables, the parameters $\beta_{3}$ and $\beta_{4}$ are not statistically helpful for the correction.}} 
+{\bf{In addition the rms for N mean RV reduces from 8.02 \ms before correcting for stellar activity to 1.02 \ms after correcting for stellar activity using the proposed linear model; the respective values for the SN median RV are 7.07 \ms to 0.88 \ms and for the SN mean RV are 5.9 \ms to 0.88 \ms.}}
+When comparing the correction proposed in Eq.~\eqref{eq:RV:correction} with what is generally used (i.e. a linear combination of only the asymmetry and width parameters), we see that the proposed correction is able to reduce the rms of the RV residuals by {\bf{an additional 14.5 - 15\%}}. Looking at the significance of the coefficients in Table~\ref{table:faculae.test}, we observe that {\bf{all the parameters corresponding to the SN variables are statistically significant. When using the Normal variables, the parameters $\beta_{3}$ and $\beta_{4}$ are not statistically helpful for the correction.}} 
 
 \begin{figure*}[htbp]
 \begin{center}
@@ -458,7 +458,7 @@ In contrast to the case of the facula, all the different estimates of the CCF ba
 
 Fig.~\ref{fig:spot.corr} shows the correlations between the asymmetry parameters and the different estimates of the CCF barycenter (i.e. SN mean RV, SN median RV and N mean RV). {\bf{The correlation between $\gamma$ and SN median RV and the correlation between the BIS SPAN and N mean RV are the strongest ($R=-0.81$) followed by the $\gamma$ - SN mean RV correlation ($R=-0.76$).}} 
 The correlations between the width and the CCF barycenter are more circular and no substantial correlation is observed. 
-Similar to the case with a facula, some parameters of the SN gives stronger correlations compared to the Normal parameters. {\color{red} \bf I'm not sure the previous statement is correct anymore - the only correlations strong with the SN variables is described has having ``no substantial correlation'' in the previous statement...I suggest we delete the previous sentence, or revise to make it correct.]}
+%Similar to the case with a facula, some parameters of the SN gives stronger correlations compared to the Normal parameters. {\color{red} \bf I'm not sure the previous statement is correct anymore - the only correlations strong with the SN variables is described has having ``no substantial correlation'' in the previous statement...I suggest we delete the previous sentence, or revise to make it correct.]}
 
 \begin{figure}[htbp]
 \begin{center}
@@ -486,7 +486,7 @@ The results of this correction are displayed in Fig.~\ref{fig:spot.correction} a
 
 %In Fig.~\ref{fig:spot.correction}, we see that the proposed activity correction is able to reduce the signal of a spot from a raw RV rms larger than {\bf{6.14\ms}} down to a rms smaller than {\bf{3.05 \ms}}, for any of the different RV estimates.
 {\bf{In addition the rms for N mean RV reduces from 6.14 \ms before correcting for stellar activity to 3.04 \ms after  correcting for stellar activity using the proposed linear model; the respective values for the SN median RV are 5.85 \ms to 2.74 \ms and for the SN mean RV are 5.27 \ms to 2.74 \ms.}}
-When comparing the activity correction proposed in this paper with what is commonly used, i.e only a linear combination of the width and asymmetry of the CCF, we see that our solution is capable of reducing the RV residual rms by {\bf \color{red} and additional 5.3 - 5.8\% ]} \sout{\bf{6 \%}}.
+When comparing the activity correction proposed in this paper with what is commonly used, i.e only a linear combination of the width and asymmetry of the CCF, we see that our solution is capable of reducing the RV residual rms by {\bf an additional 5.3 - 5.8\%}.
 The Normal or SN parameters involved in Eq.~\eqref{eq:RV:correction} are all statistically significant to explain the activity signal as seen in Table~\ref{table:spot.test}, {\bf{except the width of the CCF and the variable that captures the interaction between the width and the asymmetry of the CCF.}}
 %This is not surprising when looking at the circle shape drawn when plotting the width as a function of the RV in Fig.~\ref{fig:spot.corr}. 
 
@@ -546,9 +546,8 @@ The purpose of this example is to check if we are able to disentangle these two 
 
 Fig.~\ref{fig:spot.plus.planet} shows the variations observed in the CCF barycenter parameters. As in the case of the spot, all RV estimates show similar variations, with SN mean RV showing a slightly smaller amplitude.
 
-{\color{red} \bf [should any of the following text be in bold indicating an update as was done in the previous sections?]}
 The correlation between the different CCF parameters are displayed in Fig.~\ref{fig:spot.plus.planet.corr}. 
-The correlations are weaker than in the case of the spot due to the planet inducing changes in RV without affecting the width or the asymmetry of the CCF.  However, the order of the strength of the correlations between the CCF asymmetry parameters and RV are comparable with the ones obtained for the spot-only model: $\gamma$--SN median RV has the strongest correlation {\bf{($R=-0.7$)}}, followed by the correlation between BIS SPAN--N mean RV {\bf{($R=-0.69$)}} and finally by the correlation between $\gamma$--SN mean RV {\bf{($R=-0.67$)}}. 
+The correlations are weaker than in the case of the spot due to the planet inducing changes in RV without affecting the width or the asymmetry of the CCF.  However, the order of the strength of the correlations between the CCF asymmetry parameters and RV are comparable with the ones obtained for the spot-only model: $\gamma$--SN median RV has the strongest correlation {\bf{(R= -0.7)}}, followed by the correlation between BIS SPAN--N mean RV {\bf{(R= -0.69)}} and finally by the correlation between $\gamma$--SN mean RV {\bf{(R= -0.67)}}. 
 The patterns observed in the width-RV phase space correlations in Fig.~\ref{fig:spot.plus.planet.corr} follow a circle, similar to the spot-only model; no substantial correlation is observed between those two parameters.
 
 \begin{figure}[htbp]
@@ -589,7 +588,7 @@ with amplitude $K$, orbital period $P$, and an epoch at the periapsis $t_{0}$.  
 %We note that the p--value associated with the amplitude parameter $K$ is particularly relevant for rejecting or not rejecting the assumption about the presence of an orbiting companion. Moreover we note also that Eq.~\eqref{eq:RV:correction.planet} is highly non linear, meaning that the estimation of all the parameters involved in Eq.~\eqref{eq:RV:correction.overall} has to be done numerically. %We used non linear least squares and the results are displayed in Fig.~\ref{fig:spotplanet.correction}. We can see how in this case we are able to disentangle the spurious variations in RVs caused by stellar activity from the pure Doppler-shift due to the planet. 
 The proposed model from Eq.~\eqref{eq:RV:correction.overall} was fitted to the RV data and the results of the estimated model are summarized in Table~\ref{table:spotplanet.test}.   
 {\bf{Except for the intercept term (coefficient $\beta_0$), the width of the CCF (coefficient $\beta_3$), and the variable that captures the interaction between the width and the asymmetry of the CCF (coefficient $\beta_4$), all the other Normal or SN parameters are significantly useful to explain the RV variation induced by a spot plus a planet. 
-We also observe that the RV residuals, after correcting for stellar activity and the presence of the planet, have smaller rms when using the SN variables (rms = {\color{red} 2.29} \ms) rather than the Normal ones (rms = 2.80 \ms).}}
+We also observe that the RV residuals, after correcting for stellar activity and the presence of the planet, have smaller rms when using the SN variables (rms = 2.29 \ms) rather than the Normal ones (rms = 2.80 \ms).}}
 %\begin{figure*}[htbp]
 %   \centering
 %\includegraphics[height = 4in]{SPOT_PLANET_NEW_CORRECTION.pdf} 
@@ -936,12 +935,12 @@ The width is derived using the variance of the SN density (SN FWHM$=2\sqrt{2\tex
 
 To evaluate the performance of the proposed SN framework, tests on both simulated and real data were carried out and compared to the commonly employed approach of fitting a Normal density shape (for estimating the RV and FWHM) and then separately deriving the BIS SPAN (for estimating the asymmetry).
 The simulated CCFs were generated using the SOAP 2.0 code, which can simulate activity signals induced by a spot or a facula on a solar-like star. 
-The results of the simulation study suggest that the parameters derived from the SN density fit are more sensitive to activity than the parameters obtained by the usual Normal method, making them more useful indicators of activity.
- {\bf \color{red} The previous sentence is not correct; this was not demonstrated once the noise was added.]}
-In this case, sensitivity was measured using the correlation between the asymmetry parameter and the estimated RVs; {\bf{in the spot case SN median RV had a stronger correlation with $\gamma$ than the correlation between N mean RV and BIS SPAN.}} {\bf \color{red} On this setting, they actually had the same correlations (-.81)...the previous sentence should be deleted or revised]}
-Moreover, the correlation between the FWHM and the estimated RVs is also stronger, {\bf{for all the considered cases}}, when using the parameters from the SN compared to the parameters from the Normal. 
- {\bf \color{red} The previous comment is only relevant for the facula setting...the other two showed no significant correlations]}
-The SN parameters continued to have stronger correlations than the Normal in the setting where a planetary signal was added the SOAP 2.0 with a single spot.
+%The results of the simulation study suggest that the parameters derived from the SN density fit are more sensitive to activity than the parameters obtained by the usual Normal method, making them more useful indicators of activity.
+%{\bf \color{red} The previous sentence is not correct; this was not demonstrated once the noise was added.]}
+In this case, sensitivity was measured using the correlation between the asymmetry parameter and the estimated RVs; {\bf{in the spot case SN median RV had a correlation with $\gamma$ as strong as the correlation between N mean RV and BIS SPAN (R= -0.81).}}
+Moreover,  {\bf{when considering the case of a facula on the photosphere of the star}}, the correlation between the FWHM and the estimated RVs is stronger when using the parameters from the SN compared to the parameters from the Normal. {\bf{For the other presented cases, no statistically significant difference on the correlation between FWHM and the estimated RVs is obtained.}}
+
+%The SN parameters continued to have stronger correlations than the Normal in the setting where a planetary signal was added the SOAP 2.0 with a single spot.
 
 
 The conclusion found for the SOAP 2.0 simulations that the correlation between the CCF asymmetry and the estimated RV, as well as between the CCF width and the estimated RV, is stronger for the SN parameters than the Normal ones also holds when using real data.
@@ -1026,7 +1025,7 @@ In addition, the uncertainties measured on SN median RV and $\gamma$ are, respec
 
 Because of the advantages of using the proposed SN approach over the commonly employed approach based on the Normal density fit to the CCF and the BIS SPAN or the asymmetry parameters described in \citet{Boisse-2011} and \citet{Figueira-2013}, a SN density model for the CCF may be more useful for detecting stellar activity than the previously proposed parametrizations.
 Correlations between $\gamma$ and SN mean RV, and between the width and SN mean RV can be used to probe stellar activity signals in RV data, and SN median RV can be used to estimate RV.
-We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, {\bf{this new proposed correction reduces the effect of the stellar activity signal by {\color{red} an additional 14.5 -}15 \% and {\color{red} 5.3-5.8} \%}} over the usual model, respectively, for facula and spot. When applying this model on real data, the improvement is not as substantial, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.
+We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, {\bf{this new proposed correction reduces the effect of the stellar activity signal by an additional 14.5 -15 \% and 5.3-5.8 \%}} over the usual model, respectively, for facula and spot. When applying this model on real data, the improvement is not as substantial, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.
 
 %the RVs of the star can be calculated as the mean of the SN, whereas its asymmetry parameter $\gamma$ can be naturally used for retrieving information about the asymmetry of the CCF. Because of the natural correlation between the RVs and the asymmetry parameter, a linear combination of both $\gamma$ and the FWHM has been implemented for correcting the RVs from stellar activity, allowing us to retrieve a more precise RVs. 
 

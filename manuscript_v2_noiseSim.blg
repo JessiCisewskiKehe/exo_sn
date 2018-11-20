@@ -3,6 +3,18 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: manuscript_v2_noiseSim.aux
 The style file: aa.bst
 Database file #1: mybib-SNCCF.bib
+Repeated entry---line 665 of file mybib-SNCCF.bib
+ : @article{Feng:2017aa
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 686 of file mybib-SNCCF.bib
+ : @article{Robertson-2014
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 797 of file mybib-SNCCF.bib
+ : @article{Faria-2016a
+ :                     ,
+I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning-- there's a number but no series in belsley1991
 Warning--empty journal in teunissen1990nonlinear
@@ -47,4 +59,4 @@ warning$ -- 2
 while$ -- 189
 width$ -- 0
 write$ -- 479
-(There were 2 warnings)
+(There were 3 error messages)
