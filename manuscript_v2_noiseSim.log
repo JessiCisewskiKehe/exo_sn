@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 NOV 2018 09:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.19)  21 NOV 2018 11:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1336,7 +1336,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14 <./NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
-] [15 <./detection_limits.pdf>]
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./detection_limits.pdf>]
 Underfull \vbox (badness 4036) has occurred while \output is active []
 
 
@@ -1437,7 +1440,7 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1314.
 Here is how much of TeX's memory you used:
  10404 strings out of 492995
  147185 string characters out of 6132704
- 302458 words of memory out of 5000000
+ 303625 words of memory out of 5000000
  13668 multiletter control sequences out of 15000+600000
  117320 words of font info for 215 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1457,7 +1460,7 @@ local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript_v2_noiseSim.pdf (25 pages, 2673632 bytes).
+Output written on manuscript_v2_noiseSim.pdf (25 pages, 2673846 bytes).
 PDF statistics:
  446 PDF objects out of 1000 (max. 8388607)
  302 compressed objects within 4 object streams

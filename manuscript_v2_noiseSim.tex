@@ -348,12 +348,12 @@ In order to evaluate the performance of the proposed SN approach for modelling t
 
 For a given configuration of spots and faculae on the stellar surface, SOAP 2.0 outputs simulated CCFs as a function of rotational phase. 
 The code also returns the RV and the FWHM estimated using a Normal model for the CCF, and the BIS SPAN obtained by calculating the bisector of the CCF. 
-SOAP 2.0 gives noiseless CCFs affected by stellar activity, which are used to compare the performances of SN and Normal models of the CCF.
+SOAP 2.0 gives {\color{red}noiseless} CCFs affected by stellar activity, which are used to compare the performances of SN and Normal models of the CCF.
 
 For the simulations discussed below, a star similar to the Sun was modelled with a solar disc of one solar radius seen equator-on, and a stellar rotational period set to 25.0 days.
 The stellar effective temperature is set to 5778 K, and a quadratic limb-darkening relation with linear and quadratic coefficients 0.29 and 0.34, respectively \citep[][]{Oshagh-2013a, Claret-2011}. {\bf The temperature difference of the spot with the photosphere is $\Delta T_{spot} = -663$ K and the temperature difference of the facula depends on the centre-to-limb angle $\theta$,  $\Delta T_{plage} = 250.9 - 407.7\,\cos{\theta} + 190.9\,\cos^2 \theta$ K \citep[][]{Meunier-2010a}}.
 In order to make the result of the simulations more comparable to real data obtained with the HARPS spectrograph discussed in Sect.~\ref{sec:4}, the SOAP 2.0 CCFs were generated with a width of 40 \kms\, and considering initial spectra with resolution of R= 115'000.
-{\bf{ We consider an SNR= 100 for our simulations.}}
+{\bf{ We consider a S/N of 100 for our simulations.}}
 
 
 
@@ -377,7 +377,7 @@ In Fig.~\ref{fig:faculae}, we compare the barycentric variation of the CCF as me
 \end{figure}
 
 Correlations between the different RV estimates and the different CCF asymmetry or width estimates are displayed in Fig.~\ref{fig:faculae.corr}. 
-The correlation between $\gamma$ and SN mean RV, and $\gamma$ and SN median RV are {\bf{weaker}} than the correlation between BIS SPAN and RV, with Pearson correlation coefficient values of {\bf{$R$=-0.11, -0.55 and -0.81}}, respectively. 
+The correlation between $\gamma$ and SN mean RV, and $\gamma$ and SN median RV are {\bf{weaker}} than the correlation between BIS SPAN and RV, with Pearson correlation coefficient values of {\bf{$R= -0.11, -0.55$ and $-0.61$}}, respectively. 
 %
 {\bf{There is a stronger correlation between SN FWHM and SN mean RV ($R=0.92$) than between SN FWHM and SN median RV ($R=0.65$).  The correlation between FWHM and N mean RV is the weakest ($R=0.47$), and the correlation between FWHM and SN mean RV is the strongest ($R=0.92$).}} 
 This first analysis shows that in the case of a facula, using some parameters from the SN can lead to stronger correlations than the ones obtained by the usual Normal parameters. 
@@ -653,7 +653,7 @@ $\text{Residuals}$      &     $2.80 \ms$    &  $ 2.29 \ms$ & $2.29 \ms$  \\
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Real data application} \label{sec:4}
 
-The simulated SOAP data of the previous section were helpful in assessing the performance of the proposed methodology in a setting where the ground truth was known.  In this section we present an analysis conducted on real observations, in particular, the star Alpha Centauri B, and compare the performance when fitting a CCF using the SN density defined in Sec. \ref{sec:3} with the commonly employed approach based on fitting a Normal density for estimating the RV and retrieving the BIS SPAN for evaluating the asymmetry of the CCF. 
+The simulated SOAP 2.0 data of the previous section were helpful in assessing the performance of the proposed methodology in a setting where the ground truth was known.  In this section we present an analysis conducted on real observations, in particular, the star Alpha Centauri B, and compare the performance when fitting a CCF using the SN density defined in Sec. \ref{sec:3} with the commonly employed approach based on fitting a Normal density for estimating the RV and retrieving the BIS SPAN for evaluating the asymmetry of the CCF. 
 %to retrieve the RV and width of the CCF and calculating the bisector to derive the asymmetry parameter BIS SPAN. 
 Four other stars have been analyzed with the proposed method and details can be found in Appendix \ref{appendix}. 
 For all the stars considered in the presented work, only CCFs that were derived from spectra that had at least a S/N of 10 at 550 nm were selected. 
@@ -934,7 +934,7 @@ For the estimation of the RV, we investigated the use of the mean and the median
 The width is derived using the variance of the SN density (SN FWHM$=2\sqrt{2\text{ln}(2)\sigma^2}$) and the asymmetry by using $\gamma$, skewness parameter of the SN density.
 
 To evaluate the performance of the proposed SN framework, tests on both simulated and real data were carried out and compared to the commonly employed approach of fitting a Normal density shape (for estimating the RV and FWHM) and then separately deriving the BIS SPAN (for estimating the asymmetry).
-The simulated CCFs were generated using the SOAP 2.0 code, which can simulate activity signals induced by a spot or a facula on a solar-like star. 
+The simulated CCFs were generated using the SOAP 2.0 code, which can simulate activity signals induced by a spot or a facula on a solar-like star. {\bf{For our simulations we considered a S/N of 100.}}
 %The results of the simulation study suggest that the parameters derived from the SN density fit are more sensitive to activity than the parameters obtained by the usual Normal method, making them more useful indicators of activity.
 %{\bf \color{red} The previous sentence is not correct; this was not demonstrated once the noise was added.]}
 Sensitivity was measured using the correlation between the asymmetry parameter and the estimated RVs; {\bf{in the spot setting the SN median RV had a correlation with $\gamma$ as strong as the correlation between N mean RV and BIS SPAN (R= -0.81), and}}
@@ -943,14 +943,14 @@ Sensitivity was measured using the correlation between the asymmetry parameter a
 %The SN parameters continued to have stronger correlations than the Normal in the setting where a planetary signal was added the SOAP 2.0 with a single spot.
 
 
-The conclusion found for the SOAP 2.0 simulations that the correlation between the CCF asymmetry and the estimated RV, as well as between the CCF width and the estimated RV, is stronger for the SN parameters than the Normal ones also holds when using real data.
+The conclusion found for the SOAP 2.0 simulations showed that the correlation between the CCF asymmetry and the estimated RV, as well as between the CCF width and the estimated RV, is stronger for the SN parameters than the Normal ones also holds when using real data.
 %
 However, the strongest asymmetry-RV correlation for the simulated data is between $\gamma$ and SN median RV, while it is between $\gamma$ and SN mean RV for the real data.
 There could be several reasons for this difference. 
 First, noting that SOAP 2.0 is a simulation and, hence, is an imperfect representation of reality so it is not unexpected that there are differences between the simulated and real data.
 For example, some differences may be due to the fact that SOAP 2.0 uses the spectrum of a spot as input to model the activity induced by a facula.
 Because the temperature between a spot and a facula is significantly different, their spectra should be different. 
-Additionally, there are expected to be multiple active regions on a star at different locations in longitude and latitude, while the SOAP 2.0 data used in the simulation study included only a single active region on the equator {\bf{in order to isolate the effects of those active regions}}. 
+{\bf{Additionally, there are expected to be multiple active regions on a star at different locations in longitude and latitude, while the SOAP 2.0 data used in the simulation study included only a single active region on the equator in order to isolate the effects of those active regions}}. 
 %\xavier{The fact that we also find significant differences between the simulated and real data for the correlations between BIS SPAN and N mean RV and between FWHM and N mean RV shows that the SOAP 2.0 simulation studied here are too simple to explain the complexity of stellar activity in real RV observations.}
 %\jessi{What are these differences for Normal case?  The specific difference for the SN is the strength of the correlations with the SN mean RV compared to the SN median RV.  When I look at the SOAP vs. real data for the Normal, I do not notice anything specifically different other than different patterns, but that is not surprising.}
 %\umberto{I suggest to comment only about the differences for the SN case, since for the Normal I do not see differences between the analyses with SOAP2.0 and real stars.}
