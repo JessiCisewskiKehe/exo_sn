@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{49}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Anglada-Escud{\'e} \& Butler(2012)}]{Anglada-Escude-2012}
@@ -69,6 +69,9 @@ Desort, M., Lagrange, A.-M., Galland, F., Udry, S., \& Mayor, M. 2007,
 
 \bibitem[{Dumusque(2016)}]{Dumusque-2016a}
 Dumusque, X. 2016, Astronomy \& Astrophysics, 593, A5
+
+\bibitem[{{Dumusque}(2018)}]{Dumusque:2018aa}
+{Dumusque}, X. 2018, ArXiv e-prints [\eprint[arXiv]{1809.01548}]
 
 \bibitem[{Dumusque {et~al.}(2014)Dumusque, Boisse, \& Santos}]{Dumusque-2014b}
 Dumusque, X., Boisse, I., \& Santos, N. 2014, The Astrophysical Journal, 796,

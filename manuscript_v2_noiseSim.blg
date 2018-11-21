@@ -1,62 +1,62 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript_v2_noiseSim.aux
 The style file: aa.bst
 Database file #1: mybib-SNCCF.bib
-Repeated entry---line 665 of file mybib-SNCCF.bib
+Repeated entry---line 687 of file mybib-SNCCF.bib
  : @article{Feng:2017aa
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 686 of file mybib-SNCCF.bib
+Repeated entry---line 708 of file mybib-SNCCF.bib
  : @article{Robertson-2014
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 797 of file mybib-SNCCF.bib
+Repeated entry---line 819 of file mybib-SNCCF.bib
  : @article{Faria-2016a
  :                     ,
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning-- there's a number but no series in belsley1991
 Warning--empty journal in teunissen1990nonlinear
-You've used 48 entries,
+You've used 49 entries,
             3039 wiz_defined-function locations,
-            1007 strings with 16282 characters,
-and the built_in function-call counts, 28310 in all, are:
-= -- 2264
-> -- 2769
-< -- 19
-+ -- 953
-- -- 879
-* -- 2475
-:= -- 5290
-add.period$ -- 48
-call.type$ -- 48
-change.case$ -- 477
-chr.to.int$ -- 48
-cite$ -- 50
-duplicate$ -- 886
-empty$ -- 1272
-format.name$ -- 997
-if$ -- 5550
+            1012 strings with 16476 characters,
+and the built_in function-call counts, 28614 in all, are:
+= -- 2290
+> -- 2780
+< -- 20
++ -- 957
+- -- 882
+* -- 2498
+:= -- 5350
+add.period$ -- 49
+call.type$ -- 49
+change.case$ -- 482
+chr.to.int$ -- 49
+cite$ -- 51
+duplicate$ -- 904
+empty$ -- 1296
+format.name$ -- 1001
+if$ -- 5607
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 46
-newline$ -- 148
-num.names$ -- 192
-pop$ -- 466
+missing$ -- 47
+newline$ -- 151
+num.names$ -- 196
+pop$ -- 471
 preamble$ -- 1
-purify$ -- 477
+purify$ -- 482
 quote$ -- 0
-skip$ -- 796
+skip$ -- 808
 stack$ -- 0
-substring$ -- 1042
-swap$ -- 14
+substring$ -- 1053
+swap$ -- 15
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 429
+type$ -- 438
 warning$ -- 2
-while$ -- 189
+while$ -- 192
 width$ -- 0
-write$ -- 479
+write$ -- 489
 (There were 3 error messages)
