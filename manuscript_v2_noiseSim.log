@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  21 NOV 2018 22:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  21 NOV 2018 22:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1255,14 +1255,11 @@ Package pdftex.def Info: HD12862_[2]RadialVelocityDifferences.pdf used on input
  line 673.
 (pdftex.def)             Requested size: 260.1773pt x 260.17244pt.
 
-Underfull \vbox (badness 3492) has occurred while \output is active []
-
-
 <HD12862_[4]Comparison_para.pdf, id=180, 505.89pt x 505.89pt>
 File: HD12862_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD12862_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD12862_[4]Comparison_para.pdf used on input line 711.
+Package pdftex.def Info: HD12862_[4]Comparison_para.pdf used on input line 702.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
@@ -1276,7 +1273,7 @@ aphic file (type pdf)
 
 <use NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD12862_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 739.
+city_vs_time.pdf used on input line 742.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1290,7 +1287,7 @@ omparison_para_SN_withNoise.pdf>] <detection_limits.pdf, id=211, 867.24pt x 650
 File: detection_limits.pdf Graphic file (type pdf)
 
 <use detection_limits.pdf>
-Package pdftex.def Info: detection_limits.pdf used on input line 866.
+Package pdftex.def Info: detection_limits.pdf used on input line 869.
 (pdftex.def)             Requested size: 250.52715pt x 187.90244pt.
 
 
@@ -1305,7 +1302,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: [5]Errors_vs_SNR_all_stars.pdf Graphic file (type pdf)
 
 <use [5]Errors_vs_SNR_all_stars.pdf>
-Package pdftex.def Info: [5]Errors_vs_SNR_all_stars.pdf used on input line 912.
+Package pdftex.def Info: [5]Errors_vs_SNR_all_stars.pdf used on input line 915.
 
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
@@ -1332,7 +1329,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: HD19231_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD19231_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD19231_[4]Comparison_para.pdf used on input line 1093
+Package pdftex.def Info: HD19231_[4]Comparison_para.pdf used on input line 1096
 .
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
@@ -1343,14 +1340,14 @@ aphic file (type pdf)
 
 <use NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD19231_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 1103.
+city_vs_time.pdf used on input line 1106.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
 <HD10700_[4]Comparison_para.pdf, id=304, 505.89pt x 505.89pt>
 File: HD10700_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD10700_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD10700_[4]Comparison_para.pdf used on input line 1117
+Package pdftex.def Info: HD10700_[4]Comparison_para.pdf used on input line 1120
 .
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
@@ -1361,14 +1358,14 @@ aphic file (type pdf)
 
 <use NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD10700_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 1127.
+city_vs_time.pdf used on input line 1130.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
 <HD21515_[4]Comparison_para.pdf, id=306, 505.89pt x 505.89pt>
 File: HD21515_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use HD21515_[4]Comparison_para.pdf>
-Package pdftex.def Info: HD21515_[4]Comparison_para.pdf used on input line 1140
+Package pdftex.def Info: HD21515_[4]Comparison_para.pdf used on input line 1143
 .
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
@@ -1379,14 +1376,14 @@ aphic file (type pdf)
 
 <use NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONHD21515_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 1152.
+city_vs_time.pdf used on input line 1155.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
 <LRa01_E_[4]Comparison_para.pdf, id=308, 505.89pt x 505.89pt>
 File: LRa01_E_[4]Comparison_para.pdf Graphic file (type pdf)
 
 <use LRa01_E_[4]Comparison_para.pdf>
-Package pdftex.def Info: LRa01_E_[4]Comparison_para.pdf used on input line 1163
+Package pdftex.def Info: LRa01_E_[4]Comparison_para.pdf used on input line 1166
 .
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
@@ -1397,7 +1394,7 @@ aphic file (type pdf)
 
 <use NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_time.pdf>
 Package pdftex.def Info: NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelo
-city_vs_time.pdf used on input line 1174.
+city_vs_time.pdf used on input line 1177.
 (pdftex.def)             Requested size: 433.62885pt x 433.62pt.
 
 (./manuscript_v2_noiseSim.bbl
@@ -1415,11 +1412,11 @@ df>] [23 <./HD21515_[4]Comparison_para.pdf>] [24 <./NEW_CORRECTIONHD21515_[3]Co
 rrectionActivity_RadialVelocity_vs_time.pdf>] [25 <./LRa01_E_[4]Comparison_para
 .pdf>] [26 <./NEW_CORRECTIONLRa01_E_[3]CorrectionActivity_RadialVelocity_vs_tim
 e.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1307.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1307.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1310.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1310.
  (./manuscript_v2_noiseSim.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1307.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1307.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1310.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1310.
  ) 
 Here is how much of TeX's memory you used:
  10348 strings out of 493014
@@ -1444,7 +1441,7 @@ local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript_v2_noiseSim.pdf (26 pages, 2678755 bytes).
+Output written on manuscript_v2_noiseSim.pdf (26 pages, 2678924 bytes).
 PDF statistics:
  449 PDF objects out of 1000 (max. 8388607)
  304 compressed objects within 4 object streams

@@ -680,15 +680,6 @@ It also provides a conversion between the dimensionless $\gamma$ parameter into 
 The right plot of Fig.~\ref{fig:alphacent:corr.gamma} displays the comparison between the RVs estimated using the SN density and the Normal density. 
 The amplitude of the activity signal is slightly stronger for SN mean RV (in the top-right plot the black circles of SN mean RV tend to show more variability), while the signal measured using N mean RV or SN median RV are comparable. 
 %
-This behavior is similar to the one observed for the facula simulated with SOAP 2.0 in Sec.~\ref{sec:soap.faculae}, suggesting that the activity signal could be due to faculae present on Alpha Centauri B.  
-%
-%Another feature that suggests the presence of faculae is the strong positive measured correlation between $\gamma$ and SN mean RV and  between SN FWHM and SN mean RV, as displayed in Fig.~\ref{fig:alphacent:corrPlot}; 
-%as we saw in Sec.~\ref{sec:soap.spot} a spot induces a negative correlation between $\gamma$ and SN mean RV and weak correlations are measured between SN FWHM and SN mean RV.
-{\bf Another feature that suggests the presence of faculae is the statistically significant p--value associated to the interaction term $\gamma \cdot \text{SN FWHM}$ used in the proposed function to correct from stellar activity, as summarized in Table~\ref{table:alphacent.test}. In Sec.~\ref{sec:soap.faculae}, we saw that the interaction term was only significant in the case of faculae.
-as we saw in Sec.~\ref{sec:soap.faculae} a facula produces as well a statistically significant p--value associated to the  interaction term $\gamma \cdot \text{SN FWHM}$}
-\citet{Dumusque-2014c} had previously suggested that the activity of Alpha Centauri B could be due to faculae.
-%When using SN mean RV, it is possible to observe more variations than the ones measured by the Normal fitting. This happens because the mean of the SN is more sensitive to stellar activity. In fact, because the SN includes an asymmetry parameter, SN mean RV gets more shifted in the direction of the asymmetry induced by stellar activity. On the other hand, when using SN median RV, smaller variations in RV are caused by changes in the asymmetry of the CCF, because this second location parameter is a more robust indicator than the mean. The bottom plot of Fig.~\ref{fig:alphacent:diff:RV} captures this aspect. Both indicators can be used to capture and summarise the different information available in the CCF, as will be shown in the remainder of this work.
-%%
 %\begin{figure*}[htbp]
 %   \centering
 %\includegraphics[height = 3in]{HD12862_[2]RadialVelocityDifferences.pdf} 
@@ -716,6 +707,8 @@ The correlations between the width and the RV estimates for Alpha Centauri B is 
 \end{figure*}
 %
 
+{\bf Comparing }
+
 Results illustrating the performance of the stellar activity correction proposed in Sec.~\ref{sec:31} are displayed in Fig~\ref{fig:alphacent:correctionRV}. 
 For Alpha Centauri B, the RV estimated with SN mean RV has a rms that is 35\% larger than the rms of the RV estimated with the N mean RV, and the rms of SN median RV is 9\% larger than that of the N mean RV.
 Even though we see these differences in the estimated RV, once we correct for stellar activity using Eq.~\eqref{eq:RV:correction}, 
@@ -733,6 +726,18 @@ The results of the statistical tests of the different parameters used for correc
 However, all the other parameters in the Normal and SN cases are statistically significant for modelling stellar activity. 
 By analyzing the values of the coefficient of determination, $R^2$, we see that the model for SN mean RV is able to capture the highest percentage of variability in the estimated RV. 
 This is not a surprising result since the three different RV estimates have the same RV residual rms after correction for activity, but before correction, SN mean RV had the largest RV rms (see Fig~\ref{fig:alphacent:correctionRV}).
+
+{\bf When looking at the results discussed in this section, it is likely that the activity signal of Alpha Centauri B is due to faculae. 
+Like observed for the simulated facula in Sec.~\ref{sec:soap.faculae}, the amplitude of the activity signal is slightly stronger for SN mean RV
+than for N mean RV or SN median RV; the amplitude of the two latest being comparable. In addition, when applying the proposed correction for
+activity in the case of the Alpha Centauri B data, the interaction term is significant, which was only the case for the simulated facula in 
+Sec.~\ref{sec:soap.faculae}. Those are arguments strengthen the findings of \citet{Dumusque-2014c} that also found evidence for faculae
+dominating the RV stellar signal of Alpha Centauri B.}
+%Another feature that suggests the presence of faculae is the strong positive measured correlation between $\gamma$ and SN mean RV and  between SN FWHM and SN mean RV, as displayed in Fig.~\ref{fig:alphacent:corrPlot}; 
+%as we saw in Sec.~\ref{sec:soap.spot} a spot induces a negative correlation between $\gamma$ and SN mean RV and weak correlations are measured between SN FWHM and SN mean RV.
+%When using SN mean RV, it is possible to observe more variations than the ones measured by the Normal fitting. This happens because the mean of the SN is more sensitive to stellar activity. In fact, because the SN includes an asymmetry parameter, SN mean RV gets more shifted in the direction of the asymmetry induced by stellar activity. On the other hand, when using SN median RV, smaller variations in RV are caused by changes in the asymmetry of the CCF, because this second location parameter is a more robust indicator than the mean. The bottom plot of Fig.~\ref{fig:alphacent:diff:RV} captures this aspect. Both indicators can be used to capture and summarise the different information available in the CCF, as will be shown in the remainder of this work.
+%%
+
 
 \begin{figure*} 
 \begin{center}
