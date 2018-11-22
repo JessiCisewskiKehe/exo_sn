@@ -707,7 +707,7 @@ The correlations between the width and the RV estimates for Alpha Centauri B is 
 \end{figure*}
 %
 
-{\bf Comparing }
+{\bf When comparing the correlation between the different Normal and SN parameters in the case of the real data of Alpha Centauri B (see Fig.~\ref{fig:alphacent:corrPlot}) with the correlations obtained in the SOAP 2.0 simulations (see Sec.~\ref{sec:soap.spot.planet}), we observe some significant differences. The correlations between the different parametrisations of the CCF asymmetry and barycentre do not match between the real and simulated data. In the real case, the correlations between $\gamma$ and SN mean RV, $\gamma$ and SN median RV and BIS SPAN and N mean RV are all positives. In the case of the SOAP 2.0 simulated data for a facula or a spot, we always find negatives correlations. It is therefore not possible to reproduce with SOAP 2.0 the CCF asymmetry variations observed in real observations. On the contrary, the correlations between the CCF width and barycentre match between the real data and a SOAP 2.0 simulated facula. It seems therefore that SOAP 2.0 simulation are able to correctly model the width variation of the CCF, however not its asymmetry. This is probably because in the SOAP 2.0 simulation, a facula is modelled using the same spectrum as a spot, with only a different flux. It is well known that facula have a different temperature than spots, and therefore a spectrum that significantly differs \citep[e.g.][]{Cavallini-1985a}. Looking at other stellar activity simulation like StarSim \citep[][]{Herrero:2016aa}, it seems that simulating a positive correlation between the CCF asymmetry and barycentre is not possible with current tools, and some progress are still to be made.}
 
 Results illustrating the performance of the stellar activity correction proposed in Sec.~\ref{sec:31} are displayed in Fig~\ref{fig:alphacent:correctionRV}. 
 For Alpha Centauri B, the RV estimated with SN mean RV has a rms that is 35\% larger than the rms of the RV estimated with the N mean RV, and the rms of SN median RV is 9\% larger than that of the N mean RV.
@@ -785,10 +785,8 @@ $R^{2}$      &     $0.57$    &  $0.78$ & $0.66$  \\
 
 In the previous section we evaluated for Alpha Centauri B the improvement obtained by the SN parameters compared to the Normal parameters and the BIS SPAN. We carryout similar analyses for four other main sequence stars: HD192310 \citep[K2V,][]{Pepe-2011}, HD10700 \citep[G8V,][]{Feng:2017ac}, HD215152 \citep[K3V,][]{Delisle:2018aa} and finally Corot-7 \citep[K0V,][]{Haywood-2014}. The same correlation and residual plots displayed in the previous section for Alpha Centauri B can be found for those new four stars in Appendix~\ref{appendix}.
 
-The correlations between the parameters of these additional stars are similar to those obtained for Alpha Centauri B. The correlation between $\gamma$ and SN mean RV is the strongest among all the asymmetry-RV correlations. 
-%
-Between the width parameters and the estimated RV, the strongest correlation often is between SN FWHM and SN mean RV. 
-However, there is one exception in the case of HD10700 where the Pearson correlation coefficient between FWHM and N mean RV is equal to $R=0.53$, while it is $R=0.42$ between SN FWHM and SN mean RV, and $R=0.5$ between SN FWHM and SN median RV.
+The correlations between the parameters of these additional stars are similar to those obtained for Alpha Centauri B. The correlation between $\gamma$ and SN mean RV is the strongest among all the asymmetry-RV correlations. Between the width parameters and the estimated RV, the strongest correlation often is between SN FWHM and SN mean RV. 
+However, there is one exception in the case of HD10700 where the Pearson correlation coefficient between FWHM and N mean RV is equal to $R=0.53$, while it is $R=0.42$ between SN FWHM and SN mean RV, and $R=0.5$ between SN FWHM and SN median RV. {\bf Like in the case of Alpha Centauri B, positive correlations are always observed between the asymmetry and barycentre of the CCF. This cannot be explained by SOAP 2.0 and to our knowledge by other stellar activity simulators, showing the limit of these tools.}
 
 Except for the special case discussed above for HD10700, the analyses of those four stars, in addition to the analyses on Alpha Centauri B, show that the parameters derived when using a SN density are generally more sensitive to activity.  
 Therefore using the SN parameters, and in particular estimating RV using SN mean RV, can result in better detection of stellar activity than the Normal parameters. 
@@ -930,16 +928,19 @@ as the precision on this parameter is 60\% worse than the precision on the RVs d
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \section{Discussion} \label{sec:discu}
 
-When fitting a SN density to the CCF, parameters used to estimate the RV, defined as the CCF barycenter, the amplitude, sometimes called the CCF contrast, the width and the asymmetry of the CCF can all be estimated in a single model framework.
+When fitting a SN density shape to the CCF, parameters used to estimate the RV, defined as the CCF barycenter, the amplitude, sometimes called the CCF contrast, the width and the asymmetry of the CCF can all be estimated in a single model framework.
 For the estimation of the RV, we investigated the use of the mean and the median of the SN density. 
 The width is derived using the variance of the SN density (SN FWHM$=2\sqrt{2\text{ln}(2)\sigma^2}$) and the asymmetry by using $\gamma$, skewness parameter of the SN density.
 
-To evaluate the performance of the proposed SN framework, tests on both simulated and real data were carried out and compared to the commonly employed approach of fitting a Normal density shape to get access to the RV and the CCF FWHM and then separately deriving the BIS SPAN to estimate the CCF the asymmetry.
-The simulated CCFs were generated using the SOAP 2.0 code, which can simulate activity signals induced by a spot or a facula on a solar-like star. The results of the simulation study suggest that the parameters derived from the SN density fit are more sensitive to activity than the parameters obtained by the usual Normal method, making them more useful indicators of activity.
-In this case, sensitivity was measured using the correlation between the asymmetry parameter and the estimated RVs; {\bf{in the spot case SN median RV had a stronger correlation with $\gamma$ than the correlation between N mean RV and BIS SPAN.}} 
-Moreover, the correlation between the FWHM and the estimated RVs is also stronger, {\bf{for all the considered cases}}, when using the parameters from the SN compared to the parameters from the Normal. 
-The SN parameters continued to have stronger correlations than the Normal in the setting where a planetary signal was added the SOAP 2.0 with a single spot.
+To evaluate the performance of the proposed SN framework, tests on both simulated and real data were carried out and compared to the commonly employed approach of fitting a Normal density shape to the CCF to get access to the RV and the FWHM, and then separately deriving the BIS SPAN to estimate the CCF asymmetry.
+The simulated CCFs were generated using the SOAP 2.0 code, which can simulate activity signals induced by a spot or a facula on a solar-like star. {\bf To simulate realistic data, we considered a S/N of 100, which is typical for high-precision RV observations.}
 
+The results of the simulation study suggest that {\bf at least one of the parameters} derived from the SN density fit is equally or more sensitive to activity than the parameters obtained by the usual Normal method, making this or these parameters more useful indicators of activity. {\bf Sensitivity was measured by the strength of the correlation between the different SN or Normal parameters. In the case of a spot, the strongest correlations are found between $\gamma$ and SN median RV and between BIS SPAN and N mean RV, therefore making the SN parameters equally sensitive to activity. For the facula case, the strongest correlation is between SN FWHM and SN mean RV with a correlation coefficient of R=0.92. The correlation between the parameters derived from the Normal fit are much weaker, with correlation coefficients  between BIS SPAN and N mean RV of R=-0.61 and between FWHM and N mean RV of R=0.47.}
+The SN parameters continued to have stronger correlations than the Normal ones in the setting where a planetary signal was added the SOAP 2.0 with a single spot.
+
+{\bf Looking at real data, we arrive to a similar conclusion that the SN parameters are more sensitive to activity. While real data confirms that the correlation between CCF width and barycentre is always stronger for the SN parameters, they also show that the correlation between the CCF asymmetry and barycentre is stronger 
+
+However, in the real data case, we see that the correlations between the CCF asymmetry and barycentre, as well as the correlation between the CCF width and barycentre are always strong for the SN parameters.}
 
 The conclusion found for the SOAP 2.0 simulations that the correlation between the CCF asymmetry and the estimated RV, as well as between the CCF width and the estimated RV, is stronger for the SN parameters than the Normal ones also holds when using real data.
 %
@@ -983,9 +984,9 @@ Using the simulated data from SOAP 2.0, this new model reduces the effect of the
 
 
 
-Even if the different RV estimators result in different amplitudes, once the proposed correction for stellar activity is applied, the residuals of the model have similar rms.
+Even if the different RV estimators {\bf derived by the Normal or SN fit} result in different amplitudes, once the proposed correction for stellar activity is applied, the residuals of the model have similar rms.
 When comparing the activity correction proposed in this paper with the usual correction that only uses a linear combination of the CCF asymmetry and width, for the simulations based on the presence of a facula or a spot the new proposed correction almost entirely explains the spurious variations in RV. However, when moving to real data, there is just a slight improvement by using the proposed correction function for stellar activity. 
-Additional analysis can be performed for new datasets to see if certain components of the model are not relevant and, therefore, could be removed.
+Additional analysis can be performed for new datasets to see if {\bf certain components of the model proposed here are not relevant and, therefore, could be removed.}
 
 A test was carried out to see if some RV estimates were better at finding planets in RV data affected by observed stellar signals. The new correction based on Eq.~\eqref{eq:RV:correction} proposed in this paper to mitigate the effect from stellar activity slightly improves the detection limit respect to the usual one based on $RV_{\text{activity}}=\beta_0+\beta_1 \gamma + \beta_2 \text{SN FWHM}$ for the SN fit and on $RV_{\text{activity}}=\beta_0+\beta_1 \text{BIS SPAN} + \beta_2 \text{FWHM}$ for the Normal fit.
 Concerning the definition of the RV using the SN or the Normal fit, all three of the different RV estimators give similar detection limits. Therefore it seems that any of the RV estimators can be used to search for planetary signals.
@@ -1023,7 +1024,7 @@ In addition, the uncertainties measured on SN median RV and $\gamma$ are, respec
 
 Because of the advantages of using the proposed SN approach over the commonly employed approach based on the Normal density fit to the CCF and the BIS SPAN or the asymmetry parameters described in \citet{Boisse-2011} and \citet{Figueira-2013}, a SN density model for the CCF may be more useful for detecting stellar activity than the previously proposed parametrizations.
 Correlations between $\gamma$ and SN mean RV, and between the width and SN mean RV can be used to probe stellar activity signals in RV data, and SN median RV can be used to estimate RV.
-We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, {\bf{this new proposed correction reduces the effect of the stellar activity signal by 15 \% and 6 \%}} over the usual model, respectively, for facula and spot. When applying this model on real data, the improvement is not as substantial, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.
+We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, {\bf{this new proposed correction reduces the effect of the stellar activity signal by 15 \% and 6 \%}} over the usual model, respectively, for facula and spot. When applying this model on real data,\sout{the improvement is not as substantial, however, we still} we observe that planetary detection limits are improved by a non-negligible 12\%.
 
 %the RVs of the star can be calculated as the mean of the SN, whereas its asymmetry parameter $\gamma$ can be naturally used for retrieving information about the asymmetry of the CCF. Because of the natural correlation between the RVs and the asymmetry parameter, a linear combination of both $\gamma$ and the FWHM has been implemented for correcting the RVs from stellar activity, allowing us to retrieve a more precise RVs. 
 

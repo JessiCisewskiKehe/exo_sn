@@ -1,4 +1,4 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{51}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Anglada-Escud{\'e} \& Butler(2012)}]{Anglada-Escude-2012}
@@ -42,6 +42,11 @@ Boisse, I., Moutou, C., Vidal-Madjar, A., {et~al.} 2009, Astronomy \&
 \bibitem[{{Bouchy} {et~al.}(2005){Bouchy}, {Pont}, {Melo}, {Santos}, {Mayor},
   {Queloz}, \& {Udry}}]{Bouchy:2005aa}
 {Bouchy}, F., {Pont}, F., {Melo}, C., {et~al.} 2005, \aap, 431, 1105
+
+\bibitem[{Cavallini {et~al.}(1985)Cavallini, Ceppatelli, \&
+  Righini}]{Cavallini-1985a}
+Cavallini, F., Ceppatelli, G., \& Righini, A. 1985, Astronomy and Astrophysics,
+  143, 116
 
 \bibitem[{{Claret} \& {Bloemen}(2011)}]{Claret-2011}
 {Claret}, A. \& {Bloemen}, S. 2011, \aap, 529, A75
@@ -121,6 +126,10 @@ Hatzes, A.~P. 2002, Astronomische Nachrichten, 323, 392
   Deleuil, Fares, Gillon, Lanza, Lovis, Moutou, {et~al.}}]{Haywood-2014}
 Haywood, R., Collier~Cameron, A., Queloz, D., {et~al.} 2014, Monthly notices of
   the royal astronomical society, 443, 2517
+
+\bibitem[{{Herrero} {et~al.}(2016){Herrero}, {Ribas}, {Jordi}, {Morales},
+  {Perger}, \& {Rosich}}]{Herrero:2016aa}
+{Herrero}, E., {Ribas}, I., {Jordi}, C., {et~al.} 2016, \aap, 586, A131
 
 \bibitem[{Kurster {et~al.}(2003)Kurster, Endl, Rouesnel, Els, Kaufer, Brillant,
   Hatzes, Saar, \& Cochran}]{Kurster2003}

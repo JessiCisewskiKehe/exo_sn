@@ -3,60 +3,60 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript_v2_noiseSim.aux
 The style file: aa.bst
 Database file #1: mybib-SNCCF.bib
-Repeated entry---line 687 of file mybib-SNCCF.bib
+Repeated entry---line 712 of file mybib-SNCCF.bib
  : @article{Feng:2017aa
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 708 of file mybib-SNCCF.bib
+Repeated entry---line 733 of file mybib-SNCCF.bib
  : @article{Robertson-2014
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 819 of file mybib-SNCCF.bib
+Repeated entry---line 844 of file mybib-SNCCF.bib
  : @article{Faria-2016a
  :                     ,
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning-- there's a number but no series in belsley1991
 Warning--empty journal in teunissen1990nonlinear
-You've used 49 entries,
+You've used 51 entries,
             3039 wiz_defined-function locations,
-            1012 strings with 16476 characters,
-and the built_in function-call counts, 28614 in all, are:
-= -- 2290
-> -- 2780
+            1026 strings with 16894 characters,
+and the built_in function-call counts, 29650 in all, are:
+= -- 2376
+> -- 2867
 < -- 20
-+ -- 957
-- -- 882
-* -- 2498
-:= -- 5350
-add.period$ -- 49
-call.type$ -- 49
-change.case$ -- 482
-chr.to.int$ -- 49
-cite$ -- 51
-duplicate$ -- 904
-empty$ -- 1296
-format.name$ -- 1001
-if$ -- 5607
++ -- 986
+- -- 909
+* -- 2589
+:= -- 5542
+add.period$ -- 51
+call.type$ -- 51
+change.case$ -- 499
+chr.to.int$ -- 51
+cite$ -- 53
+duplicate$ -- 941
+empty$ -- 1349
+format.name$ -- 1033
+if$ -- 5811
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 47
-newline$ -- 151
-num.names$ -- 196
-pop$ -- 471
+missing$ -- 49
+newline$ -- 157
+num.names$ -- 204
+pop$ -- 488
 preamble$ -- 1
-purify$ -- 482
+purify$ -- 499
 quote$ -- 0
-skip$ -- 808
+skip$ -- 840
 stack$ -- 0
-substring$ -- 1053
+substring$ -- 1098
 swap$ -- 15
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 438
+type$ -- 456
 warning$ -- 2
-while$ -- 192
+while$ -- 200
 width$ -- 0
-write$ -- 489
+write$ -- 509
 (There were 3 error messages)
