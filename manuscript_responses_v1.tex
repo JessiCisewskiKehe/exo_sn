@@ -52,7 +52,7 @@ So, my conclusion after reading the paper is that it is an interesting method, b
 \item {\bf Section 3 \\
 ``Exoplanets only produce a pure RV signal.'' What do you mean by pure? To me activity and pulsations also produces ``pure'' RV signals. Do you mean to say exoplanets generally produce an RV signal without an accompanying change in the spectral line shapes?}
 %
-\item[]  RESPONSE:  Yes, we mean the impact of an exoplanet on the host star's spectrum is a shift to the entire stellar spectrum.  In the Introduction section of the paper, we note the following:  ``In theory, it should be easy to differentiate between the pure Doppler-shift induced by a planet, which shifts the entire stellar spectrum, and stellar activity, which modifies the shape of spectral lines and by doing so creates a spurious shift of the stellar spectrum''  The referenced sentence from Section 3 has been clarified to now read, ``Exoplanets  produce only a pure RV signal (i.e., exoplanets induce a Doppler shift of the entire stellar spectrum).''  The sentence following contrasts this with the impact of stellar activity to the line shape.
+\item[]  RESPONSE:  Yes, we mean the impact of an exoplanet on the host star's spectrum is a shift to the entire stellar spectrum.  In the Introduction section of the paper, we note the following:  ``In theory, it should be easy to differentiate between the pure Doppler-shift induced by a planet, which shifts the entire stellar spectrum, and stellar activity, which modifies the shape of spectral lines and by doing so creates a spurious shift of the stellar spectrum''  The referenced sentence from Section 3 has been clarified to now read, ``Exoplanets produce a Doppler shift of the entire stellar spectrum. On the contrary stellar activity and, in particular, the presence of active regions on the stellar photosphere, do not produce blueshifts or redshifts of the entire stellar spectrum but can create spurious RV signals by modifying the shape of spectral lines.''
 \bigskip
 %
 %
@@ -60,10 +60,7 @@ So, my conclusion after reading the paper is that it is an interesting method, b
 %
 \item[]  RESPONSE:  The purpose of the study using the SOAP simulations was to consider a simplified setting in which we can isolate the effects of a spot and a facula on the various activity measures.  There are many different possible combinations of spots and faculae that could be considered, but we preferred to keep the activity level simple in order to aid in the interpretation of the results.  The real observations used help to provide insight into how the various activity measures behave with realistic activity levels. In the Discussions (Section 7, pag. 15), we note: ``Additionally, there are expected to be multiple active regions on a star at different locations in longitude and latitude, while the SOAP 2.0 data used in the simulation study included only a single active region on the equator in order to isolate the effects of those active regions. ''
 
-{\color{red}Regarding the cancelation of the correlation between gamma and SN mean RV between spots and faculae, we expect that faculae would dominate and therefore create a positive correlation. 
-If we compare the gamma - SN mean RV correlation in Figure 3 (facula) and 6 (spot), indeed the amplitude in gamma and SN mean RV are similar, and we might think about cancelation. 
-However the facula used in Figure 3 is 3\%, while the spot in Figure 6 is 1\%. 
-We know that on the Sun the faculae over spots filling factor ratio is about 10 (Chapman-2001), therefore it would be reasonable to compare a 1\% spot with a 10\% facula. In such a case the effect of the facula would dominate and we would see a positive correlation. Such a positive correlation is seen in all the stars in the Appendix, therefore it is likely that for the slow rotating stars analyzed in this paper, the effect of faculae dominates over spots.}
+After redoing the SOAP 2.0 simulations and injecting some noise corresponding to a S/N of 100, it seems that both the spot and facula induce a negative correlation between the CCF asymmetry and its barycenter (i.e. the different RV estimators). Therefore we cannot have anymore a cancelation effect. Those negative correlations does not match the positive correlations always observed in the 5 stars studied in the paper. This implies that SOAP 2.0 is not able to model properly the CCF asymmetry variations. This could be due to the fact that SOAP 2.0 uses the spectrum of a spot to model the magnetic field effect inside a facula. However, we know that the temperature of a facula is significantly different that the one of a spot. We discussed this discrepancy in the text.
 
 The temperature of the spot and facula has now been added to the beginning of Section 4. The temperature difference of the spot with the photosphere is $\Delta T_{spot} = -663$ K and the temperature difference of the facula depends on the centre-to-limb angle $\theta$,  $\Delta T_{plage} = 250.9 - 407.7\,\cos{\theta} + 190.9\,\cos^2 \theta$ K (Meunier et al. 2010).
 \bigskip
@@ -71,24 +68,28 @@ The temperature of the spot and facula has now been added to the beginning of Se
 %
 \item {\bf The simulations are fine, but they appear to be due to data with no noise. I presume when you add noise slight differences in correlation will be more difficult to discern. You should consider adding some realistic level of noise to the data.}
 %
-\item[]  RESPONSE:  We considered the noise on the different parameters of the Normal and SN fit to the CCF for a SNR of 100, which is typical for high-precision RV measurements. At the beginning of Section 4 and in the Discussion of Section 7 we noted, respectively: ``We consider a S/N of 100 for our simulations'' and ``For our simulations we considered a S/N of 100''. We also updated the entire Section 4 of the manuscript with the obtained results. 
+\item[]  RESPONSE:  We considered the noise on the different parameters of the Normal and SN fit to the CCF for a SNR of 100, which is typical for high-precision RV measurements. 
 
-We also accordingly rewritten a couple of sentences in the Discussions presented in Section 7 and in the Conclusions of Section 8:
-\begin{itemize}
-\item Sensitivity was measured using the correlation between the asymmetry parameter and the estimated RVs; {\bf{in the spot setting the SN median RV had a correlation with $\gamma$ as strong as the correlation between N mean RV and BIS SPAN (R= -0.81), and}}
-{\bf{for the facula setting}}, the correlation between the FWHM and the estimated RVs is stronger when using the parameters from the SN compared to the parameters from the Normal. {\bf{For the spot and the spot plus a planet settings, no statistically significant difference on the correlation between FWHM and the estimated RVs were obtained.}}
-
-\item We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, {\bf{this new proposed correction reduces the effect of the stellar activity signal by an additional 14.5 -15 \% and 5.3-5.8 \%}} over the usual model, respectively, for facula and spot. When applying this model on real data, the improvement is not as substantial, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.
-\end{itemize}
+%We updated the entire Section 4 of the manuscript with the newly obtained results. 
+%
+%We also accordingly rewritten a couple of sentences in the Discussions presented in Section 7 and in the Conclusions of Section 8:
+%\begin{itemize}
+%\item Sensitivity was measured using the correlation between the asymmetry parameter and the estimated RVs; {\bf{in the spot setting the SN median RV had a correlation with $\gamma$ as strong as the correlation between N mean RV and BIS SPAN (R= -0.81), and}}
+%{\bf{for the facula setting}}, the correlation between the FWHM and the estimated RVs is stronger when using the parameters from the SN compared to the parameters from the Normal. {\bf{For the spot and the spot plus a planet settings, no statistically significant difference on the correlation between FWHM and the estimated RVs were obtained.}}
+%
+%\item We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, {\bf{this new proposed correction reduces the effect of the stellar activity signal by an additional 14.5 -15 \% and 5.3-5.8 \%}} over the usual model, respectively, for facula and spot. When applying this model on real data, the improvement is not as substantial, however, we still observe that planetary detection limits are improved by a non-negligible 12\%.
+%\end{itemize}
 
 \bigskip
 %
 %
 \item {\bf I found that the suggestion that the correlation between gamma and SN RV is due primarily to faculae is an interesting one. Possibly this can emerge as a useful diagnostic for this.}
 %
-\item[]  RESPONSE:  Yes, this is what we observe for example with Alpha Centauri b, where the correlation gamma -- SN RV is positive. 
-When working with simulations and, in particular, for the case of a facula, we measured a negative gamma -- SN RV correlation. 
-This may be due to the limitations of the SOAP 2.0 model described in Section 7, but provides an opportunity for improving the SOAP model in the future.
+\item[]  RESPONSE:  For all the stars, we observe a similar positive gamma -- SN RV correlation.
+The signal on Alpha Centauri B is likely due to a facule (Dumusque 2014) so this would make sense.
+But we also see a positive correlation for Corot-7. This star is extremely active, rotates fast, and the activity signal
+should be mainly driven by spots. Therefore we are not sure that we can use this gamma -- SN RV correlation to differentiate between
+spots and faculae.
 \bigskip
 %
 %
@@ -100,7 +101,7 @@ We believe that your comparison with rapid rotating stars is similar to what is 
 When the spot is on the approaching limb, we have a minimum FWHM and a maximum RV, as for point ~35, then when the spot is in the center, the FWHM is maximum, like for point 52, and finally when the spot is on the receding limb the velocity is minimum and the FWHM minimum as well, like for point ~64. 
 The only difference is that in our case we are speaking about slow rotators; also, the limited resolution of the instruments may play a role in getting a shape that is slightly different.
 
-The fact that we see nice RV-FWHM correlations for HD192310 and Corot-7 is likely because faculae are dominating the stellar activity signal (see Fig. 3 in the paper). Note that on the Sun the filling factor of faculae is approximatively 10 times larger than the one of spots (Chapman-2001). In Figure 3 we show the results for a 3\% facula, and in Figure 6 the results for a 1\% spot. If we consider that the faculae/spots filling factor ratio is similar on HD192310 and Corot-7 as on the Sun, then the faculae effect would largely dominate, therefore inducing a strong positive correlation.
+%The fact that we see nice RV-FWHM correlations for HD192310 and Corot-7 is likely because faculae are dominating the stellar activity signal (see Fig. 3 in the paper). Note that on the Sun the filling factor of faculae is approximatively 10 times larger than the one of spots (Chapman-2001). In Figure 3 we show the results for a 3\% facula, and in Figure 6 the results for a 1\% spot. If we consider that the faculae/spots filling factor ratio is similar on HD192310 and Corot-7 as on the Sun, then the faculae effect would largely dominate, therefore inducing a strong positive correlation.
 
 
 \begin{figure*}[!h]
