@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  23 NOV 2018 08:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.25)  23 NOV 2018 08:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1413,11 +1413,11 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1306.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1306.
  ) 
 Here is how much of TeX's memory you used:
- 10347 strings out of 493014
- 146423 string characters out of 6133351
- 295117 words of memory out of 5000000
- 13600 multiletter control sequences out of 15000+600000
- 117642 words of font info for 216 fonts, out of 8000000 for 9000
+ 10350 strings out of 493014
+ 146445 string characters out of 6133351
+ 295142 words of memory out of 5000000
+ 13601 multiletter control sequences out of 15000+600000
+ 119595 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,45p,2207b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1435,7 +1435,7 @@ local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript_v2_noiseSim.pdf (26 pages, 2680721 bytes).
+Output written on manuscript_v2_noiseSim.pdf (26 pages, 2681782 bytes).
 PDF statistics:
  449 PDF objects out of 1000 (max. 8388607)
  304 compressed objects within 4 object streams

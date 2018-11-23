@@ -231,7 +231,7 @@ Examples of SN densities under different skewness parameter values and the same 
 \end{center}
 \end{figure}
 %
-For reasons related to the interpretation of the parameters in Eq.~\eqref{def:snd_gen} and computational issues with estimating $\alpha$ near 0, a different parametrization is used in this work, which is referred to as the \emph{centered parametrization} (CP).  This CP is much closer to the parametrization of a Normal distribution, as it uses a mean parameter $\mu$, a variance parameter $\sigma^2$ and a skewness parameter $\gamma$. In order to define the CP, we need to express the CP parameters $(\mu, \sigma^2, \gamma)$ as a function of $(\xi, \omega^2, \alpha)$. This can be done using the following relations:
+For reasons related to the interpretation of the parameters in Eq.~\eqref{def:snd_gen} and computational issues with estimating $\alpha$ near 0, a different parametrization is used in this work, which is referred to as the \textit{centered parametrization} (CP).  This CP is much closer to the parametrization of a Normal distribution, as it uses a mean parameter $\mu$, a variance parameter $\sigma^2$ and a skewness parameter $\gamma$. In order to define the CP, we need to express the CP parameters $(\mu, \sigma^2, \gamma)$ as a function of $(\xi, \omega^2, \alpha)$. This can be done using the following relations:
 %
 \begin{equation} \label{eq:snd_cp}
 \mu = \xi + \omega \beta, \quad \sigma^{2} = \omega^{2}(1-\beta^2), \quad \gamma = \frac{1}{2}(4-\pi) \beta^{3}\left(1-\beta^2\right)^{-3/2},
@@ -269,7 +269,7 @@ $\alpha$ & $\mu$ & $\sigma^2$ & $\gamma$  & Median \\
 \end{center}
 \end{table}
 %
-Further details about the parametrization from Eq.~\eqref{def:snd_gen}, called the \emph{Direct Parametrization} (DP), the CP, and general statistical properties of the SN can be found in \cite{Azzalini2014}.
+Further details about the parametrization from Eq.~\eqref{def:snd_gen}, called the \textit{Direct Parametrization} (DP), the CP, and general statistical properties of the SN can be found in \cite{Azzalini2014}.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Fitting the Skew Normal density to the CCF} \label{sec:3}
@@ -338,7 +338,7 @@ This interaction term can account for possible interactions between SN FWHM (or 
 The proposed model is analyzed using statistical tests on the parameters $\beta_{0}$, $\beta_{1}$, $\beta_{2}$, $\beta_{3}$ and $\beta_{4}$ where the null hypothesis is $H_{0}: \beta_{i}=0$, for $i=0,\dots,4$. The significance level for the tests are set at $0.05$. The coefficient of determination, $R^2$, is used to assess how well the proposed linear combination of variables accounts for the variability of $RV_{\text{activity}}$. 
 
 The proposed function defined in Eq.~\eqref{eq:RV:correction} is the result of statistical and astronomical considerations. 
-In particular, we considered issues with correlations between the model covariates, which can lead to issues because the matrix needed to calculate the estimates could be singular; this problem is known in statistics as \emph{multicollinearity} and more discussion can be found in \citet{belsley1991}.
+In particular, we considered issues with correlations between the model covariates, which can lead to issues because the matrix needed to calculate the estimates could be singular; this problem is known in statistics as \textit{multicollinearity} and more discussion can be found in \citet{belsley1991}.
 In the analysis of real data presented in this work, we never observed a correlation coefficient exceeding $0.66$ between the asymmetry and width parameters and therefore the problem of multicollinearity appeared to be mitigated. 
 We also investigated the statistical significant of the interactions between $A$ and the width of the CCF, and $A$ and the asymmetry of the CCF; those two interactions were not statistically significant.
 
@@ -377,7 +377,7 @@ In Fig.~\ref{fig:faculae}, we compare the barycentric variation of the CCF as me
 \end{figure}
 
 Correlations between the different RV estimates and the different CCF asymmetry or width estimates are displayed in Fig.~\ref{fig:faculae.corr}. 
-{\bf The correlation between $\gamma$ and SN mean RV, and $\gamma$ and SN median RV are weaker than the correlation between BIS SPAN and RV, with Pearson correlation coefficient values of $R$=-0.11, -0.55 and -0.81, respectively. Therefore, it seems that when looking at the CCF asymmetry, fitting a SN density to the CCF does not help. However, when looking at the correlations between the width of the CCF and the RV, the stronger correlation can be found between SN FWHM and SN mean RV ($R=0.92$). Then follows the correlation between SN FWHM and SN median RV ($R=0.65$), and finally FWHM and N mean RV ($R=0.47$). Over all the different correlations in the case of a facule, the strongest one is found between SN FWHM and SN mean RV, which demonstrates that fitting a SN density to the CCF can be helpful to better probe stellar activity}
+{\bf The correlation between $\gamma$ and SN mean RV, and $\gamma$ and SN median RV are weaker than the correlation between BIS SPAN and RV, with Pearson correlation coefficient values of $R$=-0.11, -0.55 and -0.61, respectively. Therefore, it seems that when looking at the CCF asymmetry, fitting a SN density to the CCF does not help. However, when looking at the correlations between the width of the CCF and the RV, the stronger correlation can be found between SN FWHM and SN mean RV ($R=0.92$). Then follows the correlation between SN FWHM and SN median RV ($R=0.65$), and finally FWHM and N mean RV ($R=0.47$). Over all the different correlations in the case of a facule, the strongest one is found between SN FWHM and SN mean RV, which demonstrates that fitting a SN density to the CCF can be helpful to better probe stellar activity}
 %%
 %{\bf{There is a stronger correlation between SN FWHM and SN mean RV ($R=0.92$) than between SN FWHM and SN median RV ($R=0.65$), but the correlation between FWHM and N mean RV is the weakest ($R=0.47$).}} 
 %This first analysis shows that in the case of a facula, using some parameters from the SN can lead to stronger correlations than the ones obtained by the usual Normal parameters. Therefore, the SN parameters may better probe stellar activity. 
@@ -400,7 +400,7 @@ The proposed correction for stellar activity is able to account for the majority
 %In addition, the rms of the different estimates of the RV reduces from about {\bf{6 \ms}} before correcting for stellar activity to values below {\bf{1.2 \ms}} after correcting for stellar activity.
 %We see a slightly smaller rms after correction when using the SN parameters compared to the Normal parameters.
 {\bf In addition, the proposed linear model allows to reduce the activity effect from a RV rms of 8.02 \ms to 1.02 \ms when considering the CCF contrast and FWHM, and the BIS SPAN. When using the parameters derived from the SN, the improvements for SN median RV and SN mean RV are 7.07 \ms down to 0.88 \ms and 5.9 \ms down to 0.88 \ms, respectively}
-When comparing the correction proposed in Eq.~\eqref{eq:RV:correction} with what is generally used (i.e. a linear combination of only the asymmetry and width parameters), we see that the proposed correction is able to reduce the rms of the RV residuals by  {\bf{15 \%}}. Looking at the significance of the coefficients in Table~\ref{table:faculae.test}, we observe that {\bf{all the parameters corresponding to the SN variables are statistically significant. When using the Normal variables, the parameters $\beta_{3}$ and $\beta_{4}$ are not statistically helpful for the correction.}} 
+When comparing the correction proposed in Eq.~\eqref{eq:RV:correction} with what is generally used (i.e. a linear combination of only the asymmetry and width parameters), we see that the proposed correction is able to reduce the rms of the RV residuals by {\bf{an additional 14.5 - 15\%}}. Looking at the significance of the coefficients in Table~\ref{table:faculae.test}, we observe that {\bf{all the parameters corresponding to the SN variables are statistically significant. When using the Normal variables, the parameters $\beta_{3}$ and $\beta_{4}$ are not statistically helpful for the correction.}} 
 
 \begin{figure*}[htbp]
 \begin{center}
@@ -1017,7 +1017,7 @@ In addition, the uncertainties measured on SN median RV and $\gamma$ are, respec
 
 Because of the advantages of using the proposed SN approach over the commonly employed approach based on the Normal density fit to the CCF and the BIS SPAN or the asymmetry parameters described in \citet{Boisse-2011} and \citet{Figueira-2013}, a SN density model for the CCF may be more useful for detecting stellar activity than the previously proposed parametrizations.
 Correlations between $\gamma$ and SN mean RV, and between the width and SN mean RV can be used to probe stellar activity signals in RV data, and SN median RV can be used to estimate RV.
-We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, {\bf{this new proposed correction reduces the effect of the stellar activity signal by 15 \% and 6 \%}} over the usual model, respectively, for facula and spot. When applying this model on real data,\sout{the improvement is not as substantial, however, we still} we observe that planetary detection limits are improved by a non-negligible 12\%.
+We also proposed a new model to correct the estimated RV data for stellar activity signals, by using the amplitude of the CCF and an interaction term between the estimated asymmetry and the width parameters. Using simulated data from SOAP 2.0, {\bf{this new proposed correction reduces the effect of the stellar activity signal by an additional 14.5 -15 \% and 5.3-5.8 \%}} over the usual model, respectively, for facula and spot. When applying this model on real data,\sout{the improvement is not as substantial, however, we still} we observe that planetary detection limits are improved by a non-negligible 12\%.
 
 %the RVs of the star can be calculated as the mean of the SN, whereas its asymmetry parameter $\gamma$ can be naturally used for retrieving information about the asymmetry of the CCF. Because of the natural correlation between the RVs and the asymmetry parameter, a linear combination of both $\gamma$ and the FWHM has been implemented for correcting the RVs from stellar activity, allowing us to retrieve a more precise RVs. 
 
