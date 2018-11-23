@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: manuscript_v2_final.aux
+The style file: aa.bst
+Database file #1: mybib-SNCCF.bib
+Repeated entry---line 712 of file mybib-SNCCF.bib
+ : @article{Feng:2017aa
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 733 of file mybib-SNCCF.bib
+ : @article{Robertson-2014
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 844 of file mybib-SNCCF.bib
+ : @article{Faria-2016a
+ :                     ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning-- there's a number but no series in belsley1991
+Warning--empty journal in teunissen1990nonlinear
+You've used 51 entries,
+            3039 wiz_defined-function locations,
+            1026 strings with 16888 characters,
+and the built_in function-call counts, 29650 in all, are:
+= -- 2376
+> -- 2867
+< -- 20
++ -- 986
+- -- 909
+* -- 2589
+:= -- 5542
+add.period$ -- 51
+call.type$ -- 51
+change.case$ -- 499
+chr.to.int$ -- 51
+cite$ -- 53
+duplicate$ -- 941
+empty$ -- 1349
+format.name$ -- 1033
+if$ -- 5811
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 49
+newline$ -- 157
+num.names$ -- 204
+pop$ -- 488
+preamble$ -- 1
+purify$ -- 499
+quote$ -- 0
+skip$ -- 840
+stack$ -- 0
+substring$ -- 1098
+swap$ -- 15
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 456
+warning$ -- 2
+while$ -- 200
+width$ -- 0
+write$ -- 509
+(There were 3 error messages)
